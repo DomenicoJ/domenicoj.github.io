@@ -1,0 +1,219 @@
+/* DMJ Lab — inner pages: About, Services, Insights, Contact */
+
+const { useState } = React;
+
+function PageHero({ kicker, title, lede }) {
+  return (
+    <div className="page-hero">
+      <Kicker>{kicker}</Kicker>
+      <h1>{title}</h1>
+      {lede && <p className="page-lede">{lede}</p>}
+    </div>
+  );
+}
+
+function AboutPage({ lang, go }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].bio;
+  const o = window.OWNER;
+  const timeline = it
+    ? [
+        { y: "2003—2019", t: "Vent'anni nel Food & Beverage", d: "Responsabile commerciale in multinazionali italiane e internazionali del settore." },
+        { y: "2019", t: "Verso startup e foodtech", d: "Direzione commerciale in una PMI innovativa del foodtech per la ristorazione." },
+        { y: "2018—oggi", t: "Formazione & divulgazione", d: "Docenze, articoli e interventi su innovazione digitale, food delivery e tecnologie emergenti." },
+        { y: "Oggi", t: "DMJ Lab — AI & Innovazione", d: "Consulenza, keynote e formazione per l'adozione responsabile dell'intelligenza artificiale." },
+      ]
+    : [
+        { y: "2003—2019", t: "Twenty years in Food & Beverage", d: "Sales leader in Italian and international multinationals." },
+        { y: "2019", t: "Into startups and foodtech", d: "Sales director at an innovative foodtech SME for hospitality." },
+        { y: "2018—now", t: "Training & outreach", d: "Lectures, articles and talks on digital innovation, food delivery and emerging tech." },
+        { y: "Now", t: "DMJ Lab — AI & Innovation", d: "Consulting, keynotes and training for the responsible adoption of AI." },
+      ];
+  return (
+    <main className="page">
+      <PageHero kicker={it ? "Chi sono" : "About"} title={c.title} />
+      <section className="section about-body">
+        <div className="about-grid">
+          <div className="about-portrait">
+            <Placeholder label={it ? "Ritratto di Domenico" : "Portrait of Domenico"} ratio="4 / 5" src="site/domenico.jpg" />
+          </div>
+          <div className="about-text">
+            {c.body.map((p, i) => <p key={i}>{p}</p>)}
+            <p>
+              {it
+                ? "Credo in un'innovazione concreta, misurabile e umana: la tecnologia ha senso solo quando crea valore reale per le persone e per le imprese."
+                : "I believe in concrete, measurable and human innovation: technology only matters when it creates real value for people and businesses."}
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="section timeline-sec">
+        <div className="section-head"><Kicker>{it ? "Percorso" : "Journey"}</Kicker><h2>{it ? "Le tappe principali" : "Key milestones"}</h2></div>
+        <ol className="timeline">
+          {timeline.map((tl, i) => (
+            <li key={i}>
+              <span className="tl-year">{tl.y}</span>
+              <div className="tl-body"><h3>{tl.t}</h3><p>{tl.d}</p></div>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <CtaBand lang={lang} go={go} dir="solid" />
+    </main>
+  );
+}
+
+function ServicesPage({ lang, go }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].services;
+  const how = it
+    ? [
+        { n: "A", t: "Ascolto", d: "Capisco contesto, obiettivi e vincoli reali della tua organizzazione." },
+        { n: "B", t: "Strategia", d: "Definiamo insieme priorità, casi d'uso e una roadmap sostenibile e conforme." },
+        { n: "C", t: "Esecuzione", d: "Formazione, progetti pilota e affiancamento per portare l'AI in produzione." },
+      ]
+    : [
+        { n: "A", t: "Listen", d: "I understand your organisation's context, goals and real constraints." },
+        { n: "B", t: "Strategy", d: "Together we define priorities, use cases and a sustainable, compliant roadmap." },
+        { n: "C", t: "Execution", d: "Training, pilots and hands-on support to bring AI into production." },
+      ];
+  return (
+    <main className="page">
+      <PageHero kicker={c.kicker} title={c.title} lede={c.lede} />
+      <section className="section">
+        <div className="svc-grid svc-grid--page">
+          {c.items.map((s) => (
+            <article className="svc-card svc-card--page" key={s.n}>
+              <div className="svc-n">{s.n}</div>
+              <h3>{s.title}</h3>
+              <p>{s.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section how-sec">
+        <div className="section-head"><Kicker>{it ? "Metodo" : "Method"}</Kicker><h2>{it ? "Come lavoriamo" : "How we work"}</h2></div>
+        <div className="how-grid">
+          {how.map((h) => (
+            <div className="how-card" key={h.n}>
+              <span className="how-n">{h.n}</span>
+              <h3>{h.t}</h3>
+              <p>{h.d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <CtaBand lang={lang} go={go} dir="solid" />
+    </main>
+  );
+}
+
+function InsightsPage({ lang, go }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].insights;
+  const all = c.items;
+  const o = window.OWNER;
+  return (
+    <main className="page">
+      <PageHero kicker={c.kicker} title={c.title} lede={c.lede} />
+      <section className="section">
+        <div className="ln-banner">
+          <div className="ln-banner-icon" aria-hidden="true">in</div>
+          <p>{c.liveNote}</p>
+          <a className="btn btn--solid" href={o.linkedinActivity} target="_blank" rel="noopener">{c.linkedinCta} ↗</a>
+        </div>
+        <div className="ins-grid ins-grid--page">
+          {all.map((a, i) => (
+            <a className="ins-card ins-card--text" key={i} href={a.url} target="_blank" rel="noopener">
+              <span className="ins-badge" aria-hidden="true">in</span>
+              <div className="ins-meta">
+                <span className="ins-tag">{a.tag}</span>
+                <span className="ins-date">{a.date}</span>
+              </div>
+              <h3>{a.title}</h3>
+              {a.summary && <p className="ins-sum">{a.summary}</p>}
+              <span className="ins-readon">{c.readOn} <span aria-hidden="true">↗</span></span>
+            </a>
+          ))}
+        </div>
+        <p className="placeholder-note">
+          {it
+            ? "* Titoli ricavati dai link: verificali e personalizzali quando vuoi. Tutti i post aggiornati sono sul mio profilo LinkedIn."
+            : "* Titles inferred from the links: review and edit them anytime. All updated posts are on my LinkedIn profile."}
+        </p>
+      </section>
+      <Newsletter lang={lang} />
+    </main>
+  );
+}
+
+function ContactPage({ lang, go }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].contact;
+  const o = window.OWNER;
+  const [form, setForm] = useState({ name: "", email: "", org: "", message: "" });
+  const [agree, setAgree] = useState(false);
+  const [sent, setSent] = useState(false);
+  const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
+  const submit = (e) => {
+    e.preventDefault();
+    if (!form.name || !form.email || !form.message || !agree) return;
+    setSent(true);
+  };
+  return (
+    <main className="page">
+      <PageHero kicker={c.kicker} title={c.title} lede={c.lede} />
+      <section className="section contact-sec">
+        <div className="contact-grid">
+          <form className="contact-form" onSubmit={submit}>
+            <label className="field">
+              <span>{c.form.name}</span>
+              <input type="text" value={form.name} onChange={set("name")} required />
+            </label>
+            <div className="field-row">
+              <label className="field">
+                <span>{c.form.email}</span>
+                <input type="email" value={form.email} onChange={set("email")} required />
+              </label>
+              <label className="field">
+                <span>{c.form.org}</span>
+                <input type="text" value={form.org} onChange={set("org")} />
+              </label>
+            </div>
+            <label className="field">
+              <span>{c.form.message}</span>
+              <textarea rows="5" value={form.message} onChange={set("message")} required />
+            </label>
+            <label className="consent">
+              <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)} required />
+              <span>
+                {c.form.consent.split("informativa privacy")[0]}
+                <a href="#/privacy" onClick={(e) => { e.preventDefault(); go("privacy"); }}>
+                  {it ? "informativa privacy" : "privacy policy"}
+                </a>
+                {it ? c.form.consent.split("informativa privacy")[1] : c.form.consent.split("privacy policy")[1]}
+              </span>
+            </label>
+            <button className="btn btn--solid" type="submit">{c.form.submit}</button>
+            {sent && <p className="form-ok">{c.form.sent}</p>}
+          </form>
+
+          <aside className="contact-aside">
+            <h3>{c.directLabel}</h3>
+            <a className="contact-direct" href={"mailto:" + o.email}>{o.email}</a>
+            <a className="contact-direct" href={"tel:" + o.phone.replace(/\s/g, "")}>{o.phone}</a>
+            <a className="contact-direct contact-direct--wa" href={"https://wa.me/" + o.phone.replace(/[^0-9]/g, "")} target="_blank" rel="noopener">WhatsApp →</a>
+            <a className="contact-direct" href={o.linkedin} target="_blank" rel="noopener">LinkedIn →</a>
+            <div className="contact-card-id">
+              <p>{o.legalName}</p>
+              <p>{o.address}</p>
+              <p>P. IVA {o.piva}</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+Object.assign(window, { PageHero, AboutPage, ServicesPage, InsightsPage, ContactPage });
