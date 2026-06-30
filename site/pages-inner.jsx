@@ -154,11 +154,31 @@ function ContactPage({ lang, go }) {
   const [form, setForm] = useState({ name: "", email: "", org: "", message: "" });
   const [agree, setAgree] = useState(false);
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message || !agree) return;
-    setSent(true);
+    if (!form.name || !form.email || !form.message || !agree || sending) return;
+    setSending(true); setError(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: window.WEB3FORMS_KEY,
+          subject: "Nuovo messaggio dal sito — DMJ Lab",
+          from_name: form.name,
+          name: form.name,
+          email: form.email,
+          azienda: form.org,
+          messaggio: form.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) setSent(true); else setError(true);
+    } catch (err) { setError(true); }
+    finally { setSending(false); }
   };
   return (
     <main className="page">
@@ -194,8 +214,11 @@ function ContactPage({ lang, go }) {
                 {it ? c.form.consent.split("informativa privacy")[1] : c.form.consent.split("privacy policy")[1]}
               </span>
             </label>
-            <button className="btn btn--solid" type="submit">{c.form.submit}</button>
-            {sent && <p className="form-ok">{c.form.sent}</p>}
+            <button className="btn btn--solid" type="submit" disabled={sending}>
+              {sending ? (it ? "Invio in corso…" : "Sending…") : c.form.submit}
+            </button>
+            {sent && <p className="form-ok">{it ? "Grazie! Messaggio inviato: ti risponderò al più presto." : "Thank you! Your message has been sent — I'll reply soon."}</p>}
+            {error && <p className="form-ok" style={{ color: "#d33" }}>{it ? ("Invio non riuscito. Riprova o scrivimi a " + o.email + ".") : ("Sending failed. Please retry or email me at " + o.email + ".")}</p>}
           </form>
 
           <aside className="contact-aside">

@@ -208,4 +208,6 @@ const CONTENT = {
   },
 };
 
-Object.assign(window, { OWNER, NAV, CONTENT });
+const WEB3FORMS_KEY = "86683b74-437f-48b7-8dbc-0b95f5be3ea6";
+
+Object.assign(window, { OWNER, NAV, CONTENT, WEB3FORMS_KEY });

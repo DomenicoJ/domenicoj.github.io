@@ -155,12 +155,27 @@ function Newsletter({ lang }) {
   const [email, setEmail] = useState("");
   const [agree, setAgree] = useState(false);
   const [ok, setOk] = useState(false);
-  const submit = (e) => {
+  const [sending, setSending] = useState(false);
+  const submit = async (e) => {
     e.preventDefault();
-    if (!email || !agree) return;
-    setOk(true);
-    setEmail("");
-    setAgree(false);
+    if (!email || !agree || sending) return;
+    setSending(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: window.WEB3FORMS_KEY,
+          subject: "Nuova iscrizione newsletter — DMJ Lab",
+          from_name: "Newsletter DMJ Lab",
+          email: email,
+          tipo: "Iscrizione newsletter",
+        }),
+      });
+      const data = await res.json();
+      if (data.success) { setOk(true); setEmail(""); setAgree(false); }
+    } catch (err) {}
+    finally { setSending(false); }
   };
   return (
     <section className="section newsletter">
@@ -179,13 +194,13 @@ function Newsletter({ lang }) {
               onChange={(e) => setEmail(e.target.value)}
               aria-label={c.placeholder}
             />
-            <button className="btn btn--solid" type="submit">{c.button}</button>
+            <button className="btn btn--solid" type="submit" disabled={sending}>{sending ? "…" : c.button}</button>
           </div>
           <label className="consent">
             <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)} required />
             <span>{c.consent}</span>
           </label>
-          {ok && <p className="form-ok">{c.ok}</p>}
+          {ok && <p className="form-ok">{lang === "it" ? "Iscrizione registrata. Grazie!" : "Subscription registered. Thank you!"}</p>}
         </form>
       </div>
     </section>
