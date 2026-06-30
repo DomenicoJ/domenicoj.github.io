@@ -69,14 +69,14 @@ function legalDocs(L) {
       {
         h: it ? "Destinatari dei dati" : "Data recipients",
         p: it
-          ? "I dati possono essere trattati da fornitori che agiscono come responsabili del trattamento (es. hosting, servizio email/newsletter, strumenti di analytics), nominati ai sensi dell'art. 28 GDPR. Non vendiamo i tuoi dati a terzi."
-          : "Data may be processed by providers acting as data processors (e.g. hosting, email/newsletter service, analytics tools), appointed under Art. 28 GDPR. We do not sell your data to third parties.",
+          ? "Per erogare i servizi del sito ci avvaliamo di fornitori che agiscono come responsabili del trattamento (art. 28 GDPR): Web3Forms (Cool Devs LLC, USA) per la ricezione e l'inoltro dei messaggi dei form Contatti e Newsletter; GitHub Pages (GitHub, Inc., USA) per l'hosting tecnico; Google (Google Ireland Ltd / Google LLC) per la piattaforma Google Sites su cui il sito è pubblicato e per i web font. Tali fornitori trattano i dati solo per nostro conto e su nostre istruzioni. Non vendiamo né cediamo i tuoi dati a terzi per finalità di marketing."
+          : "To run the site we rely on providers acting as data processors (Art. 28 GDPR): Web3Forms (Cool Devs LLC, USA) to receive and forward Contact and Newsletter form messages; GitHub Pages (GitHub, Inc., USA) for technical hosting; Google (Google Ireland Ltd / Google LLC) for the Google Sites platform the site is published on and for web fonts. These providers process data only on our behalf and on our instructions. We do not sell or transfer your data to third parties for marketing.",
       },
       {
         h: it ? "Trasferimenti extra-UE" : "Transfers outside the EU",
         p: it
-          ? "Alcuni fornitori potrebbero trattare dati al di fuori dello Spazio Economico Europeo. In tal caso il trasferimento avviene solo verso Paesi con decisione di adeguatezza o sulla base di Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea."
-          : "Some providers may process data outside the European Economic Area. In that case, transfers occur only to countries with an adequacy decision or based on Standard Contractual Clauses (SCC) approved by the European Commission.",
+          ? "Alcuni fornitori (in particolare Web3Forms, GitHub e Google) hanno sede negli Stati Uniti e possono trattare i dati al di fuori dello Spazio Economico Europeo. Tali trasferimenti avvengono sulla base della decisione di adeguatezza EU-US Data Privacy Framework e/o di Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea, con misure supplementari ove necessario."
+          : "Some providers (notably Web3Forms, GitHub and Google) are based in the United States and may process data outside the European Economic Area. Such transfers rely on the EU-US Data Privacy Framework adequacy decision and/or on Standard Contractual Clauses (SCC) approved by the European Commission, with supplementary measures where needed.",
       },
       {
         h: it ? "Periodo di conservazione" : "Retention period",
@@ -129,14 +129,20 @@ function legalDocs(L) {
       {
         h: it ? "Cookie statistici / analytics" : "Statistical / analytics cookies",
         p: it
-          ? "Ci aiutano a capire come viene usato il sito in forma aggregata (es. Google Analytics, ove attivato). Installati solo con il tuo consenso e, ove possibile, con IP anonimizzato."
-          : "Help us understand how the site is used in aggregate form (e.g. Google Analytics, where enabled). Installed only with your consent and, where possible, with anonymised IP.",
+          ? "Ci aiutano a capire come viene usato il sito in forma aggregata (es. Google Analytics, ove attivato). Installati solo con il tuo consenso e, ove possibile, con IP anonimizzato. Attualmente il sito non ha strumenti di analytics attivi."
+          : "Help us understand how the site is used in aggregate form (e.g. Google Analytics, where enabled). Installed only with your consent and, where possible, with anonymised IP. The site currently has no active analytics tools.",
       },
       {
         h: it ? "Cookie di marketing" : "Marketing cookies",
         p: it
-          ? "Eventuali cookie di profilazione di terze parti vengono installati solo previo consenso specifico. Attualmente il sito non utilizza cookie di marketing salvo diversa indicazione nel banner."
-          : "Any third-party profiling cookies are installed only with specific consent. The site currently uses no marketing cookies unless otherwise indicated in the banner.",
+          ? "Eventuali cookie di profilazione di terze parti vengono installati solo previo consenso specifico. Attualmente il sito non utilizza cookie di marketing."
+          : "Any third-party profiling cookies are installed only with specific consent. The site currently uses no marketing cookies.",
+      },
+      {
+        h: it ? "Risorse di terze parti e hosting" : "Third-party resources and hosting",
+        p: it
+          ? "Il sito è pubblicato tramite Google Sites e si appoggia a GitHub Pages; durante la navigazione il browser contatta i server di questi fornitori. Per il corretto funzionamento vengono inoltre caricati web font e librerie tecniche da reti di distribuzione (CDN). Queste richieste sono tecnicamente necessarie, possono comportare la comunicazione del tuo indirizzo IP ai relativi provider e non installano cookie di profilazione. Google Sites, come piattaforma di hosting, può impostare cookie tecnici propri."
+          : "The site is published via Google Sites and relies on GitHub Pages; while browsing, your browser contacts these providers' servers. For correct operation, web fonts and technical libraries are also loaded from content delivery networks (CDNs). These requests are technically necessary, may involve sharing your IP address with those providers, and set no profiling cookies. Google Sites, as the hosting platform, may set its own technical cookies.",
       },
       {
         h: it ? "Gestire il consenso" : "Managing consent",

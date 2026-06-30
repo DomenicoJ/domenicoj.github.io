@@ -156,8 +156,10 @@ function Newsletter({ lang }) {
   const [agree, setAgree] = useState(false);
   const [ok, setOk] = useState(false);
   const [sending, setSending] = useState(false);
+  const [hp, setHp] = useState("");
   const submit = async (e) => {
     e.preventDefault();
+    if (hp) { setOk(true); return; } // honeypot anti-spam: bot rilevato, niente invio
     if (!email || !agree || sending) return;
     setSending(true);
     try {
@@ -185,6 +187,7 @@ function Newsletter({ lang }) {
           <p>{c.lede}</p>
         </div>
         <form className="nl-form" onSubmit={submit}>
+          <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" value={hp} onChange={(e) => setHp(e.target.value)} style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }} />
           <div className="nl-row">
             <input
               type="email"

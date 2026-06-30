@@ -156,9 +156,11 @@ function ContactPage({ lang, go }) {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState(false);
+  const [hp, setHp] = useState("");
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
   const submit = async (e) => {
     e.preventDefault();
+    if (hp) { setSent(true); return; } // honeypot anti-spam: bot rilevato, niente invio
     if (!form.name || !form.email || !form.message || !agree || sending) return;
     setSending(true); setError(false);
     try {
@@ -186,6 +188,7 @@ function ContactPage({ lang, go }) {
       <section className="section contact-sec">
         <div className="contact-grid">
           <form className="contact-form" onSubmit={submit}>
+            <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" value={hp} onChange={(e) => setHp(e.target.value)} style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }} />
             <label className="field">
               <span>{c.form.name}</span>
               <input type="text" value={form.name} onChange={set("name")} required />
