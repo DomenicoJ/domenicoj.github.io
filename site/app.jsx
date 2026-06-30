@@ -116,14 +116,14 @@ function App() {
       <a className="skip" href="#main">{it ? "Vai al contenuto" : "Skip to content"}</a>
       <Nav lang={lang} setLang={setLang} route={route} go={go} />
 
-      {/* AI transparency strip */}
+      <div id="main">{view}</div>
+
+      {/* AI transparency strip — spostata in fondo alla pagina */}
       <button className="ai-strip" onClick={() => go("ai")}>
         <span className="ai-dot" aria-hidden="true" />
         {window.CONTENT[lang].aiNotice.short}
         <span className="ai-strip-cta">{window.CONTENT[lang].aiNotice.cta} →</span>
       </button>
-
-      <div id="main">{view}</div>
 
       <Footer lang={lang} go={go} openCookie={() => setCookieOpen(true)} />
       <CookieBanner lang={lang} open={cookieOpen} setOpen={setCookieOpen} />
