@@ -45,7 +45,7 @@ const CONTENT = {
     },
     forwho: {
       kicker: "Per chi",
-      title: "Lavoro con chi decide",
+      title: "Lavoro con chi vuole rimanere al centro del cambiamento tecnologico",
       items: [
         { title: "Imprese e PMI", body: "Per chi deve decidere se e come portare l'AI in azienda, senza farsi vendere fumo e senza restare a guardare." },
         { title: "Professionisti e studi", body: "Per chi vuole moltiplicare il proprio tempo: l'AI come collaboratore affidabile, non come minaccia." },
@@ -139,7 +139,7 @@ const CONTENT = {
     },
     forwho: {
       kicker: "Who it's for",
-      title: "I work with those who decide",
+      title: "I work with those who want to stay at the centre of technological change",
       items: [
         { title: "Companies and SMEs", body: "For those deciding whether and how to bring AI into the business — without being sold smoke, and without standing still." },
         { title: "Professionals and firms", body: "For those who want to multiply their time: AI as a reliable collaborator, not a threat." },
