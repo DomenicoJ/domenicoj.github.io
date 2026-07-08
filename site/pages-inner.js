@@ -59,7 +59,8 @@ function AboutPage({
     className: "page"
   }, /*#__PURE__*/React.createElement(PageHero, {
     kicker: it ? "Chi sono" : "About",
-    title: c.title
+    title: c.title,
+    lede: it ? "«L'innovazione è una storia da raccontare, prima che un processo da implementare.»" : "“Innovation is a story to tell, before it is a process to implement.”"
   }), /*#__PURE__*/React.createElement("section", {
     className: "section about-body"
   }, /*#__PURE__*/React.createElement("div", {

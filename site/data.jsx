@@ -36,8 +36,8 @@ const CONTENT = {
     nav_cta: "Parliamone",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "L'innovazione è una storia da raccontare, prima che un processo da implementare.",
-      lede: "Aiuto imprenditori, PMI e professionisti a scrivere la propria: strategia, formazione e progetti sull'intelligenza artificiale che producono risultati, non presentazioni.",
+      quote: "La parte difficile dell'AI sono le persone. Io aiuto a portarle dove la tecnologia le aspetta.",
+      lede: "La tecnologia è il pezzo più facile del processo di cambiamento: migliora da sola ogni sei mesi senza che nessuno glielo chieda. Il collo di bottiglia è l'essere umano che deve cambiare le sue abitudini.\nNessun modello, per quanto potente, sposta l'inerzia.\nLì, dove il software non arriva, intervengo io.",
       cta_primary: "Raccontami la tua sfida",
       cta_secondary: "Come lavoro",
       latest: "Dal blog",
@@ -130,8 +130,8 @@ const CONTENT = {
     nav_cta: "Let's talk",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "Innovation is a story to tell, before it is a process to implement.",
-      lede: "I help entrepreneurs, SMEs and professionals write their own: strategy, training and artificial-intelligence projects that deliver results, not slide decks.",
+      quote: "The hard part of AI is people. I help bring them to where the technology is waiting.",
+      lede: "Technology is the easy part of change: it improves on its own every six months without being asked. The bottleneck is the human being who has to change their habits.\nNo model, however powerful, moves inertia.\nThere, where software doesn't reach, I step in.",
       cta_primary: "Tell me your challenge",
       cta_secondary: "How I work",
       latest: "From the blog",

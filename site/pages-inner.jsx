@@ -31,7 +31,13 @@ function AboutPage({ lang, go }) {
       ];
   return (
     <main className="page">
-      <PageHero kicker={it ? "Chi sono" : "About"} title={c.title} />
+      <PageHero
+        kicker={it ? "Chi sono" : "About"}
+        title={c.title}
+        lede={it
+          ? "«L'innovazione è una storia da raccontare, prima che un processo da implementare.»"
+          : "“Innovation is a story to tell, before it is a process to implement.”"}
+      />
       <section className="section about-body">
         <div className="about-grid">
           <div className="about-portrait">
