@@ -49,11 +49,26 @@ const CONTENT = {
     nav_cta: "Parliamone",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "L'AI non ruba il futuro. Lo consegna a chi ha il coraggio di guidarla.",
-      lede: "Aziende, professionisti e PA: trasformo l'intelligenza artificiale da promessa in vantaggio reale.\nStrategia, formazione e visione per usarla in modo etico, umano e concreto.",
-      cta_primary: "Lavoriamo insieme",
-      cta_secondary: "Scopri i servizi",
+      quote: "L'innovazione è una storia da raccontare, prima che un processo da implementare.",
+      lede: "Aiuto imprenditori, PMI e professionisti a scrivere la propria: strategia, formazione e progetti sull'intelligenza artificiale che producono risultati, non presentazioni.",
+      cta_primary: "Raccontami la tua sfida",
+      cta_secondary: "Come lavoro",
+      latest: "Dal blog",
       portrait: "Ritratto di Domenico — foto verticale"
+    },
+    forwho: {
+      kicker: "Per chi",
+      title: "Lavoro con chi decide",
+      items: [{
+        title: "Imprese e PMI",
+        body: "Per chi deve decidere se e come portare l'AI in azienda, senza farsi vendere fumo e senza restare a guardare."
+      }, {
+        title: "Professionisti e studi",
+        body: "Per chi vuole moltiplicare il proprio tempo: l'AI come collaboratore affidabile, non come minaccia."
+      }, {
+        title: "Scuola e PA",
+        body: "Per chi forma le persone e amministra la cosa pubblica: adozione responsabile, conforme, sostenibile."
+      }]
     },
     bio: {
       kicker: "Chi sono",
@@ -68,19 +83,19 @@ const CONTENT = {
       items: [{
         n: "01",
         title: "Consulenza AI & Strategia",
-        body: "Mappo i casi d'uso ad alto impatto, definisco una roadmap concreta e ti aiuto a scegliere strumenti e governance per adottare l'AI in modo sostenibile e conforme alle normative."
+        body: "Dalla curiosità al piano operativo: mappiamo i casi d'uso che spostano i numeri della tua azienda, definiamo priorità, strumenti e governance conforme all'AI Act. Esci con una roadmap, non con una lista di software."
       }, {
         n: "02",
         title: "Keynote & Talk",
-        body: "Porto sul palco una visione lucida sull'innovazione e sull'AI: interventi pensati per ispirare, dare prospettive nuove e tradurre la tecnologia in opportunità di business."
+        body: "Interventi su AI e innovazione costruiti sul tuo contesto: casi veri, numeri verificati, zero slide fotocopia. Il pubblico esce con idee, non solo con applausi."
       }, {
         n: "03",
         title: "Formazione & Bootcamp",
-        body: "Percorsi formativi e bootcamp pratici per dare al tuo team una mentalità pronta al futuro e competenze reali sull'AI generativa, dall'uso quotidiano alla progettazione."
+        body: "Il tuo team operativo sull'AI in settimane, non in anni: prima gli strumenti spiegati bene, poi il laboratorio pratico sui vostri casi reali."
       }, {
         n: "04",
         title: "AI per Food & Retail",
-        body: "Unisco vent'anni di esperienza nel Food & Beverage e nel retail alle nuove tecnologie, per progetti di innovazione mirati ai settori che conosco a fondo."
+        body: "Vent'anni tra scaffali e cucine, più l'intelligenza artificiale: distribuzione, ristorazione, foodtech. Progetti che parlano la lingua di chi il food lo fa davvero."
       }]
     },
     proof: {
@@ -92,8 +107,8 @@ const CONTENT = {
         n: "100+",
         label: "interventi tra eventi, talk e formazione"
       }, {
-        n: "AI",
-        label: "al centro di ogni progetto, in modo responsabile"
+        n: "7.500+",
+        label: "lettori su LinkedIn"
       }]
     },
     insights: {
@@ -109,8 +124,8 @@ const CONTENT = {
       liveNote: "Pubblico costantemente nuovi contenuti su LinkedIn: qui trovi gli articoli più recenti, adattati per una lettura più comoda, con il rimando al post originale."
     },
     cta: {
-      title: "Portiamo l'AI nel tuo prossimo progetto.",
-      lede: "Che sia una consulenza, un keynote o un percorso di formazione, partiamo da una conversazione.",
+      title: "Ogni azienda ha una storia di innovazione da scrivere.",
+      lede: "Cominciamo dalla tua: basta una conversazione per capire se posso esserti utile.",
       button: "Scrivimi"
     },
     contact: {
@@ -129,8 +144,8 @@ const CONTENT = {
       directLabel: "Oppure scrivimi direttamente"
     },
     newsletter: {
-      title: "Resta aggiornato",
-      lede: "Insights su AI e innovazione, ogni tanto, senza spam.",
+      title: "Il mio osservatorio, nella tua posta",
+      lede: "Casi concreti, numeri verificati e consigli operativi su AI e innovazione. Quando ho qualcosa da dire, non a scadenza fissa.",
       placeholder: "La tua email",
       button: "Iscrivimi",
       consent: "Acconsento a ricevere la newsletter e ho letto l'informativa privacy.",
@@ -145,11 +160,26 @@ const CONTENT = {
     nav_cta: "Let's talk",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "AI doesn't steal the future. It hands it to those with the courage to lead it.",
-      lede: "Companies, professionals and public bodies: I turn artificial intelligence from a promise into a real advantage.\nStrategy, training and vision to use it in an ethical, human, concrete way.",
-      cta_primary: "Work with me",
-      cta_secondary: "Explore services",
+      quote: "Innovation is a story to tell, before it is a process to implement.",
+      lede: "I help entrepreneurs, SMEs and professionals write their own: strategy, training and artificial-intelligence projects that deliver results, not slide decks.",
+      cta_primary: "Tell me your challenge",
+      cta_secondary: "How I work",
+      latest: "From the blog",
       portrait: "Portrait of Domenico — vertical photo"
+    },
+    forwho: {
+      kicker: "Who it's for",
+      title: "I work with those who decide",
+      items: [{
+        title: "Companies and SMEs",
+        body: "For those deciding whether and how to bring AI into the business — without being sold smoke, and without standing still."
+      }, {
+        title: "Professionals and firms",
+        body: "For those who want to multiply their time: AI as a reliable collaborator, not a threat."
+      }, {
+        title: "Schools and public sector",
+        body: "For those who educate people and manage public services: responsible, compliant, sustainable adoption."
+      }]
     },
     bio: {
       kicker: "About",
@@ -164,19 +194,19 @@ const CONTENT = {
       items: [{
         n: "01",
         title: "AI Consulting & Strategy",
-        body: "I map high-impact use cases, define a concrete roadmap and help you choose tools and governance to adopt AI sustainably and in line with regulations."
+        body: "From curiosity to an operating plan: we map the use cases that move your company's numbers, set priorities, tools and AI Act-compliant governance. You leave with a roadmap, not a list of software."
       }, {
         n: "02",
         title: "Keynotes & Talks",
-        body: "I bring a clear vision on innovation and AI to the stage: talks designed to inspire, open new perspectives and translate technology into business opportunity."
+        body: "Talks on AI and innovation built on your context: real cases, verified numbers, zero photocopied slides. The audience leaves with ideas, not just applause."
       }, {
         n: "03",
         title: "Training & Bootcamps",
-        body: "Hands-on training and bootcamps to give your team a future-ready mindset and real skills in generative AI, from everyday use to design."
+        body: "Your team operational on AI in weeks, not years: first the tools explained properly, then hands-on labs on your real cases."
       }, {
         n: "04",
         title: "AI for Food & Retail",
-        body: "I combine twenty years in Food & Beverage and retail with new technologies, for innovation projects focused on the sectors I know deeply."
+        body: "Twenty years among shelves and kitchens, plus artificial intelligence: distribution, hospitality, foodtech. Projects that speak the language of those who actually make food happen."
       }]
     },
     proof: {
@@ -188,8 +218,8 @@ const CONTENT = {
         n: "100+",
         label: "talks, events and training sessions"
       }, {
-        n: "AI",
-        label: "at the core of every project, responsibly"
+        n: "7,500+",
+        label: "readers on LinkedIn"
       }]
     },
     insights: {
@@ -205,8 +235,8 @@ const CONTENT = {
       liveNote: "I constantly publish new content on LinkedIn: here you'll find the most recent articles, adapted for easier reading, each linking back to the original post."
     },
     cta: {
-      title: "Let's bring AI into your next project.",
-      lede: "Whether it's consulting, a keynote or a training path, it starts with a conversation.",
+      title: "Every company has an innovation story to write.",
+      lede: "Let's start with yours: one conversation is enough to see whether I can help.",
       button: "Get in touch"
     },
     contact: {
@@ -225,8 +255,8 @@ const CONTENT = {
       directLabel: "Or reach me directly"
     },
     newsletter: {
-      title: "Stay updated",
-      lede: "Insights on AI and innovation, every now and then, no spam.",
+      title: "My observatory, in your inbox",
+      lede: "Concrete cases, verified numbers and practical advice on AI and innovation. When I have something to say — not on a fixed schedule.",
       placeholder: "Your email",
       button: "Subscribe",
       consent: "I agree to receive the newsletter and have read the privacy policy.",

@@ -74,7 +74,7 @@ function AboutPage({
     className: "about-text"
   }, c.body.map((p, i) => /*#__PURE__*/React.createElement("p", {
     key: i
-  }, p)), /*#__PURE__*/React.createElement("p", null, it ? "Credo in un'innovazione concreta, misurabile e umana: la tecnologia ha senso solo quando crea valore reale per le persone e per le imprese." : "I believe in concrete, measurable and human innovation: technology only matters when it creates real value for people and businesses.")))), /*#__PURE__*/React.createElement("section", {
+  }, p)), /*#__PURE__*/React.createElement("p", null, it ? "Credo in un'innovazione che si misura: se non cambia i numeri o il modo di lavorare delle persone, non è innovazione — è intrattenimento." : "I believe in innovation you can measure: if it doesn't change the numbers or the way people work, it isn't innovation — it's entertainment.")))), /*#__PURE__*/React.createElement("section", {
     className: "section timeline-sec"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"

@@ -41,8 +41,8 @@ function AboutPage({ lang, go }) {
             {c.body.map((p, i) => <p key={i}>{p}</p>)}
             <p>
               {it
-                ? "Credo in un'innovazione concreta, misurabile e umana: la tecnologia ha senso solo quando crea valore reale per le persone e per le imprese."
-                : "I believe in concrete, measurable and human innovation: technology only matters when it creates real value for people and businesses."}
+                ? "Credo in un'innovazione che si misura: se non cambia i numeri o il modo di lavorare delle persone, non è innovazione — è intrattenimento."
+                : "I believe in innovation you can measure: if it doesn't change the numbers or the way people work, it isn't innovation — it's entertainment."}
             </p>
           </div>
         </div>

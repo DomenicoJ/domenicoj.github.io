@@ -41,7 +41,10 @@ function Hero({
       e.preventDefault();
       go("services");
     }
-  }, c.cta_secondary)), /*#__PURE__*/React.createElement("div", {
+  }, c.cta_secondary)), /*#__PURE__*/React.createElement(HeroLatest, {
+    lang: lang,
+    label: c.latest
+  }), /*#__PURE__*/React.createElement("div", {
     className: "hero-sign"
   }, window.OWNER.fullName)), /*#__PURE__*/React.createElement("div", {
     className: "hero-media"
@@ -56,13 +59,49 @@ function Hero({
     "aria-hidden": "true"
   }, /*#__PURE__*/React.createElement("span", null, lang === "it" ? "Scorri" : "Scroll"), /*#__PURE__*/React.createElement("i", null)));
 }
+
+// Latest blog article teaser shown under the hero actions.
+function HeroLatest({
+  lang,
+  label
+}) {
+  const it = lang === "it";
+  const p = sortedPosts().find(x => Array.isArray(x.body) && x.body.length);
+  if (!p) return null;
+  const title = !it && p.title_en || p.title;
+  return /*#__PURE__*/React.createElement("a", {
+    className: "hero-latest",
+    href: "#/insights/" + p.slug
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "hero-latest-label"
+  }, label), " ", title, " ", /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true"
+  }, "\u2192"));
+}
+
+// "Per chi" — three audience cards right after the hero.
+function ForWho({
+  lang
+}) {
+  const c = window.CONTENT[lang].forwho;
+  return /*#__PURE__*/React.createElement("section", {
+    className: "section forwho"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head"
+  }, /*#__PURE__*/React.createElement(Kicker, null, c.kicker), /*#__PURE__*/React.createElement("h2", null, c.title)), /*#__PURE__*/React.createElement("div", {
+    className: "who-grid"
+  }, c.items.map((w, i) => /*#__PURE__*/React.createElement("div", {
+    className: "how-card",
+    key: i
+  }, /*#__PURE__*/React.createElement("h3", null, w.title), /*#__PURE__*/React.createElement("p", null, w.body)))));
+}
 function Bio({
   lang,
   go
 }) {
   const c = window.CONTENT[lang].bio;
   return /*#__PURE__*/React.createElement("section", {
-    className: "section bio"
+    className: "section bio band--tint"
   }, /*#__PURE__*/React.createElement("div", {
     className: "bio-grid"
   }, /*#__PURE__*/React.createElement("div", {
@@ -117,7 +156,7 @@ function Proof({
 }) {
   const c = window.CONTENT[lang].proof;
   return /*#__PURE__*/React.createElement("section", {
-    className: "section proof"
+    className: "section proof band--ink"
   }, /*#__PURE__*/React.createElement("div", {
     className: "proof-inner"
   }, /*#__PURE__*/React.createElement("h2", {
@@ -139,7 +178,7 @@ function Insights({
 }) {
   const c = window.CONTENT[lang].insights;
   return /*#__PURE__*/React.createElement("section", {
-    className: "section insights"
+    className: "section insights band--tint"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head section-head--row"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Kicker, null, c.kicker), /*#__PURE__*/React.createElement("h2", null, c.title), /*#__PURE__*/React.createElement("p", {
@@ -279,6 +318,8 @@ function Home({
     lang: lang,
     go: go,
     dir: dir
+  }), /*#__PURE__*/React.createElement(ForWho, {
+    lang: lang
   }), /*#__PURE__*/React.createElement(Bio, {
     lang: lang,
     go: go
@@ -300,6 +341,8 @@ function Home({
 }
 Object.assign(window, {
   Hero,
+  HeroLatest,
+  ForWho,
   Bio,
   Services,
   Proof,

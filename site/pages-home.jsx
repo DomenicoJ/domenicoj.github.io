@@ -20,6 +20,7 @@ function Hero({ lang, go, dir }) {
               {c.cta_secondary}
             </a>
           </div>
+          <HeroLatest lang={lang} label={c.latest} />
           <div className="hero-sign">{window.OWNER.fullName}</div>
         </div>
         <div className="hero-media">
@@ -35,10 +36,44 @@ function Hero({ lang, go, dir }) {
   );
 }
 
+// Latest blog article teaser shown under the hero actions.
+function HeroLatest({ lang, label }) {
+  const it = lang === "it";
+  const p = sortedPosts().find((x) => Array.isArray(x.body) && x.body.length);
+  if (!p) return null;
+  const title = (!it && p.title_en) || p.title;
+  return (
+    <a className="hero-latest" href={"#/insights/" + p.slug}>
+      <span className="hero-latest-label">{label}</span> {title} <span aria-hidden="true">→</span>
+    </a>
+  );
+}
+
+// "Per chi" — three audience cards right after the hero.
+function ForWho({ lang }) {
+  const c = window.CONTENT[lang].forwho;
+  return (
+    <section className="section forwho">
+      <div className="section-head">
+        <Kicker>{c.kicker}</Kicker>
+        <h2>{c.title}</h2>
+      </div>
+      <div className="who-grid">
+        {c.items.map((w, i) => (
+          <div className="how-card" key={i}>
+            <h3>{w.title}</h3>
+            <p>{w.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Bio({ lang, go }) {
   const c = window.CONTENT[lang].bio;
   return (
-    <section className="section bio">
+    <section className="section bio band--tint">
       <div className="bio-grid">
         <div className="bio-left">
           <Kicker>{c.kicker}</Kicker>
@@ -86,7 +121,7 @@ function Services({ lang, go, compact }) {
 function Proof({ lang }) {
   const c = window.CONTENT[lang].proof;
   return (
-    <section className="section proof">
+    <section className="section proof band--ink">
       <div className="proof-inner">
         <h2 className="proof-title">{c.title}</h2>
         <div className="proof-stats">
@@ -105,7 +140,7 @@ function Proof({ lang }) {
 function Insights({ lang, go }) {
   const c = window.CONTENT[lang].insights;
   return (
-    <section className="section insights">
+    <section className="section insights band--tint">
       <div className="section-head section-head--row">
         <div>
           <Kicker>{c.kicker}</Kicker>
@@ -208,6 +243,7 @@ function Home({ lang, go, dir }) {
   return (
     <main>
       <Hero lang={lang} go={go} dir={dir} />
+      <ForWho lang={lang} />
       <Bio lang={lang} go={go} />
       <Services lang={lang} go={go} />
       <Proof lang={lang} />
@@ -218,4 +254,4 @@ function Home({ lang, go, dir }) {
   );
 }
 
-Object.assign(window, { Hero, Bio, Services, Proof, Insights, CtaBand, Newsletter, Home });
+Object.assign(window, { Hero, HeroLatest, ForWho, Bio, Services, Proof, Insights, CtaBand, Newsletter, Home });
