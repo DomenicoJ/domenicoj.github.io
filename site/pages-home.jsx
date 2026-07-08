@@ -1,6 +1,40 @@
 /* DMJ Lab — Home page sections */
 
-const { useState } = React;
+const { useState, useEffect, useRef } = React;
+
+// Animated counter for a proof stat ("7.500+" → counts up on first view,
+// preserving the thousands separator and any suffix).
+function StatNumber({ n }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !("IntersectionObserver" in window)) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const m = (n || "").match(/^([\d.,]+)(.*)$/);
+    if (!m) return;
+    const target = parseInt(m[1].replace(/[.,]/g, ""), 10);
+    if (!target) return;
+    const sep = m[1].indexOf(".") >= 0 ? "." : m[1].indexOf(",") >= 0 ? "," : "";
+    const fmt = (v) => sep ? String(v).replace(/\B(?=(\d{3})+(?!\d))/g, sep) : String(v);
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        const t0 = performance.now(), dur = 1300;
+        const step = (t) => {
+          const p = Math.min((t - t0) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = fmt(Math.round(target * eased)) + m[2];
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.5 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [n]);
+  return <div className="stat-n" ref={ref}>{n}</div>;
+}
 
 function Hero({ lang, go, dir }) {
   const c = window.CONTENT[lang].hero;
@@ -127,7 +161,7 @@ function Proof({ lang }) {
         <div className="proof-stats">
           {c.stats.map((s, i) => (
             <div className="stat" key={i}>
-              <div className="stat-n">{s.n}</div>
+              <StatNumber n={s.n} />
               <div className="stat-label">{s.label}</div>
             </div>
           ))}

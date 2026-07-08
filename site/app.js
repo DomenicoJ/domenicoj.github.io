@@ -3,7 +3,8 @@
 
 const {
   useState,
-  useEffect
+  useEffect,
+  useLayoutEffect
 } = React;
 function Section({
   s
@@ -99,6 +100,38 @@ function App() {
     document.documentElement.lang = lang;
   }, [lang]);
 
+  // scroll-reveal: fade-up elements as they enter the viewport, staggered
+  // within their parent. Skipped entirely under prefers-reduced-motion.
+  useLayoutEffect(() => {
+    if (!("IntersectionObserver" in window)) return;
+    const els = Array.from(document.querySelectorAll(".hero-text > *, .hero-media, .section-head, .svc-card, .ins-card, .how-card, .stat, " + ".bio-left, .bio-right, .about-portrait, .about-text, .timeline li, .nl-inner, .ln-banner, " + ".contact-form, .contact-aside, .cta-inner, .legal-section, .post-body"));
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      els.forEach(el => el.classList.add("is-in"));
+      return;
+    }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-in");
+          io.unobserve(e.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -36px 0px"
+    });
+    els.forEach(el => {
+      if (el.classList.contains("is-in")) return;
+      el.classList.add("reveal");
+      const parent = el.parentElement;
+      const sibs = parent ? Array.from(parent.children).filter(c => c.classList.contains("reveal")) : [];
+      const idx = sibs.indexOf(el);
+      if (idx > 0) el.style.transitionDelay = Math.min(idx * 80, 420) + "ms";
+      io.observe(el);
+    });
+    return () => io.disconnect();
+  }, [route, lang]);
+
   // apply tweaks as CSS vars + direction class
   useEffect(() => {
     const root = document.documentElement;
@@ -184,7 +217,9 @@ function App() {
     route: route.page === "post" ? "insights" : route.page,
     go: go
   }), /*#__PURE__*/React.createElement("div", {
-    id: "main"
+    id: "main",
+    key: route.page + ":" + (route.slug || ""),
+    className: "page-in"
   }, view), /*#__PURE__*/React.createElement("button", {
     className: "ai-strip",
     onClick: () => go("ai")
