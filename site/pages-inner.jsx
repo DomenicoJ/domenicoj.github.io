@@ -136,11 +136,6 @@ function InsightsPage({ lang, go }) {
             </a>
           ))}
         </div>
-        <p className="placeholder-note">
-          {it
-            ? "* Titoli ricavati dai link: verificali e personalizzali quando vuoi. Tutti i post aggiornati sono sul mio profilo LinkedIn."
-            : "* Titles inferred from the links: review and edit them anytime. All updated posts are on my LinkedIn profile."}
-        </p>
       </section>
       <Newsletter lang={lang} />
     </main>
@@ -210,11 +205,11 @@ function ContactPage({ lang, go }) {
             <label className="consent">
               <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)} required />
               <span>
-                {c.form.consent.split("informativa privacy")[0]}
+                {c.form.consent.split(it ? "informativa privacy" : "privacy policy")[0]}
                 <a href="#/privacy" onClick={(e) => { e.preventDefault(); go("privacy"); }}>
                   {it ? "informativa privacy" : "privacy policy"}
                 </a>
-                {it ? c.form.consent.split("informativa privacy")[1] : c.form.consent.split("privacy policy")[1]}
+                {c.form.consent.split(it ? "informativa privacy" : "privacy policy")[1]}
               </span>
             </label>
             <button className="btn btn--solid" type="submit" disabled={sending}>

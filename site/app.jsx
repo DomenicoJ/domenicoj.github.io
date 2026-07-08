@@ -29,7 +29,6 @@ function LegalPage({ lang, which }) {
           <h1>{doc.title}</h1>
           <p className="legal-updated">{docs.updated}</p>
         </div>
-        <div className="legal-review">{docs.reviewNote}</div>
         <p className="legal-intro">{doc.intro}</p>
         {doc.sections.map((s, i) => <Section s={s} key={i} />)}
       </div>
@@ -40,7 +39,7 @@ function LegalPage({ lang, which }) {
 /* ---------------- App ---------------- */
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "direction": "minimal",
+  "direction": "soft",
   "accent": "#1f6feb",
   "display": "Space Grotesk",
   "radius": 4
@@ -77,13 +76,10 @@ function App() {
     else { setRoute(id); window.scrollTo(0, 0); }
   };
 
-  // first-visit cookie banner
+  // keep <html lang> in sync with the chosen language
   useEffect(() => {
-    if (!window.readConsent()) {
-      const tm = setTimeout(() => setCookieOpen(true), 700);
-      return () => clearTimeout(tm);
-    }
-  }, []);
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   // apply tweaks as CSS vars + direction class
   useEffect(() => {

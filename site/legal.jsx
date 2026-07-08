@@ -1,16 +1,11 @@
 /* DMJ Lab — legal content (GDPR / ePrivacy / EU AI Act).
-   Plain-language but substantive. Returns structured sections rendered by the legal page.
-   NOTE: This is a solid, good-faith template. Domenico should have it reviewed by a
-   qualified professional before going live (flagged in-page). */
+   Plain-language but substantive. Returns structured sections rendered by the legal page. */
 
 function legalDocs(L) {
   const o = window.OWNER;
   const it = L === "it";
 
-  const updated = it ? "Ultimo aggiornamento: giugno 2026" : "Last updated: June 2026";
-  const reviewNote = it
-    ? "Questo testo è un modello di partenza completo ma generico. Prima della pubblicazione, fallo verificare da un consulente legale o da un DPO per adattarlo ai trattamenti reali del sito."
-    : "This text is a thorough but generic starting template. Before going live, have it reviewed by a legal advisor or DPO to match the site's actual data processing.";
+  const updated = it ? "Ultimo aggiornamento: luglio 2026" : "Last updated: July 2026";
 
   const titolare = [
     `${o.legalName}`,
@@ -69,14 +64,14 @@ function legalDocs(L) {
       {
         h: it ? "Destinatari dei dati" : "Data recipients",
         p: it
-          ? "Per erogare i servizi del sito ci avvaliamo di fornitori che agiscono come responsabili del trattamento (art. 28 GDPR): Web3Forms (Cool Devs LLC, USA) per la ricezione e l'inoltro dei messaggi dei form Contatti e Newsletter; GitHub Pages (GitHub, Inc., USA) per l'hosting tecnico; Google (Google Ireland Ltd / Google LLC) per la piattaforma Google Sites su cui il sito è pubblicato e per i web font. Tali fornitori trattano i dati solo per nostro conto e su nostre istruzioni. Non vendiamo né cediamo i tuoi dati a terzi per finalità di marketing."
-          : "To run the site we rely on providers acting as data processors (Art. 28 GDPR): Web3Forms (Cool Devs LLC, USA) to receive and forward Contact and Newsletter form messages; GitHub Pages (GitHub, Inc., USA) for technical hosting; Google (Google Ireland Ltd / Google LLC) for the Google Sites platform the site is published on and for web fonts. These providers process data only on our behalf and on our instructions. We do not sell or transfer your data to third parties for marketing.",
+          ? "Per erogare i servizi del sito ci avvaliamo di fornitori che agiscono come responsabili del trattamento (art. 28 GDPR): Web3Forms (Cool Devs LLC, USA) per la ricezione e l'inoltro dei messaggi dei form Contatti e Newsletter; GitHub Pages (GitHub, Inc., USA) per l'hosting tecnico. Caratteri tipografici e librerie software sono serviti direttamente dal dominio del sito, senza chiamate a reti di distribuzione di terze parti. Tali fornitori trattano i dati solo per nostro conto e su nostre istruzioni. Non vendiamo né cediamo i tuoi dati a terzi per finalità di marketing."
+          : "To run the site we rely on providers acting as data processors (Art. 28 GDPR): Web3Forms (Cool Devs LLC, USA) to receive and forward Contact and Newsletter form messages; GitHub Pages (GitHub, Inc., USA) for technical hosting. Fonts and software libraries are served directly from the site's own domain, with no calls to third-party content delivery networks. These providers process data only on our behalf and on our instructions. We do not sell or transfer your data to third parties for marketing.",
       },
       {
         h: it ? "Trasferimenti extra-UE" : "Transfers outside the EU",
         p: it
-          ? "Alcuni fornitori (in particolare Web3Forms, GitHub e Google) hanno sede negli Stati Uniti e possono trattare i dati al di fuori dello Spazio Economico Europeo. Tali trasferimenti avvengono sulla base della decisione di adeguatezza EU-US Data Privacy Framework e/o di Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea, con misure supplementari ove necessario."
-          : "Some providers (notably Web3Forms, GitHub and Google) are based in the United States and may process data outside the European Economic Area. Such transfers rely on the EU-US Data Privacy Framework adequacy decision and/or on Standard Contractual Clauses (SCC) approved by the European Commission, with supplementary measures where needed.",
+          ? "Alcuni fornitori (in particolare Web3Forms e GitHub) hanno sede negli Stati Uniti e possono trattare i dati al di fuori dello Spazio Economico Europeo. Tali trasferimenti avvengono sulla base della decisione di adeguatezza EU-US Data Privacy Framework e/o di Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea, con misure supplementari ove necessario."
+          : "Some providers (notably Web3Forms and GitHub) are based in the United States and may process data outside the European Economic Area. Such transfers rely on the EU-US Data Privacy Framework adequacy decision and/or on Standard Contractual Clauses (SCC) approved by the European Commission, with supplementary measures where needed.",
       },
       {
         h: it ? "Periodo di conservazione" : "Retention period",
@@ -117,8 +112,8 @@ function legalDocs(L) {
   const cookie = {
     title: it ? "Cookie Policy" : "Cookie Policy",
     intro: it
-      ? "Questo sito utilizza cookie e tecnologie simili. In conformità alle Linee guida del Garante (2021) e alla Direttiva ePrivacy, i cookie non tecnici vengono installati solo dopo il tuo consenso, espresso tramite il banner."
-      : "This site uses cookies and similar technologies. In line with the Italian DPA guidelines (2021) and the ePrivacy Directive, non-technical cookies are installed only after your consent, given via the banner.",
+      ? "Questo sito utilizza soltanto cookie e strumenti di archiviazione tecnici, necessari al funzionamento e al salvataggio delle tue preferenze. In conformità alle Linee guida del Garante (2021) e alla Direttiva ePrivacy, per questi strumenti non è richiesto il consenso: per questo non trovi un banner all'ingresso. Se in futuro venissero introdotti cookie statistici o di marketing, verrebbero attivati solo previo tuo consenso esplicito."
+      : "This site uses only technical cookies and storage, needed for it to work and to save your preferences. In line with the Italian DPA guidelines (2021) and the ePrivacy Directive, no consent is required for these tools — which is why there is no entry banner. Should statistical or marketing cookies ever be introduced, they would be activated only with your explicit prior consent.",
     sections: [
       {
         h: it ? "Cookie tecnici (sempre attivi)" : "Technical cookies (always on)",
@@ -139,16 +134,16 @@ function legalDocs(L) {
           : "Any third-party profiling cookies are installed only with specific consent. The site currently uses no marketing cookies.",
       },
       {
-        h: it ? "Risorse di terze parti e hosting" : "Third-party resources and hosting",
+        h: it ? "Hosting e archiviazione locale" : "Hosting and local storage",
         p: it
-          ? "Il sito è pubblicato tramite Google Sites e si appoggia a GitHub Pages; durante la navigazione il browser contatta i server di questi fornitori. Per il corretto funzionamento vengono inoltre caricati web font e librerie tecniche da reti di distribuzione (CDN). Queste richieste sono tecnicamente necessarie, possono comportare la comunicazione del tuo indirizzo IP ai relativi provider e non installano cookie di profilazione. Google Sites, come piattaforma di hosting, può impostare cookie tecnici propri."
-          : "The site is published via Google Sites and relies on GitHub Pages; while browsing, your browser contacts these providers' servers. For correct operation, web fonts and technical libraries are also loaded from content delivery networks (CDNs). These requests are technically necessary, may involve sharing your IP address with those providers, and set no profiling cookies. Google Sites, as the hosting platform, may set its own technical cookies.",
+          ? "Il sito è ospitato su GitHub Pages: durante la navigazione il browser contatta i server di GitHub, con la comunicazione tecnicamente necessaria del tuo indirizzo IP. Caratteri tipografici e librerie sono serviti dal dominio del sito, senza reti di distribuzione di terze parti. Il sito salva inoltre nel tuo browser (localStorage) solo due preferenze tecniche: la lingua scelta e le tue scelte sui cookie. Nessuno di questi elementi è usato per profilarti."
+          : "The site is hosted on GitHub Pages: while browsing, your browser contacts GitHub's servers, which technically requires sharing your IP address. Fonts and libraries are served from the site's own domain, with no third-party content delivery networks. The site also stores in your browser (localStorage) just two technical preferences: your chosen language and your cookie choices. None of this is used to profile you.",
       },
       {
         h: it ? "Gestire il consenso" : "Managing consent",
         p: it
-          ? "Puoi modificare o revocare le tue scelte in qualsiasi momento tramite il pulsante \u201cPreferenze cookie\u201d nel footer, o cancellando i cookie dal tuo browser."
-          : "You can change or withdraw your choices at any time via the \u201cCookie preferences\u201d button in the footer, or by deleting cookies in your browser.",
+          ? "Puoi consultare in ogni momento questa pagina dal footer e cancellare cookie e dati salvati direttamente dalle impostazioni del tuo browser."
+          : "You can review this page from the footer at any time, and delete cookies and stored data directly from your browser settings.",
       },
     ],
   };
@@ -221,7 +216,7 @@ function legalDocs(L) {
     ],
   };
 
-  return { updated, reviewNote, privacy, cookie, ai, terms };
+  return { updated, privacy, cookie, ai, terms };
 }
 
 Object.assign(window, { legalDocs });

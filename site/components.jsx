@@ -156,7 +156,7 @@ function Footer({ lang, go, openCookie }) {
             <a key={l.id} href={"#/" + l.id} onClick={(e) => { e.preventDefault(); go(l.id); }}>{l.label}</a>
           ))}
           <button className="footer-cookie-btn" onClick={openCookie}>
-            {it ? "Preferenze cookie" : "Cookie preferences"}
+            {it ? "Cookie su questo sito" : "Cookies on this site"}
           </button>
         </div>
 
@@ -178,80 +178,29 @@ function Footer({ lang, go, openCookie }) {
   );
 }
 
-// GDPR / ePrivacy cookie banner — opt-in, granular, "reject" as easy as "accept".
-const COOKIE_KEY = "dmj_cookie_consent_v1";
-
-function readConsent() {
-  try { return JSON.parse(localStorage.getItem(COOKIE_KEY) || "null"); }
-  catch (e) { return null; }
-}
-
+// Cookie info card — the site only uses technical cookies/storage, so no consent
+// banner is required (Garante 2021 guidelines). Reachable from the footer.
 function CookieBanner({ lang, open, setOpen }) {
   const it = lang === "it";
-  const [analytics, setAnalytics] = useState(false);
-  const [marketing, setMarketing] = useState(false);
-  const [prefs, setPrefs] = useState(false);
-
-  useEffect(() => {
-    const c = readConsent();
-    if (c) { setAnalytics(!!c.analytics); setMarketing(!!c.marketing); }
-  }, [open]);
-
-  const save = (obj) => {
-    localStorage.setItem(COOKIE_KEY, JSON.stringify({ ...obj, ts: Date.now() }));
-    setOpen(false);
-    setPrefs(false);
-  };
 
   if (!open) return null;
 
   return (
-    <div className="cookie" role="dialog" aria-label={it ? "Preferenze cookie" : "Cookie preferences"} aria-modal="false">
+    <div className="cookie" role="dialog" aria-label={it ? "Cookie su questo sito" : "Cookies on this site"} aria-modal="false">
       <div className="cookie-card">
         <div className="cookie-head">
-          <strong>{it ? "Rispettiamo la tua privacy" : "We respect your privacy"}</strong>
+          <strong>{it ? "Cookie su questo sito" : "Cookies on this site"}</strong>
         </div>
         <p className="cookie-body">
           {it
-            ? "Usiamo cookie tecnici necessari al funzionamento del sito. Con il tuo consenso usiamo anche cookie statistici per migliorare l'esperienza. Puoi accettare, rifiutare o scegliere."
-            : "We use technical cookies needed for the site to work. With your consent we also use statistical cookies to improve the experience. You can accept, reject or choose."}
+            ? "Questo sito utilizza soltanto cookie e archiviazione tecnici, per il funzionamento e per ricordare lingua e preferenze. Nessun cookie statistico, di marketing o di profilazione è attivo: per questo non ti chiediamo alcun consenso."
+            : "This site only uses technical cookies and storage, to work properly and to remember your language and preferences. No statistical, marketing or profiling cookies are active — which is why we don't ask for any consent."}
           {" "}
           <a href="#/cookie" onClick={() => setOpen(false)}>{it ? "Cookie Policy" : "Cookie Policy"}</a>
         </p>
-
-        {prefs && (
-          <div className="cookie-prefs">
-            <label className="cookie-row is-locked">
-              <span><strong>{it ? "Tecnici" : "Technical"}</strong><em>{it ? "Sempre attivi" : "Always on"}</em></span>
-              <input type="checkbox" checked readOnly />
-            </label>
-            <label className="cookie-row">
-              <span><strong>{it ? "Statistici" : "Statistics"}</strong><em>{it ? "Analytics anonimi" : "Anonymous analytics"}</em></span>
-              <input type="checkbox" checked={analytics} onChange={(e) => setAnalytics(e.target.checked)} />
-            </label>
-            <label className="cookie-row">
-              <span><strong>{it ? "Marketing" : "Marketing"}</strong><em>{it ? "Profilazione" : "Profiling"}</em></span>
-              <input type="checkbox" checked={marketing} onChange={(e) => setMarketing(e.target.checked)} />
-            </label>
-          </div>
-        )}
-
         <div className="cookie-actions">
-          <button className="btn btn--ghost btn--sm" onClick={() => save({ analytics: false, marketing: false })}>
-            {it ? "Rifiuta" : "Reject"}
-          </button>
-          {!prefs && (
-            <button className="btn btn--ghost btn--sm" onClick={() => setPrefs(true)}>
-              {it ? "Personalizza" : "Customise"}
-            </button>
-          )}
-          {prefs && (
-            <button className="btn btn--ghost btn--sm" onClick={() => save({ analytics, marketing })}>
-              {it ? "Salva scelte" : "Save choices"}
-            </button>
-          )}
-          <button className="btn btn--solid btn--sm" onClick={() => save({ analytics: true, marketing: true })}>
-            {it ? "Accetta tutti" : "Accept all"}
+          <button className="btn btn--solid btn--sm" onClick={() => setOpen(false)}>
+            {it ? "Ho capito" : "Got it"}
           </button>
         </div>
       </div>
@@ -259,4 +208,4 @@ function CookieBanner({ lang, open, setOpen }) {
   );
 }
 
-Object.assign(window, { Placeholder, Kicker, Logo, Nav, Footer, CookieBanner, readConsent, COOKIE_KEY });
+Object.assign(window, { Placeholder, Kicker, Logo, Nav, Footer, CookieBanner });

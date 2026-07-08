@@ -97,7 +97,6 @@ function Proof({ lang }) {
             </div>
           ))}
         </div>
-        <p className="proof-note">* {c.note}</p>
       </div>
     </section>
   );
@@ -201,7 +200,11 @@ function Newsletter({ lang }) {
           </div>
           <label className="consent">
             <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)} required />
-            <span>{c.consent}</span>
+            <span>
+              {c.consent.split(lang === "it" ? "informativa privacy" : "privacy policy")[0]}
+              <a href="#/privacy">{lang === "it" ? "informativa privacy" : "privacy policy"}</a>
+              {c.consent.split(lang === "it" ? "informativa privacy" : "privacy policy")[1]}
+            </span>
           </label>
           {ok && <p className="form-ok">{lang === "it" ? "Iscrizione registrata. Grazie!" : "Subscription registered. Thank you!"}</p>}
         </form>

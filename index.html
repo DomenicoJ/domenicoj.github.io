@@ -3,10 +3,37 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DMJ Lab — Domenico Maria Jacobone</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; base-uri 'self'; form-action 'self' https://api.web3forms.com" />
+<title>DMJ Lab — Domenico Maria Jacobone · AI Strategist &amp; Innovation Advisor</title>
+<meta name="description" content="DMJ Lab — Driving Mindful Innovation. Consulenza strategica, formazione e keynote sull'intelligenza artificiale per aziende, professionisti e PA. Domenico Maria Jacobone, AI Strategist & Innovation Advisor." />
+<link rel="canonical" href="https://www.dmjlab.com/" />
+<meta name="theme-color" content="#1f6feb" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f6feb'/%3E%3Ccircle cx='32' cy='32' r='9' fill='white'/%3E%3C/svg%3E" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DMJ Lab" />
+<meta property="og:title" content="DMJ Lab — Domenico Maria Jacobone · AI Strategist & Innovation Advisor" />
+<meta property="og:description" content="Driving Mindful Innovation. Consulenza, formazione e keynote sull'intelligenza artificiale: strategia, etica e risultati concreti." />
+<meta property="og:url" content="https://www.dmjlab.com/" />
+<meta property="og:image" content="https://www.dmjlab.com/site/domenico.jpg" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="DMJ Lab — Domenico Maria Jacobone" />
+<meta name="twitter:description" content="Driving Mindful Innovation. Consulenza, formazione e keynote sull'intelligenza artificiale." />
+<meta name="twitter:image" content="https://www.dmjlab.com/site/domenico.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Domenico Maria Jacobone",
+  "jobTitle": "AI Strategist & Innovation Advisor",
+  "url": "https://www.dmjlab.com/",
+  "image": "https://www.dmjlab.com/site/domenico.jpg",
+  "worksFor": { "@type": "Organization", "name": "DMJ Lab" },
+  "sameAs": ["https://www.linkedin.com/in/domenicomjacobone"]
+}
+</script>
+<link href="site/fonts/fonts.css" rel="stylesheet" />
 <style>
 :root{
   --bg:#fbfcfe;
@@ -79,6 +106,7 @@ button{font-family:inherit;cursor:pointer;}
 }
 .ph--img{background:none;border:none;}
 .ph--img img{width:100%;height:100%;object-fit:cover;display:block;}
+.ph-tag{
   font-family:var(--font-mono);font-size:12px;color:var(--muted);letter-spacing:0.04em;
   background:rgba(255,255,255,.82);padding:6px 12px;border-radius:3px;text-align:center;max-width:80%;
 }
@@ -349,15 +377,14 @@ button{font-family:inherit;cursor:pointer;}
 <body>
 <div id="root"></div>
 
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="site/vendor/react.production.min.js"></script>
+<script src="site/vendor/react-dom.production.min.js"></script>
 
-<script type="text/babel" src="site/data.jsx"></script>
-<script type="text/babel" src="site/legal.jsx"></script>
-<script type="text/babel" src="site/components.jsx"></script>
-<script type="text/babel" src="site/pages-home.jsx"></script>
-<script type="text/babel" src="site/pages-inner.jsx"></script>
-<script type="text/babel" src="site/app.jsx"></script>
+<script src="site/data.js"></script>
+<script src="site/legal.js"></script>
+<script src="site/components.js"></script>
+<script src="site/pages-home.js"></script>
+<script src="site/pages-inner.js"></script>
+<script src="site/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
-/* DMJ Lab — site content, bilingual IT/EN.
-   Placeholders marked [PLACEHOLDER] are safe-to-edit guesses for Domenico to confirm. */
+/* DMJ Lab — site content, bilingual IT/EN. */
 
 const OWNER = {
   brand: "DMJ Lab",
@@ -65,7 +64,6 @@ const CONTENT = {
     },
     proof: {
       title: "Numeri che raccontano un percorso",
-      note: "Dati indicativi — da aggiornare con le cifre verificate.",
       stats: [
         { n: "20+", label: "anni nel mercato e nell'innovazione" },
         { n: "100+", label: "interventi tra eventi, talk e formazione" },
@@ -82,8 +80,8 @@ const CONTENT = {
       liveNote: "Pubblico costantemente nuovi contenuti su LinkedIn. Qui trovi alcuni temi ricorrenti: clicca per leggere i post originali e gli aggiornamenti più recenti.",
       items: [
         { tag: "AI", title: "IA, Claude e il valore di chi sa porre le domande", summary: "Una riflessione su come l'intelligenza artificiale e strumenti come Claude stiano cambiando il modo di lavorare: la tecnologia amplifica chi sa fare le domande giuste.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_ia-claude-cashin-share-7476695148257792000-LHu5/" },
-        { tag: "Attualità", title: "Heartquake in Venezuela", summary: "Pochi secondi di preavviso: cosa ci insegna un evento sismico sul valore dei sistemi di allerta, della tecnologia e della prontezza di risposta.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_in-venezuela-pochi-secondi-di-preavviso-share-7476901741427429376-G2Ut/" },
-        { tag: "Innovazione", title: "Riflessioni dal mio feed", summary: "Spunti e considerazioni su innovazione, tecnologie emergenti e impatto sul business, condivisi sul mio profilo LinkedIn.", date: "2026", url: "https://www.linkedin.com/feed/update/urn:li:activity:7476643102502477824/" },
+        { tag: "Attualità", title: "Terremoto in Venezuela: il valore di pochi secondi", summary: "Pochi secondi di preavviso: cosa ci insegna un evento sismico sul valore dei sistemi di allerta, della tecnologia e della prontezza di risposta.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_in-venezuela-pochi-secondi-di-preavviso-share-7476901741427429376-G2Ut/" },
+        { tag: "Innovazione", title: "Innovazione e tecnologie emergenti: appunti dal mio feed", summary: "Spunti e considerazioni su innovazione, tecnologie emergenti e impatto sul business, condivisi sul mio profilo LinkedIn.", date: "2026", url: "https://www.linkedin.com/feed/update/urn:li:activity:7476643102502477824/" },
       ],
     },
     cta: {
@@ -102,7 +100,7 @@ const CONTENT = {
         message: "Il tuo messaggio",
         submit: "Invia messaggio",
         consent: "Ho letto l'informativa privacy e acconsento al trattamento dei miei dati per essere ricontattato.",
-        sent: "Grazie! Questo è un prototipo: il messaggio non è stato inviato realmente.",
+        sent: "Grazie! Messaggio inviato: ti risponderò al più presto.",
       },
       directLabel: "Oppure scrivimi direttamente",
     },
@@ -112,7 +110,7 @@ const CONTENT = {
       placeholder: "La tua email",
       button: "Iscrivimi",
       consent: "Acconsento a ricevere la newsletter e ho letto l'informativa privacy.",
-      ok: "Iscrizione registrata (prototipo).",
+      ok: "Iscrizione registrata. Grazie!",
     },
     aiNotice: {
       short: "Questo sito può utilizzare strumenti basati su intelligenza artificiale. Te lo diciamo con trasparenza.",
@@ -124,8 +122,8 @@ const CONTENT = {
     nav_cta: "Let's talk",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "Artificial intelligence doesn't replace people. It amplifies those who ask the right questions.",
-      lede: "I help companies and professionals turn AI from hype into a real competitive advantage — with strategy, training and projects that actually work.",
+      quote: "AI doesn't steal the future. It hands it to those with the courage to lead it.",
+      lede: "Companies, professionals and public bodies: I turn artificial intelligence from a promise into a real advantage.\nStrategy, training and vision to use it in an ethical, human, concrete way.",
       cta_primary: "Work with me",
       cta_secondary: "Explore services",
       portrait: "Portrait of Domenico — vertical photo",
@@ -152,7 +150,6 @@ const CONTENT = {
     },
     proof: {
       title: "Numbers that tell a journey",
-      note: "Indicative figures — to be updated with verified numbers.",
       stats: [
         { n: "20+", label: "years in market and innovation" },
         { n: "100+", label: "talks, events and training sessions" },
@@ -168,9 +165,9 @@ const CONTENT = {
       readOn: "Read on LinkedIn",
       liveNote: "I constantly publish new content on LinkedIn. Here are some recurring themes: click to read the original posts and the latest updates.",
       items: [
-        { tag: "AI", title: "IA, Claude e il valore di chi sa porre le domande", summary: "A reflection on how AI and tools like Claude are changing the way we work: technology amplifies those who ask the right questions.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_ia-claude-cashin-share-7476695148257792000-LHu5/" },
-        { tag: "Current affairs", title: "Heartquake in Venezuela", summary: "A few seconds of warning: what a seismic event teaches us about the value of alert systems, technology and readiness to respond.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_in-venezuela-pochi-secondi-di-preavviso-share-7476901741427429376-G2Ut/" },
-        { tag: "Innovation", title: "Riflessioni dal mio feed", summary: "Thoughts on innovation, emerging technologies and business impact, shared on my LinkedIn profile.", date: "2026", url: "https://www.linkedin.com/feed/update/urn:li:activity:7476643102502477824/" },
+        { tag: "AI", title: "AI, Claude and the value of asking the right questions", summary: "A reflection on how AI and tools like Claude are changing the way we work: technology amplifies those who ask the right questions.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_ia-claude-cashin-share-7476695148257792000-LHu5/" },
+        { tag: "Current affairs", title: "Earthquake in Venezuela: the value of a few seconds", summary: "A few seconds of warning: what a seismic event teaches us about the value of alert systems, technology and readiness to respond.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_in-venezuela-pochi-secondi-di-preavviso-share-7476901741427429376-G2Ut/" },
+        { tag: "Innovation", title: "Innovation and emerging tech: notes from my feed", summary: "Thoughts on innovation, emerging technologies and business impact, shared on my LinkedIn profile.", date: "2026", url: "https://www.linkedin.com/feed/update/urn:li:activity:7476643102502477824/" },
       ],
     },
     cta: {
@@ -189,7 +186,7 @@ const CONTENT = {
         message: "Your message",
         submit: "Send message",
         consent: "I have read the privacy policy and consent to the processing of my data to be contacted.",
-        sent: "Thanks! This is a prototype: the message was not actually sent.",
+        sent: "Thank you! Your message has been sent — I'll reply soon.",
       },
       directLabel: "Or reach me directly",
     },
@@ -199,7 +196,7 @@ const CONTENT = {
       placeholder: "Your email",
       button: "Subscribe",
       consent: "I agree to receive the newsletter and have read the privacy policy.",
-      ok: "Subscription registered (prototype).",
+      ok: "Subscription registered. Thank you!",
     },
     aiNotice: {
       short: "This site may use artificial-intelligence based tools. We tell you transparently.",
