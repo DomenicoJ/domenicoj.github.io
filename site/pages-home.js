@@ -157,7 +157,9 @@ function HeroLatest({
     href: "#/insights/" + p.slug
   }, /*#__PURE__*/React.createElement("span", {
     className: "hero-latest-label"
-  }, label), " ", title, " ", /*#__PURE__*/React.createElement("span", {
+  }, label), /*#__PURE__*/React.createElement("span", {
+    className: "hero-latest-title"
+  }, title), /*#__PURE__*/React.createElement("span", {
     "aria-hidden": "true"
   }, "\u2192"));
 }

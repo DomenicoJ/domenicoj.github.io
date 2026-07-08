@@ -96,7 +96,9 @@ function HeroLatest({ lang, label }) {
   const title = (!it && p.title_en) || p.title;
   return (
     <a className="hero-latest" href={"#/insights/" + p.slug}>
-      <span className="hero-latest-label">{label}</span> {title} <span aria-hidden="true">→</span>
+      <span className="hero-latest-label">{label}</span>
+      <span className="hero-latest-title">{title}</span>
+      <span aria-hidden="true">→</span>
     </a>
   );
 }
