@@ -81,6 +81,97 @@ function Logo({
     className: "logo-tagline"
   }, window.OWNER.tagline)));
 }
+
+// Opt-in background audio (lounge jazz, Pixabay Content License, self-hosted).
+// OFF by default: the file is fetched only when the visitor turns it on.
+// Preference remembered in localStorage; autoplay on return visits is attempted
+// and fails silently where the browser blocks it.
+const AUDIO_KEY = "dmj_audio";
+let audioEl = null;
+function getAudio() {
+  if (!audioEl) {
+    audioEl = new Audio("site/audio/lounge.mp3");
+    audioEl.loop = true;
+    audioEl.preload = "none";
+    audioEl.volume = 0;
+  }
+  return audioEl;
+}
+function fadeAudio(a, to, then) {
+  const from = a.volume,
+    t0 = performance.now(),
+    dur = 900;
+  const step = t => {
+    const p = Math.min((t - t0) / dur, 1);
+    a.volume = from + (to - from) * p;
+    if (p < 1) requestAnimationFrame(step);else if (then) then();
+  };
+  requestAnimationFrame(step);
+}
+function AudioToggle({
+  lang
+}) {
+  const it = lang === "it";
+  const [on, setOn] = useState(false);
+  useEffect(() => {
+    if (localStorage.getItem(AUDIO_KEY) === "on") {
+      const a = getAudio();
+      a.play().then(() => {
+        setOn(true);
+        fadeAudio(a, 0.3);
+      }).catch(() => {});
+    }
+  }, []);
+  const toggle = () => {
+    const a = getAudio();
+    if (on) {
+      fadeAudio(a, 0, () => a.pause());
+      localStorage.setItem(AUDIO_KEY, "off");
+      setOn(false);
+    } else {
+      a.play().then(() => fadeAudio(a, 0.3)).catch(() => {});
+      localStorage.setItem(AUDIO_KEY, "on");
+      setOn(true);
+    }
+  };
+  return /*#__PURE__*/React.createElement("button", {
+    className: "audio-toggle" + (on ? " is-on" : ""),
+    onClick: toggle,
+    "aria-pressed": on,
+    "aria-label": it ? "Musica di sottofondo" : "Background music",
+    title: it ? on ? "Spegni la musica" : "Un po' di jazz?" : on ? "Turn the music off" : "Some jazz?"
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: "17",
+    height: "17",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M11 5 6 9H2v6h4l5 4z"
+  }), on ? [/*#__PURE__*/React.createElement("path", {
+    key: "a",
+    d: "M15.5 8.5a5 5 0 0 1 0 7"
+  }), /*#__PURE__*/React.createElement("path", {
+    key: "b",
+    d: "M18.5 5.5a9 9 0 0 1 0 13"
+  })] : [/*#__PURE__*/React.createElement("line", {
+    key: "a",
+    x1: "16",
+    y1: "9",
+    x2: "22",
+    y2: "15"
+  }), /*#__PURE__*/React.createElement("line", {
+    key: "b",
+    x1: "22",
+    y1: "9",
+    x2: "16",
+    y2: "15"
+  })]));
+}
 function Nav({
   lang,
   setLang,
@@ -123,7 +214,9 @@ function Nav({
     }
   }, it.label))), /*#__PURE__*/React.createElement("div", {
     className: "nav-right"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(AudioToggle, {
+    lang: lang
+  }), /*#__PURE__*/React.createElement("div", {
     className: "lang",
     role: "group",
     "aria-label": "Language"
@@ -308,6 +401,7 @@ Object.assign(window, {
   Footer,
   CookieBanner,
   PostCard,
-  sortedPosts
+  sortedPosts,
+  AudioToggle
 });
 })();

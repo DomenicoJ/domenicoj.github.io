@@ -130,6 +130,12 @@ button{font-family:inherit;cursor:pointer;}
 .nav-link:hover::after{transform:scaleX(.35);}
 .nav-link.is-active::after{transform:scaleX(1);}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:22px;}
+.audio-toggle{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  border:1px solid var(--line-strong);background:transparent;color:var(--muted);padding:0;
+  transition:color .2s,border-color .2s;}
+.audio-toggle:hover{color:var(--accent);border-color:var(--accent);}
+.audio-toggle.is-on{color:var(--accent);border-color:var(--accent);animation:audioPulse 2.4s ease-in-out infinite;}
+@keyframes audioPulse{0%,100%{box-shadow:0 0 0 0 rgba(31,111,235,.28);}50%{box-shadow:0 0 0 7px rgba(31,111,235,0);}}
 .lang{font-family:var(--font-mono);font-size:15px;color:var(--muted);display:flex;gap:6px;align-items:center;}
 .lang button{background:none;border:none;color:var(--muted);padding:2px;font:inherit;}
 .lang button.on{color:var(--accent);font-weight:500;}

@@ -26,6 +26,10 @@ for (const f of ["data", "legal", "components", "pages-home", "pages-inner", "ap
 }
 ```
 
+## Audio
+
+`site/audio/lounge.mp3` — musica di sottofondo opt-in (interruttore nel menu, spenta di default, caricata solo all'attivazione). Fonte: Pixabay, brano "Jazz Lounge Relaxing Background Music" (traditional-jazz-jazz-lounge-relaxing-background-music-537739), Pixabay Content License: uso commerciale consentito, nessuna attribuzione richiesta.
+
 ## Form
 
 Contatti e Newsletter inviano a Web3Forms (`https://api.web3forms.com/submit`, consentito nella CSP); le notifiche arrivano a domenico@dmjlab.com. Web3Forms rifiuta le chiamate server-side: testare solo dal browser.

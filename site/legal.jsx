@@ -136,8 +136,8 @@ function legalDocs(L) {
       {
         h: it ? "Hosting e archiviazione locale" : "Hosting and local storage",
         p: it
-          ? "Il sito è ospitato su GitHub Pages: durante la navigazione il browser contatta i server di GitHub, con la comunicazione tecnicamente necessaria del tuo indirizzo IP. Caratteri tipografici e librerie sono serviti dal dominio del sito, senza reti di distribuzione di terze parti. Il sito salva inoltre nel tuo browser (localStorage) solo due preferenze tecniche: la lingua scelta e le tue scelte sui cookie. Nessuno di questi elementi è usato per profilarti."
-          : "The site is hosted on GitHub Pages: while browsing, your browser contacts GitHub's servers, which technically requires sharing your IP address. Fonts and libraries are served from the site's own domain, with no third-party content delivery networks. The site also stores in your browser (localStorage) just two technical preferences: your chosen language and your cookie choices. None of this is used to profile you.",
+          ? "Il sito è ospitato su GitHub Pages: durante la navigazione il browser contatta i server di GitHub, con la comunicazione tecnicamente necessaria del tuo indirizzo IP. Caratteri tipografici, librerie e musica di sottofondo sono serviti dal dominio del sito, senza reti di distribuzione di terze parti. Il sito salva inoltre nel tuo browser (localStorage) solo tre preferenze tecniche: la lingua scelta, le tue scelte sui cookie e l'eventuale attivazione della musica di sottofondo. Nessuno di questi elementi è usato per profilarti."
+          : "The site is hosted on GitHub Pages: while browsing, your browser contacts GitHub's servers, which technically requires sharing your IP address. Fonts, libraries and background music are served from the site's own domain, with no third-party content delivery networks. The site also stores in your browser (localStorage) just three technical preferences: your chosen language, your cookie choices and whether you turned on the background music. None of this is used to profile you.",
       },
       {
         h: it ? "Gestire il consenso" : "Managing consent",
