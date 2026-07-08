@@ -41,6 +41,17 @@ function Hero({ lang, go, dir }) {
   return (
     <section className={"hero hero--" + dir}>
       <div className="hero-glow" aria-hidden="true" />
+      <div className="hero-waves" aria-hidden="true">
+        <svg className="wv wv1" viewBox="0 0 2400 160" preserveAspectRatio="none">
+          <path d="M0,84 c150,-56 450,56 600,0 c150,-56 450,56 600,0 c150,-56 450,56 600,0 c150,-56 450,56 600,0 L2400,160 L0,160 Z" fill="#dcecfa" />
+        </svg>
+        <svg className="wv wv2" viewBox="0 0 2400 160" preserveAspectRatio="none">
+          <path d="M0,88 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 L2400,160 L0,160 Z" fill="#bcdcf5" />
+        </svg>
+        <svg className="wv wv3" viewBox="0 0 2400 160" preserveAspectRatio="none">
+          <path d="M0,92 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 L2400,160 L0,160 Z" fill="#7dbcec" />
+        </svg>
+      </div>
       <div className="hero-inner">
         <div className="hero-text">
           <div className="kicker">{c.kicker}</div>

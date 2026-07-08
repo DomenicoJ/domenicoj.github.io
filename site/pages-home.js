@@ -60,6 +60,30 @@ function Hero({
     className: "hero-glow",
     "aria-hidden": "true"
   }), /*#__PURE__*/React.createElement("div", {
+    className: "hero-waves",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("svg", {
+    className: "wv wv1",
+    viewBox: "0 0 2400 160",
+    preserveAspectRatio: "none"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0,84 c150,-56 450,56 600,0 c150,-56 450,56 600,0 c150,-56 450,56 600,0 c150,-56 450,56 600,0 L2400,160 L0,160 Z",
+    fill: "#dcecfa"
+  })), /*#__PURE__*/React.createElement("svg", {
+    className: "wv wv2",
+    viewBox: "0 0 2400 160",
+    preserveAspectRatio: "none"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0,88 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 c100,-64 300,64 400,0 L2400,160 L0,160 Z",
+    fill: "#bcdcf5"
+  })), /*#__PURE__*/React.createElement("svg", {
+    className: "wv wv3",
+    viewBox: "0 0 2400 160",
+    preserveAspectRatio: "none"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0,92 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 c75,-70 225,70 300,0 L2400,160 L0,160 Z",
+    fill: "#7dbcec"
+  }))), /*#__PURE__*/React.createElement("div", {
     className: "hero-inner"
   }, /*#__PURE__*/React.createElement("div", {
     className: "hero-text"
