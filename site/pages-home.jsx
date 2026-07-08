@@ -66,7 +66,6 @@ function Hero({ lang, go, dir }) {
             </a>
           </div>
           <HeroLatest lang={lang} label={c.latest} />
-          <div className="hero-sign">{window.OWNER.fullName}</div>
         </div>
         <div className="hero-media">
           <Placeholder label={c.portrait} ratio="4 / 5" src="site/domenico.jpg" />

@@ -112,9 +112,7 @@ function Hero({
   }, c.cta_secondary)), /*#__PURE__*/React.createElement(HeroLatest, {
     lang: lang,
     label: c.latest
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "hero-sign"
-  }, window.OWNER.fullName)), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("div", {
     className: "hero-media"
   }, /*#__PURE__*/React.createElement(Placeholder, {
     label: c.portrait,
