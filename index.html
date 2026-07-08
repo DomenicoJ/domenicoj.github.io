@@ -244,6 +244,15 @@ button{font-family:inherit;cursor:pointer;}
 .ins-sum{font-size:15px;color:var(--ink-soft);line-height:1.55;margin:8px 0 0;}
 .ins-card--text .ins-readon{margin-top:16px;}
 .placeholder-note{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-top:34px;text-align:center;}
+.ins-badge--dmj{background:var(--accent);font-size:12px;letter-spacing:0.05em;}
+
+/* ---------- post (blog article) ---------- */
+.post-hero h1{max-width:840px;}
+.post-sec{padding-top:clamp(28px,4vw,48px);}
+.post-body{max-width:760px;}
+.post-body p{color:var(--ink-soft);font-size:18px;line-height:1.75;margin-bottom:1.35em;}
+.post-body h2{font-size:26px;margin:1.5em 0 .6em;}
+.post-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px;}
 
 /* ---------- cta band ---------- */
 .cta-band{background:linear-gradient(150deg,var(--accent-deep),#06245e);color:#fff;}
@@ -380,6 +389,7 @@ button{font-family:inherit;cursor:pointer;}
 <script src="site/vendor/react.production.min.js"></script>
 <script src="site/vendor/react-dom.production.min.js"></script>
 
+<script src="site/posts.js"></script>
 <script src="site/data.js"></script>
 <script src="site/legal.js"></script>
 <script src="site/components.js"></script>

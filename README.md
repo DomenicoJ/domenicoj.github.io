@@ -5,6 +5,7 @@ Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main
 ## Architettura
 
 - `index.html` — pagina unica: CSS inline, metadati SEO/OG, CSP.
+- `site/posts.js` — **dati del blog** (sezione Insights), JavaScript puro senza JSX: per aggiungere un articolo si modifica solo questo file e si pusha, **nessuna ricompilazione necessaria**. Il formato dei post è documentato nel commento in testa al file. I post con `body` hanno una pagina propria (`#/insights/<slug>`); quelli senza rimandano al post LinkedIn.
 - `site/*.jsx` — **sorgenti** React (contenuti in `data.jsx`, testi legali in `legal.jsx`, componenti e pagine negli altri). Si modificano questi.
 - `site/*.js` — **compilati** da `*.jsx` con Babel (preset `react`), ciascuno avvolto in una IIFE. Sono questi che la pagina carica: dopo ogni modifica ai `.jsx` vanno ricompilati.
 - `site/vendor/` — React e ReactDOM 18.3.1 production UMD, self-hosted.

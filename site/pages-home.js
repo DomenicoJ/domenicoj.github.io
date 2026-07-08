@@ -153,28 +153,11 @@ function Insights({
     "aria-hidden": "true"
   }, "\u2192"))), /*#__PURE__*/React.createElement("div", {
     className: "ins-grid"
-  }, c.items.map((a, i) => /*#__PURE__*/React.createElement("a", {
-    className: "ins-card ins-card--text",
-    key: i,
-    href: a.url,
-    target: "_blank",
-    rel: "noopener"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "ins-badge",
-    "aria-hidden": "true"
-  }, "in"), /*#__PURE__*/React.createElement("div", {
-    className: "ins-meta"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "ins-tag"
-  }, a.tag), /*#__PURE__*/React.createElement("span", {
-    className: "ins-date"
-  }, a.date)), /*#__PURE__*/React.createElement("h3", null, a.title), a.summary && /*#__PURE__*/React.createElement("p", {
-    className: "ins-sum"
-  }, a.summary), /*#__PURE__*/React.createElement("span", {
-    className: "ins-readon"
-  }, c.readOn, " ", /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true"
-  }, "\u2197"))))));
+  }, sortedPosts().slice(0, 3).map(p => /*#__PURE__*/React.createElement(PostCard, {
+    key: p.slug,
+    p: p,
+    lang: lang
+  }))));
 }
 function CtaBand({
   lang,

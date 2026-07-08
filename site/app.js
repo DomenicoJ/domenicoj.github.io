@@ -50,9 +50,20 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 const PAGES = ["home", "about", "services", "insights", "contact", "privacy", "cookie", "ai", "terms"];
 function parseHash() {
   const h = (window.location.hash || "").replace(/^#\//, "").trim();
-  if (!h || h === "/") return "home";
-  const id = h.split(/[/?]/)[0];
-  return PAGES.includes(id) ? id : "home";
+  if (!h || h === "/") return {
+    page: "home",
+    slug: null
+  };
+  const parts = h.split("?")[0].split("/").filter(Boolean);
+  const id = parts[0];
+  if (id === "insights" && parts[1]) return {
+    page: "post",
+    slug: decodeURIComponent(parts[1])
+  };
+  return {
+    page: PAGES.includes(id) ? id : "home",
+    slug: null
+  };
 }
 function App() {
   const t = TWEAK_DEFAULTS;
@@ -78,7 +89,7 @@ function App() {
   const go = id => {
     const target = id === "home" ? "/" : "/" + id;
     if (window.location.hash !== "#" + target) window.location.hash = target;else {
-      setRoute(id);
+      setRoute(parseHash());
       window.scrollTo(0, 0);
     }
   };
@@ -98,7 +109,7 @@ function App() {
   }, [t.direction, t.accent, t.display, t.radius]);
   const dir = t.direction;
   let view;
-  switch (route) {
+  switch (route.page) {
     case "about":
       view = /*#__PURE__*/React.createElement(AboutPage, {
         lang: lang,
@@ -114,6 +125,13 @@ function App() {
     case "insights":
       view = /*#__PURE__*/React.createElement(InsightsPage, {
         lang: lang,
+        go: go
+      });
+      break;
+    case "post":
+      view = /*#__PURE__*/React.createElement(PostPage, {
+        lang: lang,
+        slug: route.slug,
         go: go
       });
       break;
@@ -163,7 +181,7 @@ function App() {
   }, it ? "Vai al contenuto" : "Skip to content"), /*#__PURE__*/React.createElement(Nav, {
     lang: lang,
     setLang: setLang,
-    route: route,
+    route: route.page === "post" ? "insights" : route.page,
     go: go
   }), /*#__PURE__*/React.createElement("div", {
     id: "main"

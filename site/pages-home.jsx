@@ -117,17 +117,8 @@ function Insights({ lang, go }) {
         </a>
       </div>
       <div className="ins-grid">
-        {c.items.map((a, i) => (
-          <a className="ins-card ins-card--text" key={i} href={a.url} target="_blank" rel="noopener">
-            <span className="ins-badge" aria-hidden="true">in</span>
-            <div className="ins-meta">
-              <span className="ins-tag">{a.tag}</span>
-              <span className="ins-date">{a.date}</span>
-            </div>
-            <h3>{a.title}</h3>
-            {a.summary && <p className="ins-sum">{a.summary}</p>}
-            <span className="ins-readon">{c.readOn} <span aria-hidden="true">↗</span></span>
-          </a>
+        {sortedPosts().slice(0, 3).map((p) => (
+          <PostCard key={p.slug} p={p} lang={lang} />
         ))}
       </div>
     </section>

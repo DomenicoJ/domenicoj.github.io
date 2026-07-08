@@ -109,9 +109,7 @@ function ServicesPage({ lang, go }) {
 }
 
 function InsightsPage({ lang, go }) {
-  const it = lang === "it";
   const c = window.CONTENT[lang].insights;
-  const all = c.items;
   const o = window.OWNER;
   return (
     <main className="page">
@@ -123,19 +121,60 @@ function InsightsPage({ lang, go }) {
           <a className="btn btn--solid" href={o.linkedinActivity} target="_blank" rel="noopener">{c.linkedinCta} ↗</a>
         </div>
         <div className="ins-grid ins-grid--page">
-          {all.map((a, i) => (
-            <a className="ins-card ins-card--text" key={i} href={a.url} target="_blank" rel="noopener">
-              <span className="ins-badge" aria-hidden="true">in</span>
-              <div className="ins-meta">
-                <span className="ins-tag">{a.tag}</span>
-                <span className="ins-date">{a.date}</span>
-              </div>
-              <h3>{a.title}</h3>
-              {a.summary && <p className="ins-sum">{a.summary}</p>}
-              <span className="ins-readon">{c.readOn} <span aria-hidden="true">↗</span></span>
-            </a>
+          {sortedPosts().map((p) => (
+            <PostCard key={p.slug} p={p} lang={lang} />
           ))}
         </div>
+      </section>
+      <Newsletter lang={lang} />
+    </main>
+  );
+}
+
+function PostPage({ lang, slug, go }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].insights;
+  const p = (window.POSTS || []).find((x) => x.slug === slug);
+
+  if (!p || !Array.isArray(p.body) || !p.body.length) {
+    return (
+      <main className="page">
+        <div className="page-hero">
+          <Kicker>{c.kicker}</Kicker>
+          <h1>{it ? "Articolo non trovato" : "Article not found"}</h1>
+          <p className="page-lede">
+            <a className="link-arrow" href="#/insights" onClick={(e) => { e.preventDefault(); go("insights"); }}>
+              {c.backAll} <span aria-hidden="true">→</span>
+            </a>
+          </p>
+        </div>
+      </main>
+    );
+  }
+
+  const title = (!it && p.title_en) || p.title;
+  return (
+    <main className="page">
+      <div className="page-hero post-hero">
+        <Kicker>{p.tag} · {p.dateLabel}</Kicker>
+        <h1>{title}</h1>
+      </div>
+      <section className="section post-sec">
+        <article className="post-body">
+          {p.body.map((par, i) =>
+            par.indexOf("## ") === 0
+              ? <h2 key={i}>{par.slice(3)}</h2>
+              : <p key={i}>{par}</p>
+          )}
+          <div className="post-actions">
+            {p.linkedin && (
+              <a className="btn btn--ghost" href={p.linkedin} target="_blank" rel="noopener">{c.original} ↗</a>
+            )}
+            <a className="btn btn--solid" href="#/insights" onClick={(e) => { e.preventDefault(); go("insights"); }}>
+              {c.backAll}
+            </a>
+          </div>
+        </article>
       </section>
       <Newsletter lang={lang} />
     </main>
@@ -237,4 +276,4 @@ function ContactPage({ lang, go }) {
   );
 }
 
-Object.assign(window, { PageHero, AboutPage, ServicesPage, InsightsPage, ContactPage });
+Object.assign(window, { PageHero, AboutPage, ServicesPage, InsightsPage, PostPage, ContactPage });

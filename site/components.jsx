@@ -178,6 +178,42 @@ function Footer({ lang, go, openCookie }) {
   );
 }
 
+// Blog posts (window.POSTS in posts.js), newest first.
+function sortedPosts() {
+  return (window.POSTS || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+}
+
+// Insight/blog card. Posts with a body open the on-site article page;
+// posts without a body link straight to the original LinkedIn post.
+function PostCard({ p, lang }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].insights;
+  const title = (!it && p.title_en) || p.title;
+  const summary = (!it && p.summary_en) || p.summary;
+  const internal = Array.isArray(p.body) && p.body.length > 0;
+  const href = internal ? "#/insights/" + p.slug : p.linkedin;
+  return (
+    <a
+      className="ins-card ins-card--text"
+      href={href}
+      {...(internal ? {} : { target: "_blank", rel: "noopener" })}
+    >
+      <span className={"ins-badge" + (internal ? " ins-badge--dmj" : "")} aria-hidden="true">
+        {internal ? "DMJ" : "in"}
+      </span>
+      <div className="ins-meta">
+        <span className="ins-tag">{p.tag}</span>
+        <span className="ins-date">{p.dateLabel}</span>
+      </div>
+      <h3>{title}</h3>
+      {summary && <p className="ins-sum">{summary}</p>}
+      <span className="ins-readon">
+        {internal ? c.readArticle : c.readOn} <span aria-hidden="true">{internal ? "→" : "↗"}</span>
+      </span>
+    </a>
+  );
+}
+
 // Cookie info card — the site only uses technical cookies/storage, so no consent
 // banner is required (Garante 2021 guidelines). Reachable from the footer.
 function CookieBanner({ lang, open, setOpen }) {
@@ -208,4 +244,4 @@ function CookieBanner({ lang, open, setOpen }) {
   );
 }
 
-Object.assign(window, { Placeholder, Kicker, Logo, Nav, Footer, CookieBanner });
+Object.assign(window, { Placeholder, Kicker, Logo, Nav, Footer, CookieBanner, PostCard, sortedPosts });

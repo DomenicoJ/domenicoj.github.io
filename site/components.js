@@ -1,4 +1,5 @@
 (function(){
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* DMJ Lab — shared UI components */
 
 const {
@@ -228,6 +229,47 @@ function Footer({
   }, o.domain)));
 }
 
+// Blog posts (window.POSTS in posts.js), newest first.
+function sortedPosts() {
+  return (window.POSTS || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+}
+
+// Insight/blog card. Posts with a body open the on-site article page;
+// posts without a body link straight to the original LinkedIn post.
+function PostCard({
+  p,
+  lang
+}) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].insights;
+  const title = !it && p.title_en || p.title;
+  const summary = !it && p.summary_en || p.summary;
+  const internal = Array.isArray(p.body) && p.body.length > 0;
+  const href = internal ? "#/insights/" + p.slug : p.linkedin;
+  return /*#__PURE__*/React.createElement("a", _extends({
+    className: "ins-card ins-card--text",
+    href: href
+  }, internal ? {} : {
+    target: "_blank",
+    rel: "noopener"
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "ins-badge" + (internal ? " ins-badge--dmj" : ""),
+    "aria-hidden": "true"
+  }, internal ? "DMJ" : "in"), /*#__PURE__*/React.createElement("div", {
+    className: "ins-meta"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "ins-tag"
+  }, p.tag), /*#__PURE__*/React.createElement("span", {
+    className: "ins-date"
+  }, p.dateLabel)), /*#__PURE__*/React.createElement("h3", null, title), summary && /*#__PURE__*/React.createElement("p", {
+    className: "ins-sum"
+  }, summary), /*#__PURE__*/React.createElement("span", {
+    className: "ins-readon"
+  }, internal ? c.readArticle : c.readOn, " ", /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true"
+  }, internal ? "→" : "↗")));
+}
+
 // Cookie info card — the site only uses technical cookies/storage, so no consent
 // banner is required (Garante 2021 guidelines). Reachable from the footer.
 function CookieBanner({
@@ -264,6 +306,8 @@ Object.assign(window, {
   Logo,
   Nav,
   Footer,
-  CookieBanner
+  CookieBanner,
+  PostCard,
+  sortedPosts
 });
 })();

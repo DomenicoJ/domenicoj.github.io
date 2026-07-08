@@ -77,12 +77,10 @@ const CONTENT = {
       cta: "Seguimi su LinkedIn",
       linkedinCta: "Leggi tutti i post su LinkedIn",
       readOn: "Leggi su LinkedIn",
-      liveNote: "Pubblico costantemente nuovi contenuti su LinkedIn. Qui trovi alcuni temi ricorrenti: clicca per leggere i post originali e gli aggiornamenti più recenti.",
-      items: [
-        { tag: "AI", title: "IA, Claude e il valore di chi sa porre le domande", summary: "Una riflessione su come l'intelligenza artificiale e strumenti come Claude stiano cambiando il modo di lavorare: la tecnologia amplifica chi sa fare le domande giuste.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_ia-claude-cashin-share-7476695148257792000-LHu5/" },
-        { tag: "Attualità", title: "Terremoto in Venezuela: il valore di pochi secondi", summary: "Pochi secondi di preavviso: cosa ci insegna un evento sismico sul valore dei sistemi di allerta, della tecnologia e della prontezza di risposta.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_in-venezuela-pochi-secondi-di-preavviso-share-7476901741427429376-G2Ut/" },
-        { tag: "Innovazione", title: "Innovazione e tecnologie emergenti: appunti dal mio feed", summary: "Spunti e considerazioni su innovazione, tecnologie emergenti e impatto sul business, condivisi sul mio profilo LinkedIn.", date: "2026", url: "https://www.linkedin.com/feed/update/urn:li:activity:7476643102502477824/" },
-      ],
+      readArticle: "Leggi l'articolo",
+      original: "Leggi il post originale su LinkedIn",
+      backAll: "Tutti gli insights",
+      liveNote: "Pubblico costantemente nuovi contenuti su LinkedIn: qui trovi gli articoli più recenti, adattati per una lettura più comoda, con il rimando al post originale.",
     },
     cta: {
       title: "Portiamo l'AI nel tuo prossimo progetto.",
@@ -163,12 +161,10 @@ const CONTENT = {
       cta: "Follow me on LinkedIn",
       linkedinCta: "Read all posts on LinkedIn",
       readOn: "Read on LinkedIn",
-      liveNote: "I constantly publish new content on LinkedIn. Here are some recurring themes: click to read the original posts and the latest updates.",
-      items: [
-        { tag: "AI", title: "AI, Claude and the value of asking the right questions", summary: "A reflection on how AI and tools like Claude are changing the way we work: technology amplifies those who ask the right questions.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_ia-claude-cashin-share-7476695148257792000-LHu5/" },
-        { tag: "Current affairs", title: "Earthquake in Venezuela: the value of a few seconds", summary: "A few seconds of warning: what a seismic event teaches us about the value of alert systems, technology and readiness to respond.", date: "2026", url: "https://www.linkedin.com/posts/domenicomjacobone_in-venezuela-pochi-secondi-di-preavviso-share-7476901741427429376-G2Ut/" },
-        { tag: "Innovation", title: "Innovation and emerging tech: notes from my feed", summary: "Thoughts on innovation, emerging technologies and business impact, shared on my LinkedIn profile.", date: "2026", url: "https://www.linkedin.com/feed/update/urn:li:activity:7476643102502477824/" },
-      ],
+      readArticle: "Read the article",
+      original: "Read the original post on LinkedIn",
+      backAll: "All insights",
+      liveNote: "I constantly publish new content on LinkedIn: here you'll find the most recent articles, adapted for easier reading, each linking back to the original post.",
     },
     cta: {
       title: "Let's bring AI into your next project.",

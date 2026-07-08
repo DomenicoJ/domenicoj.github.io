@@ -159,9 +159,7 @@ function InsightsPage({
   lang,
   go
 }) {
-  const it = lang === "it";
   const c = window.CONTENT[lang].insights;
-  const all = c.items;
   const o = window.OWNER;
   return /*#__PURE__*/React.createElement("main", {
     className: "page"
@@ -183,28 +181,68 @@ function InsightsPage({
     rel: "noopener"
   }, c.linkedinCta, " \u2197")), /*#__PURE__*/React.createElement("div", {
     className: "ins-grid ins-grid--page"
-  }, all.map((a, i) => /*#__PURE__*/React.createElement("a", {
-    className: "ins-card ins-card--text",
-    key: i,
-    href: a.url,
+  }, sortedPosts().map(p => /*#__PURE__*/React.createElement(PostCard, {
+    key: p.slug,
+    p: p,
+    lang: lang
+  })))), /*#__PURE__*/React.createElement(Newsletter, {
+    lang: lang
+  }));
+}
+function PostPage({
+  lang,
+  slug,
+  go
+}) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].insights;
+  const p = (window.POSTS || []).find(x => x.slug === slug);
+  if (!p || !Array.isArray(p.body) || !p.body.length) {
+    return /*#__PURE__*/React.createElement("main", {
+      className: "page"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "page-hero"
+    }, /*#__PURE__*/React.createElement(Kicker, null, c.kicker), /*#__PURE__*/React.createElement("h1", null, it ? "Articolo non trovato" : "Article not found"), /*#__PURE__*/React.createElement("p", {
+      className: "page-lede"
+    }, /*#__PURE__*/React.createElement("a", {
+      className: "link-arrow",
+      href: "#/insights",
+      onClick: e => {
+        e.preventDefault();
+        go("insights");
+      }
+    }, c.backAll, " ", /*#__PURE__*/React.createElement("span", {
+      "aria-hidden": "true"
+    }, "\u2192")))));
+  }
+  const title = !it && p.title_en || p.title;
+  return /*#__PURE__*/React.createElement("main", {
+    className: "page"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "page-hero post-hero"
+  }, /*#__PURE__*/React.createElement(Kicker, null, p.tag, " \xB7 ", p.dateLabel), /*#__PURE__*/React.createElement("h1", null, title)), /*#__PURE__*/React.createElement("section", {
+    className: "section post-sec"
+  }, /*#__PURE__*/React.createElement("article", {
+    className: "post-body"
+  }, p.body.map((par, i) => par.indexOf("## ") === 0 ? /*#__PURE__*/React.createElement("h2", {
+    key: i
+  }, par.slice(3)) : /*#__PURE__*/React.createElement("p", {
+    key: i
+  }, par)), /*#__PURE__*/React.createElement("div", {
+    className: "post-actions"
+  }, p.linkedin && /*#__PURE__*/React.createElement("a", {
+    className: "btn btn--ghost",
+    href: p.linkedin,
     target: "_blank",
     rel: "noopener"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "ins-badge",
-    "aria-hidden": "true"
-  }, "in"), /*#__PURE__*/React.createElement("div", {
-    className: "ins-meta"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "ins-tag"
-  }, a.tag), /*#__PURE__*/React.createElement("span", {
-    className: "ins-date"
-  }, a.date)), /*#__PURE__*/React.createElement("h3", null, a.title), a.summary && /*#__PURE__*/React.createElement("p", {
-    className: "ins-sum"
-  }, a.summary), /*#__PURE__*/React.createElement("span", {
-    className: "ins-readon"
-  }, c.readOn, " ", /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true"
-  }, "\u2197")))))), /*#__PURE__*/React.createElement(Newsletter, {
+  }, c.original, " \u2197"), /*#__PURE__*/React.createElement("a", {
+    className: "btn btn--solid",
+    href: "#/insights",
+    onClick: e => {
+      e.preventDefault();
+      go("insights");
+    }
+  }, c.backAll)))), /*#__PURE__*/React.createElement(Newsletter, {
     lang: lang
   }));
 }
@@ -372,6 +410,7 @@ Object.assign(window, {
   AboutPage,
   ServicesPage,
   InsightsPage,
+  PostPage,
   ContactPage
 });
 })();

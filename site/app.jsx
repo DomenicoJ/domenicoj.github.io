@@ -49,9 +49,11 @@ const PAGES = ["home", "about", "services", "insights", "contact", "privacy", "c
 
 function parseHash() {
   const h = (window.location.hash || "").replace(/^#\//, "").trim();
-  if (!h || h === "/") return "home";
-  const id = h.split(/[/?]/)[0];
-  return PAGES.includes(id) ? id : "home";
+  if (!h || h === "/") return { page: "home", slug: null };
+  const parts = h.split("?")[0].split("/").filter(Boolean);
+  const id = parts[0];
+  if (id === "insights" && parts[1]) return { page: "post", slug: decodeURIComponent(parts[1]) };
+  return { page: PAGES.includes(id) ? id : "home", slug: null };
 }
 
 function App() {
@@ -73,7 +75,7 @@ function App() {
   const go = (id) => {
     const target = id === "home" ? "/" : "/" + id;
     if (window.location.hash !== "#" + target) window.location.hash = target;
-    else { setRoute(id); window.scrollTo(0, 0); }
+    else { setRoute(parseHash()); window.scrollTo(0, 0); }
   };
 
   // keep <html lang> in sync with the chosen language
@@ -93,10 +95,11 @@ function App() {
   const dir = t.direction;
 
   let view;
-  switch (route) {
+  switch (route.page) {
     case "about": view = <AboutPage lang={lang} go={go} />; break;
     case "services": view = <ServicesPage lang={lang} go={go} />; break;
     case "insights": view = <InsightsPage lang={lang} go={go} />; break;
+    case "post": view = <PostPage lang={lang} slug={route.slug} go={go} />; break;
     case "contact": view = <ContactPage lang={lang} go={go} />; break;
     case "privacy": view = <LegalPage lang={lang} which="privacy" />; break;
     case "cookie": view = <LegalPage lang={lang} which="cookie" />; break;
@@ -110,7 +113,7 @@ function App() {
   return (
     <div className="app">
       <a className="skip" href="#main">{it ? "Vai al contenuto" : "Skip to content"}</a>
-      <Nav lang={lang} setLang={setLang} route={route} go={go} />
+      <Nav lang={lang} setLang={setLang} route={route.page === "post" ? "insights" : route.page} go={go} />
 
       <div id="main">{view}</div>
 
