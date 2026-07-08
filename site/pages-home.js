@@ -120,10 +120,27 @@ function Hero({
     src: "site/domenico.jpg"
   }), /*#__PURE__*/React.createElement("div", {
     className: "hero-badge"
-  }, window.OWNER.fullName))), /*#__PURE__*/React.createElement("div", {
+  }, window.OWNER.fullName))), /*#__PURE__*/React.createElement("button", {
     className: "scroll-cue",
+    "aria-label": lang === "it" ? "Scorri in basso" : "Scroll down",
+    onClick: () => {
+      const next = document.querySelector(".forwho");
+      if (next) next.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });else window.scrollBy({
+        top: 600,
+        behavior: "smooth"
+      });
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "cue-label"
+  }, lang === "it" ? "Scorri" : "Scroll"), /*#__PURE__*/React.createElement("span", {
+    className: "buoy",
     "aria-hidden": "true"
-  }, /*#__PURE__*/React.createElement("span", null, lang === "it" ? "Scorri" : "Scroll"), /*#__PURE__*/React.createElement("i", null)));
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "buoy-dot"
+  }))));
 }
 
 // Latest blog article teaser shown under the hero actions.

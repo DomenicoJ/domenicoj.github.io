@@ -72,10 +72,18 @@ function Hero({ lang, go, dir }) {
           <div className="hero-badge">{window.OWNER.fullName}</div>
         </div>
       </div>
-      <div className="scroll-cue" aria-hidden="true">
-        <span>{lang === "it" ? "Scorri" : "Scroll"}</span>
-        <i />
-      </div>
+      <button
+        className="scroll-cue"
+        aria-label={lang === "it" ? "Scorri in basso" : "Scroll down"}
+        onClick={() => {
+          const next = document.querySelector(".forwho");
+          if (next) next.scrollIntoView({ behavior: "smooth", block: "start" });
+          else window.scrollBy({ top: 600, behavior: "smooth" });
+        }}
+      >
+        <span className="cue-label">{lang === "it" ? "Scorri" : "Scroll"}</span>
+        <span className="buoy" aria-hidden="true"><span className="buoy-dot" /></span>
+      </button>
     </section>
   );
 }

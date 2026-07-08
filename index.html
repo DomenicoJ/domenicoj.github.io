@@ -201,10 +201,14 @@ button{font-family:inherit;cursor:pointer;}
 .hero-badge{position:absolute;bottom:-14px;left:-14px;background:var(--accent);color:#fff;
   font-family:var(--font-mono);font-size:13px;letter-spacing:0.08em;padding:10px 16px;border-radius:var(--radius);}
 .hero-glow{position:absolute;inset:0;pointer-events:none;opacity:0;}
-.scroll-cue{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;
-  font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);z-index:2;}
-.scroll-cue i{width:1px;height:34px;background:linear-gradient(var(--accent),transparent);animation:cue 1.8s ease-in-out infinite;}
-@keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6);}50%{opacity:1;transform:scaleY(1);}}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;
+  background:none;border:none;padding:6px;color:var(--ink-soft);z-index:2;}
+.cue-label{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;}
+.buoy{width:30px;height:30px;border-radius:50%;background:var(--accent);display:grid;place-items:center;
+  box-shadow:0 6px 14px rgba(13,27,46,.22);animation:buoyBob 3.4s ease-in-out infinite;}
+.buoy-dot{width:9px;height:9px;border-radius:50%;background:#fff;}
+.scroll-cue:hover .buoy{background:var(--accent-deep);}
+@keyframes buoyBob{0%,100%{transform:translateY(0) rotate(-7deg);}50%{transform:translateY(-8px) rotate(7deg);}}
 
 /* direction: SOFT — azzurro wash */
 [data-dir="soft"] .hero{background:
