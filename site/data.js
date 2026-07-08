@@ -49,7 +49,7 @@ const CONTENT = {
     nav_cta: "Parliamone",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "La parte difficile dell'AI sono le persone. Ed è la parte che mi piace di più.",
+      quote: "La parte più complessa dell'AI non è tecnologica, ma di relazione tra l'essere umano e la macchina. Ed è la parte che mi piace di più.",
       lede: "La tecnologia è l'ingranaggio più facile del processo di cambiamento: migliora da sola ogni sei mesi senza che nessuno glielo chieda. Il collo di bottiglia è spesso l'essere umano, che deve cambiare completamente approccio e abitudini.\nNessun modello, per quanto potente, sposta questa inerzia: lì, dove il software non arriva, intervengo io.",
       cta_primary: "Raccontami la tua sfida",
       cta_secondary: "Come lavoro",
@@ -160,7 +160,7 @@ const CONTENT = {
     nav_cta: "Let's talk",
     hero: {
       kicker: "AI Strategist & Innovation Advisor",
-      quote: "The hard part of AI is people. And it's the part I enjoy the most.",
+      quote: "The most complex part of AI isn't technological — it's the relationship between human and machine. And it's the part I enjoy the most.",
       lede: "Technology is the easiest gear in the process of change: it improves on its own every six months without being asked. The bottleneck is often the human being, who has to completely change approach and habits.\nNo model, however powerful, moves that inertia: there, where software doesn't reach, I step in.",
       cta_primary: "Tell me your challenge",
       cta_secondary: "How I work",
