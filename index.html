@@ -179,11 +179,11 @@ button{font-family:inherit;cursor:pointer;}
 
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;}
-.hero-waves{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;z-index:0;}
+.hero-waves{position:absolute;left:0;right:0;bottom:0;height:96px;pointer-events:none;z-index:0;}
 .wv{position:absolute;bottom:0;left:0;width:200%;height:100%;}
-.wv1{animation:waveDrift 26s linear infinite;opacity:.85;}
-.wv2{animation:waveDrift 17s linear infinite reverse;opacity:.6;height:76%;}
-.wv3{animation:waveDrift 11s linear infinite;opacity:.45;height:58%;}
+.wv1{animation:waveDrift 30s linear infinite;opacity:.65;}
+.wv2{animation:waveDrift 20s linear infinite reverse;opacity:.4;height:74%;}
+.wv3{animation:waveDrift 14s linear infinite;opacity:.25;height:52%;}
 @keyframes waveDrift{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 .hero-inner{max-width:var(--maxw);margin:0 auto;padding:clamp(36px,5vw,64px) var(--pad) clamp(64px,8vw,110px);
   display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,5vw,80px);align-items:center;
