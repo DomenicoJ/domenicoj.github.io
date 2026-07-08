@@ -11,6 +11,10 @@ Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main
 - `site/vendor/` — React e ReactDOM 18.3.1 production UMD, self-hosted.
 - `site/fonts/` — font woff2 self-hosted (Space Grotesk, IBM Plex Sans, IBM Plex Mono) + `fonts.css`. Niente Google Fonts né CDN esterne: scelta GDPR (nessuna comunicazione di IP a terze parti) — non reintrodurre risorse remote senza aggiornare privacy/cookie policy e CSP.
 
+## Cache e versioni
+
+GitHub Pages serve tutto con `max-age=600`: per 10 minuti i browser possono mescolare pagina nuova e script vecchi (o viceversa), con effetti rotti a metà. Per questo i riferimenti a script e font in `index.html` portano un parametro `?v=…`: **quando si modificano i `.js` compilati o `fonts.css`, incrementare il parametro** (es. `?v=8c` → `?v=8d`) in tutti i riferimenti, così la pagina nuova carica sempre file nuovi. Per il solo `posts.js` (blog) non è indispensabile: al massimo i nuovi articoli compaiono con 10 minuti di ritardo.
+
 ## Ricompilare dopo una modifica ai .jsx
 
 Con Node disponibile (anche portatile) e `@babel/standalone` scaricato come `babel.min.js`:
