@@ -68,15 +68,18 @@ function ServicesPage({ lang, go }) {
   const c = window.CONTENT[lang].services;
   const how = it
     ? [
-        { n: "A", t: "Ascolto", d: "Capisco contesto, obiettivi e vincoli reali della tua organizzazione." },
-        { n: "B", t: "Strategia", d: "Definiamo insieme priorità, casi d'uso e una roadmap sostenibile e conforme." },
-        { n: "C", t: "Esecuzione", d: "Formazione, progetti pilota e affiancamento per portare l'AI in produzione." },
+        { n: "1", t: "Ascolto", d: "Prima di proporre, ascolto: il contesto, gli obiettivi e i vincoli reali della tua organizzazione. Il generico non esiste." },
+        { n: "2", t: "Comprensione", d: "Trasformo ciò che ho ascoltato in una lettura chiara: priorità, casi d'uso che contano e una roadmap sostenibile e conforme." },
+        { n: "3", t: "Messa a terra", d: "Formazione, progetti pilota e affiancamento fino al risultato: l'innovazione che non atterra resta una promessa." },
       ]
     : [
-        { n: "A", t: "Listen", d: "I understand your organisation's context, goals and real constraints." },
-        { n: "B", t: "Strategy", d: "Together we define priorities, use cases and a sustainable, compliant roadmap." },
-        { n: "C", t: "Execution", d: "Training, pilots and hands-on support to bring AI into production." },
+        { n: "1", t: "Listening", d: "Before proposing anything, I listen: your organisation's context, goals and real constraints. Generic doesn't exist." },
+        { n: "2", t: "Understanding", d: "I turn what I've heard into a clear reading: priorities, the use cases that matter, and a sustainable, compliant roadmap." },
+        { n: "3", t: "Landing it", d: "Training, pilot projects and hands-on support all the way to the result: innovation that doesn't land is just a promise." },
       ];
+  const team = it
+    ? "E quando la sfida chiede più mani, non sono solo: ho costruito una squadra di professionisti che condividono gli stessi valori, con competenze pronte ad affrontare qualunque sfida nel campo dell'innovazione e dell'intelligenza artificiale."
+    : "And when the challenge calls for more hands, I'm not alone: I've built a team of professionals who share the same values, with the skills to take on any challenge in innovation and artificial intelligence.";
   return (
     <main className="page">
       <PageHero kicker={c.kicker} title={c.title} lede={c.lede} />
@@ -91,8 +94,8 @@ function ServicesPage({ lang, go }) {
           ))}
         </div>
       </section>
-      <section className="section how-sec">
-        <div className="section-head"><Kicker>{it ? "Metodo" : "Method"}</Kicker><h2>{it ? "Come lavoriamo" : "How we work"}</h2></div>
+      <section className="section how-sec band--tint">
+        <div className="section-head"><Kicker>{it ? "Metodo" : "Method"}</Kicker><h2>{it ? "Come lavoro" : "How I work"}</h2></div>
         <div className="how-grid">
           {how.map((h) => (
             <div className="how-card" key={h.n}>
@@ -102,6 +105,7 @@ function ServicesPage({ lang, go }) {
             </div>
           ))}
         </div>
+        <p className="how-team">{team}</p>
       </section>
       <CtaBand lang={lang} go={go} dir="solid" />
     </main>
