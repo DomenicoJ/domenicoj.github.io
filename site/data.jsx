@@ -14,6 +14,7 @@ const OWNER = {
   tagline: "Driving Mindful Innovation",
   linkedin: "https://www.linkedin.com/in/domenicomjacobone",
   linkedinActivity: "https://www.linkedin.com/in/domenicomjacobone/recent-activity/all/",
+  booking: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ25fdYFNy4s7k8p4XTwOJEl0hyUnwYlP2y6g8nMP_lPpxblY4VM_bdHs8lQRb9d30kmZE6MPNdt",
 };
 
 const NAV = {
@@ -110,6 +111,11 @@ const CONTENT = {
         consent: "Ho letto l'informativa privacy e acconsento al trattamento dei miei dati per essere ricontattato.",
         sent: "Grazie! Messaggio inviato: ti risponderò al più presto.",
       },
+      booking: {
+        title: "Preferisci parlarne a voce?",
+        lede: "Prenota una chiamata conoscitiva di 30 minuti su Google Meet: scegli tu giorno e ora tra quelli liberi.",
+        cta: "Prenota un appuntamento",
+      },
       directLabel: "Oppure scrivimi direttamente",
     },
     newsletter: {
@@ -203,6 +209,11 @@ const CONTENT = {
         submit: "Send message",
         consent: "I have read the privacy policy and consent to the processing of my data to be contacted.",
         sent: "Thank you! Your message has been sent — I'll reply soon.",
+      },
+      booking: {
+        title: "Prefer to talk it through?",
+        lede: "Book a 30-minute intro call on Google Meet: pick the day and time that suit you.",
+        cta: "Book an appointment",
       },
       directLabel: "Or reach me directly",
     },

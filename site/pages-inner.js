@@ -389,7 +389,14 @@ function ContactPage({
     }
   }, it ? "Invio non riuscito. Riprova o scrivimi a " + o.email + "." : "Sending failed. Please retry or email me at " + o.email + ".")), /*#__PURE__*/React.createElement("aside", {
     className: "contact-aside"
-  }, /*#__PURE__*/React.createElement("h3", null, c.directLabel), /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "contact-booking"
+  }, /*#__PURE__*/React.createElement("h3", null, c.booking.title), /*#__PURE__*/React.createElement("p", null, c.booking.lede), /*#__PURE__*/React.createElement("a", {
+    className: "btn btn--solid",
+    href: o.booking,
+    target: "_blank",
+    rel: "noopener"
+  }, c.booking.cta)), /*#__PURE__*/React.createElement("h3", null, c.directLabel), /*#__PURE__*/React.createElement("a", {
     className: "contact-direct",
     href: "mailto:" + o.email
   }, o.email), /*#__PURE__*/React.createElement("a", {

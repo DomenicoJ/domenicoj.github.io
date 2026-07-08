@@ -269,6 +269,11 @@ function ContactPage({ lang, go }) {
           </form>
 
           <aside className="contact-aside">
+            <div className="contact-booking">
+              <h3>{c.booking.title}</h3>
+              <p>{c.booking.lede}</p>
+              <a className="btn btn--solid" href={o.booking} target="_blank" rel="noopener">{c.booking.cta}</a>
+            </div>
             <h3>{c.directLabel}</h3>
             <a className="contact-direct" href={"mailto:" + o.email}>{o.email}</a>
             <a className="contact-direct" href={"tel:" + o.phone.replace(/\s/g, "")}>{o.phone}</a>
