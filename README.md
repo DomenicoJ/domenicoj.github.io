@@ -10,6 +10,15 @@ Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main
 - `site/*.js` — **compilati** da `*.jsx` con Babel (preset `react`), ciascuno avvolto in una IIFE. Sono questi che la pagina carica: dopo ogni modifica ai `.jsx` vanno ricompilati.
 - `site/vendor/` — React e ReactDOM 18.3.1 production UMD, self-hosted.
 - `site/fonts/` — font woff2 self-hosted (Space Grotesk, IBM Plex Sans, IBM Plex Mono) + `fonts.css`. Niente Google Fonts né CDN esterne: scelta GDPR (nessuna comunicazione di IP a terze parti) — non reintrodurre risorse remote senza aggiornare privacy/cookie policy e CSP.
+- `insights/` — **pagine statiche degli articoli** per SEO/GEO (le rotte `#/insights/<slug>` della SPA non sono indicizzabili dai crawler). Un archivio (`insights/index.html`), un foglio di stile condiviso (`insights/insights.css`) e una cartella per slug (`insights/<slug>/index.html`) per ogni post **con `body`**; i post solo-LinkedIn compaiono nell'archivio ma non hanno pagina propria. Solo HTML+CSS, nessuno script.
+- `robots.txt`, `sitemap.xml`, `llms.txt` — indicizzazione: il robots consente tutti i crawler (inclusi quelli dei motori generativi, scelta deliberata); la sitemap elenca home, archivio e articoli; llms.txt è il sommario del sito per i modelli linguistici.
+
+## Quando si aggiunge un articolo (oltre a posts.js)
+
+1. Creare `insights/<slug>/index.html` copiando la struttura di una pagina esistente (stesso head: title, description = summary, canonical, OG, JSON-LD Article con `datePublished`; corpo: paragrafi `<p>`, stringhe `## ` come `<h2>`; escape di `&` → `&amp;`).
+2. Aggiungere la voce in cima alla lista di `insights/index.html`.
+3. Aggiungere l'URL alla `sitemap.xml` (con `lastmod` = data del post) e aggiornare il `lastmod` di home e archivio.
+4. Aggiungere l'articolo alla lista di `llms.txt`.
 
 ## Cache e versioni
 

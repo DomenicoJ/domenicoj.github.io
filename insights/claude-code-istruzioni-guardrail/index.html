@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Un'istruzione non è un guardrail: governare davvero gli agenti AI — DMJ Lab</title>
+<meta name="description" content="Dare un'istruzione a un'AI non garantisce che venga seguita: la guida tecnica di Anthropic su Claude Code distingue tra istruzioni al modello e vincoli deterministici. Una lezione di ingegneria organizzativa, non solo di software." />
+<link rel="canonical" href="https://dmjlab.com/insights/claude-code-istruzioni-guardrail/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="DMJ Lab" />
+<meta property="og:title" content="Un'istruzione non è un guardrail: governare davvero gli agenti AI" />
+<meta property="og:description" content="La guida tecnica di Anthropic su Claude Code distingue tra istruzioni al modello e vincoli deterministici. Una lezione di ingegneria organizzativa." />
+<meta property="og:url" content="https://dmjlab.com/insights/claude-code-istruzioni-guardrail/" />
+<meta property="og:image" content="https://dmjlab.com/site/domenico.jpg" />
+<meta property="og:locale" content="it_IT" />
+<meta property="article:published_time" content="2026-06-20" />
+<meta property="article:author" content="Domenico Maria Jacobone" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f6feb'/%3E%3Ccircle cx='32' cy='32' r='9' fill='white'/%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Un'istruzione non è un guardrail: governare davvero gli agenti AI",
+  "description": "Dare un'istruzione a un'AI non garantisce che venga seguita: la guida tecnica di Anthropic su Claude Code distingue tra istruzioni al modello e vincoli deterministici. Una lezione di ingegneria organizzativa, non solo di software.",
+  "datePublished": "2026-06-20",
+  "inLanguage": "it",
+  "mainEntityOfPage": "https://dmjlab.com/insights/claude-code-istruzioni-guardrail/",
+  "image": "https://dmjlab.com/site/domenico.jpg",
+  "author": { "@type": "Person", "name": "Domenico Maria Jacobone", "url": "https://dmjlab.com/" },
+  "publisher": { "@type": "Organization", "name": "DMJ Lab", "url": "https://dmjlab.com/" }
+}
+</script>
+<link href="/site/fonts/fonts.css" rel="stylesheet" />
+<link href="/insights/insights.css" rel="stylesheet" />
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="/"><span class="dot"></span>DMJ Lab</a>
+<nav><a href="/insights/">Insights</a><a href="/#/contact">Contatti</a></nav>
+</div></header>
+<main class="wrap">
+<article>
+<p class="kicker">AI · giugno 2026</p>
+<h1>Un'istruzione non è un guardrail: governare davvero gli agenti AI</h1>
+<p>Dare un'istruzione a un'AI non garantisce che venga seguita.</p>
+<p>Anthropic lo afferma esplicitamente nella guida tecnica pubblicata il 18 giugno su Claude Code: in sessioni lunghe, sotto pressione o in presenza di prompt injection nei file letti durante il lavoro, il modello può disattendere anche le regole scritte nero su bianco.</p>
+<p>Hai già una strategia per gestire questo rischio nei tuoi processi?</p>
+<p>Claude Code mette a disposizione sette metodi per istruire l'agente: il file CLAUDE.md, le regole, le skill, i subagenti, gli hook, gli stili di output e l'aggiunta al system prompt. Ognuno ha un costo di contesto diverso, un comportamento diverso durante la compattazione della sessione e un diverso livello di autorità. Scegliere il metodo sbagliato significa sprecare token o, peggio, avere un agente che si comporta in modo imprevedibile.</p>
+<p>La distinzione centrale, secondo Anthropic, è tra istruzione e guardrail deterministico. Un'istruzione al modello viene seguita quasi sempre, non sempre. Un vincolo assoluto richiede un hook: un comando eseguito dal codice indipendentemente dal ragionamento del modello, capace di bloccare qualsiasi chiamata non autorizzata. È la differenza tra una policy sull'AI e un guardrail reale.</p>
+<p>I subagenti operano secondo una logica diversa: girano in una finestra di contesto separata e restituiscono alla sessione principale solo il risultato finale. Anthropic indica che questo schema consente di orchestrare decine di agenti in parallelo senza saturare il contesto e senza perdere fedeltà alle istruzioni originali.</p>
+<h2>I miei consigli</h2>
+<p>Prima di inserire qualcosa nel file principale di istruzioni, chiediti se deve valere in ogni sessione e in ogni contesto oppure solo su file specifici: in quel caso, una regola con ambito ristretto consuma token solo quando serve.</p>
+<p>Prima di scrivere «non fare mai X», convertilo in un guardrail deterministico, perché un'istruzione al modello non ha la stessa certezza di esecuzione di una riga di codice.</p>
+<p>Se stai costruendo flussi di lavoro con agenti AI nel tuo team, mappa i sette metodi disponibili e assegna a ciascuna istruzione il meccanismo giusto: il comportamento dell'agente e il costo computazionale dipendono da questa scelta, non dalla lunghezza del prompt.</p>
+<p>Claude Code è già uno strumento di ingegneria organizzativa, non solo di sviluppo software. Chi ignora la sua architettura di controllo lascia variabile ciò che potrebbe essere deterministico.</p>
+<p>«Non basta sapere; bisogna anche applicare. Non basta volere; bisogna anche agire» (Johann Wolfgang von Goethe, Massime e riflessioni, 1833).</p>
+</article>
+<aside class="cta">
+<p><strong>Ti riconosci in questi temi?</strong> Raccontami la tua sfida: <a href="/#/contact">scrivimi</a>, oppure <a href="/insights/">leggi gli altri articoli</a>.</p>
+<p class="sig">Domenico Maria Jacobone — <a href="/">DMJ Lab</a> · <a href="https://www.linkedin.com/in/domenicomjacobone" rel="noopener">LinkedIn</a></p>
+</aside>
+</main>
+<footer><div class="wrap foot"><p>© DMJ Lab — Driving Mindful Innovation · <a href="/">dmjlab.com</a></p></div></footer>
+</body>
+</html>

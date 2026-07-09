@@ -1,0 +1,49 @@
+/* DMJ Lab — stile delle pagine statiche degli articoli (/insights/).
+   Versione leggera della palette del sito; nessuno script, solo HTML+CSS. */
+:root{
+  --bg:#fbfcfe; --surface:#ffffff; --ink:#0d1b2e; --ink-soft:#3a4a60;
+  --muted:#6b7a90; --line:#e4e9f2; --accent:#1f6feb; --accent-deep:#0a3a8c;
+  --azzurro-wash:#eaf3fc; --radius:4px;
+  --font-display:"Space Grotesk", system-ui, sans-serif;
+  --font-body:"IBM Plex Sans", system-ui, sans-serif;
+  --font-mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);
+  font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;letter-spacing:-0.005em;}
+a{color:var(--accent-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:740px;margin:0 auto;padding:0 20px;}
+header{background:var(--surface);border-bottom:1px solid var(--line);}
+.bar{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);
+  font-family:var(--font-display);font-weight:600;font-size:19px;}
+.brand:hover{text-decoration:none;}
+.dot{width:24px;height:24px;border-radius:50%;background:var(--accent);position:relative;flex:none;}
+.dot::after{content:"";position:absolute;inset:8px;border-radius:50%;background:#fff;}
+nav{display:flex;gap:18px;font-family:var(--font-mono);font-size:13px;}
+nav a{color:var(--ink-soft);}
+main{padding:40px 0 20px;}
+.kicker{font-family:var(--font-mono);font-size:13px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;}
+h1{font-family:var(--font-display);font-weight:600;line-height:1.12;
+  letter-spacing:-0.02em;font-size:clamp(28px,5vw,40px);margin:0 0 24px;}
+article h2{font-family:var(--font-display);font-weight:600;line-height:1.2;
+  letter-spacing:-0.015em;font-size:23px;margin:36px 0 14px;}
+article p{margin:0 0 1em;color:var(--ink-soft);}
+article p:first-of-type{color:var(--ink);}
+.cta{background:var(--azzurro-wash);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;margin:40px 0 0;}
+.cta p{margin:0 0 .6em;}
+.cta p:last-child{margin-bottom:0;}
+.sig{font-size:15px;color:var(--muted);}
+footer{border-top:1px solid var(--line);margin-top:48px;}
+.foot{padding-top:18px;padding-bottom:24px;font-size:14px;color:var(--muted);}
+/* archivio */
+.post-list{list-style:none;margin:0;padding:0;}
+.post-list li{border-bottom:1px solid var(--line);padding:22px 0;}
+.post-list .meta{font-family:var(--font-mono);font-size:13px;color:var(--muted);margin:0 0 6px;}
+.post-list h2{font-size:22px;margin:0 0 8px;}
+.post-list h2 a{color:var(--ink);}
+.post-list p{margin:0;color:var(--ink-soft);}
+.post-list .ext{font-family:var(--font-mono);font-size:12px;color:var(--muted);}

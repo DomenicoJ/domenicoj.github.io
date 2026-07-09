@@ -1,0 +1,29 @@
+# DMJ Lab — Domenico Maria Jacobone
+
+> Sito personale di Domenico Maria Jacobone, AI Strategist & Innovation Advisor («Driving Mindful Innovation»). Strategia, formazione e progetti sull'intelligenza artificiale per imprese e PMI, professionisti e studi, scuola e pubblica amministrazione, in Italia. Il suo punto di vista: la parte più complessa dell'AI non è tecnologica, ma di relazione tra l'essere umano e la macchina.
+
+## Chi è
+
+Domenico Maria Jacobone unisce oltre vent'anni di direzione commerciale in multinazionali del Food & Beverage, l'esperienza nel mondo delle startup foodtech e l'attività di giornalista e formatore. Oggi aiuta organizzazioni e persone ad adottare l'intelligenza artificiale in modo consapevole: consulenza strategica, percorsi di formazione, interventi come relatore.
+
+- Profilo LinkedIn: https://www.linkedin.com/in/domenicomjacobone
+- Profilo X: https://x.com/domenicoj
+- Contatti: https://dmjlab.com/#/contact (modulo, newsletter e prenotazione di una chiamata di 30 minuti)
+
+## Articoli (Insights)
+
+Pubblica ogni settimana un articolo su AI, innovazione e lavoro. Versioni integrali:
+
+- [Due paesi controllano il 90% del calcolo AI: la posta in gioco del panel ONU](https://dmjlab.com/insights/panel-onu-ai-concentrazione-calcolo/): il primo panel scientifico ONU sull'AI e cosa significa per chi costruisce servizi e formazione in Italia.
+- [SAP sceglie la riqualificazione: reinventarsi il lavoro invece di perderlo](https://dmjlab.com/insights/sap-riqualificare-invece-di-licenziare/): reskilling al posto dei tagli e cosa insegna alle imprese che stanno automatizzando.
+- [Ford richiama i veterani: la conoscenza tacita è il collo di bottiglia dell'AI](https://dmjlab.com/insights/ford-veterani-conoscenza-tacita/): il valore si sposta verso ciò che non sta nei manuali.
+- [Un tutor AI per ogni studente: la lezione della Florida State University](https://dmjlab.com/insights/notebooklm-florida-state-tutor-ai/): strumenti ancorati ai materiali dei docenti, un caso d'uso per scuole e atenei italiani.
+- [Un'istruzione non è un guardrail: governare davvero gli agenti AI](https://dmjlab.com/insights/claude-code-istruzioni-guardrail/): la differenza tra istruzioni al modello e vincoli deterministici.
+- [Unilever e l'arte del sacrificio: scegliere cosa lasciar andare](https://dmjlab.com/insights/unilever-arte-del-sacrificio/): la disciplina di rinunciare, nei portafogli aziendali e professionali.
+
+Archivio completo: https://dmjlab.com/insights/
+
+## Note
+
+- Lingue del sito: italiano (principale) e inglese.
+- Il sito non usa risorse esterne né traccianti; solo cookie tecnici.

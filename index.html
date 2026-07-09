@@ -24,13 +24,35 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Domenico Maria Jacobone",
-  "jobTitle": "AI Strategist & Innovation Advisor",
-  "url": "https://dmjlab.com/",
-  "image": "https://dmjlab.com/site/domenico.jpg",
-  "worksFor": { "@type": "Organization", "name": "DMJ Lab" },
-  "sameAs": ["https://www.linkedin.com/in/domenicomjacobone"]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dmjlab.com/#person",
+      "name": "Domenico Maria Jacobone",
+      "jobTitle": "AI Strategist & Innovation Advisor",
+      "description": "Aiuta imprese, professionisti, scuola e pubblica amministrazione ad adottare l'intelligenza artificiale in modo consapevole: consulenza strategica, formazione e interventi come relatore. In precedenza oltre vent'anni di direzione commerciale nel Food & Beverage, esperienza nelle startup foodtech, giornalista.",
+      "url": "https://dmjlab.com/",
+      "image": "https://dmjlab.com/site/domenico.jpg",
+      "worksFor": { "@type": "Organization", "name": "DMJ Lab", "url": "https://dmjlab.com/" },
+      "knowsAbout": ["Intelligenza artificiale", "Innovazione", "Formazione aziendale", "Strategia d'impresa", "AI Act", "Food & Beverage", "Giornalismo"],
+      "knowsLanguage": ["it", "en"],
+      "sameAs": [
+        "https://www.linkedin.com/in/domenicomjacobone",
+        "https://x.com/domenicoj",
+        "https://www.radio-food.it/author/jacobone/",
+        "https://www.bto.travel/speaker/domenico-maria-jacobone/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dmjlab.com/#website",
+      "name": "DMJ Lab",
+      "alternateName": "DMJ Lab — Driving Mindful Innovation",
+      "url": "https://dmjlab.com/",
+      "inLanguage": ["it", "en"],
+      "publisher": { "@id": "https://dmjlab.com/#person" }
+    }
+  ]
 }
 </script>
 <link href="site/fonts/fonts.css?v=8g" rel="stylesheet" />
