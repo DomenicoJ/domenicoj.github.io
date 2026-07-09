@@ -31,4 +31,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://dmjlab.com/sitemap.xml
+Sitemap: https://www.dmjlab.com/sitemap.xml
