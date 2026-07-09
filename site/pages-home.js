@@ -1,3 +1,4 @@
+(function(){
 /* DMJ Lab — Home page sections */
 
 const {
@@ -462,3 +463,4 @@ Object.assign(window, {
   Newsletter,
   Home
 });
+})();

@@ -1,3 +1,4 @@
+(function(){
 /* DMJ Lab — legal page renderer + app shell + router */
 
 const {
@@ -238,3 +239,4 @@ function App() {
   }));
 }
 ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(App, null));
+})();
