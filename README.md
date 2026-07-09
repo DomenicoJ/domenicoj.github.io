@@ -1,6 +1,6 @@
-# DMJ Lab — www.dmjlab.com
+# DMJ Lab — dmjlab.com
 
-Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main`, root) sul dominio custom `www.dmjlab.com` (file `CNAME`).
+Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main`, root) sul dominio custom `dmjlab.com` (www reindirizza all'apex) (file `CNAME`).
 
 ## Architettura
 
