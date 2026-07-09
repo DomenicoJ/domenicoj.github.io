@@ -1,4 +1,3 @@
-(function(){
 /* DMJ Lab — Home page sections */
 
 const {
@@ -86,12 +85,22 @@ function Hero({
   }))), /*#__PURE__*/React.createElement("div", {
     className: "hero-inner"
   }, /*#__PURE__*/React.createElement("div", {
+    className: "hero-top"
+  }, /*#__PURE__*/React.createElement("div", {
     className: "hero-text"
   }, /*#__PURE__*/React.createElement("div", {
     className: "kicker"
   }, c.kicker), /*#__PURE__*/React.createElement("h1", {
     className: "hero-quote"
-  }, c.quote), /*#__PURE__*/React.createElement("p", {
+  }, c.quote)), /*#__PURE__*/React.createElement("div", {
+    className: "hero-media"
+  }, /*#__PURE__*/React.createElement(Placeholder, {
+    label: c.portrait,
+    ratio: "4 / 5",
+    src: "site/domenico.jpg"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "hero-badge"
+  }, window.OWNER.fullName))), /*#__PURE__*/React.createElement("p", {
     className: "hero-lede"
   }, c.lede), /*#__PURE__*/React.createElement("div", {
     className: "hero-actions"
@@ -109,18 +118,33 @@ function Hero({
       e.preventDefault();
       go("services");
     }
-  }, c.cta_secondary)), /*#__PURE__*/React.createElement(HeroLatest, {
+  }, c.cta_secondary), /*#__PURE__*/React.createElement("div", {
+    className: "hero-ripple",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("svg", {
+    className: "rp rp1",
+    viewBox: "0 0 2400 44",
+    preserveAspectRatio: "none"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0,22 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0",
+    fill: "none",
+    stroke: "#7dbcec",
+    strokeWidth: "2.5",
+    vectorEffect: "non-scaling-stroke"
+  })), /*#__PURE__*/React.createElement("svg", {
+    className: "rp rp2",
+    viewBox: "0 0 2400 44",
+    preserveAspectRatio: "none"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0,26 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0",
+    fill: "none",
+    stroke: "#bcdcf5",
+    strokeWidth: "2",
+    vectorEffect: "non-scaling-stroke"
+  })))), /*#__PURE__*/React.createElement(HeroLatest, {
     lang: lang,
     label: c.latest
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "hero-media"
-  }, /*#__PURE__*/React.createElement(Placeholder, {
-    label: c.portrait,
-    ratio: "4 / 5",
-    src: "site/domenico.jpg"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "hero-badge"
-  }, window.OWNER.fullName))), /*#__PURE__*/React.createElement("button", {
+  })), /*#__PURE__*/React.createElement("button", {
     className: "scroll-cue",
     "aria-label": lang === "it" ? "Scorri in basso" : "Scroll down",
     onClick: () => {
@@ -143,25 +167,27 @@ function Hero({
   }))));
 }
 
-// Latest blog article teaser shown under the hero actions.
+// Latest blog article teasers (two) shown under the hero actions.
 function HeroLatest({
   lang,
   label
 }) {
   const it = lang === "it";
-  const p = sortedPosts().find(x => Array.isArray(x.body) && x.body.length);
-  if (!p) return null;
-  const title = !it && p.title_en || p.title;
-  return /*#__PURE__*/React.createElement("a", {
+  const posts = sortedPosts().filter(x => Array.isArray(x.body) && x.body.length).slice(0, 2);
+  if (!posts.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "hero-latest-row"
+  }, posts.map(p => /*#__PURE__*/React.createElement("a", {
+    key: p.slug,
     className: "hero-latest",
     href: "#/insights/" + p.slug
   }, /*#__PURE__*/React.createElement("span", {
     className: "hero-latest-label"
   }, label), /*#__PURE__*/React.createElement("span", {
     className: "hero-latest-title"
-  }, title), /*#__PURE__*/React.createElement("span", {
+  }, !it && p.title_en || p.title), /*#__PURE__*/React.createElement("span", {
     "aria-hidden": "true"
-  }, "\u2192"));
+  }, "\u2192"))));
 }
 
 // "Per chi" — three audience cards right after the hero.
@@ -436,4 +462,3 @@ Object.assign(window, {
   Newsletter,
   Home
 });
-})();

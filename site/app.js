@@ -1,4 +1,3 @@
-(function(){
 /* DMJ Lab — legal page renderer + app shell + router */
 
 const {
@@ -104,7 +103,7 @@ function App() {
   // within their parent. Skipped entirely under prefers-reduced-motion.
   useLayoutEffect(() => {
     if (!("IntersectionObserver" in window)) return;
-    const els = Array.from(document.querySelectorAll(".hero-text > *, .hero-media, .section-head, .svc-card, .ins-card, .how-card, .stat, " + ".bio-left, .bio-right, .about-portrait, .about-text, .timeline li, .nl-inner, .ln-banner, " + ".contact-form, .contact-aside, .cta-inner, .legal-section, .post-body"));
+    const els = Array.from(document.querySelectorAll(".hero-text > *, .hero-media, .hero-lede, .hero-actions, .hero-latest-row, .section-head, .svc-card, .ins-card, .how-card, .stat, " + ".bio-left, .bio-right, .about-portrait, .about-text, .timeline li, .nl-inner, .ln-banner, " + ".contact-form, .contact-aside, .cta-inner, .legal-section, .post-body"));
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       els.forEach(el => el.classList.add("is-in"));
       return;
@@ -239,4 +238,3 @@ function App() {
   }));
 }
 ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(App, null));
-})();

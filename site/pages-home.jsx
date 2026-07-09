@@ -53,24 +53,34 @@ function Hero({ lang, go, dir }) {
         </svg>
       </div>
       <div className="hero-inner">
-        <div className="hero-text">
-          <div className="kicker">{c.kicker}</div>
-          <h1 className="hero-quote">{c.quote}</h1>
-          <p className="hero-lede">{c.lede}</p>
-          <div className="hero-actions">
-            <a href="#/contact" className="btn btn--solid" onClick={(e) => { e.preventDefault(); go("contact"); }}>
-              {c.cta_primary}
-            </a>
-            <a href="#/services" className="btn btn--ghost" onClick={(e) => { e.preventDefault(); go("services"); }}>
-              {c.cta_secondary}
-            </a>
+        <div className="hero-top">
+          <div className="hero-text">
+            <div className="kicker">{c.kicker}</div>
+            <h1 className="hero-quote">{c.quote}</h1>
           </div>
-          <HeroLatest lang={lang} label={c.latest} />
+          <div className="hero-media">
+            <Placeholder label={c.portrait} ratio="4 / 5" src="site/domenico.jpg" />
+            <div className="hero-badge">{window.OWNER.fullName}</div>
+          </div>
         </div>
-        <div className="hero-media">
-          <Placeholder label={c.portrait} ratio="4 / 5" src="site/domenico.jpg" />
-          <div className="hero-badge">{window.OWNER.fullName}</div>
+        <p className="hero-lede">{c.lede}</p>
+        <div className="hero-actions">
+          <a href="#/contact" className="btn btn--solid" onClick={(e) => { e.preventDefault(); go("contact"); }}>
+            {c.cta_primary}
+          </a>
+          <a href="#/services" className="btn btn--ghost" onClick={(e) => { e.preventDefault(); go("services"); }}>
+            {c.cta_secondary}
+          </a>
+          <div className="hero-ripple" aria-hidden="true">
+            <svg className="rp rp1" viewBox="0 0 2400 44" preserveAspectRatio="none">
+              <path d="M0,22 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0 c75,-14 225,14 300,0" fill="none" stroke="#7dbcec" strokeWidth="2.5" vectorEffect="non-scaling-stroke" />
+            </svg>
+            <svg className="rp rp2" viewBox="0 0 2400 44" preserveAspectRatio="none">
+              <path d="M0,26 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0 c100,-18 300,18 400,0" fill="none" stroke="#bcdcf5" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+            </svg>
+          </div>
         </div>
+        <HeroLatest lang={lang} label={c.latest} />
       </div>
       <button
         className="scroll-cue"
@@ -88,18 +98,21 @@ function Hero({ lang, go, dir }) {
   );
 }
 
-// Latest blog article teaser shown under the hero actions.
+// Latest blog article teasers (two) shown under the hero actions.
 function HeroLatest({ lang, label }) {
   const it = lang === "it";
-  const p = sortedPosts().find((x) => Array.isArray(x.body) && x.body.length);
-  if (!p) return null;
-  const title = (!it && p.title_en) || p.title;
+  const posts = sortedPosts().filter((x) => Array.isArray(x.body) && x.body.length).slice(0, 2);
+  if (!posts.length) return null;
   return (
-    <a className="hero-latest" href={"#/insights/" + p.slug}>
-      <span className="hero-latest-label">{label}</span>
-      <span className="hero-latest-title">{title}</span>
-      <span aria-hidden="true">→</span>
-    </a>
+    <div className="hero-latest-row">
+      {posts.map((p) => (
+        <a key={p.slug} className="hero-latest" href={"#/insights/" + p.slug}>
+          <span className="hero-latest-label">{label}</span>
+          <span className="hero-latest-title">{(!it && p.title_en) || p.title}</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      ))}
+    </div>
   );
 }
 

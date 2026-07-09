@@ -88,7 +88,7 @@ function App() {
   useLayoutEffect(() => {
     if (!("IntersectionObserver" in window)) return;
     const els = Array.from(document.querySelectorAll(
-      ".hero-text > *, .hero-media, .section-head, .svc-card, .ins-card, .how-card, .stat, " +
+      ".hero-text > *, .hero-media, .hero-lede, .hero-actions, .hero-latest-row, .section-head, .svc-card, .ins-card, .how-card, .stat, " +
       ".bio-left, .bio-right, .about-portrait, .about-text, .timeline li, .nl-inner, .ln-banner, " +
       ".contact-form, .contact-aside, .cta-inner, .legal-section, .post-body"
     ));
