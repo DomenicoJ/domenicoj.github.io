@@ -14,6 +14,10 @@ Domenico Maria Jacobone unisce oltre vent'anni di direzione commerciale in multi
 
 Pubblica ogni settimana un articolo su AI, innovazione e lavoro. Versioni integrali:
 
+- [Le pecore di Volkswagen: quando la manutenzione migliore si nutre da sola](https://www.dmjlab.com/insights/volkswagen-pecore-agrivoltaico-polonia/): un caso concreto di agrivoltaico, e una lezione di ingegneria semplice.
+- [Debito cognitivo: cosa succede al cervello di chi lascia scrivere all'AI](https://www.dmjlab.com/insights/debito-cognitivo-ai-pensiero-critico/): due studi sul costo cognitivo della delega totale all'AI, e la lezione della maieutica socratica.
+- [Scrivi a penna, risponde la carta: il tablet e-ink che imita la tua calligrafia](https://www.dmjlab.com/insights/remarkable-riddle-diario-e-ink-scrittura/): il progetto open source riddle e una via diversa per l'AI, senza schermo né notifiche.
+- [Reflect di Anthropic: uno specchio professionale, non un cruscotto di vanità](https://www.dmjlab.com/insights/anthropic-reflect-uso-consapevole-ai/): la nuova dashboard di Anthropic sull'uso di Claude, e il valore della domanda che la accompagna.
 - [Due paesi controllano il 90% del calcolo AI: la posta in gioco del panel ONU](https://www.dmjlab.com/insights/panel-onu-ai-concentrazione-calcolo/): il primo panel scientifico ONU sull'AI e cosa significa per chi costruisce servizi e formazione in Italia.
 - [SAP sceglie la riqualificazione: reinventarsi il lavoro invece di perderlo](https://www.dmjlab.com/insights/sap-riqualificare-invece-di-licenziare/): reskilling al posto dei tagli e cosa insegna alle imprese che stanno automatizzando.
 - [Ford richiama i veterani: la conoscenza tacita è il collo di bottiglia dell'AI](https://www.dmjlab.com/insights/ford-veterani-conoscenza-tacita/): il valore si sposta verso ciò che non sta nei manuali.

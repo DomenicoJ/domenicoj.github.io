@@ -2,15 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.dmjlab.com/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.dmjlab.com/insights/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/volkswagen-pecore-agrivoltaico-polonia/</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/debito-cognitivo-ai-pensiero-critico/</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/remarkable-riddle-diario-e-ink-scrittura/</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/anthropic-reflect-uso-consapevole-ai/</loc>
+    <lastmod>2026-07-13</lastmod>
   </url>
   <url>
     <loc>https://www.dmjlab.com/insights/panel-onu-ai-concentrazione-calcolo/</loc>
