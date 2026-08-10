@@ -25,6 +25,9 @@ const NAV = {
     id: "services",
     label: "Servizi"
   }, {
+    id: "proposte",
+    label: "Proposte"
+  }, {
     id: "insights",
     label: "Insights"
   }, {
@@ -37,6 +40,9 @@ const NAV = {
   }, {
     id: "services",
     label: "Services"
+  }, {
+    id: "proposte",
+    label: "Work with me"
   }, {
     id: "insights",
     label: "Insights"
@@ -97,6 +103,126 @@ const CONTENT = {
         n: "04",
         title: "AI per Food & Retail",
         body: "Vent'anni tra scaffali e cucine, più l'intelligenza artificiale: distribuzione, ristorazione, foodtech. Progetti che parlano la lingua di chi il food lo fa davvero."
+      }]
+    },
+    proposte: {
+      kicker: "Proposte",
+      title: "Come lavoriamo insieme",
+      lede: "Tre modi per partire, dal più leggero al più strutturato: una conversazione, un percorso di consulenza, un intervento di formazione. Nessun listino: ogni lavoro parte dal tuo caso, e il preventivo arriva dopo aver capito cosa ti serve davvero.",
+      ask: "Non sai da dove cominciare? Partiamo da una chiamata: mezz'ora, senza impegno.",
+      askCta: "Prenota una chiamata",
+      takeawayLabel: "Cosa porti a casa",
+      groups: [{
+        idx: "01",
+        title: "Appuntamenti",
+        note: "Per iniziare a parlarne, senza impegno.",
+        cards: [{
+          eyebrow: "Il primo passo",
+          title: "Chiamata conoscitiva",
+          claim: "Trenta minuti per capirci.",
+          badges: [{
+            t: "Gratuita",
+            free: true
+          }, {
+            t: "30 minuti"
+          }, {
+            t: "Google Meet"
+          }],
+          body: "Il primo passo non è un preventivo: è una conversazione. Mi racconti dove sei e cosa ti frena, io ti dico senza giri se e come posso esserti utile — anche quando la risposta onesta è che un consulente non ti serve.",
+          takeaway: "Una direzione chiara e un parere sincero, non una proposta commerciale.",
+          cta: "Prenota la chiamata",
+          action: "booking"
+        }, {
+          eyebrow: "Sessione di lavoro",
+          title: "Sessione strategica 1:1",
+          claim: "Un problema reale, sul tavolo.",
+          badges: [{
+            t: "90 minuti"
+          }, {
+            t: "In call o in sede"
+          }, {
+            t: "Su misura"
+          }],
+          body: "Un blocco di lavoro concentrato sul tuo caso: un processo da automatizzare, uno strumento da scegliere, un team da convincere. Entriamo nel merito e usciamo con i prossimi tre passi, in ordine di priorità.",
+          takeaway: "Un piano d'azione essenziale, subito applicabile, e gli strumenti giusti per te.",
+          cta: "Parliamone",
+          action: "contact"
+        }]
+      }, {
+        idx: "02",
+        title: "Consulenze",
+        note: "Percorsi su misura, dalla strategia ai progetti.",
+        cards: [{
+          eyebrow: "Strategia",
+          title: "Consulenza AI & Strategia",
+          claim: "Dalla curiosità al piano operativo.",
+          badges: [{
+            t: "Percorso"
+          }, {
+            t: "In sede / da remoto"
+          }, {
+            t: "Conforme all'AI Act"
+          }],
+          body: "Per imprenditori e direzioni che vogliono decidere con metodo. Mappiamo insieme i casi d'uso che spostano davvero i numeri della tua azienda, e li trasformiamo in un piano che puoi eseguire.",
+          steps: ["**Mappa dei casi d'uso** che incidono sui tuoi numeri", "**Priorità e stima d'impatto**: cosa prima, cosa dopo", "**Strumenti e governance** conforme all'AI Act", "**Roadmap operativa** con tempi e responsabilità"],
+          takeaway: "Una roadmap, non una lista di software: sai cosa fare, in che ordine e perché.",
+          cta: "Progettiamo la tua roadmap",
+          action: "contact"
+        }, {
+          eyebrow: "Settore",
+          title: "AI per Food & Retail",
+          claim: "Vent'anni tra scaffali e cucine, più l'AI.",
+          badges: [{
+            t: "Food & Retail"
+          }, {
+            t: "Progetto su misura"
+          }, {
+            t: "Distribuzione · Ristorazione · Foodtech"
+          }],
+          body: "Il settore lo conosco da dentro: direzione commerciale, GDO, ristorazione, foodtech. Porto l'intelligenza artificiale dentro problemi che ho vissuto, non su slide teoriche — dai listini alla previsione della domanda, dal punto vendita alla filiera.",
+          takeaway: "Progetti d'innovazione che parlano la lingua di chi il food lo fa davvero.",
+          cta: "Parliamone",
+          action: "contact"
+        }]
+      }, {
+        idx: "03",
+        title: "Corsi & interventi",
+        note: "Formazione pratica e keynote costruiti sul tuo contesto.",
+        cards: [{
+          eyebrow: "Formazione",
+          title: "Formazione & Bootcamp",
+          claim: "Il team operativo sull'AI in settimane, non in anni.",
+          badges: [{
+            t: "Mezza o una giornata"
+          }, {
+            t: "In aula o online"
+          }, {
+            t: "Laboratorio pratico"
+          }, {
+            t: "Materiali inclusi"
+          }],
+          body: "Il metodo è sempre lo stesso: prima gli strumenti spiegati bene, poi le mani in pasta sui vostri casi reali. La teoria senza pratica mi fa venire i brividi — e in aula si vede.",
+          steps: ["**Gli strumenti spiegati bene**, senza gergo", "**Laboratorio** sui vostri casi di lavoro reali", "**Playbook e materiali** da riusare il giorno dopo"],
+          takeaway: "Un team che il lunedì dopo sa già usare l'AI sul lavoro vero.",
+          cta: "Progetta la formazione",
+          action: "contact"
+        }, {
+          eyebrow: "Sul palco",
+          title: "Keynote & Talk",
+          claim: "Il pubblico esce con idee, non solo con applausi.",
+          badges: [{
+            t: "45–60 minuti"
+          }, {
+            t: "In presenza o streaming"
+          }, {
+            t: "Su misura"
+          }],
+          body: "Interventi su AI e innovazione costruiti sul tuo contesto: casi veri, numeri verificati, zero slide fotocopia. Per convention aziendali, associazioni di categoria, eventi ed enti che vogliono far pensare la propria platea.",
+          ticks: ["Taglio scelto sul **tuo pubblico** e sul tuo settore", "Casi concreti e **numeri verificati**, niente fumo", "Una **domanda aperta** che resta anche dopo l'applauso"],
+          takeaway: "Un intervento che la tua platea ricorda e cita, non uno slot da riempire.",
+          cta: "Richiedi un keynote",
+          action: "contact"
+        }]
       }]
     },
     proof: {
@@ -213,6 +339,126 @@ const CONTENT = {
         n: "04",
         title: "AI for Food & Retail",
         body: "Twenty years among shelves and kitchens, plus artificial intelligence: distribution, hospitality, foodtech. Projects that speak the language of those who actually make food happen."
+      }]
+    },
+    proposte: {
+      kicker: "Work with me",
+      title: "How we work together",
+      lede: "Three ways to start, from the lightest to the most structured: a conversation, a consulting path, a training session. No price list: every engagement starts from your case, and the quote comes after we've understood what you actually need.",
+      ask: "Not sure where to start? Let's begin with a call: half an hour, no strings attached.",
+      askCta: "Book a call",
+      takeawayLabel: "What you take home",
+      groups: [{
+        idx: "01",
+        title: "Appointments",
+        note: "To start talking, with no commitment.",
+        cards: [{
+          eyebrow: "The first step",
+          title: "Intro call",
+          claim: "Thirty minutes to get to know each other.",
+          badges: [{
+            t: "Free",
+            free: true
+          }, {
+            t: "30 minutes"
+          }, {
+            t: "Google Meet"
+          }],
+          body: "The first step isn't a quote: it's a conversation. You tell me where you are and what's holding you back, and I tell you straight whether and how I can help — even when the honest answer is that you don't need a consultant.",
+          takeaway: "A clear direction and an honest opinion, not a sales pitch.",
+          cta: "Book the call",
+          action: "booking"
+        }, {
+          eyebrow: "Working session",
+          title: "1:1 strategy session",
+          claim: "A real problem, on the table.",
+          badges: [{
+            t: "90 minutes"
+          }, {
+            t: "Online or on site"
+          }, {
+            t: "Tailored"
+          }],
+          body: "A focused block of work on your case: a process to automate, a tool to choose, a team to convince. We get into the detail and leave with the next three steps, in order of priority.",
+          takeaway: "A lean action plan you can apply right away, and the right tools for you.",
+          cta: "Let's talk",
+          action: "contact"
+        }]
+      }, {
+        idx: "02",
+        title: "Consulting",
+        note: "Tailored paths, from strategy to projects.",
+        cards: [{
+          eyebrow: "Strategy",
+          title: "AI Consulting & Strategy",
+          claim: "From curiosity to an operating plan.",
+          badges: [{
+            t: "Path"
+          }, {
+            t: "On site / remote"
+          }, {
+            t: "AI Act compliant"
+          }],
+          body: "For entrepreneurs and leadership teams who want to decide with method. Together we map the use cases that actually move your company's numbers, and turn them into a plan you can execute.",
+          steps: ["**Use-case map** that affects your numbers", "**Priorities and impact estimate**: what first, what next", "**Tools and governance**, AI Act compliant", "**Operating roadmap** with timelines and ownership"],
+          takeaway: "A roadmap, not a list of software: you know what to do, in what order and why.",
+          cta: "Let's design your roadmap",
+          action: "contact"
+        }, {
+          eyebrow: "Industry",
+          title: "AI for Food & Retail",
+          claim: "Twenty years among shelves and kitchens, plus AI.",
+          badges: [{
+            t: "Food & Retail"
+          }, {
+            t: "Tailored project"
+          }, {
+            t: "Distribution · Hospitality · Foodtech"
+          }],
+          body: "I know the sector from the inside: sales leadership, retail, hospitality, foodtech. I bring artificial intelligence into problems I've lived, not theoretical slides — from pricing to demand forecasting, from the store to the supply chain.",
+          takeaway: "Innovation projects that speak the language of those who actually make food happen.",
+          cta: "Let's talk",
+          action: "contact"
+        }]
+      }, {
+        idx: "03",
+        title: "Courses & talks",
+        note: "Hands-on training and keynotes built on your context.",
+        cards: [{
+          eyebrow: "Training",
+          title: "Training & Bootcamp",
+          claim: "Your team operational on AI in weeks, not years.",
+          badges: [{
+            t: "Half or full day"
+          }, {
+            t: "In-room or online"
+          }, {
+            t: "Hands-on lab"
+          }, {
+            t: "Materials included"
+          }],
+          body: "The method is always the same: first the tools explained properly, then hands-on work on your real cases. Theory without practice gives me the shivers — and it shows in the room.",
+          steps: ["**The tools explained well**, no jargon", "**Lab** on your real work cases", "**Playbook and materials** to reuse the next day"],
+          takeaway: "A team that already knows how to use AI on real work the following Monday.",
+          cta: "Design the training",
+          action: "contact"
+        }, {
+          eyebrow: "On stage",
+          title: "Keynotes & Talks",
+          claim: "The audience leaves with ideas, not just applause.",
+          badges: [{
+            t: "45–60 minutes"
+          }, {
+            t: "In person or streaming"
+          }, {
+            t: "Tailored"
+          }],
+          body: "Talks on AI and innovation built on your context: real cases, verified numbers, zero photocopied slides. For corporate conventions, trade associations, events and institutions that want to make their audience think.",
+          ticks: ["Angle chosen for **your audience** and your sector", "Concrete cases and **verified numbers**, no smoke", "An **open question** that stays after the applause"],
+          takeaway: "A talk your audience remembers and quotes, not a slot to fill.",
+          cta: "Request a keynote",
+          action: "contact"
+        }]
       }]
     },
     proof: {

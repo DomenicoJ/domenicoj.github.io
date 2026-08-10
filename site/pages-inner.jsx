@@ -118,6 +118,76 @@ function ServicesPage({ lang, go }) {
   );
 }
 
+// Render **bold** segments inside a string as <b>…</b>.
+function richText(s) {
+  return s.split(/\*\*(.+?)\*\*/g).map((seg, i) => (i % 2 ? <b key={i}>{seg}</b> : seg));
+}
+
+function ProposPage({ lang, go }) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].proposte;
+  const o = window.OWNER;
+  const act = (a) => {
+    if (a === "booking") window.open(o.booking, "_blank", "noopener");
+    else go("contact");
+  };
+  return (
+    <main className="page">
+      <PageHero kicker={c.kicker} title={c.title} lede={c.lede} />
+      <section className="section prop-sec">
+        <div className="ask ask--inline">
+          <p className="ask-text">{c.ask}</p>
+          <a className="btn btn--solid" href={o.booking} target="_blank" rel="noopener">{c.askCta} →</a>
+        </div>
+        {c.groups.map((g, gi) => (
+          <div className="prg" key={gi}>
+            <div className="prg-head">
+              <span className="prg-idx">{g.idx}</span>
+              <h2>{g.title}</h2>
+              <span className="prg-note">{g.note}</span>
+            </div>
+            <div className="pcards">
+              {g.cards.map((card, ci) => (
+                <article className="pcard" key={ci}>
+                  <div className="pcard-eyebrow">{card.eyebrow}</div>
+                  <h3>{card.title}</h3>
+                  <div className="pcard-claim">{card.claim}</div>
+                  <div className="pbadges">
+                    {card.badges.map((b, bi) => (
+                      <span className={"pbadge" + (b.free ? " pbadge--free" : "")} key={bi}>{b.t}</span>
+                    ))}
+                  </div>
+                  <p className="pcard-body">{card.body}</p>
+                  {card.steps && (
+                    <ul className="psteps psteps--num">
+                      {card.steps.map((s, si) => (
+                        <li key={si}><span className="pstep-m">{si + 1}</span><span>{richText(s)}</span></li>
+                      ))}
+                    </ul>
+                  )}
+                  {card.ticks && (
+                    <ul className="psteps psteps--tick">
+                      {card.ticks.map((s, si) => (
+                        <li key={si}><span className="pstep-m" aria-hidden="true">→</span><span>{richText(s)}</span></li>
+                      ))}
+                    </ul>
+                  )}
+                  <div className="ptakeaway">
+                    <span className="ptakeaway-lbl">{c.takeawayLabel}</span>
+                    <p>{card.takeaway}</p>
+                  </div>
+                  <button className="btn btn--solid" onClick={() => act(card.action)}>{card.cta} →</button>
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+      <CtaBand lang={lang} go={go} dir="solid" />
+    </main>
+  );
+}
+
 function InsightsPage({ lang, go }) {
   const c = window.CONTENT[lang].insights;
   const o = window.OWNER;
@@ -291,4 +361,4 @@ function ContactPage({ lang, go }) {
   );
 }
 
-Object.assign(window, { PageHero, AboutPage, ServicesPage, InsightsPage, PostPage, ContactPage });
+Object.assign(window, { PageHero, AboutPage, ServicesPage, ProposPage, InsightsPage, PostPage, ContactPage });

@@ -43,12 +43,12 @@ function LegalPage({
 /* ---------------- App ---------------- */
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "direction": "soft",
+  "direction": "bold",
   "accent": "#1f6feb",
   "display": "Space Grotesk",
   "radius": 4
 } /*EDITMODE-END*/;
-const PAGES = ["home", "about", "services", "insights", "contact", "privacy", "cookie", "ai", "terms"];
+const PAGES = ["home", "about", "services", "proposte", "insights", "contact", "privacy", "cookie", "ai", "terms"];
 function parseHash() {
   const h = (window.location.hash || "").replace(/^#\//, "").trim();
   if (!h || h === "/") return {
@@ -151,6 +151,12 @@ function App() {
       break;
     case "services":
       view = /*#__PURE__*/React.createElement(ServicesPage, {
+        lang: lang,
+        go: go
+      });
+      break;
+    case "proposte":
+      view = /*#__PURE__*/React.createElement(ProposPage, {
         lang: lang,
         go: go
       });

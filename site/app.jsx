@@ -39,13 +39,13 @@ function LegalPage({ lang, which }) {
 /* ---------------- App ---------------- */
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "direction": "soft",
+  "direction": "bold",
   "accent": "#1f6feb",
   "display": "Space Grotesk",
   "radius": 4
 }/*EDITMODE-END*/;
 
-const PAGES = ["home", "about", "services", "insights", "contact", "privacy", "cookie", "ai", "terms"];
+const PAGES = ["home", "about", "services", "proposte", "insights", "contact", "privacy", "cookie", "ai", "terms"];
 
 function parseHash() {
   const h = (window.location.hash || "").replace(/^#\//, "").trim();
@@ -128,6 +128,7 @@ function App() {
   switch (route.page) {
     case "about": view = <AboutPage lang={lang} go={go} />; break;
     case "services": view = <ServicesPage lang={lang} go={go} />; break;
+    case "proposte": view = <ProposPage lang={lang} go={go} />; break;
     case "insights": view = <InsightsPage lang={lang} go={go} />; break;
     case "post": view = <PostPage lang={lang} slug={route.slug} go={go} />; break;
     case "contact": view = <ContactPage lang={lang} go={go} />; break;

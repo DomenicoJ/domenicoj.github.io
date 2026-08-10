@@ -159,6 +159,91 @@ function ServicesPage({
     dir: "solid"
   }));
 }
+
+// Render **bold** segments inside a string as <b>…</b>.
+function richText(s) {
+  return s.split(/\*\*(.+?)\*\*/g).map((seg, i) => i % 2 ? /*#__PURE__*/React.createElement("b", {
+    key: i
+  }, seg) : seg);
+}
+function ProposPage({
+  lang,
+  go
+}) {
+  const it = lang === "it";
+  const c = window.CONTENT[lang].proposte;
+  const o = window.OWNER;
+  const act = a => {
+    if (a === "booking") window.open(o.booking, "_blank", "noopener");else go("contact");
+  };
+  return /*#__PURE__*/React.createElement("main", {
+    className: "page"
+  }, /*#__PURE__*/React.createElement(PageHero, {
+    kicker: c.kicker,
+    title: c.title,
+    lede: c.lede
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "section prop-sec"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ask ask--inline"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "ask-text"
+  }, c.ask), /*#__PURE__*/React.createElement("a", {
+    className: "btn btn--solid",
+    href: o.booking,
+    target: "_blank",
+    rel: "noopener"
+  }, c.askCta, " \u2192")), c.groups.map((g, gi) => /*#__PURE__*/React.createElement("div", {
+    className: "prg",
+    key: gi
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "prg-head"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "prg-idx"
+  }, g.idx), /*#__PURE__*/React.createElement("h2", null, g.title), /*#__PURE__*/React.createElement("span", {
+    className: "prg-note"
+  }, g.note)), /*#__PURE__*/React.createElement("div", {
+    className: "pcards"
+  }, g.cards.map((card, ci) => /*#__PURE__*/React.createElement("article", {
+    className: "pcard",
+    key: ci
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "pcard-eyebrow"
+  }, card.eyebrow), /*#__PURE__*/React.createElement("h3", null, card.title), /*#__PURE__*/React.createElement("div", {
+    className: "pcard-claim"
+  }, card.claim), /*#__PURE__*/React.createElement("div", {
+    className: "pbadges"
+  }, card.badges.map((b, bi) => /*#__PURE__*/React.createElement("span", {
+    className: "pbadge" + (b.free ? " pbadge--free" : ""),
+    key: bi
+  }, b.t))), /*#__PURE__*/React.createElement("p", {
+    className: "pcard-body"
+  }, card.body), card.steps && /*#__PURE__*/React.createElement("ul", {
+    className: "psteps psteps--num"
+  }, card.steps.map((s, si) => /*#__PURE__*/React.createElement("li", {
+    key: si
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "pstep-m"
+  }, si + 1), /*#__PURE__*/React.createElement("span", null, richText(s))))), card.ticks && /*#__PURE__*/React.createElement("ul", {
+    className: "psteps psteps--tick"
+  }, card.ticks.map((s, si) => /*#__PURE__*/React.createElement("li", {
+    key: si
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "pstep-m",
+    "aria-hidden": "true"
+  }, "\u2192"), /*#__PURE__*/React.createElement("span", null, richText(s))))), /*#__PURE__*/React.createElement("div", {
+    className: "ptakeaway"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "ptakeaway-lbl"
+  }, c.takeawayLabel), /*#__PURE__*/React.createElement("p", null, card.takeaway)), /*#__PURE__*/React.createElement("button", {
+    className: "btn btn--solid",
+    onClick: () => act(card.action)
+  }, card.cta, " \u2192"))))))), /*#__PURE__*/React.createElement(CtaBand, {
+    lang: lang,
+    go: go,
+    dir: "solid"
+  }));
+}
 function InsightsPage({
   lang,
   go
@@ -420,6 +505,7 @@ Object.assign(window, {
   PageHero,
   AboutPage,
   ServicesPage,
+  ProposPage,
   InsightsPage,
   PostPage,
   ContactPage

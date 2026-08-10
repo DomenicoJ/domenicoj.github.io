@@ -106,13 +106,6 @@ function Hero({
   }, c.lede), /*#__PURE__*/React.createElement("div", {
     className: "hero-actions"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "#/contact",
-    className: "btn btn--solid",
-    onClick: e => {
-      e.preventDefault();
-      go("contact");
-    }
-  }, c.cta_primary), /*#__PURE__*/React.createElement("a", {
     href: "#/services",
     className: "btn btn--ghost",
     onClick: e => {
@@ -191,6 +184,29 @@ function HeroLatest({
   }, "\u2192"))));
 }
 
+// Ask strip — the direct invite, placed after the presentation (hero + who + bio)
+// rather than in the hero, so it asks only once value has been shown.
+function AskStrip({
+  lang,
+  go
+}) {
+  const it = lang === "it";
+  return /*#__PURE__*/React.createElement("section", {
+    className: "ask-band"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ask"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "ask-text"
+  }, it ? "Ti ho raccontato chi sono e come lavoro. " : "Now you know who I am and how I work. ", /*#__PURE__*/React.createElement("b", null, it ? "Ora la parola passa a te." : "Now it's your turn.")), /*#__PURE__*/React.createElement("a", {
+    href: "#/contact",
+    className: "btn btn--solid",
+    onClick: e => {
+      e.preventDefault();
+      go("contact");
+    }
+  }, it ? "Raccontami la tua sfida →" : "Tell me your challenge →")));
+}
+
 // "Per chi" — three audience cards right after the hero.
 function ForWho({
   lang
@@ -252,7 +268,7 @@ function Services({
   }, c.items.map(s => /*#__PURE__*/React.createElement("article", {
     className: "svc-card",
     key: s.n,
-    onClick: () => !compact && go("services"),
+    onClick: () => !compact && go("proposte"),
     style: {
       cursor: compact ? "default" : "pointer"
     }
@@ -433,6 +449,9 @@ function Home({
   }), /*#__PURE__*/React.createElement(ForWho, {
     lang: lang
   }), /*#__PURE__*/React.createElement(Bio, {
+    lang: lang,
+    go: go
+  }), /*#__PURE__*/React.createElement(AskStrip, {
     lang: lang,
     go: go
   }), /*#__PURE__*/React.createElement(Services, {

@@ -65,9 +65,6 @@ function Hero({ lang, go, dir }) {
         </div>
         <p className="hero-lede">{c.lede}</p>
         <div className="hero-actions">
-          <a href="#/contact" className="btn btn--solid" onClick={(e) => { e.preventDefault(); go("contact"); }}>
-            {c.cta_primary}
-          </a>
           <a href="#/services" className="btn btn--ghost" onClick={(e) => { e.preventDefault(); go("services"); }}>
             {c.cta_secondary}
           </a>
@@ -113,6 +110,25 @@ function HeroLatest({ lang, label }) {
         </a>
       ))}
     </div>
+  );
+}
+
+// Ask strip — the direct invite, placed after the presentation (hero + who + bio)
+// rather than in the hero, so it asks only once value has been shown.
+function AskStrip({ lang, go }) {
+  const it = lang === "it";
+  return (
+    <section className="ask-band">
+      <div className="ask">
+        <p className="ask-text">
+          {it ? "Ti ho raccontato chi sono e come lavoro. " : "Now you know who I am and how I work. "}
+          <b>{it ? "Ora la parola passa a te." : "Now it's your turn."}</b>
+        </p>
+        <a href="#/contact" className="btn btn--solid" onClick={(e) => { e.preventDefault(); go("contact"); }}>
+          {it ? "Raccontami la tua sfida →" : "Tell me your challenge →"}
+        </a>
+      </div>
+    </section>
   );
 }
 
@@ -171,7 +187,7 @@ function Services({ lang, go, compact }) {
           <article
             className="svc-card"
             key={s.n}
-            onClick={() => !compact && go("services")}
+            onClick={() => !compact && go("proposte")}
             style={{ cursor: compact ? "default" : "pointer" }}
           >
             <div className="svc-n">{s.n}</div>
@@ -312,6 +328,7 @@ function Home({ lang, go, dir }) {
       <Hero lang={lang} go={go} dir={dir} />
       <ForWho lang={lang} />
       <Bio lang={lang} go={go} />
+      <AskStrip lang={lang} go={go} />
       <Services lang={lang} go={go} />
       <Proof lang={lang} />
       <Insights lang={lang} go={go} />
