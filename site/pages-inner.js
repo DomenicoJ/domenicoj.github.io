@@ -21,6 +21,7 @@ function AboutPage({
 }) {
   const it = lang === "it";
   const c = window.CONTENT[lang].bio;
+  const d = window.CONTENT[lang].deontologia;
   const o = window.OWNER;
   const timeline = it ? [{
     y: "2003—2019",
@@ -87,7 +88,20 @@ function AboutPage({
     className: "tl-year"
   }, tl.y), /*#__PURE__*/React.createElement("div", {
     className: "tl-body"
-  }, /*#__PURE__*/React.createElement("h3", null, tl.t), /*#__PURE__*/React.createElement("p", null, tl.d)))))), /*#__PURE__*/React.createElement(CtaBand, {
+  }, /*#__PURE__*/React.createElement("h3", null, tl.t), /*#__PURE__*/React.createElement("p", null, tl.d)))))), /*#__PURE__*/React.createElement("section", {
+    className: "section deontologia-sec",
+    id: "deontologia"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-head"
+  }, /*#__PURE__*/React.createElement(Kicker, null, d.kicker), /*#__PURE__*/React.createElement("h2", null, d.title)), /*#__PURE__*/React.createElement("p", {
+    className: "deon-intro"
+  }, d.intro), /*#__PURE__*/React.createElement("ul", {
+    className: "deon-list"
+  }, d.items.map((p, i) => /*#__PURE__*/React.createElement("li", {
+    key: i
+  }, /*#__PURE__*/React.createElement("b", null, p.t), " ", p.d))), /*#__PURE__*/React.createElement("p", {
+    className: "deon-close"
+  }, d.close)), /*#__PURE__*/React.createElement(CtaBand, {
     lang: lang,
     go: go,
     dir: "solid"
@@ -268,7 +282,25 @@ function InsightsPage({
     href: o.linkedinActivity,
     target: "_blank",
     rel: "noopener"
-  }, c.linkedinCta, " \u2197")), /*#__PURE__*/React.createElement("div", {
+  }, c.linkedinCta, " \u2197")), /*#__PURE__*/React.createElement("p", {
+    className: "ins-deon-link"
+  }, /*#__PURE__*/React.createElement("a", {
+    className: "link-arrow",
+    href: "#/about",
+    onClick: e => {
+      e.preventDefault();
+      go("about");
+      setTimeout(() => {
+        const el = document.getElementById("deontologia");
+        if (el) el.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 140);
+    }
+  }, lang === "it" ? "Come verifico e scrivo" : "How I verify and write", " ", /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true"
+  }, "\u2192"))), /*#__PURE__*/React.createElement("div", {
     className: "ins-grid ins-grid--page"
   }, sortedPosts().map(p => /*#__PURE__*/React.createElement(PostCard, {
     key: p.slug,

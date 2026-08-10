@@ -15,6 +15,7 @@ function PageHero({ kicker, title, lede }) {
 function AboutPage({ lang, go }) {
   const it = lang === "it";
   const c = window.CONTENT[lang].bio;
+  const d = window.CONTENT[lang].deontologia;
   const o = window.OWNER;
   const timeline = it
     ? [
@@ -63,6 +64,16 @@ function AboutPage({ lang, go }) {
             </li>
           ))}
         </ol>
+      </section>
+      <section className="section deontologia-sec" id="deontologia">
+        <div className="section-head"><Kicker>{d.kicker}</Kicker><h2>{d.title}</h2></div>
+        <p className="deon-intro">{d.intro}</p>
+        <ul className="deon-list">
+          {d.items.map((p, i) => (
+            <li key={i}><b>{p.t}</b> {p.d}</li>
+          ))}
+        </ul>
+        <p className="deon-close">{d.close}</p>
       </section>
       <CtaBand lang={lang} go={go} dir="solid" />
     </main>
@@ -200,6 +211,11 @@ function InsightsPage({ lang, go }) {
           <p>{c.liveNote}</p>
           <a className="btn btn--solid" href={o.linkedinActivity} target="_blank" rel="noopener">{c.linkedinCta} ↗</a>
         </div>
+        <p className="ins-deon-link">
+          <a className="link-arrow" href="#/about" onClick={(e) => { e.preventDefault(); go("about"); setTimeout(() => { const el = document.getElementById("deontologia"); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 140); }}>
+            {lang === "it" ? "Come verifico e scrivo" : "How I verify and write"} <span aria-hidden="true">→</span>
+          </a>
+        </p>
         <div className="ins-grid ins-grid--page">
           {sortedPosts().map((p) => (
             <PostCard key={p.slug} p={p} lang={lang} />

@@ -83,6 +83,28 @@ const CONTENT = {
       body: ["Dopo oltre vent'anni come responsabile commerciale in multinazionali del Food & Beverage, dal 2019 mi sono avvicinato al mondo delle startup e del foodtech, fino a fare dell'innovazione digitale e dell'intelligenza artificiale il centro del mio lavoro.", "Oggi, con DMJ Lab, affianco imprese, PMI e professionisti nell'adozione responsabile dell'AI: dalla strategia alla formazione, fino ai progetti operativi. Sono anche formatore e divulgatore, con interventi a eventi, podcast e pubblicazioni di settore."],
       cta: "Il mio percorso"
     },
+    deontologia: {
+      kicker: "Deontologia",
+      title: "I principi con cui scrivo e lavoro",
+      intro: "Da giornalista porto in tutto ciò che faccio — articoli, consulenze, aule — gli stessi doveri che l'Ordine chiede a chi fa informazione:",
+      items: [{
+        t: "Verità e verifica.",
+        d: "Pubblico solo fatti controllati alla fonte, con numeri verificabili; quando cito un dato, dico da dove viene. Se sbaglio, rettifico senza aspettare che me lo chiedano."
+      }, {
+        t: "Fatti e opinioni separati.",
+        d: "Distinguo sempre ciò che è accaduto da ciò che ne penso: l'analisi non si traveste da cronaca."
+      }, {
+        t: "Rispetto della persona.",
+        d: "La dignità e la riservatezza di chi incontro vengono prima della notizia o del caso di studio."
+      }, {
+        t: "Trasparenza.",
+        d: "Dichiaro conflitti d'interesse e contenuti sponsorizzati, e ti dico quando uso strumenti di intelligenza artificiale."
+      }, {
+        t: "Tutela delle fonti.",
+        d: "Chi mi affida un'informazione in confidenza resta protetto."
+      }],
+      close: "Non è un vezzo: è il motivo per cui sul mio lavoro puoi fidarti dei numeri."
+    },
     services: {
       kicker: "Servizi",
       title: "Come posso aiutarti",
@@ -318,6 +340,28 @@ const CONTENT = {
       title: "Twenty years in the market, now serving innovation.",
       body: ["After more than twenty years as a sales leader in Food & Beverage multinationals, in 2019 I moved into the world of startups and foodtech, eventually making digital innovation and artificial intelligence the core of my work.", "Today, with DMJ Lab, I support companies, SMEs and professionals in the responsible adoption of AI: from strategy to training, all the way to operational projects. I'm also a trainer and speaker, with talks at events, podcasts and industry publications."],
       cta: "My journey"
+    },
+    deontologia: {
+      kicker: "Ethics",
+      title: "The principles I write and work by",
+      intro: "As a journalist, I bring to everything I do — articles, consulting, classrooms — the same duties the Order asks of those who report the news:",
+      items: [{
+        t: "Truth and verification.",
+        d: "I publish only facts checked at the source, with verifiable numbers; when I cite data, I say where it comes from. If I'm wrong, I correct it without waiting to be asked."
+      }, {
+        t: "Facts and opinions kept apart.",
+        d: "I always separate what happened from what I think of it: analysis doesn't disguise itself as reporting."
+      }, {
+        t: "Respect for the person.",
+        d: "The dignity and privacy of the people I meet come before the story or the case study."
+      }, {
+        t: "Transparency.",
+        d: "I disclose conflicts of interest and sponsored content, and I tell you when I use artificial-intelligence tools."
+      }, {
+        t: "Protection of sources.",
+        d: "Anyone who shares information with me in confidence stays protected."
+      }],
+      close: "It isn't a flourish: it's why you can trust the numbers in my work."
     },
     services: {
       kicker: "Services",
