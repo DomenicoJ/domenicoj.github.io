@@ -204,7 +204,7 @@ function Footer({ lang, go, openCookie }) {
         <div className="footer-brand">
           <Logo onClick={go} tagline />
           <p className="footer-tag">
-            {it ? "AI Strategist & Innovation Advisor" : "AI Strategist & Innovation Advisor"}
+            {it ? "AI Strategist, Consulente, Formatore e Giornalista" : "AI Strategist, Consultant, Trainer and Journalist"}
           </p>
           <p className="footer-ai-note">
             {it

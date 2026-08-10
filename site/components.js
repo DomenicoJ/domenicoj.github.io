@@ -289,7 +289,7 @@ function Footer({
     tagline: true
   }), /*#__PURE__*/React.createElement("p", {
     className: "footer-tag"
-  }, it ? "AI Strategist & Innovation Advisor" : "AI Strategist & Innovation Advisor"), /*#__PURE__*/React.createElement("p", {
+  }, it ? "AI Strategist, Consulente, Formatore e Giornalista" : "AI Strategist, Consultant, Trainer and Journalist"), /*#__PURE__*/React.createElement("p", {
     className: "footer-ai-note"
   }, it ? "Sito realizzato con il supporto di strumenti AI, nel rispetto dei principi di trasparenza dell'AI Act." : "Site built with the support of AI tools, respecting the AI Act transparency principles.")), /*#__PURE__*/React.createElement("div", {
     className: "footer-col"
