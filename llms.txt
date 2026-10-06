@@ -4,11 +4,25 @@
 
 ## Chi è
 
-Domenico Maria Jacobone unisce oltre vent'anni di direzione commerciale in multinazionali del Food & Beverage, l'esperienza nel mondo delle startup foodtech e l'attività di giornalista e formatore. Oggi aiuta organizzazioni e persone ad adottare l'intelligenza artificiale in modo consapevole: consulenza strategica, percorsi di formazione, interventi come relatore.
+Domenico Maria Jacobone è AI Strategist, consulente, formatore e giornalista iscritto all'Ordine dei Giornalisti d'Abruzzo. Ha alle spalle oltre vent'anni di direzione commerciale in multinazionali del Food & Beverage (2003-2019) e l'esperienza nel foodtech come direttore commerciale di una PMI innovativa per la ristorazione. Oggi, con DMJ Lab, aiuta organizzazioni e persone ad adottare l'intelligenza artificiale in modo consapevole. Basi operative: Città Sant'Angelo (Pescara) e Torino; lavora in tutta Italia, in sede e da remoto, in italiano e in inglese.
 
+- [Chi sono](https://www.dmjlab.com/chi-sono/): percorso, sintesi biografica e principi deontologici.
+- [Servizi](https://www.dmjlab.com/servizi/): consulenza, formazione, keynote, Food & Retail, metodo e domande frequenti.
 - Profilo LinkedIn: https://www.linkedin.com/in/domenicomjacobone
 - Profilo X: https://x.com/domenicoj
-- Contatti: https://www.dmjlab.com/#/contact (modulo, newsletter e prenotazione di una chiamata di 30 minuti)
+- Contatti: domenico@dmjlab.com, oppure https://www.dmjlab.com/#/contact (modulo, newsletter e prenotazione di una chiamata conoscitiva gratuita di 30 minuti)
+
+## Servizi in sintesi
+
+- Consulenza AI & Strategia: mappa dei casi d'uso, priorità e stima d'impatto, strumenti e governance conforme all'AI Act, roadmap operativa con tempi e responsabilità.
+- Formazione & Bootcamp: mezza o una giornata, in aula o online; strumenti spiegati senza gergo, poi laboratorio pratico sui casi reali del team, con playbook e materiali.
+- Keynote & Talk: 45-60 minuti, in presenza o in streaming, costruiti sul pubblico e sul settore.
+- AI per Food & Retail: progetti su distribuzione, ristorazione e foodtech, dai listini alla previsione della domanda.
+- Nessun listino pubblico: il preventivo segue la chiamata conoscitiva.
+
+## Punto di vista
+
+La parte più complessa dell'AI non è tecnologica, ma di relazione tra l'essere umano e la macchina. Un'innovazione che non cambia i numeri o il modo di lavorare delle persone non è innovazione. Negli articoli separa sempre i fatti, verificati alla fonte, dalle opinioni.
 
 ## Articoli (Insights)
 
@@ -26,6 +40,7 @@ Pubblica ogni settimana un articolo su AI, innovazione e lavoro. Versioni integr
 - [Unilever e l'arte del sacrificio: scegliere cosa lasciar andare](https://www.dmjlab.com/insights/unilever-arte-del-sacrificio/): la disciplina di rinunciare, nei portafogli aziendali e professionali.
 
 Archivio completo: https://www.dmjlab.com/insights/
+Testo integrale di tutti gli articoli in un solo file: https://www.dmjlab.com/llms-full.txt
 
 ## Note
 
