@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OpenAI violata in 72 ore con l'AI di un concorrente — DMJ Lab</title>
+<meta name="description" content="Tre ricercatori di Hacktron AI hanno raggiunto il repository interno di OpenAI in meno di tre giorni, usando Claude per costruire l'exploit. Un test di realtà: la superficie da difendere include ormai anche gli strumenti terzi apparentemente marginali." />
+<link rel="canonical" href="https://www.dmjlab.com/insights/hacktron-openai-violata-in-72-ore/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="DMJ Lab" />
+<meta property="og:title" content="OpenAI violata in 72 ore con l'AI di un concorrente" />
+<meta property="og:description" content="Tre ricercatori di Hacktron AI hanno raggiunto il repository interno di OpenAI in meno di tre giorni, usando Claude per costruire l'exploit. Un test di realtà: la superficie da difendere include ormai anche gli strumenti terzi apparentemente marginali." />
+<meta property="og:url" content="https://www.dmjlab.com/insights/hacktron-openai-violata-in-72-ore/" />
+<meta property="og:image" content="https://www.dmjlab.com/site/domenico.jpg" />
+<meta property="og:locale" content="it_IT" />
+<meta property="article:published_time" content="2026-09-21" />
+<meta property="article:author" content="Domenico Maria Jacobone" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f6feb'/%3E%3Ccircle cx='32' cy='32' r='9' fill='white'/%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "Article",
+    "headline":  "OpenAI violata in 72 ore con l\u0027AI di un concorrente",
+    "description":  "Tre ricercatori di Hacktron AI hanno raggiunto il repository interno di OpenAI in meno di tre giorni, usando Claude per costruire l\u0027exploit. Un test di realtà: la superficie da difendere include ormai anche gli strumenti terzi apparentemente marginali.",
+    "datePublished":  "2026-09-21",
+    "inLanguage":  "it",
+    "mainEntityOfPage":  "https://www.dmjlab.com/insights/hacktron-openai-violata-in-72-ore/",
+    "image":  "https://www.dmjlab.com/site/domenico.jpg",
+    "author":  {
+                   "@type":  "Person",
+                   "name":  "Domenico Maria Jacobone",
+                   "url":  "https://www.dmjlab.com/"
+               },
+    "publisher":  {
+                      "@type":  "Organization",
+                      "name":  "DMJ Lab",
+                      "url":  "https://www.dmjlab.com/"
+                  }
+}
+</script>
+<link href="/site/fonts/fonts.css" rel="stylesheet" />
+<link href="/insights/insights.css" rel="stylesheet" />
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="/"><span class="dot"></span>DMJ Lab</a>
+<nav><a href="/insights/">Insights</a><a href="/#/contact">Contatti</a></nav>
+</div></header>
+<main class="wrap">
+<article>
+<p class="kicker">Sicurezza · settembre 2026</p>
+<h1>OpenAI violata in 72 ore con l'AI di un concorrente</h1>
+<p>Tre ricercatori esperti di sicurezza informatica hanno violato l'infrastruttura interna di OpenAI in meno di 72 ore, usando Claude di Anthropic per costruire l'exploit che ha aperto la strada.</p>
+<p>Il gruppo, la società Hacktron AI, ha rubato token di autenticazione da una vulnerabilità nel forum di supporto dell'azienda, è arrivato fino all'account ChatGPT di un dipendente e da lì al repository interno su GitHub, incassando 6.500 dollari dal programma di bug bounty che la stessa OpenAI aveva istituito.</p>
+<p>L'azienda che paga per farsi testare la sicurezza è stata bucata con l'intelligenza artificiale di un concorrente, e ha pagato comunque.</p>
+<p>Cosa vi dice, di primo istinto, il fatto che tre persone abbiano fatto in tre giorni quello che un tempo richiedeva un team specializzato?</p>
+<h2>La sequenza dei fatti</h2>
+<p>L'operazione comincia il 23 luglio 2026, quando Harsh Jaiswal, Mohan Pedhapati e Rahul Maini individuano una falla nella libreria di elaborazione immagini usata da Discourse, la piattaforma che ospita il forum della community OpenAI.</p>
+<p>Chiedono a Claude Opus 4.8 di scrivere l'exploit, ma il modello fatica a superare le protezioni di memoria del sistema attaccato. Il giorno dopo Anthropic rilascia Claude Opus 5, e il nuovo modello produce in poche ore un exploit ARM64 funzionante, dove il predecessore si era fermato.</p>
+<p>Da lì la catena si allunga da sola, perché il codice generato consente di sottrarre token di autenticazione validi anche per l'account ChatGPT di un dipendente, e attraverso quell'account i ricercatori raggiungono l'ambiente di sviluppo collegato al repository interno di OpenAI su GitHub.</p>
+<p>Per dimostrare l'accesso senza toccare codice sensibile, il gruppo si limita ad aprire una richiesta di modifica innocua nel repository, poi segnala tutto attraverso Bugcrowd il 25 luglio.</p>
+<p>OpenAI corregge le falle, riconosce una ricompensa di 6.500 dollari e dichiara che né i dati degli utenti né i pesi dei modelli sono stati compromessi.</p>
+<h2>I miei consigli</h2>
+<p>Leggete questo episodio come un test di realtà più che come un caso isolato, perché la capacità che ha permesso a tre persone di violare un colosso dell'AI in tre giorni è già disponibile a chiunque abbia accesso a un modello di frontiera.</p>
+<p>La superficie da difendere include ormai anche gli strumenti terzi apparentemente marginali, come un forum di supporto collegato per errore a risorse ben più sensibili.</p>
+<p>«La sicurezza è un processo, non un prodotto» (Bruce Schneier).</p>
+</article>
+<aside class="cta">
+<p><strong>Ti riconosci in questi temi?</strong> Raccontami la tua sfida: <a href="/#/contact">scrivimi</a>, oppure <a href="/insights/">leggi gli altri articoli</a>.</p>
+<p class="sig">Domenico Maria Jacobone — <a href="/">DMJ Lab</a> · <a href="https://www.linkedin.com/in/domenicomjacobone" rel="noopener">LinkedIn</a></p>
+</aside>
+</main>
+<footer><div class="wrap foot"><p>© DMJ Lab — Driving Mindful Innovation · <a href="/">dmjlab.com</a></p></div></footer>
+</body>
+</html>

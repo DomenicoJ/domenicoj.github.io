@@ -2,15 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.dmjlab.com/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.dmjlab.com/insights/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/google-ai-mode-annunci-scritti-da-gemini/</loc>
+    <lastmod>2026-09-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/gemini-flash-tts-clonazione-vocale-consenso/</loc>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/anthropic-bioscienze-claude-enzima-art/</loc>
+    <lastmod>2026-09-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/laureati-informatica-ai-posizioni-junior/</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/hacktron-openai-violata-in-72-ore/</loc>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/chatgpt-sponsored-agents-turismo/</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/mit-ai-valutazione-apprendimento/</loc>
+    <lastmod>2026-09-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/panettiere-bavarese-trasparenza-ai-act/</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/hami-solare-sale-fuso-automazione-non-ai/</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/amodei-rallentare-la-frontiera/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/antonelli-wolff-simulatori-apprendimento/</loc>
+    <lastmod>2026-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/huettig-lettura-riorganizza-la-mente/</loc>
+    <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/antonelli-monza-pratica-deliberata/</loc>
+    <lastmod>2026-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/meta-project-ot-azienda-senza-dipendenti/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/ibm-watson-health-lezione-di-metodo/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/agenti-ai-hugging-face-affidabilita/</loc>
+    <lastmod>2026-09-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/gemini-google-ritorno-a-scuola/</loc>
+    <lastmod>2026-09-02</lastmod>
   </url>
   <url>
     <loc>https://www.dmjlab.com/insights/volkswagen-pecore-agrivoltaico-polonia/</loc>
