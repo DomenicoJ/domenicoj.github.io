@@ -8,6 +8,24 @@ const {
   useRef
 } = React;
 
+// URL reali (pagine statiche) per le sezioni che le hanno: i crawler non seguono i link #/...
+// Il click resta intercettato e naviga dentro la SPA.
+const STATIC_PATHS = {
+  about: "/chi-sono/",
+  services: "/servizi/",
+  insights: "/insights/"
+};
+function sectionHref(id) {
+  return STATIC_PATHS[id] || "#/" + id;
+}
+function postHref(slug) {
+  return "/insights/" + slug + "/";
+}
+function openPost(e, slug) {
+  e.preventDefault();
+  window.location.hash = "#/insights/" + slug;
+}
+
 // Striped placeholder with a mono caption — never a fake photo.
 // Pass `src` to show a real image instead of the placeholder.
 function Placeholder({
@@ -206,7 +224,7 @@ function Nav({
     "aria-label": "Primary"
   }, items.map(it => /*#__PURE__*/React.createElement("a", {
     key: it.id,
-    href: "#/" + it.id,
+    href: sectionHref(it.id),
     className: "nav-link" + (route === it.id ? " is-active" : ""),
     onClick: e => {
       e.preventDefault();
@@ -244,7 +262,7 @@ function Nav({
     className: "nav-mobile" + (open ? " is-open" : "")
   }, items.map(it => /*#__PURE__*/React.createElement("a", {
     key: it.id,
-    href: "#/" + it.id,
+    href: sectionHref(it.id),
     onClick: e => {
       e.preventDefault();
       nav(it.id);
@@ -338,11 +356,13 @@ function PostCard({
   const title = !it && p.title_en || p.title;
   const summary = !it && p.summary_en || p.summary;
   const internal = Array.isArray(p.body) && p.body.length > 0;
-  const href = internal ? "#/insights/" + p.slug : p.linkedin;
+  const href = internal ? postHref(p.slug) : p.linkedin;
   return /*#__PURE__*/React.createElement("a", _extends({
     className: "ins-card ins-card--text",
     href: href
-  }, internal ? {} : {
+  }, internal ? {
+    onClick: e => openPost(e, p.slug)
+  } : {
     target: "_blank",
     rel: "noopener"
   }), /*#__PURE__*/React.createElement("span", {
@@ -402,6 +422,9 @@ Object.assign(window, {
   CookieBanner,
   PostCard,
   sortedPosts,
-  AudioToggle
+  AudioToggle,
+  sectionHref,
+  postHref,
+  openPost
 });
 })();

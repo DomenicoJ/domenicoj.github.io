@@ -11,14 +11,19 @@ Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main
 - `site/vendor/` — React e ReactDOM 18.3.1 production UMD, self-hosted.
 - `site/fonts/` — font woff2 self-hosted (Space Grotesk, IBM Plex Sans, IBM Plex Mono) + `fonts.css`. Niente Google Fonts né CDN esterne: scelta GDPR (nessuna comunicazione di IP a terze parti) — non reintrodurre risorse remote senza aggiornare privacy/cookie policy e CSP.
 - `insights/` — **pagine statiche degli articoli** per SEO/GEO (le rotte `#/insights/<slug>` della SPA non sono indicizzabili dai crawler). Un archivio (`insights/index.html`), un foglio di stile condiviso (`insights/insights.css`) e una cartella per slug (`insights/<slug>/index.html`) per ogni post **con `body`**; i post solo-LinkedIn compaiono nell'archivio ma non hanno pagina propria. Solo HTML+CSS, nessuno script.
-- `robots.txt`, `sitemap.xml`, `llms.txt` — indicizzazione: il robots consente tutti i crawler (inclusi quelli dei motori generativi, scelta deliberata); la sitemap elenca home, archivio e articoli; llms.txt è il sommario del sito per i modelli linguistici.
+- `chi-sono/`, `servizi/` — **pagine statiche** di profilo e servizi (stesso stile di `insights/`), con JSON-LD ProfilePage, Service e FAQPage: le rotte `#/about` e `#/services` della SPA non sono indicizzabili. Se cambiano i testi in `data.jsx`, aggiornare anche queste.
+- `index.html` contiene dentro `#root` una **versione statica della home** per i crawler che non eseguono JavaScript (inclusi quelli dei motori generativi): React la sostituisce al primo render. Va tenuta allineata ai contenuti, inclusi gli ultimi 5 articoli.
+- `robots.txt`, `sitemap.xml`, `llms.txt`, `llms-full.txt` — indicizzazione: il robots consente tutti i crawler (inclusi quelli dei motori generativi, scelta deliberata); la sitemap elenca home, archivio e articoli; llms.txt è il sommario del sito per i modelli linguistici.
 
 ## Quando si aggiunge un articolo (oltre a posts.js)
 
-1. Creare `insights/<slug>/index.html` copiando la struttura di una pagina esistente (stesso head: title, description = summary, canonical, OG, JSON-LD Article con `datePublished`; corpo: paragrafi `<p>`, stringhe `## ` come `<h2>`; escape di `&` → `&amp;`).
-2. Aggiungere la voce in cima alla lista di `insights/index.html`.
-3. Aggiungere l'URL alla `sitemap.xml` (con `lastmod` = data del post) e aggiornare il `lastmod` di home e archivio.
-4. Aggiungere l'articolo alla lista di `llms.txt`.
+1. Creare `insights/<slug>/index.html` copiando la struttura di una pagina esistente (title, description = summary, canonical, OG, corpo: paragrafi `<p>`, stringhe `## ` come `<h2>`; escape di `&` → `&amp;`).
+2. Aggiungere la voce in cima alla lista di `insights/index.html` e all'elenco di `llms.txt`.
+3. Eseguire `node tools/seo-build.js`: aggiorna JSON-LD, navigazione, blocco «Altri articoli» e piè di pagina di tutte le pagine statiche, l'elenco degli ultimi articoli nella home statica, e rigenera `sitemap.xml` e `llms-full.txt`. Segnala le pagine statiche mancanti.
+
+## Link interni e indicizzazione
+
+Google non segue i link `#/...` della SPA. Per questo menu, schede e link «Dal blog» hanno un `href` reale verso le pagine statiche (`/chi-sono/`, `/servizi/`, `/insights/`, `/insights/<slug>/`) e intercettano il click per restare nella SPA (`sectionHref`, `postHref`, `openPost` in `components.jsx`). Non reintrodurre `href="#/..."` per sezioni che hanno una pagina statica.
 
 ## Cache e versioni
 
