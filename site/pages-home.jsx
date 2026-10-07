@@ -65,7 +65,7 @@ function Hero({ lang, go, dir }) {
         </div>
         <p className="hero-lede">{c.lede}</p>
         <div className="hero-actions">
-          <a href="#/services" className="btn btn--ghost" onClick={(e) => { e.preventDefault(); go("services"); }}>
+          <a href={sectionHref("services")} className="btn btn--ghost" onClick={(e) => { e.preventDefault(); go("services"); }}>
             {c.cta_secondary}
           </a>
           <div className="hero-ripple" aria-hidden="true">
@@ -103,7 +103,7 @@ function HeroLatest({ lang, label }) {
   return (
     <div className="hero-latest-row">
       {posts.map((p) => (
-        <a key={p.slug} className="hero-latest" href={"#/insights/" + p.slug}>
+        <a key={p.slug} className="hero-latest" href={postHref(p.slug)} onClick={(e) => openPost(e, p.slug)}>
           <span className="hero-latest-label">{label}</span>
           <span className="hero-latest-title">{(!it && p.title_en) || p.title}</span>
           <span aria-hidden="true">→</span>
@@ -164,7 +164,7 @@ function Bio({ lang, go }) {
         </div>
         <div className="bio-right">
           {c.body.map((p, i) => <p key={i}>{p}</p>)}
-          <a href="#/about" className="link-arrow" onClick={(e) => { e.preventDefault(); go("about"); }}>
+          <a href={sectionHref("about")} className="link-arrow" onClick={(e) => { e.preventDefault(); go("about"); }}>
             {c.cta} <span aria-hidden="true">→</span>
           </a>
         </div>

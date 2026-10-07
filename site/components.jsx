@@ -2,6 +2,13 @@
 
 const { useState, useEffect, useRef } = React;
 
+// URL reali (pagine statiche) per le sezioni che le hanno: i crawler non seguono i link #/...
+// Il click resta intercettato e naviga dentro la SPA.
+const STATIC_PATHS = { about: "/chi-sono/", services: "/servizi/", insights: "/insights/" };
+function sectionHref(id) { return STATIC_PATHS[id] || "#/" + id; }
+function postHref(slug) { return "/insights/" + slug + "/"; }
+function openPost(e, slug) { e.preventDefault(); window.location.hash = "#/insights/" + slug; }
+
 // Striped placeholder with a mono caption — never a fake photo.
 // Pass `src` to show a real image instead of the placeholder.
 function Placeholder({ label, ratio = "4 / 5", radius = 0, className = "", src, position }) {
@@ -141,7 +148,7 @@ function Nav({ lang, setLang, route, go }) {
           {items.map((it) => (
             <a
               key={it.id}
-              href={"#/" + it.id}
+              href={sectionHref(it.id)}
               className={"nav-link" + (route === it.id ? " is-active" : "")}
               onClick={(e) => { e.preventDefault(); nav(it.id); }}
             >
@@ -177,7 +184,7 @@ function Nav({ lang, setLang, route, go }) {
 
       <div className={"nav-mobile" + (open ? " is-open" : "")}>
         {items.map((it) => (
-          <a key={it.id} href={"#/" + it.id} onClick={(e) => { e.preventDefault(); nav(it.id); }}>
+          <a key={it.id} href={sectionHref(it.id)} onClick={(e) => { e.preventDefault(); nav(it.id); }}>
             {it.label}
           </a>
         ))}
@@ -261,12 +268,12 @@ function PostCard({ p, lang }) {
   const title = (!it && p.title_en) || p.title;
   const summary = (!it && p.summary_en) || p.summary;
   const internal = Array.isArray(p.body) && p.body.length > 0;
-  const href = internal ? "#/insights/" + p.slug : p.linkedin;
+  const href = internal ? postHref(p.slug) : p.linkedin;
   return (
     <a
       className="ins-card ins-card--text"
       href={href}
-      {...(internal ? {} : { target: "_blank", rel: "noopener" })}
+      {...(internal ? { onClick: (e) => openPost(e, p.slug) } : { target: "_blank", rel: "noopener" })}
     >
       <span className={"ins-badge" + (internal ? " ins-badge--dmj" : "")} aria-hidden="true">
         {internal ? "DMJ" : "in"}
@@ -314,4 +321,4 @@ function CookieBanner({ lang, open, setOpen }) {
   );
 }
 
-Object.assign(window, { Placeholder, Kicker, Logo, Nav, Footer, CookieBanner, PostCard, sortedPosts, AudioToggle });
+Object.assign(window, { Placeholder, Kicker, Logo, Nav, Footer, CookieBanner, PostCard, sortedPosts, AudioToggle, sectionHref, postHref, openPost });

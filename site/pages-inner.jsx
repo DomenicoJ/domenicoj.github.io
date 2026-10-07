@@ -212,7 +212,7 @@ function InsightsPage({ lang, go }) {
           <a className="btn btn--solid" href={o.linkedinActivity} target="_blank" rel="noopener">{c.linkedinCta} ↗</a>
         </div>
         <p className="ins-deon-link">
-          <a className="link-arrow" href="#/about" onClick={(e) => { e.preventDefault(); go("about"); setTimeout(() => { const el = document.getElementById("deontologia"); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 140); }}>
+          <a className="link-arrow" href={sectionHref("about")} onClick={(e) => { e.preventDefault(); go("about"); setTimeout(() => { const el = document.getElementById("deontologia"); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 140); }}>
             {lang === "it" ? "Come verifico e scrivo" : "How I verify and write"} <span aria-hidden="true">→</span>
           </a>
         </p>
@@ -239,7 +239,7 @@ function PostPage({ lang, slug, go }) {
           <Kicker>{c.kicker}</Kicker>
           <h1>{it ? "Articolo non trovato" : "Article not found"}</h1>
           <p className="page-lede">
-            <a className="link-arrow" href="#/insights" onClick={(e) => { e.preventDefault(); go("insights"); }}>
+            <a className="link-arrow" href={sectionHref("insights")} onClick={(e) => { e.preventDefault(); go("insights"); }}>
               {c.backAll} <span aria-hidden="true">→</span>
             </a>
           </p>
@@ -266,7 +266,7 @@ function PostPage({ lang, slug, go }) {
             {p.linkedin && (
               <a className="btn btn--ghost" href={p.linkedin} target="_blank" rel="noopener">{c.original} ↗</a>
             )}
-            <a className="btn btn--solid" href="#/insights" onClick={(e) => { e.preventDefault(); go("insights"); }}>
+            <a className="btn btn--solid" href={sectionHref("insights")} onClick={(e) => { e.preventDefault(); go("insights"); }}>
               {c.backAll}
             </a>
           </div>

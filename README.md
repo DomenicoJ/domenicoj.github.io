@@ -17,12 +17,13 @@ Sito personale di Domenico Maria Jacobone, servito da GitHub Pages (branch `main
 
 ## Quando si aggiunge un articolo (oltre a posts.js)
 
-1. Creare `insights/<slug>/index.html` copiando la struttura di una pagina esistente (stesso head: title, description = summary, canonical, OG, JSON-LD Article con `datePublished`; corpo: paragrafi `<p>`, stringhe `## ` come `<h2>`; escape di `&` → `&amp;`).
-2. Aggiungere la voce in cima alla lista di `insights/index.html`.
-3. Aggiungere l'URL alla `sitemap.xml` (con `lastmod` = data del post) e aggiornare il `lastmod` di home e archivio.
-4. Aggiungere l'articolo alla lista di `llms.txt` e rigenerare `llms-full.txt` con `node tools/llms-full.js`.
-5. Aggiornare l'elenco «Gli ultimi articoli» nel contenuto statico di `index.html` e il `blogPost` nel JSON-LD di `insights/index.html`.
-6. Nel JSON-LD della pagina articolo usare il grafo `Article` + `BreadcrumbList` delle pagine esistenti (autore `#person`, editore `#org`).
+1. Creare `insights/<slug>/index.html` copiando la struttura di una pagina esistente (title, description = summary, canonical, OG, corpo: paragrafi `<p>`, stringhe `## ` come `<h2>`; escape di `&` → `&amp;`).
+2. Aggiungere la voce in cima alla lista di `insights/index.html` e all'elenco di `llms.txt`.
+3. Eseguire `node tools/seo-build.js`: aggiorna JSON-LD, navigazione, blocco «Altri articoli» e piè di pagina di tutte le pagine statiche, l'elenco degli ultimi articoli nella home statica, e rigenera `sitemap.xml` e `llms-full.txt`. Segnala le pagine statiche mancanti.
+
+## Link interni e indicizzazione
+
+Google non segue i link `#/...` della SPA. Per questo menu, schede e link «Dal blog» hanno un `href` reale verso le pagine statiche (`/chi-sono/`, `/servizi/`, `/insights/`, `/insights/<slug>/`) e intercettano il click per restare nella SPA (`sectionHref`, `postHref`, `openPost` in `components.jsx`). Non reintrodurre `href="#/..."` per sezioni che hanno una pagina statica.
 
 ## Cache e versioni
 
