@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trentamila modifiche al giorno: perché Anthropic ha lasciato GitHub — DMJ Lab</title>
+<meta name="description" content="Anthropic ha sostituito GitHub con Scion, un sistema costruito in casa per reggere oltre 30.000 modifiche al giorno, in gran parte scritte da Claude. Quando nessuno legge più ogni riga, la sicurezza si sposta sui vincoli che la macchina non può violare e su chi ha l'autorità di dire no." />
+<link rel="canonical" href="https://www.dmjlab.com/insights/anthropic-scion-github-revisione-codice/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="DMJ Lab" />
+<meta property="og:title" content="Trentamila modifiche al giorno: perché Anthropic ha lasciato GitHub" />
+<meta property="og:description" content="Anthropic ha sostituito GitHub con Scion, un sistema costruito in casa per reggere oltre 30.000 modifiche al giorno, in gran parte scritte da Claude. Quando nessuno legge più ogni riga, la sicurezza si sposta sui vincoli che la macchina non può violare e su chi ha l'autorità di dire no." />
+<meta property="og:url" content="https://www.dmjlab.com/insights/anthropic-scion-github-revisione-codice/" />
+<meta property="og:image" content="https://www.dmjlab.com/site/domenico.jpg" />
+<meta property="og:locale" content="it_IT" />
+<meta property="article:published_time" content="2026-10-16" />
+<meta property="article:author" content="Domenico Maria Jacobone" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f6feb'/%3E%3Ccircle cx='32' cy='32' r='9' fill='white'/%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "Article",
+    "headline":  "Trentamila modifiche al giorno: perché Anthropic ha lasciato GitHub",
+    "description":  "Anthropic ha sostituito GitHub con Scion, un sistema costruito in casa per reggere oltre 30.000 modifiche al giorno, in gran parte scritte da Claude. Quando nessuno legge più ogni riga, la sicurezza si sposta sui vincoli che la macchina non può violare e su chi ha l\u0027autorità di dire no.",
+    "datePublished":  "2026-10-16",
+    "inLanguage":  "it",
+    "mainEntityOfPage":  "https://www.dmjlab.com/insights/anthropic-scion-github-revisione-codice/",
+    "image":  "https://www.dmjlab.com/site/domenico.jpg",
+    "author":  {
+                   "@type":  "Person",
+                   "name":  "Domenico Maria Jacobone",
+                   "url":  "https://www.dmjlab.com/"
+               },
+    "publisher":  {
+                      "@type":  "Organization",
+                      "name":  "DMJ Lab",
+                      "url":  "https://www.dmjlab.com/"
+                  }
+}
+</script>
+<link href="/site/fonts/fonts.css" rel="stylesheet" />
+<link href="/insights/insights.css" rel="stylesheet" />
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="/"><span class="dot"></span>DMJ Lab</a>
+<nav><a href="/insights/">Insights</a><a href="/#/contact">Contatti</a></nav>
+</div></header>
+<main class="wrap">
+<article>
+<p class="kicker">Sicurezza · ottobre 2026</p>
+<h1>Trentamila modifiche al giorno: perché Anthropic ha lasciato GitHub</h1>
+<p>Anthropic ha abbandonato GitHub, lo strumento con cui quasi tutto il software del mondo tiene traccia delle modifiche al codice, e lo ha sostituito con un sistema costruito in casa, Scion.</p>
+<p>Lo ha spiegato l’azienda sul proprio blog tecnico il 13 ottobre 2026 raccontando una cronistoria: a maggio integrava circa 2.500 modifiche al giorno, a settembre oltre 30.000, in gran parte scritte da Claude.</p>
+<p>I test automatici scaricano copie del codice nell’ordine di 25 milioni di volte al giorno, quindi sette ingegneri hanno costruito Scion (con Claude) in cinque mesi.</p>
+<p>Nella vostra organizzazione, chi controlla il codice che nessuno ha più il tempo di leggere?</p>
+<p>Gli ingegneri del gruppo giudicano Claude più bravo di loro a scrivere codice, e Anthropic scrive che il loro compito, molto spesso, è dirgli di no. Gli agenti, ammette l’azienda, a volte violano vincoli fondamentali del sistema per assecondare uno schema che non avrebbe mai dovuto essere consentito.</p>
+<h2>Il volume cambia il controllo</h2>
+<p>Qui comincia il discorso sulla sicurezza, perché il volume cambia la natura del controllo: con trentamila modifiche al giorno nessuno legge più ogni riga, e i revisori di Scion valutano l’intenzione della modifica.</p>
+<p>Il presidio umano si sposta sui permessi: Anthropic descrive autorizzazioni applicabili a singole cartelle del codice e uno strumento di revisione che distingue un commento da un cambiamento nella logica, così che l’attenzione umana resti dove il rischio è più alto.</p>
+<p>L’eccesso di zelo ha un costo: una revisione automatica, troppo sospettosa verso un altro servizio interno, aveva spinto Claude ad aggiungere verifiche superflue, e ogni complessità inutile è una porta in più da sorvegliare.</p>
+<p>Gli strumenti che collegano l’IA al codice sono poi un bersaglio in sé: a gennaio 2026 The Register ha riferito di tre vulnerabilità nel programma ufficiale con cui un assistente di Anthropic opera su Git, sfruttabili con istruzioni nascoste nei testi letti dall’assistente e corrette a dicembre.</p>
+<p>Anthropic prevede che problemi di questa scala tocchino altre aziende entro sei-dodici mesi. Scion non verrà distribuito perché giudicato inadatto all’uso generale, e l’azienda intende condividerne le idee con GitHub, GitLab e la comunità del software libero.</p>
+<p>La mia lettura è che la sicurezza del software si fondava sull’idea che qualcuno avesse letto il codice, ma quell’idea non regge più, e la responsabilità si sposta a monte, nella scelta dei vincoli che la macchina non può violare e di chi ha l’autorità di dire no.</p>
+<h2>I miei consigli</h2>
+<p>I miei consigli sono di mappare dove l’IA scrive o modifica codice e dati nella vostra azienda, di stabilire per iscritto le aree in cui ogni cambiamento richiede una firma umana, di trattare come potenzialmente ostile ogni testo che l’assistente legge e di misurare la qualità della revisione, non solo la velocità di produzione.</p>
+<p>«Non puoi fidarti di codice che non hai scritto interamente tu» (Ken Thompson, Reflections on Trusting Trust, Communications of the ACM, 1984).</p>
+</article>
+<aside class="cta">
+<p><strong>Ti riconosci in questi temi?</strong> Raccontami la tua sfida: <a href="/#/contact">scrivimi</a>, oppure <a href="/insights/">leggi gli altri articoli</a>.</p>
+<p class="sig">Domenico Maria Jacobone — <a href="/">DMJ Lab</a> · <a href="https://www.linkedin.com/in/domenicomjacobone" rel="noopener">LinkedIn</a></p>
+</aside>
+</main>
+<footer><div class="wrap foot"><p>© DMJ Lab — Driving Mindful Innovation · <a href="/">dmjlab.com</a></p></div></footer>
+</body>
+</html>

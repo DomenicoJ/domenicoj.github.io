@@ -2,15 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.dmjlab.com/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.dmjlab.com/insights/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/character-ai-chapter-11-rischio-fornitore/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/anthropic-scion-github-revisione-codice/</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/attacco-frigoriferi-supermercati-francesi-danfoss/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/meta-muse-agenti-amazon/</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/anthropic-usage-policy-crudelta-claude/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/spirit-airlines-archivio-email-asta-google/</loc>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/design-thinking-ia-scuola-lavoro/</loc>
+    <lastmod>2026-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/mit-rapporto-ia-didattica-ricerca/</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/pixelleak-agenti-ai-schermate-github/</loc>
+    <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/tavus-griffin-test-di-turing/</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/anthropic-religiosi-coscienza-claude/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/tesla-optimus-dati-addestramento-operai/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/openai-devday-2026-dots-astra/</loc>
+    <lastmod>2026-10-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.dmjlab.com/insights/nvidia-open-agent-safety-platform/</loc>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://www.dmjlab.com/insights/google-ai-mode-annunci-scritti-da-gemini/</loc>

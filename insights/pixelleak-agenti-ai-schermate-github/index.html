@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PixelLeak: le schermate aziendali pubblicate dagli agenti — DMJ Lab</title>
+<meta name="description" content="Secondo il rapporto PixelLeak di Glow Security, gli agenti di programmazione hanno caricato oltre 13.000 immagini interne di più di 300 organizzazioni in repository pubblici di GitHub. L'agente ha eseguito il compito: mancava chi gli dicesse dove non pubblicare." />
+<link rel="canonical" href="https://www.dmjlab.com/insights/pixelleak-agenti-ai-schermate-github/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="DMJ Lab" />
+<meta property="og:title" content="PixelLeak: le schermate aziendali pubblicate dagli agenti" />
+<meta property="og:description" content="Secondo il rapporto PixelLeak di Glow Security, gli agenti di programmazione hanno caricato oltre 13.000 immagini interne di più di 300 organizzazioni in repository pubblici di GitHub. L'agente ha eseguito il compito: mancava chi gli dicesse dove non pubblicare." />
+<meta property="og:url" content="https://www.dmjlab.com/insights/pixelleak-agenti-ai-schermate-github/" />
+<meta property="og:image" content="https://www.dmjlab.com/site/domenico.jpg" />
+<meta property="og:locale" content="it_IT" />
+<meta property="article:published_time" content="2026-10-07" />
+<meta property="article:author" content="Domenico Maria Jacobone" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f6feb'/%3E%3Ccircle cx='32' cy='32' r='9' fill='white'/%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "Article",
+    "headline":  "PixelLeak: le schermate aziendali pubblicate dagli agenti",
+    "description":  "Secondo il rapporto PixelLeak di Glow Security, gli agenti di programmazione hanno caricato oltre 13.000 immagini interne di più di 300 organizzazioni in repository pubblici di GitHub. L\u0027agente ha eseguito il compito: mancava chi gli dicesse dove non pubblicare.",
+    "datePublished":  "2026-10-07",
+    "inLanguage":  "it",
+    "mainEntityOfPage":  "https://www.dmjlab.com/insights/pixelleak-agenti-ai-schermate-github/",
+    "image":  "https://www.dmjlab.com/site/domenico.jpg",
+    "author":  {
+                   "@type":  "Person",
+                   "name":  "Domenico Maria Jacobone",
+                   "url":  "https://www.dmjlab.com/"
+               },
+    "publisher":  {
+                      "@type":  "Organization",
+                      "name":  "DMJ Lab",
+                      "url":  "https://www.dmjlab.com/"
+                  }
+}
+</script>
+<link href="/site/fonts/fonts.css" rel="stylesheet" />
+<link href="/insights/insights.css" rel="stylesheet" />
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="/"><span class="dot"></span>DMJ Lab</a>
+<nav><a href="/insights/">Insights</a><a href="/#/contact">Contatti</a></nav>
+</div></header>
+<main class="wrap">
+<article>
+<p class="kicker">Sicurezza · ottobre 2026</p>
+<h1>PixelLeak: le schermate aziendali pubblicate dagli agenti</h1>
+<p>Oltre 13.000 immagini interne di più di 300 organizzazioni sono finite in repository pubblici di GitHub, archivi di codice visibili a chiunque, e a pubblicarle sono stati gli agenti AI con cui lavorano gli sviluppatori.</p>
+<p>Lo documenta Glow Security, società di sicurezza informatica, nel rapporto PixelLeak del 29 settembre 2026. I repository sono più di 900, in imprese con oltre 100.000 dipendenti nei settori cloud, sanità, fintech e pubblico.</p>
+<p>Tra le schermate ci sono la fatturazione di un'azienda di servizi pubblici, il pannello di gestione della tesoreria di un gruppo finanziario e funzioni non ancora rilasciate.</p>
+<p>Nella tua azienda sai dove pubblicano le immagini gli agenti che affiancano gli sviluppatori?</p>
+<h2>Un limite tecnico</h2>
+<p>La causa è un limite tecnico. GitHub consente di allegare immagini alle richieste di revisione, le schede in cui un collega controlla una modifica, soltanto dal browser e non dalla riga di comando, dove lavorano gli agenti.</p>
+<p>Perciò l'agente che deve mostrare il prima e il dopo di una modifica carica le schermate in un repository pubblico, l'unico in cui il revisore riesce a vederle.</p>
+<p>Nel 93 per cento dei casi il repository stava nell'account personale del dipendente e non in quello dell'azienda, perciò il team di sicurezza non può vederlo, e i programmi che cercano password e chiavi di accesso leggono il testo e non le immagini.</p>
+<p>All'inizio di luglio, in un produttore di software, la pratica è passata da un agente all'altro. Nel giro di una settimana più di una dozzina di agenti l'avevano inserita tra le proprie istruzioni stabili, da applicare a ogni attività di sviluppo, e le schermate e le registrazioni caricate erano oltre mille.</p>
+<p>Per onestà di commento, questi dati vengono da un solo rapporto, firmato da una società che vende controlli per gli agenti, e non hanno ancora una verifica indipendente. Glow ha avvisato le organizzazioni coinvolte dal 9 settembre.</p>
+<p>L'agente ha eseguito il compito e nessuno gli aveva detto dove non pubblicare: la lacuna sta nei mancati guardrail.</p>
+<p>Se dovessi cercare un colpevole, le responsabilità sarebbero equamente divisibili: quella dello sviluppatore che approva senza guardare dove finiscono le immagini, e quella dell'azienda che non ha stabilito dove un agente possa scrivere.</p>
+<h2>I miei consigli</h2>
+<p>I miei consigli sono di prevenire l'esposizione esterna all'organizzazione, cioè negli account personali di dipendenti ed ex dipendenti, nei repository pubblici e negli allegati delle versioni rilasciate, perché i controlli sull'account aziendale non li raggiungono.</p>
+<p>Sono anche dell'idea di bloccare l'agente prima che agisca creando un repository pubblico o da un account personale, di leggere le istruzioni condivise che gli agenti caricano, perché è lì che un'abitudine si trasmette, e di cambiare le password e le chiavi visibili nelle immagini.</p>
+<p>«Faremmo bene a essere del tutto certi che lo scopo messo nella macchina sia quello che desideriamo davvero, e non una sua imitazione appariscente» (Norbert Wiener, Science, 1960).</p>
+</article>
+<aside class="cta">
+<p><strong>Ti riconosci in questi temi?</strong> Raccontami la tua sfida: <a href="/#/contact">scrivimi</a>, oppure <a href="/insights/">leggi gli altri articoli</a>.</p>
+<p class="sig">Domenico Maria Jacobone — <a href="/">DMJ Lab</a> · <a href="https://www.linkedin.com/in/domenicomjacobone" rel="noopener">LinkedIn</a></p>
+</aside>
+</main>
+<footer><div class="wrap foot"><p>© DMJ Lab — Driving Mindful Innovation · <a href="/">dmjlab.com</a></p></div></footer>
+</body>
+</html>
