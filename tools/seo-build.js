@@ -80,7 +80,9 @@ for (const p of posts) {
     "blogPost": posts.map((p) => ({ "@type": "BlogPosting", "headline": p.title, "url": `${SITE}/insights/${p.slug}/`, "datePublished": p.date })) }));
   fs.writeFileSync(f, common(h));
 }
-for (const f of ["chi-sono/index.html", "servizi/index.html"]) fs.writeFileSync(f, common(read(f)));
+// Pagine statiche stabili (profilo, servizi, guide): stessi navigazione e piè di pagina, incluse in sitemap
+const STATIC_PAGES = ["chi-sono", "servizi", "ai-act-articolo-4-formazione"];
+for (const d of STATIC_PAGES) fs.writeFileSync(`${d}/index.html`, common(read(`${d}/index.html`)));
 
 // Home: ultimi articoli nel contenuto statico
 {
@@ -95,7 +97,7 @@ for (const f of ["chi-sono/index.html", "servizi/index.html"]) fs.writeFileSync(
 {
   const latest = posts[0] ? posts[0].date : TODAY;
   const urls = [
-    [SITE + "/", TODAY], [SITE + "/chi-sono/", TODAY], [SITE + "/servizi/", TODAY], [SITE + "/insights/", latest],
+    [SITE + "/", TODAY], ...STATIC_PAGES.map((d) => [`${SITE}/${d}/`, TODAY]), [SITE + "/insights/", latest],
     ...posts.filter((p) => fs.existsSync(`insights/${p.slug}/index.html`)).map((p) => [`${SITE}/insights/${p.slug}/`, p.date]),
   ];
   const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +

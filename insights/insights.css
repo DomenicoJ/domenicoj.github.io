@@ -58,3 +58,7 @@ article ul.facts li{margin:0 0 .5em;}
 .related ul{margin:0 0 12px;padding-left:1.2em;}
 .related li{margin:0 0 6px;}
 .related a{color:var(--accent-deep);}
+.note{font-size:14px;color:var(--muted);font-style:italic;}
+/* intestazione su schermi stretti: marchio e voci di menu non vanno a capo */
+.brand,nav a{white-space:nowrap;}
+@media (max-width:560px){.bar{flex-wrap:wrap;gap:10px 16px;}nav{flex-wrap:wrap;gap:6px 14px;}}
