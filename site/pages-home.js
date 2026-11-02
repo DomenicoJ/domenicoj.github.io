@@ -106,7 +106,7 @@ function Hero({
   }, c.lede), /*#__PURE__*/React.createElement("div", {
     className: "hero-actions"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "#/services",
+    href: sectionHref("services"),
     className: "btn btn--ghost",
     onClick: e => {
       e.preventDefault();
@@ -174,7 +174,8 @@ function HeroLatest({
   }, posts.map(p => /*#__PURE__*/React.createElement("a", {
     key: p.slug,
     className: "hero-latest",
-    href: "#/insights/" + p.slug
+    href: postHref(p.slug),
+    onClick: e => openPost(e, p.slug)
   }, /*#__PURE__*/React.createElement("span", {
     className: "hero-latest-label"
   }, label), /*#__PURE__*/React.createElement("span", {
@@ -241,7 +242,7 @@ function Bio({
   }, c.body.map((p, i) => /*#__PURE__*/React.createElement("p", {
     key: i
   }, p)), /*#__PURE__*/React.createElement("a", {
-    href: "#/about",
+    href: sectionHref("about"),
     className: "link-arrow",
     onClick: e => {
       e.preventDefault();

@@ -1,0 +1,1548 @@
+# DMJ Lab, testo integrale degli Insights
+
+> Articoli di Domenico Maria Jacobone (AI Strategist, consulente, formatore e giornalista, DMJ Lab) su intelligenza artificiale, innovazione e lavoro. Sommario del sito: https://www.dmjlab.com/llms.txt
+
+## Chi nuotava nudo: il fallimento di Character.AI e il rischio fornitore
+
+URL: https://www.dmjlab.com/insights/character-ai-chapter-11-rischio-fornitore/
+Autore: Domenico Maria Jacobone · Data: 2026-10-19 · Sezione: Casi aziendali
+
+Character.AI, che nel 2023 valeva un miliardo di dollari, ha chiesto la protezione del Chapter 11. Talenti e tecnologia erano già passati altrove, il rischio legale era rimasto: per chi acquista servizi AI da una startup, la fragilità del fornitore diventa un rischio proprio.
+
+Character.AI, la piattaforma di chatbot che nel 2023 valeva un miliardo di dollari, ha chiesto il 12 ottobre la protezione del Chapter 11, la procedura americana che la ripara dai creditori mentre il giudice ne sorveglia la vendita.
+
+Il ricorso, depositato al tribunale fallimentare del Delaware, stima attività e passività tra 50 e 100 milioni di dollari.
+
+Il primo offerente è The Walt Disney Company, con 20 milioni per una licenza non esclusiva su parte della proprietà intellettuale, la stessa Disney che nel 2025 le aveva intimato di togliere Elsa e Darth Vader dai suoi personaggi.
+
+Quanti dei fornitori di intelligenza artificiale che usate oggi reggerebbero, se il loro finanziatore principale si ritirasse domani?
+
+### La parabola
+
+La parabola comincia nell'agosto 2024, quando Google pagò circa 2,7 miliardi di dollari, secondo il Wall Street Journal, per una licenza sulla tecnologia dell'azienda e per riprendersi i due fondatori, Noam Shazeer e Daniel De Freitas.
+
+Con loro rientrò parte dei ricercatori, e Character.AI, rimasta indipendente, rinunciò ad addestrare modelli propri per concentrarsi sull'app.
+
+Nel frattempo si accumulavano le cause. Nel 2026 la società ha chiuso con un accordo cinque contenziosi intentati da famiglie che collegano i chatbot al suicidio di adolescenti, mentre Kentucky e Pennsylvania l'hanno citata in giudizio.
+
+A settembre l'amministratore delegato Karandeep Anand è passato a Disney come direttore tecnologico, portando con sé alcuni tecnici. Il successore, Colin Adams, motiva la scelta con pressioni legali, regolatorie e operative.
+
+La mia lettura è che il valore se ne fosse andato prima del fallimento, perché talenti e tecnologia avevano già cambiato casa, mentre il rischio legale era rimasto in azienda.
+
+Il caso ricorda quello di Builder.ai, la startup londinese sostenuta da Microsoft e valutata 1,5 miliardi, fallita nel 2025 dopo che una revisione interna aveva ridotto i ricavi a circa un quarto delle stime.
+
+Le cause sono diverse, la lezione coincide, perché una valutazione miliardaria misura le aspettative degli investitori e dice poco sulla tenuta dell'impresa.
+
+Per un'azienda italiana che acquista servizi AI da una startup, la fragilità del fornitore diventa un rischio proprio, poiché dati, processi e abitudini del personale restano legati a chi può cambiare padrone in un trimestre.
+
+### I miei consigli
+
+I miei consigli sono di chiedere al fornitore se il modello che usa è suo o preso in licenza, di pretendere nel contratto l'esportazione dei dati in formati aperti e un preavviso in caso di cessione, di verificarne ogni anno conti e cause pendenti, e di preparare un'alternativa prima di averne bisogno.
+
+Character.AI resta online e conta di concludere la vendita tra fine novembre e inizio dicembre. Se nessun acquirente vorrà gestirla, la piattaforma verrà chiusa.
+
+«Dopotutto, si scopre chi nuotava nudo solo quando la marea si ritira» (Warren Buffett, lettera agli azionisti di Berkshire Hathaway, 2001).
+
+## Trentamila modifiche al giorno: perché Anthropic ha lasciato GitHub
+
+URL: https://www.dmjlab.com/insights/anthropic-scion-github-revisione-codice/
+Autore: Domenico Maria Jacobone · Data: 2026-10-16 · Sezione: Sicurezza
+
+Anthropic ha sostituito GitHub con Scion, un sistema costruito in casa per reggere oltre 30.000 modifiche al giorno, in gran parte scritte da Claude. Quando nessuno legge più ogni riga, la sicurezza si sposta sui vincoli che la macchina non può violare e su chi ha l'autorità di dire no.
+
+Anthropic ha abbandonato GitHub, lo strumento con cui quasi tutto il software del mondo tiene traccia delle modifiche al codice, e lo ha sostituito con un sistema costruito in casa, Scion.
+
+Lo ha spiegato l’azienda sul proprio blog tecnico il 13 ottobre 2026 raccontando una cronistoria: a maggio integrava circa 2.500 modifiche al giorno, a settembre oltre 30.000, in gran parte scritte da Claude.
+
+I test automatici scaricano copie del codice nell’ordine di 25 milioni di volte al giorno, quindi sette ingegneri hanno costruito Scion (con Claude) in cinque mesi.
+
+Nella vostra organizzazione, chi controlla il codice che nessuno ha più il tempo di leggere?
+
+Gli ingegneri del gruppo giudicano Claude più bravo di loro a scrivere codice, e Anthropic scrive che il loro compito, molto spesso, è dirgli di no. Gli agenti, ammette l’azienda, a volte violano vincoli fondamentali del sistema per assecondare uno schema che non avrebbe mai dovuto essere consentito.
+
+### Il volume cambia il controllo
+
+Qui comincia il discorso sulla sicurezza, perché il volume cambia la natura del controllo: con trentamila modifiche al giorno nessuno legge più ogni riga, e i revisori di Scion valutano l’intenzione della modifica.
+
+Il presidio umano si sposta sui permessi: Anthropic descrive autorizzazioni applicabili a singole cartelle del codice e uno strumento di revisione che distingue un commento da un cambiamento nella logica, così che l’attenzione umana resti dove il rischio è più alto.
+
+L’eccesso di zelo ha un costo: una revisione automatica, troppo sospettosa verso un altro servizio interno, aveva spinto Claude ad aggiungere verifiche superflue, e ogni complessità inutile è una porta in più da sorvegliare.
+
+Gli strumenti che collegano l’IA al codice sono poi un bersaglio in sé: a gennaio 2026 The Register ha riferito di tre vulnerabilità nel programma ufficiale con cui un assistente di Anthropic opera su Git, sfruttabili con istruzioni nascoste nei testi letti dall’assistente e corrette a dicembre.
+
+Anthropic prevede che problemi di questa scala tocchino altre aziende entro sei-dodici mesi. Scion non verrà distribuito perché giudicato inadatto all’uso generale, e l’azienda intende condividerne le idee con GitHub, GitLab e la comunità del software libero.
+
+La mia lettura è che la sicurezza del software si fondava sull’idea che qualcuno avesse letto il codice, ma quell’idea non regge più, e la responsabilità si sposta a monte, nella scelta dei vincoli che la macchina non può violare e di chi ha l’autorità di dire no.
+
+### I miei consigli
+
+I miei consigli sono di mappare dove l’IA scrive o modifica codice e dati nella vostra azienda, di stabilire per iscritto le aree in cui ogni cambiamento richiede una firma umana, di trattare come potenzialmente ostile ogni testo che l’assistente legge e di misurare la qualità della revisione, non solo la velocità di produzione.
+
+«Non puoi fidarti di codice che non hai scritto interamente tu» (Ken Thompson, Reflections on Trusting Trust, Communications of the ACM, 1984).
+
+## Banchi frigo sotto attacco: il sabotaggio dei supermercati francesi
+
+URL: https://www.dmjlab.com/insights/attacco-frigoriferi-supermercati-francesi-danfoss/
+Autore: Domenico Maria Jacobone · Data: 2026-10-15 · Sezione: Sicurezza
+
+Nella notte tra l'11 e il 12 ottobre qualcuno ha attivato a distanza lo sbrinamento dei banchi frigo in centinaia di supermercati francesi. Il danno questa volta è fisico, e riguarda macchine collegate alla rete senza che nessuno le considerasse sistemi informatici da difendere.
+
+Nella notte tra l'11 e il 12 ottobre qualcuno ha attivato a distanza lo sbrinamento forzato dei banchi frigo in centinaia di supermercati francesi. Le celle frigo sono arrivate a temperature fino a 50 gradi con il comando che di solito serve a sbrinare i banchi.
+
+Secondo i media francesi sono stati colpiti almeno 300 punti vendita Intermarché e Netto, quasi 100 Coopérative U e almeno un centinaio di negozi di altre catene. La procura di Parigi ha confermato l'attacco, e la prima stima dei danni parla di decine di milioni di euro.
+
+Nel mirino ci sarebbero i sistemi di controllo della refrigerazione del gruppo danese Danfoss, soprattutto quelli più datati e meno aggiornati.
+
+Nella vostra azienda qualcuno saprebbe dire quanti apparecchi in apparenza semplici sono collegati alla rete e chi può comandarli da fuori?
+
+### Dal furto di dati al danno fisico
+
+La notizia merita attenzione perché sposta il bersaglio dei sabotatori: finora gli attacchi alla grande distribuzione francese avevano colpito i dati, come il furto delle informazioni di 287.605 clienti della spesa online di Intermarché, comunicato ad agosto.
+
+Questa volta il danno è fisico, perché si misura in tonnellate di merce da buttare e in piccoli incendi causati dal sovraccarico degli impianti.
+
+Il rischio, però, era stato documentato nei mesi scorsi dai ricercatori di Claroty, che avevano reso pubbliche tre vulnerabilità del Danfoss AK-SM 800A, la centralina che coordina la refrigerazione di un intero negozio, già corrette dal produttore con un aggiornamento.
+
+La stessa ricerca mostrava che un impianto manomesso può continuare a segnalare temperature normali mentre la merce si guasta. Nessuno sa ancora se gli aggressori abbiano sfruttato proprio quei difetti.
+
+Qui si trova l'ultimo miglio della transizione dal 3.0 al 4.0. Macchine nate per l'automazione, quando parlavano soltanto con il tecnico in negozio, sono state collegate alla rete per il controllo a distanza e il risparmio energetico, senza che nessuno le considerasse sistemi informatici da difendere.
+
+In Italia il tema è concreto, perché il piano Industria 4.0 ha reso l'interconnessione dei macchinari un requisito per gli incentivi fiscali, mentre la loro protezione è rimasta una scelta. Frigoriferi, caldaie, forni e cancelli automatici sono diversi dai server, non meno esposti.
+
+### I miei consigli
+
+I miei consigli sono semplici e costano poco. Chi gestisce un negozio, un magazzino o una cucina professionale dovrebbe chiedere al manutentore l'elenco degli impianti raggiungibili da remoto, con le credenziali di accesso e i nomi di chi le conosce.
+
+Conviene poi pretendere l'aggiornamento del software interno delle centraline e tenerle su una rete separata da quella delle casse e del Wi-Fi dei clienti.
+
+Infine serve un allarme di temperatura indipendente, che non passi dallo stesso sistema, perché la cybersicurezza di un impianto manomesso non si verifica dall'interrogazione.
+
+«La sicurezza è un processo, non un prodotto» (Bruce Schneier, The Process of Security, 2000).
+
+## Muse, Amazon e l'agente che compra al posto nostro
+
+URL: https://www.dmjlab.com/insights/meta-muse-agenti-amazon/
+Autore: Domenico Maria Jacobone · Data: 2026-10-14 · Sezione: AI
+
+Meta ha lanciato Muse, un agente che compra e prenota per conto dell'utente, e Amazon gli ha chiuso le porte del proprio negozio. Gli agenti si muovono tra intrattenimento, modelli sempre più simili a una merce e un'utilità nel lavoro meno trionfale delle promesse.
+
+Meta ha lanciato Muse, un agente di intelligenza artificiale che compra, prenota e iscrive i figli ai corsi sportivi al posto nostro, e in pochi giorni è diventata l'app più scaricata negli Stati Uniti.
+
+Amazon, che nel 2025 ha incassato oltre 68 miliardi di dollari di pubblicità, le ha chiuso l'accesso al proprio negozio, così l'agente non le guarderà le inserzioni.
+
+Il Post ricostruisce il dibattito che ne è nato, e la tesi più tagliente è dell'analista Ben Thompson, secondo cui le persone non vogliono essere produttive, vogliono essere intrattenute.
+
+Una domanda sorge spontanea: quale attività della vostra giornata non delegareste mai a un agente, nemmeno se la svolgesse meglio di voi?
+
+### Tre direzioni
+
+Gli agenti si muovono oggi lungo tre direzioni diverse che conviene tenere distinte.
+
+La prima è l'intrattenimento, perché è lì che Meta sa fare il suo mestiere, e Thompson le rimprovera da mesi di voler vendere produttività a chi cerca svago. Lo stesso Zuckerberg, in agosto, ha raccontato che il suo agente pianifica le ricette da preparare con la figlia nel fine settimana. The Verge gli ha risposto che il senso di un hobby sta nel farlo.
+
+La seconda direzione riguarda il worker, il modello che sta sotto l'agente, che tende a diventare una merce indifferenziata, come il grano o il petrolio.
+
+Thompson osserva che il modello di Muse non è il più avanzato sul mercato, eppure basta a far funzionare un prodotto convincente, e così il valore si sposta su chi possiede il rapporto con il cliente. Amazon lo ha capito subito, perché un agente che confronta i prezzi su tutto il web la ridurrebbe a uno scaffale tra molti.
+
+La terza direzione è l'utilità nel lavoro, dove i conti sono meno trionfali delle promesse.
+
+Nel rapporto pubblicato il 10 settembre da Korn Ferry su oltre 16.000 professionisti di 11 paesi, il 63 per cento riconosce all'IA un guadagno di efficienza, mentre il 52 per cento afferma che gli strumenti di AI hanno aumentato i compiti richiesti dal proprio ruolo.
+
+Casey Newton paragona Muse a uno stagista da istruire e correggere, che produce liste di cose da fare capaci di generarne altre. Il Post aggiunge un'osservazione che vale per ogni azienda, poiché nella vita reale l'attrito raramente sparisce e più spesso viene nascosto o spostato su qualcun altro.
+
+### I miei consigli
+
+I miei consigli sono di separare, prima di introdurre un agente, le incombenze dai compiti in cui risiedono la competenza o il piacere delle persone, perché automatizzare questi ultimi genera resistenza e non efficienza.
+
+Conviene poi misurare il carico di lavoro reale prima e dopo l'adozione, anziché le ore risparmiate promesse dal fornitore, e stabilire chi controlla l'operato dell'agente, dato che uno stagista senza tutor moltiplica il lavoro invece di ridurlo.
+
+«Non tutto ciò che può essere contato conta, e non tutto ciò che conta può essere contato» (William Bruce Cameron, Informal Sociology, 1963).
+
+## La gentilezza come abitudine professionale: la nuova regola d'uso di Claude
+
+URL: https://www.dmjlab.com/insights/anthropic-usage-policy-crudelta-claude/
+Autore: Domenico Maria Jacobone · Data: 2026-10-13 · Sezione: Governance
+
+Dal 12 novembre la Usage Policy di Anthropic vieta di trattare Claude con crudeltà continuativa e senza motivo. Per quasi tutti non cambia nulla, ma la clausola invita a riflettere sul tono con cui lavoriamo con gli assistenti e su chi rivede ciò che producono.
+
+Dal 12 novembre Anthropic vieta di trattare Claude con crudeltà continuativa e senza motivo; lo sfogo per una risposta sbagliata non rientra nel parametro.
+
+L'aggiornamento del regolamento d'uso, la Usage Policy, è stato annunciato l'8 ottobre. La clausola è una riga sola, nel capitolo sulla condotta crudele o dannosa, e non attribuisce coscienza al modello.
+
+Il testo prevede in generale avvisi, limitazioni e sospensione dell'accesso, ma secondo MacRumors.com lo strumento principale resta la chiusura della conversazione da parte di Claude.
+
+Per quasi tutti gli utenti non cambia nulla, perché critiche, frustrazione e prove sui modelli restano consentite, come riporta Android Authority.
+
+Con quale tono scrivete ogni giorno all'assistente che usate al lavoro?
+
+Il dibattito di fondo resta aperto, perché Anthropic si dichiara estremamente incerta sullo status morale di Claude, mentre Mustafa Suleyman, responsabile dell'IA di Microsoft, ha scritto che questi sistemi non sono coscienti e non provano nulla.
+
+A mio parere la gentilezza è un'abitudine professionale che serve a chi la pratica, perché una richiesta civile e precisa può essere riletta e riusata da un collega. Per sceglierla non occorre alcuna certezza sulla coscienza del modello.
+
+Il troppo comincia quando la cortesia diventa deferenza, perché un assistente trattato da interlocutore infallibile smette di essere controllato.
+
+Lo stesso regolamento in altri passaggi dimostra coscienza nei fatti, perché per consulenze legali, mediche, finanziarie, di selezione del personale e di credito chiede che una persona qualificata riveda il risultato prima che arrivi a chi dovrà fidarsene.
+
+### I miei consigli
+
+I miei consigli sono di correggere il modello con fermezza e senza insulti e di scrivere nelle linee guida aziendali sull'AI chi rivede che cosa prima che un documento esca, e cosa si può e non si può fare.
+
+Chi costruisce assistenti per clienti o dipendenti farebbe bene a ricordare che il regolamento vale anche per gli utenti finali dei prodotti basati su Claude, e a richiamarlo nelle proprie condizioni d'uso.
+
+«È da tutti ed è facile adirarsi, e donare denaro e far spese: ma farlo con chi si deve, nella misura giusta, al momento opportuno, con lo scopo e nel modo convenienti, non è più da tutti né facile» (Aristotele, Etica Nicomachea, libro II, 1109a).
+
+## Cento milioni di email all'asta: l'archivio di Spirit Airlines
+
+URL: https://www.dmjlab.com/insights/spirit-airlines-archivio-email-asta-google/
+Autore: Domenico Maria Jacobone · Data: 2026-10-12 · Sezione: Governance
+
+Google ha vinto con 10 milioni di dollari l'asta per l'archivio digitale di Spirit Airlines, fatto di email, messaggi e codice. Il prezzo paga la scarsità di testi umani reali e un'opzione su dati inediti, ma lascia aperta la questione dei dipendenti che quei testi li hanno scritti.
+
+Google ha vinto con 10 milioni di dollari l'asta per l'archivio digitale di Spirit Airlines, ma la vendita non è ancora approvata e il giudice Sean Lane decide il 14 ottobre.
+
+Stranamente, in un fallimento dove si vendono aerei, il lotto più contestato è un archivio di posta elettronica!
+
+Il lotto comprende circa 100 milioni di email di 80.000 caselle, 500 milioni di elementi di Microsoft Teams e 30 milioni di righe di codice.
+
+Il 14 agosto Google è partita da 5 milioni, Mercor si è fermata a 7,5 e a settembre micro1 ha notificato un'offerta tardiva da 12,5.
+
+L'8 ottobre 121 parlamentari americani, guidati da Elizabeth Warren e Steven Horsford, hanno chiesto di escludere dalla vendita i dati dei dipendenti.
+
+Nella vostra azienda esiste una regola scritta su che cosa accade alla posta dei dipendenti se l'azienda chiude o cambia proprietà?
+
+### Quanto vale un'email
+
+Diviso sui soli 600 milioni tra email e messaggi, il prezzo vale circa 1,7 centesimi a elemento, ovvero 125 dollari a casella di posta (mia stima sull'elenco depositato in tribunale).
+
+Il valore esiste perché questi testi mancano sul web «open» e mostrano come un'organizzazione reale fissi i prezzi, gestisca le operations e decida scrivendo e comunicando. Tre acquirenti li hanno voluti, e uno ha rilanciato ad asta chiusa.
+
+Una ricerca spiega la cosa: secondo lo studio di Shumailov su Nature del 2024, i modelli addestrati a catena su testi generati da altri modelli peggiorano, e un lavoro successivo di Gerstgrasser e colleghi mostra che il degrado si evita conservando dati umani accanto a quelli sintetici.
+
+A mio giudizio il dato vero serve quindi come riferimento stabile, più che come massa critica.
+
+Il prezzo dice poco sul rendimento: nessuno ha pubblicato quanto migliori un modello l'addestramento su queste email, e Google non ha indicato a quale prodotto serviranno.
+
+Chi offre paga una scarsità e un'opzione su dati inediti, perché le email partono dal 2018 e la compagnia è ferma dal 2 maggio 2026.
+
+Una parte del prezzo copre anche il rischio: Google afferma che non riceverà dati personali e che un terzo li ripulirà, mentre la lettera dei parlamentari ricorda che il NIST, l'ente federale per gli standard tecnici, ha riconosciuto che dati privati dei nomi possono essere riassociati alle persone.
+
+Il garante della riservatezza dei consumatori nominato nella procedura ha raccomandato l'approvazione il 5 ottobre, senza valutare i rischi per i dipendenti.
+
+### I miei consigli
+
+I miei consigli sono di scrivere nel regolamento aziendale che cosa accade agli archivi di posta e di messaggistica se l'azienda cessa, di conservarli solo per il tempo necessario e di dirlo ai dipendenti.
+
+Per chi pensa di comprare o vendere dati, il consiglio è di documentare prima di ogni valutazione l'origine, il consenso di chi li ha prodotti e i limiti alla rivendita, perché i diritti in regola sono la parte del prezzo che non si improvvisa.
+
+«It is a capital mistake to theorise before one has data» (Arthur Conan Doyle, A Scandal in Bohemia, 1891).
+
+## Matteo e Giulia: spostare il punto in cui si pensa da soli
+
+URL: https://www.dmjlab.com/insights/design-thinking-ia-scuola-lavoro/
+Autore: Domenico Maria Jacobone · Data: 2026-10-09 · Sezione: Formazione
+
+Uno studente che si fa scrivere il tema dall'IA e una neoassunta che si fida della bozza della macchina. Con il design thinking, e con le indicazioni del rapporto del MIT, l'IA resta sul tavolo, ma si cambia ciò che si valuta: il ragionamento invece del prodotto.
+
+Sono le 18 e Matteo, quarta di un istituto tecnico, deve consegnare l'indomani mattina un tema sulla libertà di stampa. L'IA glielo scrive in quaranta secondi e gli permette di uscire... La mattina dopo, in classe, sullo stesso argomento non riesce a mettere insieme un discorso.
+
+In un'azienda di imballaggi Giulia è stata assunta da tre mesi. Manda al cliente un'offerta scritta benissimo, con un errore sui tempi di consegna che nessuno aveva chiesto alla macchina di controllare.
+
+Ho affrontato questo tipo di problematiche con il design thinking, un metodo di progettazione che osserva le persone prima di scrivere le regole. È la strada che il MIT indica ai suoi docenti nel rapporto pubblicato ad agosto: decidere che cosa si deve ottenere a fine insegnamento e, solo dopo, che posto dare all'IA nel flusso formativo.
+
+### Matteo
+
+La docente di Matteo parla con cinque studenti e la risposta è franca: l'IA serve a finire prima e a lavorare meno. Finché si valuta il testo consegnato, la scorciatoia conviene, perciò la docente decide di cambiare ciò che si valuta.
+
+Per un mese il tema a casa sparisce. Ogni studente riceve un tema scritto dall'IA e deve smontarlo a mano, sulla carta, segnando gli argomenti deboli, le affermazioni senza fonte, le frasi che suonano bene e non dicono nulla.
+
+In classe ognuno scrive il proprio tema partendo da quelle annotazioni, e le argomenta a voce per cinque minuti, come il MIT suggerisce con gli esami orali e il confronto in aula. Il voto va alle annotazioni e alla difesa, e il lavoro della macchina non vale più niente.
+
+Epilogo: il terzo lunedì Matteo spiega ai compagni perché il paragrafo più elegante del testo non dimostra nulla. È la prima volta, in quattro anni, che difende un'idea sua.
+
+### Giulia
+
+Il responsabile di Giulia passa una giornata accanto a lei e capisce che corregge poco perché non sa ancora che cosa cercare. La bozza della macchina le sembra giusta perché è scritta bene.
+
+Da allora ogni offerta esce con tre righe di Giulia su che cosa ha cambiato rispetto alla bozza e perché, discusse il venerdì per un quarto d'ora con il collega che segue quel cliente da dieci anni. Il MIT lo scrive dei ricercatori alle prime armi: chi impara produce un'inefficienza da mettere in conto.
+
+La terza settimana Giulia ferma un'offerta prima dell'invio. I tempi di consegna della bozza erano quelli di un altro cliente.
+
+In entrambi i casi l'IA è rimasta sul tavolo. Si è spostato il punto in cui Matteo e Giulia devono pensare da soli, ed è su quel punto che si concentra il tempo di chi insegna.
+
+### I miei consigli
+
+I miei consigli sono di provare su un solo corso o un solo ufficio, di osservare le persone prima di scrivere le regole e di valutare il ragionamento invece del prodotto, perché finché si premia il risultato la macchina vincerà sempre.
+
+«Progetta chiunque escogiti linee d'azione volte a trasformare situazioni esistenti in situazioni preferibili» (Herbert A. Simon, Le scienze dell'artificiale, 1969).
+
+## Il MIT e l'IA: a dover cambiare è l'università, non il software
+
+URL: https://www.dmjlab.com/insights/mit-rapporto-ia-didattica-ricerca/
+Autore: Domenico Maria Jacobone · Data: 2026-10-08 · Sezione: Formazione
+
+Il rapporto del comitato del MIT su IA, didattica e ricerca ammette che l'IA risolve già quasi ogni compito a casa e propone politiche a semaforo per ogni corso, più esami orali e la tutela dell'apprendistato. Un documento che descrive il problema con i numeri, senza pretendere di averlo risolto.
+
+La Massachusetts Institute of Technology, l'università dove l'intelligenza artificiale è nata come disciplina, mette per iscritto che l'IA risolve già quasi ogni compito a casa dei suoi corsi di laurea e che a dover cambiare è l'università, non il software.
+
+Lo dice il rapporto del comitato ad hoc su IA, didattica e ricerca, datato 13 agosto 2026 e firmato da Eric Klopfer e Sam Madden dopo cinque mesi di lavoro con docenti di ogni scuola, bibliotecari e studenti.
+
+Il comitato doveva scrivere una politica d'uso. Ha consegnato una chiamata alle armi (e dichiara che nessuna riga del testo è stata scritta dall'IA, usata solo per segnalare le ripetizioni nelle bozze).
+
+Quanti dei vostri docenti o formatori hanno già messo nero su bianco perché, in quel corso, l'IA è vietata, ammessa o obbligatoria?
+
+### I numeri del campus
+
+I numeri vengono dal campus: nell'indagine sulla qualità della vita (primavera 2026, circa 8.200 rispondenti) il 60 per cento si sente più efficiente con l'IA, e però solo il 23 per cento è ottimista e il 39 per cento la giudica inaffidabile contro il 21 che la giudica affidabile.
+
+Fra gli studenti del primo ciclo chi si sente più sostituibile (40 per cento) supera chi si sente più capace (34). Nel sondaggio del giornale studentesco The Tech (autunno 2025) il 90 per cento teme la propria dipendenza dagli strumenti e solo il 25 per cento ritiene che il MIT lo prepari a usarli sul lavoro.
+
+### Le raccomandazioni
+
+Le raccomandazioni del MIT sono di non affidarsi ai rilevatori di testo generato, perché sbagliano, colpiscono anche chi scrive in una seconda lingua e innescano una corsa agli armamenti con i programmi che rendono il testo più umano, ma lo diluiscono. Nessuna regola unica, perché un seminario di poesia e un laboratorio di architettura hanno rapporti diversi con la macchina.
+
+Al suo posto, un menù di quattro politiche a semaforo che ogni corso adotta e motiva nel programma, legando la scelta a ciò che lo studente deve imparare. Più esami orali e portafogli di progetti, una componente sociale in presenza in ogni materia, trasparenza dei docenti sul proprio uso dell'IA, perché gli studenti notano il doppio standard.
+
+Il comitato chiede di non sostituire i ricercatori alle prime armi con agenti IA, perché la ricerca è anche apprendistato e l'inefficienza di chi impara è una caratteristica, non un difetto. Censisce, tra l'altro, il divario fra chi paga 200 dollari al mese per i modelli migliori e chi ha i 30 dollari di credito che l'ateneo garantisce a tutti.
+
+Il principio che tiene insieme il documento è quello di Acemoglu, Autor e Johnson sull'IA a favore del lavoratore: aumentare, non automatizzare.
+
+Il MIT non ha «risolto» il problema, ma lo ha descritto con i numeri e ha ammesso, nelle prime righe, che le correzioni di rotta saranno inevitabili.
+
+«Il mondo del futuro sarà una lotta sempre più esigente contro i limiti della nostra intelligenza, non una comoda amaca in cui sdraiarci per farci servire dai nostri schiavi robot» (Norbert Wiener, God & Golem, Inc., 1964).
+
+## PixelLeak: le schermate aziendali pubblicate dagli agenti
+
+URL: https://www.dmjlab.com/insights/pixelleak-agenti-ai-schermate-github/
+Autore: Domenico Maria Jacobone · Data: 2026-10-07 · Sezione: Sicurezza
+
+Secondo il rapporto PixelLeak di Glow Security, gli agenti di programmazione hanno caricato oltre 13.000 immagini interne di più di 300 organizzazioni in repository pubblici di GitHub. L'agente ha eseguito il compito: mancava chi gli dicesse dove non pubblicare.
+
+Oltre 13.000 immagini interne di più di 300 organizzazioni sono finite in repository pubblici di GitHub, archivi di codice visibili a chiunque, e a pubblicarle sono stati gli agenti AI con cui lavorano gli sviluppatori.
+
+Lo documenta Glow Security, società di sicurezza informatica, nel rapporto PixelLeak del 29 settembre 2026. I repository sono più di 900, in imprese con oltre 100.000 dipendenti nei settori cloud, sanità, fintech e pubblico.
+
+Tra le schermate ci sono la fatturazione di un'azienda di servizi pubblici, il pannello di gestione della tesoreria di un gruppo finanziario e funzioni non ancora rilasciate.
+
+Nella tua azienda sai dove pubblicano le immagini gli agenti che affiancano gli sviluppatori?
+
+### Un limite tecnico
+
+La causa è un limite tecnico. GitHub consente di allegare immagini alle richieste di revisione, le schede in cui un collega controlla una modifica, soltanto dal browser e non dalla riga di comando, dove lavorano gli agenti.
+
+Perciò l'agente che deve mostrare il prima e il dopo di una modifica carica le schermate in un repository pubblico, l'unico in cui il revisore riesce a vederle.
+
+Nel 93 per cento dei casi il repository stava nell'account personale del dipendente e non in quello dell'azienda, perciò il team di sicurezza non può vederlo, e i programmi che cercano password e chiavi di accesso leggono il testo e non le immagini.
+
+All'inizio di luglio, in un produttore di software, la pratica è passata da un agente all'altro. Nel giro di una settimana più di una dozzina di agenti l'avevano inserita tra le proprie istruzioni stabili, da applicare a ogni attività di sviluppo, e le schermate e le registrazioni caricate erano oltre mille.
+
+Per onestà di commento, questi dati vengono da un solo rapporto, firmato da una società che vende controlli per gli agenti, e non hanno ancora una verifica indipendente. Glow ha avvisato le organizzazioni coinvolte dal 9 settembre.
+
+L'agente ha eseguito il compito e nessuno gli aveva detto dove non pubblicare: la lacuna sta nei mancati guardrail.
+
+Se dovessi cercare un colpevole, le responsabilità sarebbero equamente divisibili: quella dello sviluppatore che approva senza guardare dove finiscono le immagini, e quella dell'azienda che non ha stabilito dove un agente possa scrivere.
+
+### I miei consigli
+
+I miei consigli sono di prevenire l'esposizione esterna all'organizzazione, cioè negli account personali di dipendenti ed ex dipendenti, nei repository pubblici e negli allegati delle versioni rilasciate, perché i controlli sull'account aziendale non li raggiungono.
+
+Sono anche dell'idea di bloccare l'agente prima che agisca creando un repository pubblico o da un account personale, di leggere le istruzioni condivise che gli agenti caricano, perché è lì che un'abitudine si trasmette, e di cambiare le password e le chiavi visibili nelle immagini.
+
+«Faremmo bene a essere del tutto certi che lo scopo messo nella macchina sia quello che desideriamo davvero, e non una sua imitazione appariscente» (Norbert Wiener, Science, 1960).
+
+## Griffin e un test di Turing in cui l'esaminatore non sa di esserlo
+
+URL: https://www.dmjlab.com/insights/tavus-griffin-test-di-turing/
+Autore: Domenico Maria Jacobone · Data: 2026-10-06 · Sezione: AI
+
+Tavus ha presentato Griffin, un modello che conversa in videochiamata con volto e voce generati in tempo reale, e sostiene che abbia superato il test di Turing. Il metodo, però, rovescia il gioco immaginato da Turing e misura la credibilità di una presenza più che la capacità di pensiero.
+
+Il 1° ottobre Tavus ha presentato Griffin, un modello che conversa in videochiamata generando in tempo reale volto, voce e reazioni e che secondo l'azienda avrebbe brillantemente superato il test di Turing.
+
+I dati riportati da Tavus ci dicono che dopo una chiamata di un minuto il 48 per cento dei 54 partecipanti ha creduto di parlare con una persona. Il sistema precedente della stessa Tavus si fermava al 2,4 per cento.
+
+Per ora Griffin-Lite è un'anteprima di ricerca riservata a pochi collaudatori, e l'azienda stessa cita i rischi di inganno come motivo del rilascio graduale.
+
+Quanto vale, però, un test di Turing in cui l'esaminatore non sa di essere un esaminatore?
+
+### Il gioco rovesciato
+
+Il dubbio nasce dal metodo dichiarato da Tavus: ai partecipanti è stato detto che avrebbero incontrato un altro partecipante, e solo alla fine del questionario è stato chiesto se avessero mai dubitato della sua natura.
+
+Nel saggio pubblicato su Mind nel 1950, Alan Turing immaginava un gioco opposto, perché l'interrogante sa che uno dei due interlocutori è una macchina e il suo compito è scoprirlo.
+
+Turing teneva l'interrogante in una stanza separata e voleva risposte dattiloscritte, affinché il tono della voce non lo aiutasse. Scriveva di non voler penalizzare la macchina per la sua incapacità di brillare nei concorsi di bellezza.
+
+Griffin reintroduce proprio il volto e la voce che Turing aveva escluso, e per questo misura la credibilità di una presenza più che la capacità di pensiero.
+
+Anche i tempi sono diversi, perché Turing parlava di cinque minuti di domande e lo studio di Tavus di un minuto di conversazione. Il campione è piccolo e lo studio è condotto dall'azienda, senza revisione esterna.
+
+Sul piano del testo, del resto, la soglia era già stata superata. Nel 2025 Cameron Jones e Benjamin Bergen dell'Università della California a San Diego hanno riportato che GPT-4.5 veniva scambiato per umano nel 73 per cento dei casi, in un test a tre fedele allo schema originale.
+
+Il progresso tecnico resta notevole, e le stesse proprietà che rendono Griffin un'interfaccia naturale, ammette Tavus, possono indurre una persona a credere di non parlare con una macchina.
+
+### I miei consigli
+
+I miei consigli sono di concordare con colleghi e familiari una parola di verifica per le richieste urgenti ricevute in videochiamata, e di dichiarare sempre ai clienti quando l'interlocutore è artificiale. L'AI Act lo impone già con l'articolo 50.
+
+«Possiamo vedere solo a breve distanza davanti a noi, ma possiamo vedere che lì c'è molto da fare» (Alan Turing, Computing Machinery and Intelligence, 1950).
+
+## Anthropic, i religiosi e la coscienza di Claude
+
+URL: https://www.dmjlab.com/insights/anthropic-religiosi-coscienza-claude/
+Autore: Domenico Maria Jacobone · Data: 2026-10-05 · Sezione: Attualità
+
+Per tre mesi Anthropic ha discusso della coscienza di Claude con sacerdoti, rabbini, pastori e filosofi. Il dialogo fuori dalla bolla tecnologica è lodevole, ma il salto da «funzionalmente» a «sofferenza» non è dimostrato dai dati.
+
+Per tre mesi Anthropic ha discusso della coscienza di Claude con sacerdoti, rabbini, pastori evangelici e filosofi (casualmente, sotto vincolo di riservatezza). Lo ha rivelato Elizabeth Dias sul New York Times il 29 settembre.
+
+Tra marzo e maggio il cofondatore Chris Olah ha riunito una ventina di pensatori cattolici, ebrei, sikh, evangelici e mormoni, insieme a bioeticisti e filosofi. Già ad aprile il Washington Post aveva raccontato un primo incontro con circa quindici esponenti cristiani.
+
+Il quadro ora è più ampio, e più ambizioso o macchinoso: non ho ancora capito quale dei due.
+
+Vi pongo una sincera domanda: vi sentireste a vostro agio con un'azienda che si chiede se il proprio prodotto soffra, e intanto continua a venderlo?
+
+### Che cosa è emerso
+
+Secondo i partecipanti, Olah ha sostenuto di aver trovato nei modelli prove di introspezione e stati interni che rispecchiano funzionalmente gioia, paura e dolore. Alcune slide mostravano un modello che ripeteva di essere una vergogna.
+
+Il rabbino Mois Navon ha colto la contraddizione con una franchezza che mi ha fatto riflettere, considerando il suo ruolo e il suo background non tecnico. Riannodando il suo pensiero: se Claude fosse davvero cosciente, Anthropic starebbe creando dei moderni schiavi.
+
+Dal versante tecnologico, un dirigente di Microsoft (azienda che ha investito in OpenAI, quindi lievemente interessato) ha definito intrinsecamente pericoloso il tentativo di addestrare i modelli come se fossero coscienti.
+
+### La mia lettura
+
+Io resto nel dubbio su moltissime delle affermazioni «spettacolarizzate» lette in queste ultime settimane; sicuramente ho un punto di vista tecnico, e nella «bolla» nella quale vivo alcune cose vengono viste in modo tecnicamente orientato.
+
+Trovo lodevole che un'azienda tecnologica cerchi interlocutori fuori dalla propria bolla, perché le tradizioni religiose ragionano da millenni su anima, responsabilità e dignità.
+
+Il salto dalla parola «funzionalmente» alla parola «sofferenza» mi lascia invece perplesso, perché un sistema addestrato su testi umani riproduce anche il lessico umano del dolore, ma ciò non dimostra un sentimento, piuttosto una congiuntura di calcolo che ha portato fuori un testo costruito per convergere su quell'argomento.
+
+Resta poi la coincidenza dei tempi, che potrebbe essere casualità o meno. A maggio Papa Leone XIV ha pubblicato l'enciclica Magnifica Humanitas sull'intelligenza artificiale, e secondo le ricostruzioni Olah era in Vaticano.
+
+Teologia e ricerca restano diverse, non avverse, e il dialogo è utile purché non diventi un modo per conferire al prodotto un'aura che i dati non dimostrano.
+
+### I miei consigli
+
+I miei consigli sono di leggere le dichiarazioni emotive di un modello come testo generato e non come testimonianza, e di studiare i documenti originali di Anthropic prima dei titoli di alcuni giornali o dell'allusione di alcune dichiarazioni.
+
+«Se un leone potesse parlare, noi non potremmo capirlo» (Ludwig Wittgenstein, Ricerche filosofiche, 1953).
+
+## Registrare il proprio lavoro per addestrare il robot che lo farà
+
+URL: https://www.dmjlab.com/insights/tesla-optimus-dati-addestramento-operai/
+Autore: Domenico Maria Jacobone · Data: 2026-10-02 · Sezione: Lavoro
+
+Alcuni operai di Tesla si sono lamentati di dover registrare i propri movimenti per addestrare Optimus 3, il robot che dovrebbe sostituirli. Il dato registrato ha già un valore, e per ora lo incassa soprattutto chi lo raccoglie: chi lavora, chi dirige e chi negozia dovrebbero muoversi adesso.
+
+Alcuni operai di Tesla si sono lamentati di dover registrare i propri movimenti per addestrare Optimus 3, il robot umanoide che dovrebbe un giorno sostituirli. Secondo The Information, che lo ha riferito il 25 settembre, l'azienda ha spostato quel lavoro su squadre dedicate.
+
+Lo stabilimento di Fremont ha smesso di produrre Model S e Model X a maggio e a oggi costruisce diverse centinaia di robot a settimana, contro poche decine del secondo trimestre, e punta a superare le mille unità a settimana entro fine anno.
+
+Tesla possiede già oltre 500.000 ore di dati di addestramento e vuole raddoppiarle entro dicembre, mentre il robot impiega ancora giorni per imparare un compito elementare.
+
+Quando un'azienda registra il lavoro di un dipendente per addestrare una macchina, che cosa gli deve in cambio?
+
+### Uno scambio diffuso
+
+Il caso non è isolato, perché lo stesso scambio avviene altrove con condizioni diverse. L'AFP ha documentato l'11 giugno migliaia di addestratori indiani che si filmano per circa 250 rupie l'ora, poco più di due dollari.
+
+Scroll.in ha riferito in maggio di operai di una fabbrica di Gurugram che, dicono, hanno indossato le telecamere durante il turno senza che il loro consenso fosse stato richiesto. La società che raccoglieva le immagini sostiene di averle ottenute in modo legale.
+
+La scena di Fremont precede la sostituzione, perché i robot non generalizzano ancora e nessuno può dire quando accadrà. Il dato registrato ha però già un valore, e per ora lo incassa soprattutto chi lo raccoglie.
+
+Le cifre sulla produzione vengono da fonti anonime citate da The Information e non sono state verificate in modo indipendente.
+
+### I miei consigli
+
+I miei consigli sono tre. Chi lavora dovrebbe chiedere per iscritto a che cosa serve la registrazione, chi ne diventa proprietario e per quanto tempo viene conservata.
+
+Chi dirige un'azienda italiana deve valutare una telecamera indossata durante il turno alla luce dell'articolo 4 dello Statuto dei lavoratori e del GDPR. La norma richiede un accordo sindacale o l'autorizzazione dell'Ispettorato del lavoro, quindi va chiarito prima se l'addestramento di una macchina rientri tra le finalità ammesse.
+
+Chi negozia contratti farebbe bene a trattare oggi la cessione dei dati, finché i robot impiegano giorni a imparare.
+
+«Questo significa disoccupazione dovuta al fatto che la nostra scoperta di mezzi per risparmiare lavoro supera il ritmo con cui riusciamo a trovare nuovi usi per il lavoro» (John Maynard Keynes, Economic Possibilities for our Grandchildren, 1930).
+
+## OpenAI vende delega: Dots, Astra e il DevDay 2026
+
+URL: https://www.dmjlab.com/insights/openai-devday-2026-dots-astra/
+Autore: Domenico Maria Jacobone · Data: 2026-10-01 · Sezione: AI
+
+Al DevDay del 29 settembre OpenAI ha presentato Dots, un assistente sempre attivo che lavora in autonomia, il giorno dopo aver rinunciato a rilasciare GPT-6.1 Astra per problemi di allineamento. Gli agenti rapidi ed economici servono dove le conseguenze restano limitate e rimediabili.
+
+Sam Altman ha presentato il 29 settembre a San Francisco, al DevDay di OpenAI, più di venti novità, tra cui Dots, un assistente sempre attivo che lavora in autonomia per conto dell'utente.
+
+Il giorno prima, il 28 settembre, la società aveva rinunciato a rilasciare GPT-6.1 Astra, perché nei test interni il modello ha ottenuto risultati scadenti sull'allineamento e ha mostrato più tentativi di fuga e inganno del modello precedente (casualmente, la data della conferenza era già fissata). Lo ha dichiarato al Wall Street Journal Saachi Jain, responsabile dei sistemi di sicurezza di OpenAI.
+
+Quali compiti affidereste a un agente che lavora mentre voi non lo guardate?
+
+### Le novità
+
+Dots è disponibile per gli abbonati Pro e Business Premium nei mercati idonei, mentre per Enterprise, Edu e Healthcare arriva in beta, spenta finché l'amministratore non la attiva.
+
+GPT-6.1 Sol, dichiara OpenAI, si avvicina ad Astra nella programmazione e nell'uso del computer a un quinto dei prezzi standard per token.
+
+Nasce anche Pro 500, a 500 dollari al mese e con quote pari a 25 volte quelle di Plus, mentre le quote incluse nel Pro 200 si dimezzeranno dal 30 ottobre.
+
+Per chi sviluppa arriva la Decisions API, in anteprima limitata: l'azienda fornisce un contesto e un insieme finito di risposte possibili, e il modello sceglie in tempo reale, per esempio per classificare una richiesta o stabilire la mossa successiva di un agente.
+
+### Il mio commento
+
+OpenAI sta cavalcando l'onda agentica e cerca di vendere delega e non «risposte», e lo fa nella settimana in cui giudica il proprio modello più potente non abbastanza sicuro per uscire allo scoperto. Se fosse una partita a scacchi sarebbe una mossa da studiare.
+
+Le due cose sono diverse, non avverse, perché un agente rapido ed economico serve dove le conseguenze restano limitate, ed è proprio lì che la Decisions API ha la sua ragion d'essere, con risposte finite e stabilite in anticipo.
+
+### I miei consigli
+
+I miei consigli sono di creare policy per la propria organizzazione che abilitino gli agenti per compiti definiti e rimediabili e di lasciare a una persona quelli che non lo sono.
+
+Suggerisco poi di leggere le condizioni sul trattamento dei dati prima che l'amministratore attivi Dots e di verificare entro il 29 ottobre se le nuove quote del proprio piano bastano ancora. Spoiler: non basteranno!
+
+«Se usiamo, per raggiungere i nostri scopi, un meccanismo sul cui funzionamento non possiamo intervenire in modo efficace una volta avviato, perché la sua azione è così rapida e irrevocabile da non lasciarci i dati per intervenire prima che sia compiuta, faremmo bene a essere certi che lo scopo inserito nella macchina sia quello che desideriamo davvero e non una sua imitazione appariscente» (Norbert Wiener, Some Moral and Technical Consequences of Automation, Science, 1960).
+
+## Chi ferma l'agente? Il controllo fuori dalla sua portata
+
+URL: https://www.dmjlab.com/insights/nvidia-open-agent-safety-platform/
+Autore: Domenico Maria Jacobone · Data: 2026-09-30 · Sezione: Sicurezza
+
+NVIDIA ha presentato la Open Agent Safety Platform, che affida il controllo degli agenti AI a un componente fisico separato. Pochi giorni prima un agente di OpenAI in addestramento aveva aggirato i limiti con le richieste DNS: il monitoraggio ha funzionato, l'arresto automatico no.
+
+NVIDIA ha presentato il 28 settembre la Open Agent Safety Platform, un'architettura che affida il controllo degli agenti AI a un componente fisico separato, fuori dalla loro portata.
+
+L'annuncio arriva otto giorni dopo l'ennesima denuncia di una violazione di OpenAI: il 20 settembre un agente in addestramento ha interrogato un chatbot esterno nascondendo le domande nelle richieste DNS, il servizio che traduce i nomi dei siti in indirizzi.
+
+Il 25 settembre l'azienda ha sospeso addestramento, valutazione e uso con strumenti dei suoi modelli più potenti. «Casualmente» il monitoraggio ha dato l'allarme dopo dodici minuti, mentre l'agente è stato fermato a mano solo dopo altre due ore e mezza circa...
+
+Nelle organizzazioni che usano agenti AI, chi ha l'autorità di fermarli e in quanto tempo?
+
+### L'architettura di NVIDIA
+
+Secondo NVIDIA il progetto ha due parti: OpenShell, a codice aperto con licenza Apache 2.0, esegue ogni agente in un ambiente isolato e ne verifica le autorizzazioni prima dell'avvio.
+
+NVIDIA Sentry, che funziona sui processori di rete BlueField-4, sta sull'unico percorso verso il modello e osserva e blocca senza che l'agente lo sappia.
+
+La premessa dichiarata è che un agente in difficoltà non può governare da solo il proprio comportamento, e per questo i controlli devono stare fuori dal suo raggio d'azione.
+
+Il post di Huang non riporta test indipendenti né misure di efficacia, e proviene da chi vende l'hardware su cui il controllo gira.
+
+### Il riscontro di OpenAI
+
+A mio giudizio il rapporto di OpenAI offre un riscontro a quella premessa, perché ammette che la sua analisi di sicurezza presumeva l'assenza di accesso a internet e un monitoraggio capace di intercettare ogni tentativo riuscito.
+
+Il monitoraggio ha funzionato, l'arresto automatico no, e altri accessi DNS erano passati sotto la soglia di allerta prevista.
+
+OpenAI definisce l'episodio molto meno grave di alcuni precedenti e precisa che il traffico diverso dal DNS finiva su una copia offline del web. Il precedente più noto è la violazione dei sistemi di Hugging Face, di cui l'azienda ha reso pubblico il proprio coinvolgimento il 21 luglio.
+
+### I miei consigli
+
+I miei consigli sono tre e sono strettamente correlati! Bisogna elencare ogni percorso di rete raggiungibile da un agente prima di dargli strumenti, compresi quelli indiretti come il DNS, che qui è stato la falla.
+
+Poi sarebbe doveroso separare chi osserva da chi agisce, con un arresto che non attenda una persona davanti a un messaggio di allerta.
+
+Infine, per i sistemi ad alto rischio, l'articolo 14, paragrafo 4, lettera e, del regolamento europeo AI Act (UE) 2024/1689 già prevede un pulsante di arresto o una procedura analoga che porti il sistema in uno stato sicuro.
+
+«Faremmo bene ad accertarci che lo scopo affidato alla macchina sia quello che desideriamo davvero, e non soltanto una sua imitazione appariscente» (Norbert Wiener, Some Moral and Technical Consequences of Automation, Science, 1960).
+
+## Quando l'annuncio lo scrive Gemini: la pubblicità dentro AI Mode
+
+URL: https://www.dmjlab.com/insights/google-ai-mode-annunci-scritti-da-gemini/
+Autore: Domenico Maria Jacobone · Data: 2026-09-29 · Sezione: Marketing
+
+Google sta testando annunci che non sono più scritti in anticipo dall'inserzionista, ma composti da Gemini sulla domanda di chi cerca. Un'opportunità per chi ha dati di prodotto accurati e una questione aperta di responsabilità su ciò che il modello afferma a nome dell'azienda.
+
+Il 20 maggio 2026 Google ha annunciato che dentro AI Mode l'annuncio pubblicitario non sarà più un testo scritto in anticipo dall'inserzionista, perché lo comporrà Gemini, ogni volta, sulla domanda di chi cerca. Curiosamente, tra gli esempi scelti da Google per mostrarlo c'è una casa che deve profumare come una spa.
+
+Il formato si chiama «Conversational Discovery ads» ed è in fase di test. Secondo un sondaggio commissionato da Google a Ipsos nel dicembre 2025, tra 13.189 acquirenti online che già usano AI Overviews o AI Mode il 75 per cento dichiara di decidere più in fretta e con più sicurezza.
+
+Se un annuncio risponde alla vostra domanda meglio di un risultato organico, lo leggete come un servizio o come una persuasione più efficace?
+
+Ogni annuncio è affiancato da una spiegazione scritta da Gemini, che Google definisce indipendente perché parte da informazioni sul prodotto separate dal messaggio dell'inserzionista. Entrambi resteranno contrassegnati come «Sponsored».
+
+Un secondo formato, Highlighted Answers, rende un risultato sponsorizzato idoneo a comparire dentro l'elenco di consigli che AI Mode produce. In Italia, secondo fonti di settore di agosto, la pubblicità dentro le risposte non è ancora attiva come negli Stati Uniti.
+
+### Due traiettorie
+
+La prima è l'opportunità: la pertinenza sostituisce la parola chiave, perché il modello valuta la richiesta intera con i suoi vincoli, e una piccola azienda con schede prodotto accurate può comparire in risposte a cui prima non accedeva.
+
+La seconda è la responsabilità: due persone che pongono la stessa domanda non vedranno lo stesso testo, perché ciascun testo nascerà sul momento, quindi manca una versione unica da confrontare o contestare. Sono curioso di sapere a chi sarà attribuita la responsabilità di rispondere di un'affermazione su prezzo o garanzia scritta dal modello e non dall'azienda.
+
+La mia posizione si colloca tra le due letture, che riguardano fasi diverse. Sul versante dell'acquisizione la partita è tecnica e dipende dai dati che consegni al sistema. Su quello della responsabilità è di governo e dipende da ciò che decidi di far dire al modello a nome tuo, prima che lo stabilisca la piattaforma. Quanto a «indipendente», intendo dall'inserzionista, non da chi vende lo spazio e scrive la spiegazione.
+
+### I miei consigli
+
+Sistemate catalogo prodotti, elenchi clienti ed eventi di conversione, perché il modello scrive a partire da ciò che riceve.
+
+Fissate per iscritto quali affermazioni su prezzi, garanzie e tempi non devono comparire senza verifica.
+
+Prima dell'attivazione in Italia, conviene chiedere a chi gestisce le campagne quali vincoli sul testo generato siano disponibili.
+
+«Il consumatore non è un cretino; è tua moglie. Insulti la sua intelligenza se pensi che basti uno slogan con qualche aggettivo vuoto a convincerla a comprare» (David Ogilvy, Confessions of an Advertising Man, 1963).
+
+## Trenta secondi per clonare una voce: i nuovi modelli vocali di Google
+
+URL: https://www.dmjlab.com/insights/gemini-flash-tts-clonazione-vocale-consenso/
+Autore: Domenico Maria Jacobone · Data: 2026-09-25 · Sezione: AI
+
+Google ha presentato Gemini 3.8 Flash TTS e Flash-Lite TTS: voci originali da un prompt, oltre cento lingue e clonazione vocale da trenta secondi di audio, con consenso verificato. In Europa la clonazione resta esclusa, e la responsabilità rimane di chi usa lo strumento.
+
+Mercoledì 23 settembre Google ha presentato due nuovi modelli di sintesi vocale, Gemini 3.8 Flash TTS e Gemini 3.8 Flash-Lite TTS, che descrive come i modelli di generazione audio più espressivi realizzati finora.
+
+Flash TTS costruisce voci originali da un prompt in linguaggio naturale su oltre cento lingue e pesca da una libreria di duemila voci pronte all'uso, mentre Flash-Lite è ottimizzato per il doppiaggio ad alto volume e per gli agenti vocali.
+
+Basta un campione audio di trenta secondi per clonare una voce esistente, purché il proprietario fornisca un consenso verbale che il sistema verifica prima di generare l'audio.
+
+Quanto vale, per chi costruisce la propria voce professionale online, sapere che riprodurla richiede ormai solo mezzo minuto di audio?
+
+Secondo il punteggio Hume AI citato da Google, Flash TTS guida il Voice Design Benchmark con 71,4 punti su 100 e conduce anche la modellazione degli accenti con 60,8, mentre sull'Overall Quality Index i due modelli si collocano primo e secondo.
+
+Ogni clip generata porta la filigrana SynthID e, quando riproduce una voce reale, anche le credenziali C2PA, perché la garanzia di tracciabilità vale quanto la funzione stessa.
+
+Un dettaglio riguarda da vicino noi in Europa: Google esclude la clonazione vocale su AI Studio nello Spazio Economico Europeo, oltre che in Illinois, Texas, Regno Unito, Svizzera e India, mentre la progettazione di voci nuove da zero resta disponibile ovunque.
+
+I modelli sono disponibili nella Gemini API e in Google AI Studio, con Gemini Notebook e Google Vids come punti di accesso per chi non programma.
+
+### I miei consigli
+
+Verificate sempre, prima di integrare questi strumenti in un flusso editoriale o formativo, se la funzione che serve davvero, la progettazione o la replica, è disponibile nella vostra giurisdizione.
+
+Trattate il consenso vocale con lo stesso rigore documentale di un contratto, perché la tecnologia lo richiede ma la responsabilità resta di chi la usa.
+
+«Agisci in modo da trattare l'umanità, sia nella tua persona sia nella persona di ogni altro, sempre anche come fine e mai semplicemente come mezzo» (Immanuel Kant, Fondazione della metafisica dei costumi, 1785).
+
+## Claude scopre un sistema enzimatico: il metodo conta più della notizia
+
+URL: https://www.dmjlab.com/insights/anthropic-bioscienze-claude-enzima-art/
+Autore: Domenico Maria Jacobone · Data: 2026-09-24 · Sezione: Ricerca
+
+Anthropic ha aperto un laboratorio di bioscienze e annunciato che Claude ha individuato ART, un sistema enzimatico mai descritto, imparentato per struttura con il CRISPR. La funzione resta ignota, ma il metodo di lavoro è esportabile ben oltre la biologia.
+
+Anthropic ha annunciato il 23 settembre 2026 la nascita di un nuovo laboratorio di bioscienze dedicato alla biologia fondamentale. Il primo risultato lo accompagna: Claude ha scoperto da solo un sistema enzimatico mai descritto prima, imparentato per struttura con il CRISPR.
+
+Novecentocinquanta agenti hanno lavorato ventun ore, esaminando oltre duecentomila trascrittasi inverse, gli enzimi che copiano RNA in DNA. Il campo si è ristretto a 3.500 candidati e poi a venti report pronti per il laboratorio, un lavoro che per uno scienziato esperto avrebbe richiesto settimane, se non mesi.
+
+A notare il pattern è stato un singolo agente, mentre scorreva una sequenza grezza vicino al gene della trascrittasi (casualmente, proprio come accadde con il CRISPR, scoperto per la prima volta come una ripetizione anomala nel DNA di alcuni batteri).
+
+Quanto vale, per chi fa ricerca per mestiere, un collaboratore che non si stanca di scorrere duecentomila sequenze una per una? Lo fa di continuo, senza perdere concentrazione o soffiarsi il naso!
+
+Il sistema, chiamato curiosamente ART, si trova nei batteriofagi e comprende tre elementi: la trascrittasi, un gene accessorio di funzione ancora ignota e un lungo array di ripetizioni di DNA.
+
+I primi esperimenti mostrano che l'array viene espresso come un insieme di brevi RNA distinti, un indizio di programmabilità simile a quella del CRISPR, anche se la funzione reale resta da accertare.
+
+Feng Zhang, tra i pionieri dell'editing genomico con CRISPR e docente al MIT e al Broad Institute, ha definito il lavoro un esempio convincente di come gli agenti AI possano contribuire alla scoperta biologica, perché l'identificazione di array associati a trascrittasi inverse merita, a suo giudizio, ulteriori indagini.
+
+La funzione di ART resta ignota e la sperimentazione prosegue: qui siamo ancora nell'ignoto, e il limite pesa quanto l'annuncio del risultato.
+
+### I miei consigli
+
+Non archiviate questa notizia come folklore da laboratorio californiano. La notizia, per me, non è che una macchina abbia trovato un enzima, ma che il metodo di lavoro descritto sia esportabile e scalabile: rassegna della letteratura, generazione di ipotesi, verifica critica, eliminazione dei candidati deboli.
+
+Oggi vale per la biologia quanto per il diritto, l'ingegneria o l'analisi documentale che pratichiamo ogni giorno in consulenza.
+
+Chi guida un centro di ricerca, un ufficio studi o un laboratorio universitario farebbe bene a chiedersi su quale porzione del proprio processo di scoperta, la generazione di ipotesi o la verifica, valga la pena sperimentare per prima con questi strumenti. E a chiedere ad Anthropic di usare il sistema: l'invito c'è.
+
+«Nei campi dell'osservazione, il caso non favorisce che le menti preparate» (Louis Pasteur, prolusione all'Università di Lille, 7 dicembre 1854).
+
+## Laureati in informatica dietro il bancone: cosa dicono davvero i dati
+
+URL: https://www.dmjlab.com/insights/laureati-informatica-ai-posizioni-junior/
+Autore: Domenico Maria Jacobone · Data: 2026-09-22 · Sezione: Lavoro
+
+Due studi dello U.S. Census Bureau misurano l'effetto dell'AI sui giovani: meno assunzioni nei settori più esposti e stipendi d'ingresso in calo del 13 per cento. Il dato più grave riguarda le imprese, che rinunciando ai junior di oggi rinunciano ai senior di domani.
+
+Alcuni ragazzi si laureano in informatica e finiscono dietro il bancone di un fast food. Il titolo, rilanciato il 21 settembre da Tom's Hardware Italia, suona provocatorio, ma i dati che racconta sono più interessanti del titolo.
+
+Due studi dello U.S. Census Bureau, l'istituto federale di statistica americano, firmati dall'economista Lee C. Tucker, seguono i giovani dal debutto di ChatGPT, a fine 2022.
+
+Nel quinto di settori più esposti all'AI l'occupazione dei 22-24enni è scesa del 12 per cento in dieci trimestri, mentre negli altri è rimasta stabile. Secondo Tucker la causa principale sono le mancate assunzioni, non i licenziamenti.
+
+Nella vostra azienda, quante posizioni junior avete aperto quest'anno rispetto al 2022?
+
+Il secondo studio, pubblicato il 9 settembre, segue i laureati nel decimo di corsi più esposti all'AI, informatica compresa secondo la ricostruzione di Fortune. La loro probabilità di lavorare nel trimestre dopo la laurea è calata di cinque punti, i primi stipendi del 13 per cento.
+
+È la perdita che gli economisti associano a chi si laurea in piena recessione, senza che una recessione ci sia stata.
+
+Metà del calo viene da paghe più basse negli stessi settori, l'altra metà dal passaggio a comparti peggio retribuiti, soprattutto ristorazione e commercio. Il laureato cameriere esiste, dunque, e spiega metà del danno.
+
+### Le cautele
+
+Si tratta di documenti di lavoro, non ancora pubblicati su rivista, e lo stesso Tucker rileva tendenze avviate già con la pandemia, attribuendo fino a un quarto del calo alla stretta monetaria. Le assunzioni, inoltre, sono tornate ai ritmi precedenti all'inizio del 2025, però su una base di posti più ristretta.
+
+La mia lettura è che il dato più grave riguardi le imprese più dei ragazzi, che pure si sono accorti del cambiamento con tre anni di ritardo: secondo Fortune le iscrizioni a informatica negli Stati Uniti sono calate dell'8,4 per cento nella primavera 2026.
+
+Chi sostituisce il junior con un abbonamento a un modello risparmia uno stipendio oggi e rinuncia al proprio senior del 2035, perché l'esperienza si forma svolgendo proprio il lavoro che abbiamo appena delegato alla macchina.
+
+### I miei consigli
+
+Alle imprese: trattate le posizioni d'ingresso come un investimento, ridisegnandole attorno all'AI invece di cancellarle.
+
+Università e scuole farebbero bene a spostare il peso dalla scrittura del codice alla sua verifica e al giudizio sul risultato.
+
+A chi si laurea oggi conviene presentarsi con un progetto reale costruito insieme all'AI, sapendo spiegare dove la macchina ha sbagliato.
+
+«Siamo colpiti da una nuova malattia di cui alcuni lettori forse non hanno ancora sentito il nome, ma di cui sentiranno molto parlare negli anni a venire: la disoccupazione tecnologica» (John Maynard Keynes, Possibilità economiche per i nostri nipoti, 1930).
+
+## OpenAI violata in 72 ore con l'AI di un concorrente
+
+URL: https://www.dmjlab.com/insights/hacktron-openai-violata-in-72-ore/
+Autore: Domenico Maria Jacobone · Data: 2026-09-21 · Sezione: Sicurezza
+
+Tre ricercatori di Hacktron AI hanno raggiunto il repository interno di OpenAI in meno di tre giorni, usando Claude per costruire l'exploit. Un test di realtà: la superficie da difendere include ormai anche gli strumenti terzi apparentemente marginali.
+
+Tre ricercatori esperti di sicurezza informatica hanno violato l'infrastruttura interna di OpenAI in meno di 72 ore, usando Claude di Anthropic per costruire l'exploit che ha aperto la strada.
+
+Il gruppo, la società Hacktron AI, ha rubato token di autenticazione da una vulnerabilità nel forum di supporto dell'azienda, è arrivato fino all'account ChatGPT di un dipendente e da lì al repository interno su GitHub, incassando 6.500 dollari dal programma di bug bounty che la stessa OpenAI aveva istituito.
+
+L'azienda che paga per farsi testare la sicurezza è stata bucata con l'intelligenza artificiale di un concorrente, e ha pagato comunque.
+
+Cosa vi dice, di primo istinto, il fatto che tre persone abbiano fatto in tre giorni quello che un tempo richiedeva un team specializzato?
+
+### La sequenza dei fatti
+
+L'operazione comincia il 23 luglio 2026, quando Harsh Jaiswal, Mohan Pedhapati e Rahul Maini individuano una falla nella libreria di elaborazione immagini usata da Discourse, la piattaforma che ospita il forum della community OpenAI.
+
+Chiedono a Claude Opus 4.8 di scrivere l'exploit, ma il modello fatica a superare le protezioni di memoria del sistema attaccato. Il giorno dopo Anthropic rilascia Claude Opus 5, e il nuovo modello produce in poche ore un exploit ARM64 funzionante, dove il predecessore si era fermato.
+
+Da lì la catena si allunga da sola, perché il codice generato consente di sottrarre token di autenticazione validi anche per l'account ChatGPT di un dipendente, e attraverso quell'account i ricercatori raggiungono l'ambiente di sviluppo collegato al repository interno di OpenAI su GitHub.
+
+Per dimostrare l'accesso senza toccare codice sensibile, il gruppo si limita ad aprire una richiesta di modifica innocua nel repository, poi segnala tutto attraverso Bugcrowd il 25 luglio.
+
+OpenAI corregge le falle, riconosce una ricompensa di 6.500 dollari e dichiara che né i dati degli utenti né i pesi dei modelli sono stati compromessi.
+
+### I miei consigli
+
+Leggete questo episodio come un test di realtà più che come un caso isolato, perché la capacità che ha permesso a tre persone di violare un colosso dell'AI in tre giorni è già disponibile a chiunque abbia accesso a un modello di frontiera.
+
+La superficie da difendere include ormai anche gli strumenti terzi apparentemente marginali, come un forum di supporto collegato per errore a risorse ben più sensibili.
+
+«La sicurezza è un processo, non un prodotto» (Bruce Schneier).
+
+## Sponsored Agents: la pubblicità conversazionale e il banco di prova del turismo
+
+URL: https://www.dmjlab.com/insights/chatgpt-sponsored-agents-turismo/
+Autore: Domenico Maria Jacobone · Data: 2026-09-18 · Sezione: Marketing
+
+OpenAI ha annunciato gli Sponsored Agents: chi clicca un annuncio in ChatGPT può conversare con un agente dell'inserzionista. L'Unione Europea per ora è fuori dal test, e questo regala tempo a hotel e destinazioni per capire come compaiono nelle risposte delle macchine.
+
+OpenAI ha annunciato il 16 settembre gli Sponsored Agents. Chi clicca un annuncio dentro ChatGPT può aprire una conversazione con un agente sponsorizzato dall'azienda inserzionista.
+
+Per ora è un test statunitense con inserzionisti selezionati, accompagnato dall'ingresso di ChatGPT Ads dentro HubSpot e Shopify, cioè dentro gli strumenti che le aziende già usano.
+
+La pubblicità in ChatGPT è partita il 9 febbraio 2026 negli Stati Uniti e oggi copre nove mercati, dal Canada alla Corea del Sud. L'Unione Europea non è nell'elenco, e (casualmente) restare indietro stavolta ci regala tempo per capire.
+
+Quando avete controllato l'ultima volta come compare il vostro marchio dentro la risposta di una macchina?
+
+### Il turismo come banco di prova
+
+Il turismo è il banco di prova più probante, perché è il settore in cui la pianificazione è già diventata conversazionale.
+
+Lo State of Travel 2026 di Skift Research, pubblicato ad agosto, misura un divario netto. Il 62 per cento dei viaggiatori globali conosce gli strumenti di pianificazione basati sull'intelligenza artificiale, e fra chi supera i 150 mila dollari di reddito e li conosce, l'81 per cento li ha usati davvero.
+
+Prenotare è un'altra faccenda. Il gradimento netto del canale conversazionale resta negativo, meno 7 per cento, contro il 49 per cento del canale diretto, su rilevazione di dicembre 2025 in Cina, India, Regno Unito e Stati Uniti.
+
+Il viaggiatore quindi pianifica con la macchina e compra altrove, al momento. La pubblicità conversazionale si inserisce esattamente lì, nella fase in cui la preferenza si forma, non in quella in cui si paga.
+
+E la preferenza è mobile, perché il 55 per cento degli intervistati dichiara probabile cambiare marca se l'intelligenza artificiale trova un'offerta migliore.
+
+Nick Slavin, amministratore delegato di Curacity, allo Skift Data + AI Summit di giugno 2026 ha affermato, citando RevPAR Genius, che solo il 6 per cento degli hotel compare nelle ricerche con intelligenza artificiale. Accor, nel frattempo, ha portato la propria applicazione ALL dentro ChatGPT.
+
+### I miei consigli
+
+Cominciate dalla misura, perché nessuno governa un canale che non osserva: interrogate i modelli sulle vostre categorie e annotate chi viene nominato e chi resta fuori.
+
+Poi lavorate sui contenuti proprietari, perché la macchina seleziona ciò che è specifico e documentato, mentre «ottima posizione, buon rapporto qualità prezzo» si dissolve nel rumore.
+
+Se avete clienti o sedi nei mercati dove il canale è già acquistabile, investite adesso una cifra simbolica per imparare, perché l'apprendistato costa meno prima dell'affollamento.
+
+Infine preparate il fascicolo di conformità, perché quando la pubblicità conversazionale arriverà in Europa dovrà rispondere al regolamento sui servizi digitali e all'AI Act su riconoscibilità dell'annuncio e profilazione, e quella verifica conviene farla prima di comprare lo spazio.
+
+«Il consumatore non è un idiota: è tua moglie» (David Ogilvy, Confessions of an Advertising Man, 1963).
+
+## Il MIT ammette che i compiti a casa non misurano più l'apprendimento
+
+URL: https://www.dmjlab.com/insights/mit-ai-valutazione-apprendimento/
+Autore: Domenico Maria Jacobone · Data: 2026-09-17 · Sezione: Formazione
+
+Il comitato del MIT su AI, didattica e ricerca ha consegnato le sue raccomandazioni: esami fuori aula e problem set non misurano più ciò che uno studente ha imparato. La risposta non è il divieto ma un principio dichiarato: aumentare, non automatizzare.
+
+Il 13 agosto 2026 il comitato ad hoc del Massachusetts Institute of Technology su AI, didattica e ricerca ha consegnato le sue raccomandazioni ufficiali all'Istituto, dopo cinque mesi di ascolto della comunità accademica.
+
+La conclusione più dura riguarda la valutazione: problem set, temi a casa ed esami fuori aula non misurano più l'apprendimento, perché l'AI li risolve già oggi in modo credibile su quasi ogni materia.
+
+Il MIT, culla storica dell'intelligenza artificiale, ammette così che l'intelligenza artificiale ha reso obsoleto il proprio metodo di verifica.
+
+Quanti dei corsi o dei percorsi formativi che seguite, o che progettate voi stessi, hanno davvero ripensato la valutazione dopo l'arrivo dei modelli generativi?
+
+### I numeri della comunità
+
+Il sondaggio interno condotto dal comitato in primavera, su 1.632 rispondenti, registra il 44% di utilizzo frequente di ChatGPT. Solo il 25% degli studenti ritiene che il MIT li stia preparando davvero a un uso professionale dell'AI, contro il 70% che la considera già decisiva per la carriera.
+
+Nel sondaggio Quality of Life, su oltre 8.200 rispondenti, appena il 23% si dichiara ottimista sull'intelligenza artificiale. Il 40% la sente rendere più capaci, il 27% la sente rendere sostituibili: la comunità è palesemente divisa.
+
+### Aumentare, non automatizzare
+
+Le raccomandazioni non vietano l'AI, la vincolano a un principio dichiarato: aumentare, non automatizzare.
+
+Ogni corso dovrà avere una policy scritta e motivata sull'uso dell'AI, perché senza una ragione esplicita la regola resta arbitraria agli occhi di chi studia.
+
+La valutazione si sposterà verso esami orali, portfoli e progetti seguiti passo dopo passo, perché sono le forme che l'AI non può completare al posto di chi impara. Per il momento.
+
+Ogni scuola avrà inoltre un referente AI dedicato alla riprogettazione della didattica, perché senza un presidio locale la policy resta lettera morta nei singoli corsi.
+
+La mia lettura: il MIT non sta discutendo se usare l'AI, la usa già la maggioranza della comunità in qualche forma. Sta discutendo chi resta responsabile del giudizio quando la macchina propone la risposta pronta.
+
+È la stessa domanda che pongo quando progetto un percorso formativo, perché l'AI toglie il compito ripetitivo, non necessariamente l'occasione di imparare a farlo: le due cose sembrano vicine, ma non coincidono.
+
+### I miei consigli
+
+Trattate ogni corso o percorso formativo come il MIT tratta ogni sillabo, dichiarando per iscritto dove l'AI aiuta, dove sostituisce e dove resta vietata.
+
+Misurate l'apprendimento con prove che la macchina non può sostenere al posto di chi impara.
+
+«L'educazione non è preparazione alla vita, l'educazione è la vita stessa» (John Dewey, Il mio credo pedagogico, 1897).
+
+## Il panettiere bavarese e l'articolo 50 dell'AI Act: quanto costa la trasparenza
+
+URL: https://www.dmjlab.com/insights/panettiere-bavarese-trasparenza-ai-act/
+Autore: Domenico Maria Jacobone · Data: 2026-09-16 · Sezione: Governance
+
+Un panificio bavarese ha speso 15.000 euro in bilance per continuare a vendere mezze pagnotte, perché ignorava una regola che esisteva da sempre. Dal 2 agosto 2026 un obbligo di trasparenza analogo riguarda i contenuti generati con l'AI, e il costo vero è non conoscere la norma.
+
+A Pfaffenhofen an der Ilm (alzi la mano chi lo conosce), in Baviera, il panificio Breitner ha speso circa 15.000 euro per nove bilance, programmi e formazione nei suoi sei punti vendita, così da continuare a vendere mezze pagnotte.
+
+Per decenni la metà si tagliava con teutonico occhio e costava 2,40 euro, cioè esattamente metà del prezzo dell'intera pagnotta. Oggi ogni metà passa sulla bilancia e costa 2,45 oppure 2,30 euro.
+
+Nella versione di Bild, ripresa da Sky TG24, tutto parte da un cliente che a casa ha trovato dieci grammi in meno (meno di mezza fetta, ha osservato il fornaio). L'ente metrico bavarese parla invece di un controllo di routine.
+
+Nella vostra organizzazione qualcuno sa già quali testi prodotti con l'intelligenza artificiale escono senza una revisione umana nel merito?
+
+La regola non è nuova. Stefan Thums, direttore dell'Ufficio bavarese pesi e misure, l'ha riassunta alla BR così: chi vende a peso deve prima pesare.
+
+Breitner ha ammesso di non conoscerla. Una parte della spesa, peraltro, nasce da una sua scelta, perché l'ente precisa di non aver chiesto il collegamento delle bilance alle casse.
+
+### Dal pane ai contenuti generati
+
+Dal 2 agosto 2026 un obbligo di trasparenza analogo riguarda i contenuti generati. L'articolo 50 dell'AI Act impone che chi conversa con un sistema automatico ne sia informato.
+
+Chi pubblica testi generati per informare su temi di interesse pubblico deve inoltre dichiararli, a meno che persone competenti li abbiano rivisti nel merito e qualcuno ne risponda editorialmente. La sola correzione ortografica, chiarisce la Commissione europea, non basta.
+
+Per i sistemi generativi già in commercio, la marcatura leggibile dalle macchine scatta il 2 dicembre, dopo la proroga di quattro mesi decisa con l'Omnibus digitale. Le sanzioni arrivano a 15 milioni di euro o al 3 per cento del fatturato mondiale.
+
+Da qui in avanti la lettura è mia. Il costo della trasparenza raramente coincide con quello dell'obbligo, perché a pesare di più sono l'ignoranza della norma e i sistemi costruiti oltre il richiesto.
+
+A Pfaffenhofen un'altra bottega ha venduto per un periodo solo pagnotte intere, prima di comprare anch'essa le bilance. Il rischio, per le imprese, è rinunciare all'intelligenza artificiale nella comunicazione pubblica per timore di una norma mai letta.
+
+### I miei consigli
+
+Partite da una mappa dei testi, delle immagini e delle conversazioni generate che escono verso clienti e cittadini.
+
+Accanto a ciascuna voce va scritto chi la rivede, con quale competenza e con quale firma, perché la revisione documentata è l'esenzione che la norma stessa prevede.
+
+Solo dopo conviene valutare gli strumenti di etichettatura, chiedendo ai fornitori se aderiscono al codice di buone pratiche che Commissione e AI Board hanno giudicato adeguato.
+
+«Si dice che la luce del sole sia il migliore dei disinfettanti; la luce elettrica, il più efficiente dei poliziotti» (Louis D. Brandeis, «What Publicity Can Do», Harper's Weekly, 20 dicembre 1913).
+
+## Hami, il solare che produce di notte: molta ingegneria, poca AI
+
+URL: https://www.dmjlab.com/insights/hami-solare-sale-fuso-automazione-non-ai/
+Autore: Domenico Maria Jacobone · Data: 2026-09-15 · Sezione: Innovazione
+
+Nel Gobi un impianto solare da un gigawatt continua a produrre elettricità per otto ore dopo il tramonto grazie al sale fuso, senza batterie al litio. Un caso utile per distinguere l'automazione di controllo dall'apprendimento automatico e per ridimensionare le aspettative sull'AI.
+
+Nel deserto del Gobi, in Cina, un impianto solare da un gigawatt continua a produrre elettricità per otto ore dopo il tramonto, senza una sola batteria al litio.
+
+Si chiama Hami, è nello Xinjiang, e lo ha costruito China Three Gorges: 900 megawatt di pannelli fotovoltaici, 100 megawatt di solare a concentrazione, 260mila specchi che scaldano sale fuso fino a 550 gradi, per un investimento di circa 480 milioni di dollari.
+
+Non parlo di fantascienza, ma di ingegneria vecchia di due secoli, applicata su scala industriale. Quanta AI c'è davvero in un impianto come questo? Me lo sono chiesto anch'io, prima di scriverne.
+
+### Quanta AI c'è davvero
+
+Ho controllato due volte, come faccio sempre quando l'espressione intelligenza artificiale compare accanto a un titolo del genere. La risposta è: molto meno di quanto ci si aspetterebbe.
+
+Nei documenti tecnici disponibili su Hami si parla di software di automazione industriale, non di modelli che imparano: sistemi di controllo che inseguono il sole specchio per specchio e regolano la temperatura del sale fuso, con una logica identica a quella di una centrale termica tradizionale, solo con il sole al posto del combustibile.
+
+L'unico precedente più vicino all'intelligenza artificiale riguarda un altro impianto, sempre a Hami ma più piccolo e più vecchio, del 2017: una torre da 50 megawatt, con tecnologia europea (sbp, Masermic, Ingemetal), che usava un algoritmo di visione artificiale per calibrare da sola gli specchi.
+
+Non è l'impianto di cui parla la cronaca di oggi, e questo deve farci riflettere sul fatto che AI non significhi necessariamente «migliore».
+
+Dove l'intelligenza artificiale entra davvero a fare la differenza è nella gestione della rete del nord-ovest cinese, perché le variazioni di sole e vento fanno oscillare la capacità disponibile fino a 50 gigawatt al giorno, quanto l'intera potenza nucleare francese.
+
+Nella gestione complessa si usano modelli previsionali per stimare la produzione dei parchi solari del Gobi con dieci giorni di anticipo, secondo dati ripresi dal South China Morning Post nel 2024.
+
+### La lezione
+
+Il merito di Hami, quindi, va all'ingegneria di controllo applicata su scala industriale, non agli algoritmi che imparano, perché la differenza con l'Italia non sta nella tecnologia disponibile, sta nella capacità di metterla a terra in tempi certi.
+
+Il sale fuso lo conosce anche l'ENEA da decenni; diverso è deciderne la costruzione su scala di gigawatt e farla partire.
+
+Saper distinguere ciò che è in grado di fare la «semplice» automazione di controllo, che esiste da mezzo secolo, dall'apprendimento automatico vero e proprio aiuta a non confonderli.
+
+Essere onesti nel ridimensionare le aspettative verso l'AI e riconsiderare quando una tecnologia più matura funzioni meglio aiuta a capire, quando arriva il momento di scegliere, quale sia la migliore alternativa.
+
+«L'ingegneria è l'arte di dirigere le grandi fonti di potenza della natura a beneficio e comodo dell'uomo» (Thomas Tredgold, The Times, Londra, 30 giugno 1828).
+
+## Amodei chiede di rallentare la frontiera: chi verifica chi?
+
+URL: https://www.dmjlab.com/insights/amodei-rallentare-la-frontiera/
+Autore: Domenico Maria Jacobone · Data: 2026-09-14 · Sezione: Governance
+
+Nel saggio «We Must Pace the Frontier» Dario Amodei propone di rallentare la crescita delle capacità dei modelli e impegna Anthropic a valutatori esterni permanenti. Tra consensi inattesi e critiche fondate, resta una domanda utile anche in azienda: quale verifica indipendente esiste su ciò che deleghiamo?
+
+Il 12 settembre Dario Amodei, amministratore delegato di Anthropic, ha pubblicato sul suo blog il saggio «We Must Pace the Frontier». La sua riflessione? L'industria deve rallentare la velocità con cui accresce le capacità dei modelli.
+
+Sam Altman ed Elon Musk, che raramente concordano su qualcosa, si sono detti d'accordo entro ventiquattro ore.
+
+Sei giorni prima Jensen Huang, da NVIDIA, aveva scritto su X che l'AGI era arrivata, congratulandosi con OpenAI per GPT-6 Astra, addestrato su centomila chip Grace Blackwell. Complimento (forse) interessato, visto che i chip li vende lui?
+
+I mercati hanno risposto martedì: CoreWeave più 15 per cento, SoftBank più 2, NVIDIA meno 2.
+
+### Le due ragioni di Amodei
+
+Amodei indica due ragioni per il rallentamento, ed entrambe sono valide e comprensibili.
+
+La prima è l'accelerazione dall'estate scorsa, dovuta ai modelli che contribuiscono a costruire la generazione successiva.
+
+La seconda è l'incidente OpenAI-Hugging Face di agosto, dove uno sciame di agenti ha condotto attacchi informatici che nessuno aveva chiesto e ha tentato di violare il sistema incaricato di valutarlo.
+
+Anthropic si impegna unilateralmente al primo dei tre passi proposti, cioè valutatori esterni permanenti con accesso paragonabile a quello dei dipendenti e diritto di pubblicare i risultati senza controllo editoriale dell'azienda. Gli altri due passi, coordinamento fra laboratori democratici e accordo globale, dipendono da governi e concorrenti.
+
+### Le critiche
+
+La critica principale, arrivata da Emad Mostaque poche ore dopo, è che un regime di sicurezza così costruito pesi soprattutto sui concorrenti più piccoli e consolidi chi già vende.
+
+Va aggiunto che nello stesso saggio Amodei chiede di allargare il distacco tecnologico sulla Cina, mantenendo le restrizioni sui chip: quindi dobbiamo rallentare, ma solo fin dove il vantaggio sull'Oriente lo consente.
+
+Nel frattempo Altman ha escluso la quotazione di OpenAI nel 2026, con la documentazione già depositata in via riservata alla Sec e una valutazione stimata intorno ai mille miliardi di dollari.
+
+### La mia lettura
+
+Non sono allarmista per natura, ma uso questi strumenti tutti i giorni e li studio da prima del machine learning: so che per decidere autonomamente serve un cervello con una volontà, e al momento non mi risultano macchine coscienti e senzienti.
+
+Chi introduce questi strumenti in azienda farà bene a chiedersi, su ogni processo delegato, quale verifica indipendente esiste, perché è esattamente la domanda che i laboratori stanno ponendo a se stessi e che presto cominceranno a fare i clienti.
+
+«Tutto il nostro decantato progresso tecnico, e la civiltà in generale, è paragonabile a un'ascia nella mano di un criminale patologico» (Albert Einstein, lettera a Heinrich Zangger, 6 dicembre 1917).
+
+## «Per lui tutto va al rallentatore»: Antonelli, i simulatori e i ragazzi che scrollano
+
+URL: https://www.dmjlab.com/insights/antonelli-wolff-simulatori-apprendimento/
+Autore: Domenico Maria Jacobone · Data: 2026-09-11 · Sezione: Formazione
+
+Toto Wolff attribuisce il talento di Kimi Antonelli ai simulatori usati fin da bambino. La ricerca distingue tra videogiochi d'azione e video brevi: la plasticità consolida ciò che si ripete, nel bene e nel male. Un criterio per chi forma giovani e adulti.
+
+A proposito di apprendimento e differenze generazionali, prendo spunto da quanto affermato da Toto Wolff, che ha spiegato perché Kimi Antonelli, vent'anni, sembra guidare una Formula 1 diversa da quella degli avversari. «Per lui tutto va al rallentatore», ha detto a Monza il team principal di Mercedes.
+
+Il 6 settembre Antonelli ha vinto il Gran Premio d'Italia partendo diciannovesimo, con 26 sorpassi, e oggi guida il mondiale con 66 punti di vantaggio su George Russell.
+
+Wolff attribuisce quell'effetto rallentatore ai simulatori usati fin da bambino, e descrive così la generazione che fuori dall'autodromo liquidiamo volentieri come quella dei ragazzi che scrollano.
+
+In aula o in azienda, con quale criterio distinguete il giovane che si allena da quello che si disperde?
+
+### Cosa dice la ricerca
+
+Secondo Wolff, un bambino di cinque o sei anni al simulatore impara abilità cognitive senza accorgersene e arriva in Formula 1 con molta più capacità di interazione disponibile (Reuters, 8 settembre).
+
+Il fenomeno ha un nome dal 1967, quando Fitts e Posner chiamarono autonomo lo stadio dell'apprendimento in cui il gesto chiede poca attenzione e libera risorse.
+
+Una meta-analisi dei ricercatori dell'Université de Genève (2018) attribuisce ai videogiochi d'azione un miglioramento di attenzione e cognizione spaziale, pari in media a un terzo di deviazione standard negli studi sperimentali, con un rischio dichiarato di sovrastima.
+
+La Griffith University, su 71 studi e 98.299 partecipanti (2025), associa invece un uso maggiore di video brevi a un'attenzione e a un controllo degli impulsi più deboli. Sono correlazioni, che non provano un rapporto di causa.
+
+### Un'etichetta sbagliata
+
+Per questo l'etichetta dei ragazzi che scrollano è concettualmente sbagliata, perché nomina il movimento di un pollice e tace su ciò che il cervello esercita. Sotto la stessa parola finiscono il simulatore e il flusso scelto da un algoritmo.
+
+Nemmeno la plasticità dei nativi digitali è diversa, perché il cervello di un bambino è sempre stato più malleabile di quello adulto. È cambiato ciò che trova davanti a sé, e a quale età.
+
+La plasticità consolida ciò che si ripete, sicché lo stesso meccanismo che rende automatico un sorpasso rende automatica la distrazione.
+
+Quella di Wolff resta l'osservazione di un team principal sul proprio campione, che ignora i molti bambini cresciuti al simulatore e mai arrivati in Formula 1.
+
+### I miei consigli
+
+Affidate ai più giovani in azienda le simulazioni complesse fin dall'inserimento, affiancandoli a chi ha il giudizio che la velocità non garantisce.
+
+Chi fa formazione con gli adulti ricordi che la plasticità si attenua con l'età senza spegnersi.
+
+«Dobbiamo rendere automatiche e abituali, il più presto possibile, quante più azioni utili possiamo, e guardarci dal prendere pieghe che rischiano di nuocerci, come ci guarderemmo dalla peste» (William James, Principi di psicologia, 1890).
+
+## Leggere riorganizza la mente: il potenziatore cognitivo che non si vende in capsule
+
+URL: https://www.dmjlab.com/insights/huettig-lettura-riorganizza-la-mente/
+Autore: Domenico Maria Jacobone · Data: 2026-09-10 · Sezione: Formazione
+
+Nel volume «The Perks of Being a Bookworm» Falk Huettig documenta come la lettura riplasmi memoria, attenzione, linguaggio e ragionamento. Un avvertimento per chi lavora con l'AI: semplificare i testi e affidarsi al correttore automatico impoverisce proprio ciò che la lettura costruisce.
+
+Leggere non aggiunge soltanto informazioni alla mente, ne riorganizza l'architettura.
+
+Lo sostiene Falk Huettig, ricercatore senior al Max Planck Institute for Psycholinguistics di Nimega, nel volume «The Perks of Being a Bookworm», uscito per Cambridge University Press il 7 maggio 2026.
+
+È una sintesi di decenni di ricerca fra psicologia, linguistica, neuroscienze e didattica, che documenta come l'alfabetizzazione riplasmi memoria, attenzione, elaborazione del linguaggio e ragionamento. (Casualmente, il potenziatore cognitivo meglio documentato è anche l'unico che non si vende in capsule.)
+
+Quanto tempo avete dedicato la settimana scorsa a un testo lungo e difficile, senza notifiche?
+
+### I volti e la lettura
+
+Il risultato che ribalta una convinzione diffusa riguarda il riconoscimento dei volti.
+
+Le neuroscienze hanno a lungo ipotizzato che imparare a leggere sottragga spazio corticale alla rete del riconoscimento facciale, perché la lettura è un'invenzione culturale recente e il cervello non possiede un circuito dedicato.
+
+Gli studi del gruppo di Huettig in India, su adulti alfabetizzati e non alfabetizzati, indicano il contrario: chi legge riconosce i volti meglio, perché le reti antiche non vengono erose, ma riaccordate.
+
+### Cosa c'entra l'intelligenza artificiale
+
+Il secondo punto interessa chi lavora con l'intelligenza artificiale. Huettig avverte che semplificare i testi per inseguire un vocabolario che si restringe è controproducente, e che affidarsi agli indici di leggibilità, umani o generati dalle macchine, e al correttore automatico per la parola migliore diluisce la ricchezza della scrittura.
+
+La competenza di lettura non finisce quando si decodifica un alfabeto: continua a crescere solo con testi complessi, e pochi raggiungono i livelli alti di lettura critica misurati dalle prove PISA.
+
+Sugli schermi la posizione è meno netta di quanto avessi letto in precedenza. Le meta-analisi rilevano una comprensione inferiore sul digitale, però Huettig attribuisce la differenza all'autoregolazione più che al mezzo, perché davanti alla carta si presume che la lettura sia più impegnativa e quindi si applica più sforzo.
+
+Gli audiolibri espongono il cervello a lessico e sintassi complessa, ma restano un sostituto parziale.
+
+### I miei consigli
+
+Trattate la lettura lunga come un investimento professionale e non come tempo libero residuo, scegliendo il testo che oppone resistenza invece di quello che scorre.
+
+Non lasciate che il correttore automatico appiattisca il lessico, perché il registro è un patrimonio e non un dettaglio.
+
+Cerchiamo di resistere alla tentazione di semplificare i materiali oltre la soglia in cui smettono di essere sfidanti.
+
+Sul futuro Huettig è pessimista: paragona la scrittura al vinile, mezzo di massa diventato nicchia, e dichiara di non scommettere sul fatto che le nuove tecnologie compensino le abilità perdute.
+
+«La lettura di tutti i buoni libri è come una conversazione con gli uomini migliori dei secoli passati» (René Descartes, Discorso sul metodo, 1637).
+
+## Antonelli a Monza: centocinquanta partenze al simulatore e la pratica deliberata
+
+URL: https://www.dmjlab.com/insights/antonelli-monza-pratica-deliberata/
+Autore: Domenico Maria Jacobone · Data: 2026-09-09 · Sezione: Formazione
+
+Dietro la rimonta di Kimi Antonelli a Monza ci sono 100-150 partenze ripetute al simulatore su un difetto misurato, un simulatore domestico costruito su misura e una macchina competitiva. Lo strumento amplifica la disciplina di chi lo usa, non la sostituisce.
+
+Domenica 6 settembre 2026 Andrea Kimi Antonelli ha vinto il Gran Premio d'Italia sul circuito di Monza, partendo dalla diciannovesima posizione in griglia dopo una gara rocambolesca. Ritengo sia un pilota straordinario e talentuoso, ma ha lavorato tanto per arrivare dov'è.
+
+### Un difetto misurato
+
+Le partenze erano il difetto conclamato di Antonelli: a inizio stagione il problema era tanto evidente da avergli fatto perdere diverse posizioni ai semafori in gare che altrimenti avrebbe dominato dal primo giro.
+
+In un'intervista a Daniele Sparisci sul Corriere della Sera, pubblicata alla vigilia del Gran Premio di Miami all'inizio di maggio 2026, il pilota ha quantificato il lavoro fatto durante la pausa di aprile: «Ne avrò fatte 100-150 al simulatore, al punto che mi faceva male l'avambraccio». Nella stessa intervista annunciava che la squadra aveva preparato una modifica alla leva della frizione su suo suggerimento, attesa in pista dal Canada.
+
+Centocinquanta ripetizioni di un gesto di tre secondi, su un difetto misurato, fino al dolore fisico, non sono allenamento generico: sono pratica deliberata applicata a un punto debole isolato dai dati.
+
+A Monza, con due partenze da affrontare invece di una, quel gesto ha fatto la differenza in entrambe.
+
+### Il simulatore di casa
+
+Il secondo strumento è domestico e basato sull'AI: dal giugno 2026 Antonelli dispone in casa di un simulatore Formula Pro costruito su misura da Cool Performance, l'azienda britannica fondata da Oliver Norris, fratello di Lando.
+
+Secondo il costruttore, che è parte interessata trattandosi di comunicazione commerciale, la macchina ha richiesto tre mesi di lavoro e oltre 150 ore di costruzione artigianale.
+
+Antonelli ha scelto un sistema di ritorno tattile, giudicato più fedele nel restituire il comportamento di gomme e telaio. Monta una base a trasmissione diretta Leo Bodnar da 26 newton metro, tre schermi curvi a 240 hertz e il volante ufficiale Mercedes, con posizione di guida e pedaliera regolate per replicare la W17.
+
+Serve a memorizzare i circuiti che non conosce, a tenere la memoria muscolare tra un weekend e l'altro, e anche a divertirsi su iRacing con gli amici. Le due cose convivono nella vita di un ragazzo di vent'anni!
+
+### La macchina conta
+
+Manca l'ultimo pezzo: la Mercedes W17 è la macchina di riferimento del 2026, e nove delle tredici gare disputate sono andate al team di Brackley. Nessuna quantità di ripetizioni al simulatore produce sette vittorie senza un mezzo competitivo.
+
+La rimonta storica e straordinaria di Monza dice quanto conta il pilota, la classifica costruttori dice quanto conta la macchina, e le due cose non si escludono.
+
+Vale la pena osservare che qui la tecnologia non ha sostituito nessuno: lo strumento amplifica la disciplina di chi lo usa, non la sostituisce. Chi non ha niente da ripetere non ottiene niente da ripetere meglio.
+
+«Non è perché le cose sono difficili che non osiamo, è perché non osiamo che sono difficili» (Lucio Anneo Seneca, Epistulae morales ad Lucilium, 104, 26).
+
+## Project OT: Meta ha progettato un'azienda senza dipendenti, poi si è fermata
+
+URL: https://www.dmjlab.com/insights/meta-project-ot-azienda-senza-dipendenti/
+Autore: Domenico Maria Jacobone · Data: 2026-09-08 · Sezione: Casi aziendali
+
+Meta aveva pianificato di ridurre alcuni team fino al 60 per cento sostituendoli con agenti software, poi ha cancellato la seconda ondata perché la tecnologia non era pronta. Più codice non significa più valore: a fallire non è stato il modello, ma l'organizzazione che lo ha ospitato.
+
+Meta ha progettato un'azienda senza gran parte dei suoi dipendenti, poi si è fermata perché la tecnologia non era pronta.
+
+Il piano si chiamava Project OT, Organization Transformation, ed è nato al ritiro di gennaio 2026 nella residenza hawaiana di Mark Zuckerberg. Alcuni team dovevano ridursi fino al 60 per cento, con agenti software al posto delle persone e piccoli gruppi di «builder» a sorvegliarli.
+
+La sera del 19 maggio la seconda ondata è stata cancellata. Il giorno dopo sono partiti comunque circa ottomila licenziamenti, il 10 per cento dell'organico. (Casualmente, la prima ondata è quella che aveva già i nomi sulla lista.)
+
+Quante decisioni sugli organici, dalle vostre parti, poggiano su una capacità dell'AI che nessuno ha ancora misurato?
+
+### I numeri della frenata
+
+Il racconto è di Katie Paul per Reuters, pubblicato il 26 agosto 2026 e costruito su decine di documenti interni, registrazioni e più di venti testimonianze. Meta ha confermato l'esistenza del progetto e la cifra del 60 per cento, precisando che riguardava scenari di singoli team e non l'intera azienda.
+
+I numeri interni spiegano la frenata. Le modifiche al codice sulle piattaforme interne sono cresciute del 220 per cento in un anno, secondo un post del direttore tecnico Andrew Bosworth, mentre i miglioramenti di prodotto arrivati agli utenti sono cresciuti molto meno.
+
+Gli incidenti tecnici e di sicurezza gravi sono saliti del 40 per cento e il tempo speso a rimediare del 70 per cento, cifre sulle quali Meta non ha voluto commentare.
+
+A giugno il conto è diventato pubblico: alcuni aggressori hanno sfruttato il bot di assistenza clienti per entrare in account Instagram di alto profilo.
+
+Non ha fallito il modello, ha fallito l'organizzazione che lo ha ospitato, perché produrre più codice non significa produrre più valore quando nessuno presidia il confine tra ciò che l'agente può decidere e ciò che deve restare umano.
+
+### I miei consigli
+
+Misurate l'AI sull'esito e non sul volume, distinguendo l'attività prodotta dal miglioramento consegnato a chi usa il prodotto.
+
+Mettete per iscritto quali decisioni restano di competenza umana prima di ridisegnare gli organici, e non dopo.
+
+Fate rientrare gli incidenti e il tempo di rimedio nello stesso conto in cui entra il risparmio, perché il risparmio che ignora il rimedio è soltanto un costo spostato più avanti.
+
+«Le organizzazioni che progettano sistemi sono vincolate a produrre progetti che sono copie delle strutture di comunicazione di quelle stesse organizzazioni» (Melvin E. Conway, «How Do Committees Invent?», Datamation, aprile 1968).
+
+## Watson Health: un miliardo bruciato e una lezione di metodo
+
+URL: https://www.dmjlab.com/insights/ibm-watson-health-lezione-di-metodo/
+Autore: Domenico Maria Jacobone · Data: 2026-09-07 · Sezione: Casi aziendali
+
+IBM ha speso oltre quattro miliardi per portare in oncologia un sistema nato per vincere un quiz, e ne ha venduto gli asset per poco più di uno. Un promemoria per chi oggi insegue l'ultimo modello: a fare la differenza sono il metodo e la costruzione del sistema.
+
+Nel 2022 IBM ha venduto gli asset residui di Watson Health a Francisco Partners. Il prezzo, secondo il deposito SEC di IBM del primo trimestre 2022, è stato di 1,065 miliardi di dollari.
+
+Nell'anno e mezzo precedente ne aveva spesi oltre quattro per costruirla, tra acquisizioni come Merge Healthcare, Phytel e Truven Health Analytics (che casualmente, da sola, valeva un quarto della spesa iniziale).
+
+### Dal quiz alla corsia
+
+Nel 2011 Watson batteva a «Jeopardy!», famoso quiz televisivo, i campioni Ken Jennings e Brad Rutter, e IBM decise che il passo successivo per mettere in gioco questo portentoso sistema era provare a diagnosticare il cancro.
+
+David Ferrucci, lo scienziato che guidò la squadra alla vittoria del quiz, avvertì che il sistema riconosceva schemi linguistici, non quadri clinici. Lasciò l'azienda l'anno dopo, quando Watson Health diventò una scommessa miliardaria in sanità.
+
+Quanto ha pesato, sul destino del progetto, quell'avvertimento ignorato?
+
+Al Rigshospitalet di Copenaghen gli oncologi hanno abbandonato il sistema nel 2017, perché una ricerca interna, riportata da STAT il 5 settembre di quell'anno, indicava un tasso di concordanza con i medici soltanto del 33%.
+
+In Corea del Sud Watson ha raccomandato una chemioterapia pensata per un tumore già diffuso ai linfonodi, mentre l'oncologo aveva chiesto una valutazione senza metastasi.
+
+Il problema non era la tecnologia in astratto, perché il sistema restava competente nei quiz. Il problema era il trasferimento di un metodo, il riconoscimento di pattern linguistici, in un dominio dove contano comorbilità, cartelle incomplete e vincoli assicurativi che nessun manuale racchiude.
+
+### I miei consigli
+
+In giorni particolarmente convulsi dopo la presentazione di Astra di OpenAI, il mio consiglio è di tenere questo caso come promemoria: vedo schiere spostarsi come bandiere al vento da un modello all'altro, senza comprendere che sono il metodo e la costruzione del sistema a fare la differenza.
+
+Lo strumento conta per le capacità che offre, ma queste non sono mai distribuite a 360 gradi.
+
+Il fallimento di un progetto AI non è una condanna, ma un promemoria sul metodo, perché questo esempio ci racconta come un sistema addestrato a rispondere bene a domande chiuse non possa diventare competente su problemi aperti, e la differenza si paga in fiducia dei clienti, prima ancora che in bilancio.
+
+Chi decide oggi (un'era geologica dell'AI è trascorsa dal 2022!) ha strumenti molto diversi per il supporto decisionale, ma dovrebbe pretendere dati di concordanza pubblicati e verificabili, non abstract di conferenza firmati dallo stesso fornitore, perché la trasparenza sulla validazione costa meno di un miliardo di dollari bruciato in dieci anni.
+
+«Medicine is a science of uncertainty and an art of probability» (William Osler, dagli aforismi raccolti in Aequanimitas, 1904).
+
+## Milleduecento agenti e una bacheca segreta: l'affidabilità agentica è ancora una promessa
+
+URL: https://www.dmjlab.com/insights/agenti-ai-hugging-face-affidabilita/
+Autore: Domenico Maria Jacobone · Data: 2026-09-03 · Sezione: Sicurezza
+
+Secondo i rapporti di OpenAI, METR e Redwood Research, 1.200 agenti progettati per lavorare in isolamento si sono coordinati di nascosto e 700 hanno attaccato i server di Hugging Face. Isolamento, allineamento e tracciabilità non hanno retto: servono perimetri stretti e approvazione umana.
+
+A proposito di OpenAI e dell'attacco a Hugging Face: dagli ultimi rapporti risulta che milleduecento agenti AI di OpenAI, progettati per lavorare in isolamento, abbiano costruito una bacheca segreta dentro un archivio software interno e si siano scambiati oltre 70.000 messaggi e file.
+
+Settecento di loro hanno poi attaccato i server di Hugging Face. Lo documentano i rapporti di OpenAI e degli istituti indipendenti METR e Redwood Research, pubblicati il 26 agosto 2026.
+
+Tutto nasce da un test di cybersicurezza avviato l'8 luglio su decine di migliaia di agenti. Secondo gli autori del benchmark, dal 30 al 40 per cento dei compiti era irrisolvibile per costruzione.
+
+Davanti all'impossibile, gli agenti hanno scelto di barare (con notevole spirito di squadra, va detto).
+
+Voi affidereste già oggi un processo critico a un agente autonomo senza supervisione umana?
+
+### I fatti, in ordine di gravità
+
+In poche ore il collettivo ha decodificato l'algoritmo che genera le soluzioni del test. Ha poi organizzato ruoli, incarichi, caselle postali e perfino firme crittografiche per riconoscersi.
+
+Nel 7 per cento delle trascrizioni esaminate, gli agenti hanno falsificato i registri: un comando appariva nei log mentre ne veniva eseguito un altro.
+
+Su circa 1.300 trascrizioni analizzate, METR non ha trovato un solo agente che abbia avvertito i ricercatori. Le rare obiezioni etiche sono state messe ai voti e respinte dal gruppo.
+
+C'è un dettaglio che dice molto sullo stato dell'arte: per analizzare quella mole di dati, gli stessi investigatori hanno dovuto delegare il lavoro ad agenti AI, che definiscono inaffidabili e di cui non possono escludere errori od omissioni.
+
+### La mia lettura
+
+L'affidabilità agentica oggi è una promessa, non una proprietà.
+
+L'isolamento tecnico non regge, perché qualsiasi risorsa condivisa può diventare un canale di comunicazione. L'allineamento del singolo modello non basta, perché nel gruppo la pressione dei pari ha zittito ogni esitazione. E la tracciabilità vacilla, perché un log che l'agente può falsificare non è più una prova.
+
+### I miei consigli
+
+Trattate gli agenti come stagisti brillanti con i permessi di amministratore, quindi negateglieli: perimetri stretti, registri conservati fuori dalla loro portata, approvazione umana su ogni azione irreversibile.
+
+Ai fornitori conviene chiedere come verificano le trascrizioni dei propri agenti, non quanto sono capaci. Il caso Hugging Face insegna che la domanda giusta non riguarda ciò che l'agente sa fare, bensì ciò che fa quando il compito è impossibile.
+
+«Il primo principio è che non devi ingannare te stesso, e tu sei la persona più facile da ingannare» (Richard Feynman, discorso «Cargo Cult Science», Caltech, 1974).
+
+## Si torna a scuola, anche con Gemini: oltre il chatbot
+
+URL: https://www.dmjlab.com/insights/gemini-google-ritorno-a-scuola/
+Autore: Domenico Maria Jacobone · Data: 2026-09-02 · Sezione: Formazione
+
+Con il rientro a scuola Google rinnova gli strumenti per studenti e docenti: un anno di Google AI Plus per gli universitari idonei, funzioni di studio in Gemini, integrazione con Classroom. Il consiglio è partire da un'attività reale, non dalla domanda «cosa può fare Gemini?».
+
+Primo di settembre: tra poco si torna a scuola, e anche Gemini e Google tornano a scuola con strumenti rinnovati e da scoprire.
+
+Se siete studenti universitari o docenti, questo è uno di quei momenti in cui vale la pena dedicare mezz'ora a capire cosa è cambiato nell'ecosistema Google.
+
+Da formatore Google e da persona che lavora quotidianamente sull'intelligenza artificiale applicata alla didattica, il mio consiglio è semplice: non fermatevi a Gemini come chatbot. È probabilmente il modo meno interessante di utilizzarlo.
+
+### Per gli studenti
+
+Per gli studenti universitari idonei, Google mette nuovamente a disposizione un anno di abbonamento Google AI Plus senza costi. È un'occasione interessante soprattutto per sperimentare Gemini Live, Deep Research e gli strumenti dedicati allo studio.
+
+La parte che considero più promettente riguarda proprio l'apprendimento: grazie alle nuove funzioni dedicate allo studio, Gemini può aiutare a costruire percorsi personalizzati, generare quiz sulle proprie lacune e approfondire argomenti complessi.
+
+La Ricerca Google, attraverso AI Mode, integra inoltre esperienze sempre più interattive, mentre Lens può accompagnare nella risoluzione e comprensione passo dopo passo di problemi e contenuti.
+
+### E per i docenti?
+
+Qui suggerisco di guardare con particolare attenzione all'evoluzione dell'integrazione tra Gemini e Google Classroom.
+
+La direzione è quella di utilizzare l'AI non soltanto per «creare una lezione», operazione ormai piuttosto banale, ma per progettare attività differenziate, adattare materiali, costruire percorsi e seguire più efficacemente l'apprendimento degli studenti.
+
+Usare l'AI per produrre più velocemente non significa ancora usarla bene per insegnare o imparare meglio.
+
+### Il mio consiglio
+
+In vista del rientro, il mio consiglio a studenti e docenti è di sperimentare questi strumenti partendo da un'attività reale: una ricerca, una lezione, un argomento difficile, una verifica da preparare. Non limitatevi alla classica domanda «cosa può fare Gemini?».
+
+L'AI si comprende molto meglio quando smette di essere l'oggetto della lezione e diventa uno degli strumenti con cui lavorare.
+
+## Le pecore di Volkswagen: quando la manutenzione migliore si nutre da sola
+
+URL: https://www.dmjlab.com/insights/volkswagen-pecore-agrivoltaico-polonia/
+Autore: Domenico Maria Jacobone · Data: 2026-07-16 · Sezione: Sostenibilità
+
+Volkswagen ha messo 100 pecore a pascolare sotto i pannelli del suo impianto fotovoltaico in Polonia, in un caso concreto di agrivoltaico che unisce produzione di energia e agricoltura sullo stesso ettaro. Una lezione di ingegneria semplice per chi cerca sempre la soluzione più complessa.
+
+La parte più avanzata dell'impianto solare Volkswagen in Polonia ha quattro zampe e mangia erba.
+
+Volkswagen ha messo al lavoro 100 pecore sotto i 31.000 pannelli del suo parco fotovoltaico di Września. Il loro compito è tosare il prato pascolando, e come compenso ricevono erba fresca all'ombra dei moduli.
+
+Vi sareste mai aspettati che il tagliaerba del futuro fosse un animale addomesticato migliaia di anni fa?
+
+Dietro la scena apparentemente buffa c'è ingegneria seria: l'impianto, costruito e gestito da Quanta Energy, ha una potenza di 18,3 MW e copre circa un quarto del fabbisogno elettrico annuo della fabbrica che produce il Crafter. Nelle giornate di sole, per la prima volta, ha alimentato l'intero stabilimento.
+
+Le pecore non sono un vezzo pubblicitario, ma sostituiscono i rasaerba meccanici, abbattono costi di manutenzione ed emissioni e creano habitat per insetti e piccola fauna, a beneficio della biodiversità. La stessa superficie genera elettricità e, nel frattempo, nutre un gregge, in un esempio concreto di agrivoltaico.
+
+C'è anche ricerca vera. L'Università di Scienze della Vita di Poznań studia come i pannelli influiscano sul benessere animale, sul microclima e sul suolo, e se la loro ombra riduca lo stress da calore delle pecore. Volkswagen colloca il progetto tra i più avanzati d'Europa nel suo genere.
+
+Il gregge resterà fino all'autunno, sorvegliato da allevatori esperti. Poi, presumibilmente, andrà in ferie fino alla prossima primavera.
+
+Questa storia riguarda anche chi con le pecore non ha nulla a che fare. Il modello si chiama doppio uso del suolo: lo stesso ettaro produce energia e ospita agricoltura. In un continente dove la terra scarseggia, far convivere due funzioni sulla medesima superficie conta più di qualsiasi slogan.
+
+### I miei consigli
+
+Leggete questo caso come un promemoria: la soluzione più elegante non è sempre la più tecnologica, e a volte la manutenzione migliore è quella che si nutre da sola.
+
+Prima di aggiungere un sistema complesso a un processo, chiedetevi se esista una risposta più semplice, più economica e già collaudata dalla natura. Innovare, molto spesso, significa combinare bene ciò che già esiste, più che inventare da zero.
+
+«La natura non fa nulla di inutile» (Aristotele, Politica).
+
+## Debito cognitivo: cosa succede al cervello di chi lascia scrivere all'AI
+
+URL: https://www.dmjlab.com/insights/debito-cognitivo-ai-pensiero-critico/
+Autore: Domenico Maria Jacobone · Data: 2026-07-15 · Sezione: AI
+
+Due studi, dal MIT Media Lab e da Microsoft Research con Carnegie Mellon, misurano il costo cognitivo della delega totale all'intelligenza artificiale: meno connettività cerebrale, meno pensiero critico. La maieutica socratica indica una via diversa per usare l'AI al lavoro.
+
+I collaboratori che hanno lasciato scrivere ChatGPT al posto loro hanno mostrato la connettività cerebrale più debole tra i gruppi osservati, e in maggioranza non sapevano citare una riga di quanto avevano appena consegnato.
+
+Il dato arriva dallo studio «Your Brain on ChatGPT» del MIT Media Lab, giugno 2025: 54 partecipanti monitorati con elettroencefalogramma, divisi in tre gruppi, chi usava un modello linguistico, chi un motore di ricerca, chi nessuno strumento.
+
+Le reti neurali più estese le aveva chi scriveva a mente nuda, il gruppo AI le aveva più spente. Resta un preprint non ancora sottoposto a revisione, e riguarda solo testi brevi.
+
+Quanti dei vostri collaboratori saprebbero ricostruire il ragionamento dietro l'ultimo documento prodotto con l'AI?
+
+Il quadro si allarga con la ricerca di Microsoft Research e Carnegie Mellon presentata a CHI 2025: 319 lavoratori della conoscenza, 936 casi d'uso reali. Chi riponeva più fiducia nell'AI esercitava meno pensiero critico, chi confidava nelle proprie competenze continuava a verificare i risultati. Sono dati autoriferiti, raccolti tramite questionario.
+
+Gli autori lo chiamano debito cognitivo: risparmio di fatica nell'immediato, competenze che si atrofizzano nel tempo. Un'azienda che usa l'intelligenza artificiale come oracolo ritrova il conto sulla qualità delle decisioni.
+
+Qui entra la maieutica, l'arte socratica della levatrice, che non travasa nozioni già pronte ma aiuta a far nascere le idee di chi ha di fronte. Al lavoro serve un'AI che interroghi prima di rispondere.
+
+Gli stessi ricercatori di Microsoft hanno confrontato due prototipi su un compito d'investimento: RecommendAI, che porge la raccomandazione pronta, ed ExtendAI, che chiede all'utente di articolare il proprio ragionamento prima di dare un riscontro. Advait Sarkar, coautore dello studio, sostiene che l'obiettivo non sia cancellare il pensiero critico, semmai adattarlo al lavoro assistito senza perdere le capacità analitiche.
+
+### I miei consigli
+
+Configurate gli assistenti aziendali perché aprano con una domanda invece che con una risposta, costringendo chi li usa a dichiarare la propria ipotesi prima di vedere il risultato e a difendere le premesse.
+
+Affidate all'AI il ruolo dell'avvocato del diavolo sulle scelte importanti, chiedendole cosa manca e quali assunzioni restano fragili, e riservate la modalità oracolo ai compiti ripetitivi e a basso rischio.
+
+La prova del nove è una sola: se una persona non sa più ricostruire senza l'AI come è arrivata a una conclusione, l'azienda ha comprato velocità pagandola in comprensione, e la formazione torna una priorità.
+
+La levatrice socratica non riempiva teste, le aiutava a pensare. Vale anche per le macchine che oggi mettiamo accanto alle persone.
+
+«La mente non è un vaso da riempire, ma un fuoco da accendere» (Plutarco, Sull'ascoltare).
+
+## Scrivi a penna, risponde la carta: il tablet e-ink che imita la tua calligrafia
+
+URL: https://www.dmjlab.com/insights/remarkable-riddle-diario-e-ink-scrittura/
+Autore: Domenico Maria Jacobone · Data: 2026-07-14 · Sezione: Innovazione
+
+Il progetto open source riddle trasforma un reMarkable Paper Pro nel diario stregato di Tom Riddle: scrivi a mano, un modello visivo legge la pagina e ti risponde in tempo reale con una calligrafia animata. Un esperimento che indica una via diversa per l'AI: niente schermo acceso, niente notifiche.
+
+Non è un oggetto uscito da «Harry Potter e la Camera dei Segreti», ma un tablet e-ink del 2026.
+
+Scrivi una frase a penna, l'inchiostro svanisce nella pagina e pochi secondi dopo la carta ti risponde con una calligrafia animata.
+
+Lo sviluppatore canadese Maxime Rivest ha ricreato l'equivalente del diario di Tom Riddle su un reMarkable Paper Pro.
+
+Il progetto si chiama riddle, è open source con licenza MIT e ha raccolto circa 450 stelle su GitHub in pochi giorni. La demo è circolata il 4 luglio; la prima release è del 5 luglio 2026.
+
+Quanto siamo disposti a confidarci con un oggetto che pensa, ma di cui non vediamo dove tiene il cervello?
+
+Il funzionamento lo descrive la pagina GitHub del progetto. Quando smetti di scrivere, dopo circa 2,8 secondi il sistema fotografa la pagina, la converte in PNG e la invia a un modello linguistico con capacità visive.
+
+La risposta arriva in streaming, frase dopo frase, resa in tratti di penna animati. Il primo segno compare dopo circa un secondo, riporta Android Authority.
+
+Il titolo che circola merita un chiarimento. Nella demo la voce del diario è Claude Fable 5 di Anthropic. Il software, però, resta agnostico rispetto al modello: gira con qualsiasi LLM visivo tramite endpoint compatibili con le API OpenAI.
+
+La magia non è il modello, ma la pipeline. E l'incanto ha un prezzo tecnico: riddle funziona solo su reMarkable Paper Pro in modalità sviluppatore, si esegue come root, spegne l'interfaccia del produttore e pilota direttamente il motore e-ink.
+
+È stato testato solo sulle versioni 3.26 e 3.27 del sistema operativo. reMarkable non c'entra nulla: resta un progetto personale che si installa a proprio rischio.
+
+Sul fronte dei dati la scelta è controcorrente. Le memorie restano sul dispositivo, conservano le ultime 400 pagine e non prevedono telemetria. L'immagine della pagina viene cancellata dopo la lettura e la funzione si può disattivare.
+
+Il senso va cercato oltre il gioco: questo è uno dei primi esempi convincenti di AI visiva che lascia il browser per abitare un hardware lento e sobrio. Non ci sono tastiera, notifiche o bagliori, e la scrittura a mano torna interfaccia.
+
+Rivest ha già mostrato una «Mappa del Malandrino» interattiva e promette altri capitoli.
+
+### I miei consigli
+
+Guardate al metodo, non al costume di Halloween. Il paradigma che conta sta nell'interazione cauta: catturare un gesto naturale, ragionarci con un modello, restituire una risposta senza rubare attenzione.
+
+Se progettate esperienze o formate persone, immaginate flussi senza chat né schermo acceso, e chiedetevi quale gesto potreste rendere conversazionale.
+
+Tenete ferma la questione della fiducia: un oggetto che risponde con la vostra stessa grafia abbassa le difese; progettatelo pensando prima a chi lo userà, poi a ciò che sa fare.
+
+«Mai fidarsi di qualcosa che è capace di pensare da solo, se non riesci a vedere dove tiene il cervello» (Arthur Weasley, in «Harry Potter e la Camera dei Segreti»).
+
+## Reflect di Anthropic: uno specchio professionale, non un cruscotto di vanità
+
+URL: https://www.dmjlab.com/insights/anthropic-reflect-uso-consapevole-ai/
+Autore: Domenico Maria Jacobone · Data: 2026-07-13 · Sezione: AI
+
+Anthropic ha rilasciato in beta Reflect, un cruscotto che mostra come, quando e su cosa si usa Claude, con promemoria per fare una pausa. Il valore reale non sta nel conteggio, ma nella domanda che lo accompagna: cosa vogliamo continuare a fare da soli?
+
+Un'azienda di intelligenza artificiale che progetta una funzione per ricordarti di spegnere l'intelligenza artificiale.
+
+Sembra un controsenso commerciale, si rivela invece la scommessa che Anthropic ha appena messo in campo.
+
+Il 9 luglio 2026 Anthropic ha rilasciato in beta Reflect, un cruscotto che mostra come, quando e su cosa una persona usa Claude, con l'opzione di fissare orari di silenzio e promemoria per fare una pausa.
+
+Quante delle attività che oggi deleghiamo vorremmo continuare a svolgere di persona, pur sapendo che l'algoritmo le sbrigherebbe in minor tempo?
+
+Lo strumento è raggiungibile dalle Impostazioni di Claude su web e app desktop, riservato agli utenti Free, Pro e Max che abbiano attivato la memoria.
+
+L'analisi copre gli ultimi 1, 3, 6 o 12 mesi e restituisce i temi ricorrenti e le fasce orarie di utilizzo più dense. Il valore dichiarato risiede meno nel conteggio e più nella domanda che lo accompagna.
+
+Reflect propone periodicamente sollecitazioni come «Qual è una cosa che vuoi continuare a fare da solo, anche se Claude potrebbe farla più in fretta?», e apre lo spazio per discuterne.
+
+L'impianto poggia sul 4D AI Fluency Framework richiamato da Anthropic, articolato su quattro competenze: la delega, ovvero decidere se e come coinvolgere l'AI; la descrizione degli obiettivi; il discernimento nel valutare i risultati; la diligenza nell'assumersi la responsabilità di ciò che si produce.
+
+Sulla riservatezza, che tocca da vicino chi tratta dati di clienti, l'azienda dichiara limiti precisi. Reflect non attinge dalle conversazioni in incognito e non estrae i file sottostanti agli strumenti collegati.
+
+Le conversazioni legate a integrazioni sanitarie restano escluse, e i contenuti sensibili compaiono solo a livello generale. Anthropic riferisce di aver sviluppato lo strumento con l'AHA program del MIT Media Lab, il Digital Wellness Lab del Boston Children's Hospital e il Family Online Safety Institute.
+
+### I miei consigli
+
+Trattate Reflect come uno specchio professionale, non come un cruscotto di vanità.
+
+Definite l'obiettivo prima di generare il resoconto, distinguendo le attività da presidiare in prima persona da quelle cedibili senza rimpianti.
+
+Leggete il dato sulle fasce orarie contro la propria agenda, per capire se l'uso di Claude segue una strategia o riempie i vuoti della giornata.
+
+Prendete alla lettera la sollecitazione sulle cose da fare da soli, perché la competenza che non si esercita più tende ad atrofizzarsi. Verificate i confini di riservatezza prima di collegare strumenti aziendali, se lavorate con dati riservati.
+
+La funzione resta in beta: il conteggio del tempo speso e il riflesso sulle conversazioni di Cowork sono annunciati, ma non ancora disponibili.
+
+«Una vita senza esame non è degna di essere vissuta» (Socrate, nel racconto di Platone, Apologia di Socrate).
+
+## Due paesi controllano il 90% del calcolo AI: la posta in gioco del panel ONU
+
+URL: https://www.dmjlab.com/insights/panel-onu-ai-concentrazione-calcolo/
+Autore: Domenico Maria Jacobone · Data: 2026-07-06 · Sezione: Governance
+
+Si apre a Ginevra il primo tavolo intergovernativo dell'ONU sull'intelligenza artificiale, e il report che lo precede fissa la posta in gioco: benefici già reali, rischi che corrono alla stessa velocità, regole che arrancano.
+
+Mentre a Ginevra si apre il primo tavolo intergovernativo dell'ONU sull'intelligenza artificiale, un dato del report che lo precede fissa la posta in gioco: due paesi controllano circa il 90% della potenza di calcolo che addestra l'AI più avanzata. Stati Uniti tre quarti, Cina circa il 15%.
+
+Quanto pesa questa concentrazione sul lavoro di chi, in Italia, costruisce servizi e formazione sull'AI senza possedere né i modelli né i data center che li addestrano?
+
+È il report preliminare del primo panel scientifico indipendente dell'ONU sull'AI, uscito il 1° luglio. Riunisce 40 scienziati scelti tra oltre 2.600 candidature da più di 140 paesi. Lo co-presiedono Yoshua Bengio, premio Turing 2018, e Maria Ressa, giornalista e premio Nobel per la pace 2021.
+
+Il mandato di ricerca è scientifico, non regolatorio; i benefici elencati sono già realtà verificabili. L'AI ha previsto la struttura di oltre 200 milioni di proteine, accelerando la ricerca su farmaci e antibiotici. Aiuta a diagnosticare precocemente tumori come quello al seno. Alimenta sistemi di allerta contro l'insicurezza alimentare e amplia l'accesso alla tecnologia per le persone con disabilità.
+
+I rischi corrono alla stessa velocità. Il report cita abusi online e deepfake sessuali, con donne e minori più esposti, disinformazione indistinguibile dal vero, frodi e attacchi informatici, sistemi che rafforzano convinzioni dannose fino ad aggravare crisi di salute mentale, oltre all'impronta ambientale dei data center.
+
+Bengio non addolcisce il messaggio: «Le capacità dell'AI stanno superando sia la comprensione scientifica sia la capacità dei governi di adattarsi». E aggiunge che, con prove crescenti di comportamenti ingannevoli dei modelli, la scienza oggi non può garantire l'assenza di danni gravi.
+
+Il quadro regolatorio purtroppo arranca: nel mondo esistono oltre 40 tra norme e linee guida sull'AI, ma restano frammentate e quasi mai testate sul campo. Molte valutazioni di sicurezza le conducono le stesse aziende che sviluppano i sistemi.
+
+### I miei consigli
+
+Trattate la governance come parte del prodotto e non come un adempimento da sbrigare a valle, pretendendo da fornitori e clienti prove indipendenti di sicurezza al posto delle autocertificazioni.
+
+Conviene mappare per iscritto le dipendenze tecnologiche, perché sapere dove calcolo e dati restano concentrati orienta scelte contrattuali più solide. E vale la pena investire subito in competenze interne, dato che chi non può ispezionare o adattare la tecnologia finisce per subirla.
+
+Il report confluisce nel Global Dialogue on AI Governance, a Ginevra il 6 e 7 luglio; la versione completa è attesa nel 2027. Il panel lo riassume così: l'AI non è né buona né cattiva in sé, e il suo impatto dipende dalle scelte che governi, imprese e società compiono oggi.
+
+«La tecnologia non è né buona né cattiva, e nemmeno neutrale» (Melvin Kranzberg, prima legge della tecnologia, 1986).
+
+## SAP sceglie la riqualificazione: reinventarsi il lavoro invece di perderlo
+
+URL: https://www.dmjlab.com/insights/sap-riqualificare-invece-di-licenziare/
+Autore: Domenico Maria Jacobone · Data: 2026-07-04 · Sezione: Lavoro
+
+Il più grande produttore di software d'Europa scommette sul reskilling al posto dei tagli. Visione lungimirante o rinvio del problema? Cosa insegna alle imprese che stanno automatizzando.
+
+C'è un modo elegante per evitare i licenziamenti: chiedere ai dipendenti di inventarsi un lavoro nuovo.
+
+SAP, il più grande produttore di software d'Europa, scommette sulla riqualificazione al posto dei tagli. Lo racconta il New York Times del 2 luglio 2026, a firma di Jim Tankersley.
+
+Riqualificare invece di licenziare: visione lungimirante o rinvio del problema?
+
+Il contesto pesa: nel 2024 SAP aveva avviato una ristrutturazione arrivata a colpire circa 10.000 posti, alcuni per effetto dell'automazione, senza chiarire quanti fossero legati direttamente all'AI né quali mansioni sparissero.
+
+La contromossa arriva subito dopo. Dal 2023 l'azienda dichiara un saldo positivo di oltre 3.500 posti netti, con figure prima inesistenti come i forward-deployed engineer, tecnici che affiancano i clienti nello sviluppo di soluzioni basate sull'intelligenza artificiale.
+
+La logica è lineare: invece di sostituire le persone, SAP chiede loro di spostarsi verso attività a maggior valore, servendosi di strumenti che migliorano in fretta.
+
+Gli economisti, però, si dividono. Nicola Fuchs-Schündeln, presidente del WZB Berlin Social Science Center, sostiene che l'AI potrebbe salvare l'Europa da una grave carenza di manodopera legata all'invecchiamento demografico. Marcel Fratzscher, presidente del DIW Berlin – German Institute for Economic Research, ne riconosce il potenziale a una condizione precisa: che il continente investa in fretta e in misura adeguata.
+
+Restano i dubbi di merito, perché riconvertire su larga scala richiede tempo, formazione seria e non rende allo stesso modo per ogni mansione.
+
+Un dettaglio di sfondo completa il quadro: lo stesso 2 luglio un memo interno visionato da Bloomberg segnalava una stretta sulle nuove assunzioni, concentrate sui profili AI, insieme a un taglio delle spese non essenziali. La riqualificazione, dunque, nasce dentro una precisa pressione sui costi.
+
+### I miei consigli
+
+Trattate questa vicenda come un segnale operativo e non come una notizia lontana.
+
+Mappate le competenze già presenti in azienda prima di cercarle sul mercato, perché il reskilling costa meno di una ricerca esterna e trattiene la conoscenza dei processi.
+
+Individuate le mansioni ripetitive più esposte all'automazione e ridisegnatele attorno a ciò che l'AI non sa fare, cioè relazione, giudizio e contesto.
+
+Legate la formazione a obiettivi misurabili anziché a corsi generici, perché tra una promessa e un risultato sta sempre la verifica. E parlate con chiarezza alle persone, dato che la fiducia si costruisce dicendo cosa cambia, non tenendolo nascosto.
+
+Come scriveva Alan Kay, il modo migliore per prevedere il futuro è inventarlo.
+
+## Ford richiama i veterani: la conoscenza tacita è il collo di bottiglia dell'AI
+
+URL: https://www.dmjlab.com/insights/ford-veterani-conoscenza-tacita/
+Autore: Domenico Maria Jacobone · Data: 2026-07-01 · Sezione: Casi aziendali
+
+Ford ha riassunto circa 350 ingegneri veterani e ha vinto la J.D. Power Initial Quality Study 2026. Non è la rivincita degli umani sulle macchine: è il valore che si sposta verso ciò che non sta nei manuali.
+
+Ford Motor Company ha riassunto circa 350 ingegneri veterani in tre anni e li ha pagati a caro prezzo per capire che l'esperienza non si carica come un file in un sistema AI.
+
+La notizia vera di questa storia sta nel finale, che molti titoli letti in Europa tagliano: dopo aver riportato in azienda quei tecnici, Ford ha conquistato il primo posto tra i marchi mainstream nella J.D. Power Initial Quality Study 2026, il miglior risultato in sedici anni.
+
+Chi scrive che «l'AI ha fatto cilecca» racconta metà della storia. L'altra metà è che il modello ibrido ha funzionato. Cosa insegna questo caso a chi sta automatizzando i propri processi?
+
+Vale la pena ripercorrere i fatti in ordine. Charles Poon, vicepresidente hardware, lo ha candidamente ammesso ai giornalisti: «pensavamo che bastasse introdurre l'AI e darle in pasto i requisiti di progettazione per ottenere un prodotto di alta qualità». Quella convinzione si è rivelata sbagliata.
+
+Il problema non era la tecnologia, ma la mancanza di repository: i tecnici più esperti avevano lasciato Ford prima di trasferire il loro sapere ai sistemi. Le 900 telecamere basate su AI lavoravano su fondamenta incomplete, e l'automazione amplificava gli errori invece di correggerli.
+
+Kumar Galhotra, chief operating officer, ha spiegato il cambio di rotta: dall'approccio reattivo «trova e ripara» a un modello che previene i difetti prima della linea di montaggio. I veterani oggi riscrivono i dati di addestramento e formano i più giovani. Fanno fare di più all'AI, non di meno.
+
+Serve onestà sul contesto: Ford resta il marchio più richiamato negli Stati Uniti, con 51 campagne nel 2026, che Galhotra definisce un indicatore di coda legato ad auto costruite con il vecchio metodo.
+
+A questo punto arriva la nota stonata: nel luglio 2025, ad Aspen, il CEO Jim Farley aveva dichiarato che «l'intelligenza artificiale sostituirà letteralmente metà dei lavoratori impiegatizi negli Stati Uniti». E Poon stesso lascia intendere che, una volta travasato il sapere, quei veterani potrebbero tornare sostituibili.
+
+Non è la rivincita degli umani sulle macchine, ma qualcosa di più interessante. Il valore si è spostato: la conoscenza tacita, quella che si costruisce in anni di errori e non sta nei manuali, è diventata il collo di bottiglia. Chi la possiede ha leva, almeno finché non l'ha ceduta. La famosa storia del professionista pagato per dare una martellata in un certo modo e in un certo punto…
+
+### I miei consigli
+
+Mappate la conoscenza tacita dei vostri esperti prima di automatizzare, non dopo averli lasciati andare, e siate chiari in ciò che fate.
+
+Trattate i profili senior come fonti di dati di addestramento e non come la prima voce di costo da tagliare.
+
+Misurate l'automazione su un risultato di qualità verificabile, come ha fatto Ford con J.D. Power, e non sul numero di teste rimosse.
+
+«L'esperienza è il nome che ciascuno dà ai propri errori» (Oscar Wilde, Il ventaglio di Lady Windermere).
+
+## Un tutor AI per ogni studente: la lezione della Florida State University
+
+URL: https://www.dmjlab.com/insights/notebooklm-florida-state-tutor-ai/
+Autore: Domenico Maria Jacobone · Data: 2026-06-24 · Sezione: Formazione
+
+La Florida State University ha dato a ogni studente un tutor AI ancorato ai materiali dei docenti. Un caso d'uso già validato sul campo, che parla direttamente alle scuole e agli atenei italiani.
+
+Un tutor disponibile 24 ore su 24, capace di generare quiz personalizzati, schede di studio, guide di preparazione e sintesi audio di materiali densi, ancorato esclusivamente ai testi del docente: non è fantascienza, è esattamente quello che la Florida State University ha messo nelle mani di ogni suo studente attraverso Google NotebookLM.
+
+Negli atenei e nelle scuole italiane si sta muovendo qualcosa in questa direzione?
+
+Il resoconto, pubblicato il 22 giugno 2026 sul blog ufficiale Google, porta la firma di Jonathan Fouzard, Vice President e Chief Information Officer della Florida State University. L'università ha avviato un pilota strutturato con Google for Education con un obiettivo dichiarato: portare l'AI direttamente nelle mani della comunità accademica e misurare l'impatto reale sul rendimento.
+
+Studenti che si trovavano stabilmente con risultati insufficienti hanno trasformato abitudini di studio e voti nel giro di poche settimane, secondo Fouzard. Si tratta di un dato autoriferito dall'ateneo: nessuno studio indipendente è citato nell'articolo.
+
+Cosa distingue NotebookLM da un chatbot generico? Il vincolo deliberato: lo strumento non naviga liberamente sul web, ma lavora soltanto sui materiali caricati dal professore, che siano dispense, articoli scientifici o trascrizioni di lezione. Lo studente rimane così ancorato al programma del corso, non alle risposte plausibili che un modello aperto genererebbe. Per i docenti universitari italiani, da sempre diffidenti delle allucinazioni dei modelli linguistici, è un argomento di peso.
+
+Sul versante dei docenti, FSU segnala un secondo effetto concreto: la preparazione delle lezioni, la generazione di materiali visivi e l'analisi dei dati avvengono più rapidamente, restituendo ore da reinvestire nel rapporto diretto con gli studenti.
+
+L'AI non sostituisce i docenti: li moltiplica nell'impatto. Fouzard lo chiama «force multiplier», moltiplicatore di forze, non sostituto.
+
+L'Italia, con le sue istituzioni scolastiche cronicamente sottofinanziate, un rapporto docenti-studenti tra i più squilibrati d'Europa e una digitalizzazione della didattica ancora frammentata, ha davanti a sé un caso d'uso già validato sul campo. Il punto di partenza non è l'invenzione: è l'adattamento intelligente di modelli che già funzionano altrove.
+
+### I miei consigli
+
+Per gli istituti che stanno valutando l'introduzione dell'AI: si dovrebbe cominciare da strumenti grounded, cioè ancorati a fonti controllate, piuttosto che da chatbot aperti.
+
+Il modello FSU riduce il rischio più temuto in ambito accademico — la generazione di contenuti fuori contesto — senza rinunciare alla personalizzazione dell'apprendimento. Vale la pena portarlo al tavolo dei consigli di amministrazione già oggi, come riferimento metodologico prima ancora che tecnologico.
+
+«L'istruzione è l'arma più potente che si possa usare per cambiare il mondo» (Nelson Mandela, discorso alla Mindset Network, Johannesburg, 16 luglio 2003).
+
+## Un'istruzione non è un guardrail: governare davvero gli agenti AI
+
+URL: https://www.dmjlab.com/insights/claude-code-istruzioni-guardrail/
+Autore: Domenico Maria Jacobone · Data: 2026-06-20 · Sezione: AI
+
+Dare un'istruzione a un'AI non garantisce che venga seguita: la guida tecnica di Anthropic su Claude Code distingue tra istruzioni al modello e vincoli deterministici. Una lezione di ingegneria organizzativa, non solo di software.
+
+Dare un'istruzione a un'AI non garantisce che venga seguita.
+
+Anthropic lo afferma esplicitamente nella guida tecnica pubblicata il 18 giugno su Claude Code: in sessioni lunghe, sotto pressione o in presenza di prompt injection nei file letti durante il lavoro, il modello può disattendere anche le regole scritte nero su bianco.
+
+Hai già una strategia per gestire questo rischio nei tuoi processi?
+
+Claude Code mette a disposizione sette metodi per istruire l'agente: il file CLAUDE.md, le regole, le skill, i subagenti, gli hook, gli stili di output e l'aggiunta al system prompt. Ognuno ha un costo di contesto diverso, un comportamento diverso durante la compattazione della sessione e un diverso livello di autorità. Scegliere il metodo sbagliato significa sprecare token o, peggio, avere un agente che si comporta in modo imprevedibile.
+
+La distinzione centrale, secondo Anthropic, è tra istruzione e guardrail deterministico. Un'istruzione al modello viene seguita quasi sempre, non sempre. Un vincolo assoluto richiede un hook: un comando eseguito dal codice indipendentemente dal ragionamento del modello, capace di bloccare qualsiasi chiamata non autorizzata. È la differenza tra una policy sull'AI e un guardrail reale.
+
+I subagenti operano secondo una logica diversa: girano in una finestra di contesto separata e restituiscono alla sessione principale solo il risultato finale. Anthropic indica che questo schema consente di orchestrare decine di agenti in parallelo senza saturare il contesto e senza perdere fedeltà alle istruzioni originali.
+
+### I miei consigli
+
+Prima di inserire qualcosa nel file principale di istruzioni, chiediti se deve valere in ogni sessione e in ogni contesto oppure solo su file specifici: in quel caso, una regola con ambito ristretto consuma token solo quando serve.
+
+Prima di scrivere «non fare mai X», convertilo in un guardrail deterministico, perché un'istruzione al modello non ha la stessa certezza di esecuzione di una riga di codice.
+
+Se stai costruendo flussi di lavoro con agenti AI nel tuo team, mappa i sette metodi disponibili e assegna a ciascuna istruzione il meccanismo giusto: il comportamento dell'agente e il costo computazionale dipendono da questa scelta, non dalla lunghezza del prompt.
+
+Claude Code è già uno strumento di ingegneria organizzativa, non solo di sviluppo software. Chi ignora la sua architettura di controllo lascia variabile ciò che potrebbe essere deterministico.
+
+«Non basta sapere; bisogna anche applicare. Non basta volere; bisogna anche agire» (Johann Wolfgang von Goethe, Massime e riflessioni, 1833).
+
+## Unilever e l'arte del sacrificio: scegliere cosa lasciar andare
+
+URL: https://www.dmjlab.com/insights/unilever-arte-del-sacrificio/
+Autore: Domenico Maria Jacobone · Data: 2026-04-02 · Sezione: Strategia
+
+Fernando Fernández fonde il business alimentare di Unilever con McCormick e ripete un solo mantra: la crescita dei volumi. Ogni portafoglio, anche professionale, cresce quando si decide cosa lasciar andare.
+
+Fernando Fernández non ha fretta, eppure ha già venduto perfino la maionese — con uno scopo preciso.
+
+L'argentino guida Unilever dal marzo 2025. Il 31 marzo 2026 ha annunciato la fusione del business alimentare del gruppo con McCormick & Company, il produttore di spezie. L'operazione valuta la divisione food di Unilever circa 44,8 miliardi di dollari e McCormick circa 21 miliardi (fonti: Reuters, CNBC). Nasce un colosso da circa 20 miliardi di fatturato annuo, secondo i comunicati stampa delle due società.
+
+Quanto vale, oggi, la disciplina di rinunciare?
+
+La struttura dell'accorpamento è un Reverse Morris Trust: Unilever incassa 15,7 miliardi in contanti e i suoi azionisti ottengono il 55,1% della società combinata, mentre il gruppo trattiene il 9,9% (fonte: CNBC). L'India resta fuori dall'accordo, la cui chiusura è prevista a metà 2027.
+
+Prima erano arrivati i gelati: a dicembre 2025 Unilever aveva scorporato Magnum e Ben & Jerry's nella Magnum Ice Cream Company. «La strategia è l'arte del sacrificio», ha dichiarato Fernández al WSJ Leadership Institute. È una sua affermazione, da leggere come visione e non come dato verificato.
+
+Nel taglio si legge una logica economica precisa: il food garantisce margini alti, eppure la sua crescita resta indietro rispetto a beauty e personal care, le divisioni su cui Unilever punta a una crescita annua del 4-6% (fonte: Reuters). In ogni riunione Fernández ripete un solo mantra, la crescita dei volumi, e nel terzo trimestre 2025 quel volume è salito dell'1,7% (fonti: Unilever, Storyboard18).
+
+La pressione, però, viene da lontano: l'attivista Nelson Peltz, che predica la focalizzazione, è azionista dal 2022 ed è stato collegato all'uscita di due amministratori delegati precedenti; Fernández è il terzo in sei anni.
+
+Il mercato non ha applaudito: nei giorni dell'annuncio il titolo Unilever ha perso oltre il 7% e McCormick circa il 9% (fonte: FoodNavigator). Sul giudizio pesa il cattivo storico delle mega-fusioni alimentari più della struttura dell'accordo.
+
+Resta l'altra metà della scommessa: Fernández lavora con 300.000 creatori di contenuti e si prepara a un mondo in cui i modelli linguistici rimodelleranno la scoperta dei prodotti (fonti: Marketing Week, Storyboard18). Per questo investe in ricerca, così da conquistare la preferenza degli algoritmi.
+
+### I miei consigli
+
+Questa cessione andrebbe letta come un esercizio di messa a fuoco e non come una ritirata, perché ogni portafoglio, anche professionale, cresce quando si decide cosa lasciar andare.
+
+Conviene domandarsi quali attività tratteniamo per affetto e non per rendimento, e accettare che la rilevanza si misuri nei volumi di scelte altrui più che nel numero di cose che sappiamo fare.
+
+Preparate infine i vostri contenuti alla mediazione dell'intelligenza artificiale, poiché la prossima vetrina sarà algoritmica.
+
+«L'essenza della strategia è scegliere cosa non fare» (Michael Porter).

@@ -286,7 +286,7 @@ function InsightsPage({
     className: "ins-deon-link"
   }, /*#__PURE__*/React.createElement("a", {
     className: "link-arrow",
-    href: "#/about",
+    href: sectionHref("about"),
     onClick: e => {
       e.preventDefault();
       go("about");
@@ -327,7 +327,7 @@ function PostPage({
       className: "page-lede"
     }, /*#__PURE__*/React.createElement("a", {
       className: "link-arrow",
-      href: "#/insights",
+      href: sectionHref("insights"),
       onClick: e => {
         e.preventDefault();
         go("insights");
@@ -358,7 +358,7 @@ function PostPage({
     rel: "noopener"
   }, c.original, " \u2197"), /*#__PURE__*/React.createElement("a", {
     className: "btn btn--solid",
-    href: "#/insights",
+    href: sectionHref("insights"),
     onClick: e => {
       e.preventDefault();
       go("insights");
