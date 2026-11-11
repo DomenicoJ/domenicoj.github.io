@@ -19,6 +19,7 @@ const OWNER = {
 
 const NAV = {
   it: [
+    { id: "ai", label: "AI", href: "/intelligenza-artificiale/" },
     { id: "about", label: "Chi sono" },
     { id: "services", label: "Servizi" },
     { id: "proposte", label: "Proposte" },
@@ -26,6 +27,7 @@ const NAV = {
     { id: "contact", label: "Contatti" },
   ],
   en: [
+    { id: "ai", label: "AI", href: "/intelligenza-artificiale/" },
     { id: "about", label: "About" },
     { id: "services", label: "Services" },
     { id: "proposte", label: "Work with me" },
