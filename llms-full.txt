@@ -2,6 +2,622 @@
 
 > Articoli di Domenico Maria Jacobone (AI Strategist, consulente, formatore e giornalista, DMJ Lab) su intelligenza artificiale, innovazione e lavoro. Sommario del sito: https://www.dmjlab.com/llms.txt
 
+## Lavazza e gli agenti nel marketing: il riordino viene prima dello strumento
+
+URL: https://www.dmjlab.com/insights/lavazza-agenti-ai-marketing-riordino-processi/
+Autore: Domenico Maria Jacobone · Data: 2026-11-06 · Sezione: Casi aziendali
+
+Lavazza ha ridisegnato il proprio marketing attorno a una squadra mista di persone e agenti di intelligenza artificiale, con Accenture come partner tecnologico. Il metodo è descritto con cura, ma senza un solo risultato misurato: l'opportunità maggiore sta nel riordino dei processi che precede lo strumento.
+
+Lavazza Group ha ridisegnato il proprio marketing attorno a una squadra mista di persone e agenti di intelligenza artificiale, programmati per svolgere compiti in autonomia.
+
+Il partner tecnologico è Accenture e vari articoli descrivono il metodo con cura, ma senza riportare un solo risultato misurato.
+
+Nel marketing della vostra azienda, sapete dire quali decisioni vengono già preparate da un agente di intelligenza artificiale?
+
+### Il modello
+
+Il modello si regge su quattro strumenti.
+
+Il Brand Intelligence Hub raccoglie e interpreta dati di mercato, consumo, interazione e innovazione, mentre i profili tipo di consumatore nascono dalle ricerche dell'azienda.
+
+Un'interfaccia conversazionale genera idee e richieste creative, e una Content Factory produce contenuti in più lingue.
+
+Prima degli strumenti, Lavazza ha mappato i processi da capo a fondo e li ha discussi con il vertice, perché analisi dei consumatori, strategia di marca, innovazione e contenuti seguono spesso percorsi distinti.
+
+Le persone, precisano gli articoli che ho letto, mantengono la responsabilità delle decisioni finali.
+
+Il rischio di risposte compiacenti è già emerso in Lavazza, perché Stravito, fornitore di profili virtuali di consumatori e quindi fonte interessata, ha riferito il 27 maggio 2026 che i gruppi di lavoro trovavano negli strumenti generici risposte troppo positive e levigate.
+
+Per questo hanno costruito un assistente addestrato sulle ricerche dell'azienda e incaricato di muovere critiche.
+
+### La mia lettura
+
+La mia lettura è che l'opportunità maggiore stia nel riordino che precede lo strumento, perché un agente rende solo dove dati e passaggi di lavoro sono collegati.
+
+I rischi nascono dalla stessa automazione che rende utile lo strumento. I profili virtuali rispondono entro ciò che l'azienda ha già chiesto ai consumatori, perché derivano da ricerche passate.
+
+I contenuti prodotti in serie moltiplicano su ogni mercato un errore di partenza, e la responsabilità dichiarata diventa formale quando manca il tempo di controllare.
+
+Per chi in Italia guida un marketing di media dimensione, il caso indica che il riordino dei processi viene prima dell'acquisto dello strumento.
+
+### I miei consigli
+
+I miei consigli sono di mappare i processi prima di scegliere qualunque strumento, di fissare per iscritto quali decisioni restano umane e chi le firma, e di concordare prima dell'avvio due o tre indicatori di risultato, come i tempi di produzione dei contenuti.
+
+Conviene inoltre verificare ogni tanto i profili virtuali con persone reali, perché una simulazione costruita sul passato non coglie ciò che il mercato ha appena iniziato a fare.
+
+«Poiché oggi non abbiamo alcun modo di rendere saggi i computer, oggi non dobbiamo affidare ai computer compiti che richiedono saggezza.» (Joseph Weizenbaum, Computer Power and Human Reason, 1976).
+
+## I fondi non scommettono contro l'intelligenza artificiale, ma contro il debito che la finanzia
+
+URL: https://www.dmjlab.com/insights/hedge-fund-vendite-ai-debito-che-la-finanzia/
+Autore: Domenico Maria Jacobone · Data: 2026-11-05 · Sezione: Attualità
+
+Tra l'8 e il 14 ottobre i maggiori hedge fund hanno venduto, al netto, tante azioni legate all'intelligenza artificiale quante ne avevano comprate dall'inizio del 2025. Le posizioni restano però aperte: il dubbio non riguarda la tecnologia, ma il capitale che ne sostiene la corsa.
+
+Tra l'8 e il 14 ottobre i maggiori hedge fund hanno venduto, al netto, tante azioni legate all'intelligenza artificiale quante ne avevano comprate dall'inizio del 2025.
+
+Lo indicano i dati del servizio che Goldman Sachs riserva ai fondi, ripresi dalla stampa finanziaria.
+
+Il 22 ottobre il paniere dei titoli preferiti dai fondi, compilato dalla stessa banca, ha perso il 4,2 per cento, la giornata peggiore dal 2011.
+
+I produttori di memorie, da Samsung a Micron, hanno bruciato oltre 700 miliardi di dollari in meno di due settimane.
+
+Il titolo che circola da domenica 1° novembre, anche su Yahoo Finance, sostiene che i fondi abbiano venduto «tutte» le azioni legate all'intelligenza artificiale: non è corretto.
+
+Le decisioni sull'intelligenza artificiale nella vostra azienda seguono i listini o i risultati nei processi?
+
+### I dati
+
+I fondi hanno cancellato gli acquisti netti di quasi due anni, mentre le posizioni restano in larga parte aperte.
+
+Secondo Bloomberg, a metà ottobre la tecnologia pesava ancora per il 23,5 per cento sul portafoglio globale seguito da Goldman, con un'esposizione netta tra le più alte degli ultimi cinque anni.
+
+Le vendite hanno colpito soprattutto le scommesse al rialzo, chiuse a un ritmo circa 3,5 volte superiore a quello delle nuove scommesse al ribasso.
+
+Il meccanismo è noto: chi investe con denaro preso a prestito, quando i prezzi scendono, deve ridurre il rischio, e vendendo spinge i prezzi ancora più giù.
+
+Anche i dati di Morgan Stanley, letti da Steno Research, segnalano un taglio di circa l'8 per cento dell'esposizione azionaria complessiva da giugno, il più ampio da quasi dieci anni.
+
+Richard Privorotsky, CFA di Goldman, ha riassunto il problema in una nota ai clienti: la domanda di potenza di calcolo può crescere in modo esponenziale, ma il capitale che la finanzia no.
+
+Il contesto di questi giorni gli dà ragione: Alphabet ha appena chiuso il trimestre con 9,1 miliardi di cassa bruciata per costruire data center, e Meta aveva subito la stessa sorte la settimana prima.
+
+### La mia lettura
+
+La mia lettura è che i fondi non stiano scommettendo contro l'intelligenza artificiale, bensì contro il debito che ne sostiene la corsa.
+
+I produttori di chip vedono ancora una domanda superiore all'offerta, mentre gli investitori dubitano che i ritorni arrivino prima delle scadenze.
+
+Per chi in Italia adotta l'intelligenza artificiale, le oscillazioni di Borsa non cambiano l'utilità di un modello dentro un processo.
+
+Possono cambiare però i prezzi, le condizioni contrattuali e la tenuta dei fornitori più fragili.
+
+### I miei consigli
+
+I miei consigli sono di valutare i progetti sui risultati misurati nei propri processi, non sul clima dei mercati, e di evitare impegni pluriennali rigidi con fornitori poco solidi, prevedendo clausole su prezzi e uscita.
+
+«Quando lo sviluppo del capitale di un paese diventa un sottoprodotto delle attività di un casinò, è probabile che il lavoro sia fatto male.» (John Maynard Keynes, Teoria generale dell'occupazione, dell'interesse e della moneta, 1936).
+
+## Surgelati a 50 gradi: la catena del freddo attaccata da remoto
+
+URL: https://www.dmjlab.com/insights/cyberattacco-catena-del-freddo-supermercati-coop/
+Autore: Domenico Maria Jacobone · Data: 2026-11-04 · Sezione: Sicurezza
+
+Nella notte tra il 1° e il 2 novembre qualcuno ha alzato da remoto la temperatura dei banchi surgelati in almeno quattro supermercati siciliani, e nessuno ha chiesto un riscatto. La falla sta nell'organizzazione più che nella tecnologia, perché del controllo del freddo non risponde nessuno fino in fondo.
+
+Torno su un argomento importante, perché nella notte tra il 1° e il 2 novembre qualcuno ha alzato da remoto la temperatura dei banchi surgelati in almeno quattro supermercati Coop di Catania e Palermo, gestiti dal gruppo Radenza.
+
+La merce alterata è finita tra i rifiuti.
+
+È l'ultima tappa di un'ondata partita in Francia l'11 ottobre, di cui ho già scritto, con centinaia di punti vendita colpiti. In queste settimane sono stati coinvolti anche Belgio, Svezia, Irlanda, Lussemburgo, Estonia, Paesi Bassi e Portogallo.
+
+I congelatori sono arrivati a 50 gradi.
+
+Nessuno ha chiesto un riscatto, e stavolta l'assenza di una richiesta di denaro è la notizia peggiore.
+
+Nella vostra azienda sapete chi può cambiare, da un altro Paese, la temperatura delle vostre celle frigorifere?
+
+### I fatti
+
+Secondo Tgcom24 la polizia postale ritiene gli episodi collegati e valuta anche la pista di gruppi filorussi.
+
+Il commissario europeo Christophe Hansen ha parlato di un attacco deliberato alla filiera alimentare, pur escludendo rischi immediati per l'approvvigionamento.
+
+L'Agenzia per la Cybersicurezza Nazionale ha segnalato anche un'azienda toscana di ristorazione collettiva e un produttore emiliano di surgelati: è esposta l'intera catena del freddo.
+
+In Francia erano coinvolte soprattutto centraline Danfoss AK-SM 800 e AK-SC 355, fuori produzione rispettivamente dal 2021 e dal 2016 e prive di aggiornamenti di sicurezza, come ha precisato la stessa azienda.
+
+Il 21 ottobre il direttore dell'agenzia francese per la sicurezza informatica, Vincent Strubel, ha spiegato al Senato che non sono serviti difetti noti del software.
+
+Sono bastati pannelli raggiungibili da internet, accessi remoti poco protetti e password deboli.
+
+### La mia lettura
+
+La mia lettura è che la falla stia nell'organizzazione più che nella tecnologia, perché il controllo del freddo è affidato a una filiera di fornitori in cui nessuno ne risponde fino in fondo.
+
+Il frigorista vende l'impianto, il manutentore lo segue a distanza, e il titolare spesso ignora che il pannello sia visibile dalla rete.
+
+Intanto quel banco lavora per anni dopo che il produttore ha smesso di aggiornarne il software.
+
+Il rischio riguarda chiunque conservi prodotti freschi, freschissimi o surgelati, dalla grande catena alla macelleria, perché un solo comando può svuotare un magazzino in una notte.
+
+### I miei consigli
+
+I miei consigli sono di censire centraline e modem collegati agli impianti, staccando da internet ciò che non deve esservi, e di consentire l'accesso a distanza solo da una rete privata, con un codice di conferma oltre alla password, che va rinforzata e fatta cambiare ciclicamente.
+
+Conviene poi riscrivere i contratti di manutenzione, stabilendo chi entra e con quali credenziali, mettere a bilancio la sostituzione degli apparati obsoleti e installare un allarme di temperatura indipendente, con una persona reperibile anche di notte.
+
+«La sicurezza è un processo, non un prodotto.» (Bruce Schneier, The Process of Security, aprile 2000).
+
+## Si cerca su Google come non accadeva da cinque anni, e ogni ricerca rende meno
+
+URL: https://www.dmjlab.com/insights/alphabet-ricerca-rende-meno-google-infrastruttura/
+Autore: Domenico Maria Jacobone · Data: 2026-11-03 · Sezione: Strategia
+
+Alphabet ha perso quasi 500 miliardi di dollari di valore in poche ore, dopo una trimestrale con ricavi in crescita del 25 per cento. Vende sempre più calcolo e sempre meno attenzione: per necessità prima che per scelta, Google sta diventando un'azienda di infrastruttura.
+
+Giovedì 29 ottobre Alphabet, la società che controlla Google, è arrivata a perdere il 13 per cento a Wall Street, quasi 500 miliardi di dollari di valore in poche ore.
+
+La trimestrale diffusa la sera prima mostrava ricavi in crescita del 25 per cento, a 127,6 miliardi, e investimenti per 51,4 miliardi in tre mesi, più del doppio di un anno fa.
+
+Il mercato ha punito un paradosso, che invece a Mountain View rivendicano come un successo: si cerca su Google come non accadeva da cinque anni, e ogni ricerca rende meno.
+
+Se la vostra azienda vive di visite dal motore di ricerca, sapete quante arrivano ancora da un clic su un link?
+
+### I numeri
+
+Secondo il comunicato di Alphabet, le ricerche crescono al ritmo più alto degli ultimi cinque anni. I ricavi della ricerca sono saliti del 12 per cento, a 63,4 miliardi, sotto i quasi 65 attesi dagli analisti.
+
+Philipp Schindler, direttore commerciale, ha attribuito parte del rallentamento alla modalità AI, la ricerca in forma di conversazione, perché le sue risposte oggi generano meno pubblicità della pagina di link tradizionale.
+
+Hanno pesato anche i cambi e la frenata degli inserzionisti asiatici.
+
+Il secondo timore riguarda la cassa, perché il flusso di cassa libero è negativo per 9,1 miliardi, il secondo trimestre in rosso da quando la società è quotata, cioè dal 2004.
+
+La direttrice finanziaria Anat Ashkenazi ha confermato una spesa per il 2026 tra 195 e 205 miliardi e ha annunciato che nel 2027 crescerà in modo significativo.
+
+Il dato che indica la direzione è un altro: Google Cloud, che affitta calcolo e modelli alle imprese, ha raddoppiato i ricavi a 30,7 miliardi e triplicato l'utile operativo a 11,1.
+
+### La mia lettura
+
+La mia lettura è che Google stia diventando, per necessità prima che per scelta, un'azienda di infrastruttura. Vende sempre più calcolo e sempre meno attenzione, perché il suo prodotto storico sta cambiando natura.
+
+Per vent'anni la rete ha retto su un patto: il sito offre contenuti, il motore porta visitatori, l'inserzionista paga il clic. Una risposta che esaurisce la domanda riduce il clic, e il patto si allenta per tutti, Google compreso.
+
+Il mercato non dubita che l'intelligenza artificiale funzioni. Teme che non si lasci vendere con la stessa efficienza dei link, e finora nessuno lo ha dimostrato.
+
+Per chi in Italia fa comunicazione, editoria o commercio online, la trimestrale anticipa un cambiamento che arriverà sui propri conti prima che sui listini.
+
+### I miei consigli
+
+I miei consigli sono di misurare a parte il traffico che arriva dai link e quello che arriva dalle risposte generate, e di scrivere contenuti che un modello possa citare con nome e fonte riconoscibili.
+
+Conviene anche costruire canali propri, come lettere periodiche ai clienti e liste di contatti, perché affidare a un solo intermediario la relazione con i clienti è diventato un rischio.
+
+«Questo processo di distruzione creatrice è il fatto essenziale del capitalismo.» (Joseph A. Schumpeter, Capitalismo, socialismo e democrazia, 1942).
+
+## Antonelli campione a vent'anni: la fiducia che accorcia la gavetta
+
+URL: https://www.dmjlab.com/insights/antonelli-campione-mondo-fiducia-giovani-talenti/
+Autore: Domenico Maria Jacobone · Data: 2026-11-02 · Sezione: Strategia
+
+Andrea Kimi Antonelli è il più giovane campione del mondo di Formula 1 della storia. Dietro il talento c'è chi ha scommesso su di lui: per chi guida un'azienda o una scuola, la lezione è affidare responsabilità vere ai giovani prima di quando sembri prudente.
+
+Oggi non si parla di tecnologia, ma di Andrea Kimi Antonelli. È diventato campione del mondo di Formula 1 ieri, domenica 1° novembre, a Città del Messico.
+
+Gli è bastato un terzo posto epico, dietro Max Verstappen e Lewis Hamilton (insieme fanno 11 campionati del mondo!), con quattro gare d'anticipo.
+
+Ha vent'anni e sessantotto giorni, e nessuno ci era mai riuscito così giovane: il primato di Sebastian Vettel, campione nel 2010 a ventitré anni, cade di oltre tre anni.
+
+L'ultimo italiano iridato era stato Alberto Ascari, nel 1953 (quando la Formula 1 disputava appena la sua quarta stagione).
+
+Nella vostra organizzazione, a quale ventenne affidereste oggi una responsabilità di primo piano?
+
+### La storia
+
+Nato a Bologna nel 2006, figlio di Marco, pilota e titolare di una squadra corse, Antonelli è entrato a dodici anni nel vivaio di Mercedes-AMG PETRONAS Formula One Team, scelto da Toto Wolff.
+
+Ha bruciato le tappe in senso letterale: dalla Formula Regional è passato direttamente alla Formula 2, saltando la Formula 3, e nel 2025 ha preso il non facile posto di Hamilton in Mercedes.
+
+La patente l'aveva presa due mesi prima del debutto in Australia, e nello stesso anno ha sostenuto anche l'esame di maturità.
+
+Il 2025 è stato l'anno dell'apprendistato, con il primo podio in Canada e il settimo posto finale. Il 2026 quello della piena maturità: prima vittoria e prima pole in Cina, il comando del mondiale in Giappone, il successo a Monza partendo diciannovesimo, di cui ho già scritto.
+
+In Messico è arrivato dopo una febbre alta che giovedì 29 ottobre lo aveva costretto a letto, e alla vigilia ha raccontato di volersi aiutare con la melatonina per dormire dieci ore.
+
+Porta il numero 12 in omaggio ad Ayrton Senna, il suo idolo, e prima delle gare gioca a briscola con il padre, per scaramanzia.
+
+Guardare questo ragazzo, con un velo di lacrime, mi spinge a pensare che il talento immenso, da solo, non spieghi tutto di questa storia, perché accanto al pilota c'è chi ha deciso di scommettere su di lui, chi lo ha seguito, chi lo supporta e chi lo ha cresciuto.
+
+Nel 2024 Mercedes ha scelto di sostituire il pilota con più vittorie nella storia della Formula 1 con un diciottenne senza esperienza, e nel 2025 ha accettato un anno di errori pagato in punti.
+
+Il dibattito italiano sui giovani parla spesso di attese, di gavetta, di turni da rispettare. La parabola di Antonelli mostra che la gavetta può accorciarsi quando chi investe offre insieme fiducia, struttura, lungimiranza e tolleranza dell'errore.
+
+### I miei consigli
+
+I miei consigli sono, per chi guida un'azienda o una scuola, di riconoscere presto i talenti e di affidare loro responsabilità vere prima di quando sembri prudente, con un mentore accanto e un margine d'errore dichiarato.
+
+Altra possibilità è giocare sul reverse mentoring, perché la prudenza ha un costo che non compare nel bilancio: il rischio di perdere il ventenne rampante che non trova spazio e va a crescere altrove.
+
+«Non è che abbiamo poco tempo, è che ne perdiamo molto.» (Seneca, De brevitate vitae).
+
+## Spy story Nvidia: un problema di filiera con la forma di un romanzo
+
+URL: https://www.dmjlab.com/insights/nvidia-megaspeed-spy-story-filiera-chip/
+Autore: Domenico Maria Jacobone · Data: 2026-10-30 · Sezione: Sicurezza
+
+Secondo il New York Times, un'indagine sui chip Nvidia dirottati verso la Cina arriva fino al vertice dell'azienda. La storia ha la forma di un romanzo di spionaggio e la sostanza di un problema di filiera: conviene decidere in anticipo quali informazioni condividere con i partner.
+
+Tutto comincia dall'altro lato del mondo, con delle scatole ancora chiuse: nel 2024 un funzionario del Dipartimento del Commercio americano trova in un data center della Malesia apparecchiature Nvidia ancora sigillate negli imballaggi originali e da quel dettaglio nasce una storia che, secondo The New York Times, arriva fino al ceo di Nvidia.
+
+Sorvegliando Alice Huang, dirigente di Megaspeed sospettata di dirottare chip verso la Cina, gli investigatori concludono che passa informazioni a Pechino e scoprono che ha incontrato più volte Jensen Huang, amministratore delegato di Nvidia.
+
+I due condividono il cognome, ma non hanno alcun legame di parentela.
+
+Se un fornitore della vostra azienda finisse sotto indagine, lo scoprireste da lui o dai giornali?
+
+### I fatti
+
+Il seguito riguarda ciò che non è stato fatto. Il presidente Donald Trump sarebbe stato informato circa un anno fa e non avrebbe agito, mentre a Huang nessuno ha rivolto l'avvertimento riservato che le autorità danno a chi è bersaglio di un'intelligence straniera, perché i funzionari di allora non lo ritenevano consapevole.
+
+Il Times elenca anche ciò che resta ignoto: se Washington abbia taciuto per non allertare la dirigente, quali agenzie la sorvegliassero, quali informazioni abbia trasmesso.
+
+Nvidia replica che incontrare i clienti fa parte del lavoro di un amministratore delegato, che Megaspeed è un cliente regionale come altri e che non sono stati condivisi segreti industriali.
+
+Megaspeed ha incaricato uno studio legale esterno di un'indagine interna, Pechino parla di calunnie infondate, mentre Casa Bianca, CIA e NSA non hanno commentato.
+
+### La mia lettura
+
+La mia lettura è che la storia ha la forma di un romanzo di spionaggio e la sostanza di un problema di filiera, perché il caso nasce dai chip.
+
+Megaspeed compra apparecchiature con chip Nvidia e ne affitta la potenza di calcolo, secondo il Times anche ad Alibaba, e gli investigatori sospettano che parte di quei chip sia entrata in Cina in modo illegale, ipotesi che Nvidia contesta.
+
+Il fascicolo è passato quest'anno al Dipartimento di Giustizia, e un'azienda che secondo Forbes pesa per circa l'8 per cento dell'indice S&P 500 rende ogni scelta più costosa.
+
+Non ci è dato sapere come finirà la storia appena raccontata, ma ne sentiremo ancora parlare.
+
+### I miei consigli
+
+A proposito: quando si incontrano partner d'affari conviene decidere in anticipo quali informazioni condividere, perché non sappiamo mai, esattamente, dove finiranno.
+
+In questa storia l'accesso alle informazioni è passato dagli incontri «personali e confidenziali», non da meeting aziendali ufficiali.
+
+«Fidarsi, ma verificare.» (Ronald Reagan, citando un proverbio russo, alla firma del Trattato sulle forze nucleari a medio raggio, Washington, 8 dicembre 1987).
+
+## Il prospetto di Anthropic in sette numeri
+
+URL: https://www.dmjlab.com/insights/anthropic-prospetto-nasdaq-sette-numeri/
+Autore: Domenico Maria Jacobone · Data: 2026-10-29 · Sezione: Strategia
+
+Anthropic ha depositato il prospetto per la quotazione al Nasdaq: ricavi in forte crescita, una perdita in gran parte contabile e impegni di calcolo enormi. Per chi usa modelli di frontiera, il documento fotografa una dipendenza reciproca da leggere come la verifica di un fornitore strategico.
+
+Anthropic ha depositato lunedì 26 ottobre il prospetto per la quotazione al Nasdaq. The New York Times ne ha estratto sette numeri che offrono una interessante visione d'insieme.
+
+Nel primo semestre del 2026 i ricavi sono stati 16,3 miliardi di dollari, quasi quattordici volte quelli dello stesso periodo del 2025. Nello stesso semestre la perdita netta ha toccato 80,7 miliardi.
+
+Le due cifre convivono perché raccontano cose diverse (e chi scrive, che lavora ogni giorno con Claude, ha un motivo in più per leggerle con freddezza).
+
+Se la vostra azienda usa un modello di intelligenza artificiale, avete mai letto i fattori di rischio del vostro fornitore?
+
+### I numeri
+
+La perdita è in gran parte contabile: secondo il NYT, 72,4 miliardi derivano dalle obbligazioni convertibili sottoscritte da investitori come Amazon e Google, che il bilancio rivaluta al crescere della valutazione dell'azienda.
+
+Il risultato operativo del semestre, secondo il prospetto, è negativo per 693 milioni, e nel secondo trimestre è diventato positivo per 974 milioni.
+
+La cassa non preoccupa, perché a fine giugno ammontava a circa 132 miliardi tra liquidità e investimenti a breve.
+
+Il rischio riguarda piuttosto gli impegni: per un calcolo del NYT, i contratti di potenza di calcolo elencati nel prospetto potrebbero valere fino a 807 miliardi.
+
+Quelli non rescindibili vanno pagati anche se la crescita rallenta, come l'accordo da 110 miliardi con Amazon che arriva al 2036.
+
+Pesa anche la concentrazione, perché nei nove mesi chiusi al 30 settembre cinque clienti, non nominati, hanno generato circa un quarto dei ricavi.
+
+Dopo la quotazione Dario Amodei e gli altri sei cofondatori controlleranno il 50,1 per cento dei voti, e gli azionisti esterni non potranno metterli in minoranza.
+
+Infine, 94 delle 335 pagine del prospetto descrivono i fattori di rischio, compresa la possibilità che i modelli comportino rischi catastrofici o esistenziali per l'umanità. Il timore, ammette la società, esiste anche al suo interno.
+
+### La mia lettura
+
+La mia lettura è che la quotazione comprerà tempo, non certezze. I conti mostrano un modello di ricavi che funziona e margini operativi in arrivo, mentre la tenuta dipende dalla capacità della domanda di crescere al passo degli impegni firmati.
+
+Per chi in Italia lavora con Claude o con altri modelli di frontiera, il prospetto documenta una dipendenza reciproca: il fornitore dipende da pochi clienti e da pochi fornitori di calcolo, il cliente dal fornitore.
+
+### I miei consigli
+
+I miei consigli sono di leggere la sezione sui rischi come la verifica preliminare di un fornitore strategico e di negoziare la portabilità di dati e flussi di lavoro verso un altro modello.
+
+Conviene anche tenere pronta un'alternativa collaudata, perché la crescita di un fornitore non coincide automaticamente con la sua stabilità.
+
+«Nel breve periodo il mercato è una macchina per votare, nel lungo periodo è una bilancia.» (Benjamin Graham, citato da Warren Buffett nella lettera agli azionisti di Berkshire Hathaway sul 1993).
+
+## GTA 6 e le ferie: quando un videogioco sposta i calendari aziendali
+
+URL: https://www.dmjlab.com/insights/gta-6-ferie-assenze-lavoro-19-novembre/
+Autore: Domenico Maria Jacobone · Data: 2026-10-28 · Sezione: Lavoro
+
+Il 19 novembre esce GTA 6 e una parte dell'America ha già chiesto le ferie. Tra stime accademiche e fatti documentati, il caso insegna a chi gestisce persone che un'assenza annunciata si pianifica, mentre una malattia improvvisa si subisce.
+
+Il 19 novembre esce GTA 6 di Rockstar Games e una parte dell'America ha già chiesto le ferie per giocarlo, approfittando che sia un giovedì, ad un passo dal fine settimana.
+
+L'economista Jose García Montalvo, dell'Universitat Pompeu Fabra, stima 1,5 milioni di assenze dal lavoro e circa un miliardo di dollari di produzione perduta in una sola giornata.
+
+La cifra, ripresa da IBTimes, è una proiezione accademica e non una previsione ufficiale, e non è stata verificata in modo indipendente.
+
+Nella vostra azienda il 19 novembre è già segnato in calendario?
+
+### I fatti
+
+I fatti documentati al momento sono decisamente istruttivi: a Fort Stewart, in Georgia, il 9th Brigade Engineer Battalion, un battaglione del genio, offre quattro giorni di licenza a chi rinnova la ferma entro il 14 novembre.
+
+Secondo un portavoce dell'esercito, citato dall'Associated Press, almeno 20 soldati su 130 idonei hanno già accettato. Sarà un caso concomitante?
+
+In California l'azienda di componenti per auto Burger Motorsports chiuderà il giorno del lancio, perché molti dipendenti avevano già chiesto quella data di ferie.
+
+Intanto Sensor Tower stima 6,45 milioni di prenotazioni digitali per circa 630 milioni di dollari, senza contare le copie fisiche.
+
+IBTimes accosta il miliardo di fatturato «perduto» al miliardo che Take-Two Interactive prevede come flusso di cassa operativo dell'anno fiscale.
+
+Le due cifre misurano ovviamente grandezze diverse: la prima è l'ammanco di una giornata di lavoro, la seconda la cassa di dodici mesi.
+
+Rifacendo il conto con i dati dichiarati dalle diverse fonti ho qualche cifra che merita uno sguardo: 70.000 dollari di produzione annua per lavoratore fanno circa 270 dollari al giorno su 260 giornate lavorative. Per 1,5 milioni di assenti sono circa 400 milioni, senza calcolare che l'effetto si prolunghi ben oltre il giovedì.
+
+La parte utile per chi gestisce persone è che un'assenza annunciata si pianifica, mentre una malattia improvvisa si subisce, ma essere costretti alla chiusura per le troppe ferie chieste in concomitanza del lancio epocale di un videogioco non è una cosa che si legga tutti i giorni!
+
+### I miei consigli
+
+I miei consigli sono di segnare la data in calendario come qualsiasi evento noto, di raccogliere subito le richieste di ferie e di concordare in anticipo i turni di copertura, perché chi decide prima spende meno di chi reagisce dopo.
+
+Questa è una mia lettura, non un dato: un videogioco è diventato un evento collettivo capace di spostare calendari, bilanci e persino arruolamenti, e le organizzazioni lo gestiscono meglio quando smettono di considerarlo un passatempo.
+
+«Il gioco è più antico della cultura.» (Johan Huizinga, Homo ludens, 1938).
+
+## Google in Finlandia: i boschi abbattuti prima della valutazione d'impatto
+
+URL: https://www.dmjlab.com/insights/google-finlandia-data-center-disboscamento/
+Autore: Domenico Maria Jacobone · Data: 2026-10-27 · Sezione: Sostenibilità
+
+Google ha disboscato centinaia di ettari in Finlandia per due data center prima che la valutazione di impatto ambientale fosse conclusa. Tra cifre da verificare e un quadro giuridico ancora aperto, il caso invita a chiedere ai fornitori di cloud e di AI a che punto siano le autorizzazioni.
+
+Google ha disboscato centinaia di ettari di foresta in Finlandia per due data center prima che la valutazione di impatto ambientale fosse conclusa.
+
+L'autorità finlandese di vigilanza, la LVV, ha ordinato a Tuike Finland, la società che rappresenta Google nel Paese, di sospendere entro il 23 ottobre 2026 i lavori preparatori nei due nuovi siti di Muhos e di Kajaani.
+
+Al momento risultano disboscati circa 330 ettari a Muhos e poco meno di 200 a Kajaani; il lavoro è parte di un investimento da 13 miliardi di euro annunciato a settembre e legalmente concordato.
+
+Secondo voi, la valutazione di impatto ambientale di un data center dovrebbe precedere anche i lavori preparatori sul terreno?
+
+### I fatti, con cautela
+
+Il titolo che circola e riferisce di «400mila alberi abbattuti» somma due stime: 250mila a Muhos e 150mila a Otanmäki, nel comune di Kajaani. Alberi sacrificabili? Non ho dati per rispondere, ma so che parliamo di stime dedotte da un conteggio (per il solo sito di Kajaani) attribuito all'ecologista Mari Annala, dell'Associazione finlandese per la conservazione della natura. A onor del vero di un conteggio ufficiale non ho trovato traccia.
+
+Anche l'aggettivo «illegale» va letto con cautela, perché la LVV contesta la «mancata conclusione» della valutazione d'impatto ambientale e ha ricordato che potrà avviare procedimenti coercitivi in caso di inadempienza, ma non che non fossero concordati i lavori da fare.
+
+Secondo Yle, la polizia ha aperto un'indagine preliminare sul sito di Muhos dopo la denuncia di un privato cittadino, quindi il quadro giuridico resta da definire con certezza.
+
+Google ammette di non avere rispettato i propri standard, il suo responsabile per la Finlandia, Antti Järvinen, ha chiesto scusa e l'azienda sostiene di avere agito in buona fede seguendo la legge forestale finlandese.
+
+Per Muhos c'è già un piano che prevede la piantumazione di nuovi alberi su 130 ettari (un po' più di un terzo di quelli disboscati).
+
+Il caso finlandese riguarda il suolo e le foreste, mentre l'impatto più noto dei data center resta quello energetico.
+
+Secondo l'Agenzia internazionale dell'energia, nel 2024 hanno assorbito circa 415 terawattora, l'1,5 per cento dell'elettricità mondiale, e nel 2030 arriveranno a circa 945, quasi il 3 per cento.
+
+### I miei consigli
+
+I miei consigli sono di chiedere ai fornitori di servizi cloud e di intelligenza artificiale dove si trovano i loro data center e, se in costruzione, a che punto siano le autorizzazioni d'impatto ambientale e se siano previste contromisure di mitigazione.
+
+La mia lettura è quella di una persona che non rifiuta il progresso, che ha visto succedere cose ben peggiori, ma ha trovato questa leggerezza inverosimile perché dopo i lavori di demolizione al massimo si può «confermare» il danno senza poterlo più gestire o prevenire.
+
+«Agisci in modo che le conseguenze della tua azione siano compatibili con la permanenza di un'autentica vita umana sulla terra.» (Hans Jonas, Il principio responsabilità, 1979).
+
+## Essere o non essere sostituiti dall'IA: la terza risposta, la più costosa
+
+URL: https://www.dmjlab.com/insights/ia-sostituzione-ruoli-riaperti-compito-mestiere/
+Autore: Domenico Maria Jacobone · Data: 2026-10-26 · Sezione: Lavoro
+
+Molte aziende che hanno tagliato ruoli a causa dell'IA li hanno poi riaperti. L'errore ricorrente è aver confuso il compito con il mestiere: conviene scomporre i ruoli, documentare l'esperienza dei più anziani e non chiudere l'ingresso ai giovani.
+
+Essere o non essere sostituiti dall'intelligenza artificiale?
+
+Dopo due anni di annunci, molte aziende hanno scoperto che la risposta giusta era una terza, la più costosa da imparare.
+
+In un sondaggio di Robert Half su circa duemila responsabili HR negli Stati Uniti, il 32% dichiara che la propria azienda ha eliminato un ruolo a causa dell'IA per poi riaprirlo. Nella finanza la quota sale al 44%, nelle Risorse Umane al 35%.
+
+Tra i dirigenti che hanno tagliato personale per l'IA, il 55% ammette di aver sbagliato, secondo una ricerca internazionale di Orgvue.
+
+Nella vostra azienda chi decide quali compiti affidare alla macchina conosce davvero quei compiti?
+
+### I casi
+
+Meta aveva studiato scenari di riduzione fino al 60 per cento in alcuni gruppi di lavoro. A maggio si è fermata al 10 per cento dell'organico e ha annullato la seconda ondata, anche perché gli strumenti non davano i guadagni attesi, come ha ricostruito Reuters.
+
+Ford Motor Company ha inserito in tre anni circa 350 ingegneri e tecnici esperti, alcuni dei quali ex dipendenti, perché i sistemi automatici di controllo qualità non vedevano i difetti che loro riconoscevano. Il vicepresidente Charles Poon ha ammesso che l'azienda aveva trascurato l'esperienza di chi se n'era andato prima di poterla trasmettere.
+
+Klarna, che nel 2024 attribuiva al suo assistente automatico il lavoro di 700 operatori, è tornata a cercare persone per l'assistenza clienti, perché la qualità del servizio era calata.
+
+IBM offre il caso più istruttivo di questo post: il suo assistente per le risorse umane risolve il 94 per cento delle richieste, mentre il resto richiede giudizio umano; per questo l'azienda triplicherà nel 2026 le assunzioni di giovani negli Stati Uniti, con mansioni riscritte attorno a ciò che la macchina non sa fare.
+
+L'errore ricorrente ha una radice comune, perché si è confuso il «compito» con il «mestiere».
+
+L'AI svolge bene la parte ripetibile di un lavoro, mentre il valore risiede spesso nella parte residua, fatta di esperienza, eccezioni e responsabilità.
+
+Qui si apre l'opportunità, e IKEA ne ha già dato prova: dal 2021 il gruppo Ingka ha riqualificato 8.500 operatori dei centri di contatto come consulenti d'arredo a distanza, mentre un assistente automatico gestiva quasi metà delle richieste. Nel 2022 quel servizio valeva 1,3 miliardi di euro di ricavi.
+
+### I miei consigli
+
+I miei consigli sono di scomporre ogni ruolo nelle sue attività prima di toccare l'organico, di documentare l'esperienza dei più anziani prima che esca dalla porta, e di non chiudere l'ingresso ai giovani, perché senza di loro fra cinque anni mancheranno i responsabili.
+
+Conviene infine misurare i risultati prima di annunciarli agli investitori: secondo CNBC, a metà maggio 13 delle 23 grandi società quotate che avevano legato i tagli all'IA valevano meno che al momento dell'annuncio.
+
+«La vera questione non è se le macchine pensino, ma se pensino gli uomini.» (B. F. Skinner, Contingencies of Reinforcement, 1969).
+
+## Accenture e i 29 dollari di Claude: l'IA diventa un costo di produzione
+
+URL: https://www.dmjlab.com/insights/accenture-claude-29-dollari-costo-ia-governance/
+Autore: Domenico Maria Jacobone · Data: 2026-10-23 · Sezione: Governance
+
+Dal 1° ottobre Accenture paga a ogni dipendente 29 dollari al mese di Claude; chi consuma di più deve addebitare la differenza a un progetto. La scelta sposta la spesa dal centro al progetto e anticipa ciò che le imprese italiane dovranno decidere sulla governance dell'IA.
+
+Dal 1° ottobre Accenture paga a ciascun dipendente 29 dollari al mese di Claude, l'assistente di Anthropic.
+
+Chi consuma più crediti deve trovare un progetto di valore a cui addebitare la differenza.
+
+Lo ha rivelato 404 Media il 15 ottobre, citando un messaggio interno. Alcuni consulenti, soprattutto quelli che scrivono software con agenti automatici, spendevano già fra 500 e 1.000 dollari al mese.
+
+Tra i servizi di consulenza venduti da Accenture c'è l'AI Transformation e quindi questa scelta farà scuola.
+
+Nella vostra organizzazione qualcuno sa quanto costa davvero l'IA usata ogni giorno?
+
+### La notizia
+
+La notizia è stata letta come un taglio, ma l'azienda contesta che si tratti di un limite rigido. Il portavoce di Accenture parla di «strumento "giusto" per il lavoro "giusto"».
+
+Il dato interessante è nella visione, perché la decisione sposta la spesa dal centro al progetto. L'IA smette di essere un beneficio distribuito a tutti e diventa un costo di produzione, con un responsabile e una finalità dichiarata.
+
+La motivazione è contabile, prima che tecnologica: secondo 24/7 Wall St., oltre il 65% delle commesse di Accenture è a prezzo fisso, e ogni consumo non preventivato erode il margine invece di finire in fattura al cliente.
+
+I modelli si pagano a consumo, in base alla quantità di testo elaborato. Una conversazione occasionale costa poco, mentre un agente che scrive e collauda codice per ore consuma in proporzione al lavoro svolto: il salto da 29 a 1.000 dollari misura la distanza fra chi interroga la macchina e chi le affida un'attività intera.
+
+Il tetto contiene il costo, però non dice nulla sulla produttività: Ron Schmelzer ha osservato su Forbes che un limite di spesa non distingue chi ottiene risultati da chi genera testi da correggere.
+
+Per le imprese italiane, che proprio in questi mesi stanno distribuendo licenze, il caso è un'anticipazione utile.
+
+La governance dell'IA è sapere chi la usa, per fare cosa e con quale ritorno, prima che sia la fattura del fornitore a dirlo.
+
+### I miei consigli
+
+I miei consigli sono di separare le licenze di base dall'uso intensivo, che va autorizzato e imputato al progetto che ne beneficia.
+
+Misurare, accanto alla spesa, il tempo risparmiato e gli errori evitati.
+
+Inserire il costo dei modelli nei preventivi a prezzo fisso, perché è lì che il margine si consuma senza che nessuno se ne accorga.
+
+«Guardatevi dalle piccole spese: una piccola falla affonda una grande nave.» (Benjamin Franklin, La via della ricchezza, 1758).
+
+## Hermès nei sobborghi: aprire dove vivono i clienti, non dove sta il prestigio
+
+URL: https://www.dmjlab.com/insights/hermes-boutique-sobborghi-dati-clienti/
+Autore: Domenico Maria Jacobone · Data: 2026-10-22 · Sezione: Marketing
+
+Hermès apre le nuove boutique americane dove i dati dicono che vivono i clienti, non dove la tradizione colloca il lusso. Una lezione che vale anche per le province e i distretti produttivi italiani: scegliere il luogo in base alle abitudini di chi compra.
+
+Hermès apre le nuove boutique americane dove i dati dicono che vivono i clienti, non dove la tradizione colloca il lusso. Lo racconta Natasha Khan sul The Wall Street Journal: dopo Manhattan e Beverly Hills, la maison francese guarda ai sobborghi benestanti e alle città medie.
+
+Ad agosto ha inaugurato a Wilmette, a nord di Chicago, in un centro commerciale degli anni Venti. Le vetrine vicine sono una farmacia CVS e un supermercato Jewel-Osco (casualmente, gli stessi negozi in cui i residenti fanno la spesa ogni settimana).
+
+Vi chiedo: nelle vostre aziende la scelta di dove aprire nasce dai dati sui clienti o dall'abitudine?
+
+### I fatti
+
+Hermès aveva già un negozio nel centro di Chicago, a 35 minuti di auto. Analizzandone i flussi, i dirigenti hanno visto che lo frequentavano soprattutto visitatori di fuori stato, mentre i residenti facoltosi della North Shore non scendevano in città.
+
+Secondo il WSJ, la casa sceglie le sedi incrociando demografia locale, provenienza degli ordini online, abitudini d'acquisto e attrazioni nei dintorni.
+
+A Nashville, aperta nell'ottobre 2025 in un'ex fabbrica di calze in mattoni rossi, il contesto era opposto: accanto c'erano Soho House e ristoranti alla moda. «Oggi negli Stati Uniti la ricchezza è diffusa e diversificata», ha spiegato al quotidiano Diane Mahady, amministratrice delegata di Hermès per le Americhe, ricordando che i dati contano miliardari in 47 stati.
+
+La notizia conta perché rovescia un'abitudine del lusso, che per decenni ha chiesto al cliente di raggiungere la capitale. Hermès compie il percorso inverso perché il suo nome non ha bisogno della via celebre per farsi riconoscere, e quindi può stare accanto al supermercato senza perdere prestigio.
+
+Le due strategie, Nashville e Wilmette, sono diverse, non avverse, perché obbediscono allo stesso criterio: seguire la vita quotidiana di chi compra, invece di aspettarlo in vetrina. La lezione vale anche per l'Italia, dove molta ricchezza abita nelle province e nei distretti produttivi, lontano dalle varie via Montenapoleone e da via Condotti.
+
+### I miei consigli
+
+I miei consigli sono di leggere gli indirizzi di spedizione delle vendite online come una mappa della domanda e di distinguere chi visita un negozio da chi ci abita accanto.
+
+Conviene poi scegliere il quartiere in base alle abitudini dei clienti prima che al prestigio dell'indirizzo, un lavoro che gli strumenti di analisi dei dati, compresi quelli basati sull'IA, rendono accessibile anche a una media impresa.
+
+«Il consumo vistoso di beni di valore è per il gentiluomo agiato un mezzo per acquisire reputazione.» (Thorstein Veblen, La teoria della classe agiata, 1899).
+
+## Anthropic Public Benefit Fund: immagine o coerenza?
+
+URL: https://www.dmjlab.com/insights/anthropic-public-benefit-fund-governance/
+Autore: Domenico Maria Jacobone · Data: 2026-10-21 · Sezione: Governance
+
+Domenica 18 ottobre Anthropic ha annunciato che destinerà il 5% delle proprie azioni a un nuovo fondo di pubblica utilità. Gli argomenti per la coerenza e per l'operazione d'immagine sono entrambi concreti: il giudizio dipende dalle regole di governo, ancora da conoscere.
+
+Domenica 18 ottobre Anthropic ha annunciato che destinerà il 5% delle proprie azioni a un nuovo soggetto: l'Anthropic Public Benefit Fund.
+
+L'annuncio, «casualmente», arriva poche settimane prima della quotazione in Borsa di cui scrive la stampa americana.
+
+La quota iniziale attende comunque conferma dal voto degli azionisti. Il consiglio di amministrazione potrà aggiungere un altro 2% per ogni aumento del 50% del valore dell'azienda oltre una soglia non ancora resa nota.
+
+Contando anche i fondatori, che alla nascita promisero di donare l'80% delle proprie quote, e il programma che raddoppia le azioni donate dai dipendenti, Anthropic calcola che circa un quinto del capitale sia ormai vincolato al bene pubblico.
+
+Voi lo leggete come un'operazione d'immagine o come un atto coerente con la missione dichiarata?
+
+### Gli argomenti a favore
+
+Gli argomenti a favore della coerenza sono documentati: Anthropic è nata come public benefit corporation, la forma societaria americana che obbliga il consiglio a bilanciare il profitto con una finalità pubblica dichiarata nello statuto.
+
+L'impegno dei fondatori, inoltre, precede di anni la corsa alla quotazione e il nuovo fondo nasce con un vincolo esplicito: nessuna delle azioni che detiene potrà finanziare attività di lobbying o donazioni politiche.
+
+L'azienda rivendica anche una scelta di principio, perché il meccanismo che di solito premia i dirigenti con quote crescenti al crescere del valore viene qui rivolto al bene pubblico.
+
+### Gli argomenti contrari
+
+Gli argomenti per la visione opposta sono altrettanto concreti: il fondo è una società a responsabilità limitata interamente posseduta da Anthropic, non un ente benefico indipendente, e le regole su chi lo governa verranno illustrate soltanto nei prossimi mesi.
+
+Lise Buyer, della società di consulenza Class V Group, ha osservato alla CNBC che un passaggio del genere è necessario in vista della quotazione e torna utile all'immagine, mentre l'AI ridisegna il mercato del lavoro.
+
+Proprio il lavoro è l'esempio scelto da Anthropic. Alla cifra di 200 milioni di dollari già stanziati per studiarne le trasformazioni potrebbero aggiungersi grandi donazioni a enti senza scopo di lucro o distribuzioni dirette a specifici gruppi di persone.
+
+### La mia lettura
+
+La mia opinione è che opportunità e coerenza in questo caso possano convergere: la data dell'annuncio risponde al calendario della Borsa, mentre la struttura risponde a una storia cominciata prima.
+
+La valutazione sull'operato si sposterà sui dati che ancora mancano, cioè la soglia di partenza, la composizione dell'organo che governerà il fondo e il primo rapporto sul beneficio pubblico promesso dall'azienda.
+
+Cerco di leggere i fatti mettendo la percentuale insieme alle regole di governo, di separare ciò che è vincolato da ciò che resta discrezionale e di tornare sulla notizia quando arriveranno i documenti, non il giorno del comunicato.
+
+«La responsabilità sociale dell'impresa è aumentare i propri profitti.» (Milton Friedman, The New York Times Magazine, 13 settembre 1970).
+
+## I 16,8 miliardi di Anthropic: come leggere un dato non certificato
+
+URL: https://www.dmjlab.com/insights/anthropic-ricavi-trimestre-leggere-i-numeri/
+Autore: Domenico Maria Jacobone · Data: 2026-10-20 · Sezione: Strategia
+
+Tra luglio e settembre Anthropic avrebbe incassato 16,8 miliardi di dollari, ma il dato è non certificato e dipende da criteri contabili particolari. Per chi adotta questi strumenti, il fornitore resta una startup in forte crescita: prezzi, portabilità dei dati e alternative vanno fissati nei contratti.
+
+Tra luglio e settembre Anthropic ha incassato 16,8 miliardi di dollari, il 45 per cento in più rispetto agli 11,5 del trimestre precedente.
+
+Lo ha riferito Reuters il 14 ottobre, citando un investitore presente a un incontro riservato in vista della quotazione in Borsa.
+
+Nelle stesse ore i titoli tecnologici legati all'intelligenza artificiale sono finiti sotto una pioggia di vendite.
+
+Quanto vale davvero quel numero, una volta letto con gli strumenti di un analista?
+
+### Le cautele
+
+Il dato non è certificato, perché Anthropic resta una società privata e il prospetto definitivo non è ancora pubblico. La cifra, inoltre, proviene da una sola fonte non verificabile.
+
+Conta poi il metodo di calcolo: Anthropic iscrive a ricavo l'intero importo delle vendite che passano dai negozi digitali di Amazon, Google e Microsoft, e registra la quota delle piattaforme come costo commerciale. OpenAI, al contrario, contabilizza soltanto la parte che le spetta.
+
+Secondo i documenti di quotazione esaminati da Reuters, nel 2025 quei canali valevano il 47 per cento dei ricavi di Anthropic.
+
+La differenza pesa anche sui mercati, perché la confusione sui criteri, rivelata da Bloomberg il 9 ottobre, aveva già fatto perdere l'1,4 per cento al Nasdaq 100.
+
+Anche l'analisi dell'utile richiede cautela: il Financial Times riferisce un risultato operativo positivo per il secondo trimestre consecutivo, al netto però dei compensi in azioni ai dipendenti. Il margine lordo supera l'80 per cento soltanto prima di pagare i partner e di addestrare i modelli.
+
+Nel 2025, secondo la bozza del prospetto citata da Reuters, la società aveva perso 8,1 miliardi su 4,6 di ricavi.
+
+Restano poi impegni pesanti, come gli 1,25 miliardi al mese (!!) dovuti a SpaceX per la capacità di calcolo fino al maggio 2029.
+
+La valutazione di 2.000 miliardi attribuita dagli investitori al debutto equivale (secondo un calcolo sicuramente perfettibile) a circa trenta volte i ricavi del trimestre proiettati sull'anno.
+
+Detto questo, la crescita è reale, e il passaggio dalle proiezioni annualizzate ai trimestri chiusi rappresenta un progresso di trasparenza che il settore attendeva.
+
+### I miei consigli
+
+I miei consigli sono di filtrare ogni annuncio separando ricavi lordi e netti, utile rettificato e utile di bilancio, e di attendere il prospetto pubblico, l'unico sottoposto a revisione.
+
+A chi adotta questi strumenti in azienda suggerisco di trattare il fornitore per ciò che è oggi, un'impresa in fortissima crescita che dipende dai capitali e dalle infrastrutture dei suoi stessi concorrenti, fissando nei contratti prezzi, portabilità dei dati e alternative.
+
+È, per quanto enorme possa essere la sua valutazione, pur sempre una startup, con i rischi che ne derivano.
+
+«Il prezzo è quello che paghi, il valore è quello che ottieni.» (Warren Buffett, lettera agli azionisti di Berkshire Hathaway, 2008).
+
 ## Chi nuotava nudo: il fallimento di Character.AI e il rischio fornitore
 
 URL: https://www.dmjlab.com/insights/character-ai-chapter-11-rischio-fornitore/

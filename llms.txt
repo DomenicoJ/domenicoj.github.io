@@ -6,6 +6,10 @@
 
 Domenico Maria Jacobone è AI Strategist, consulente, formatore e giornalista iscritto all'Ordine dei Giornalisti d'Abruzzo. Ha alle spalle oltre vent'anni di direzione commerciale in multinazionali del Food & Beverage (2003-2019) e l'esperienza nel foodtech come direttore commerciale di una PMI innovativa per la ristorazione. Oggi, con DMJ Lab, aiuta organizzazioni e persone ad adottare l'intelligenza artificiale in modo consapevole. Basi operative: Città Sant'Angelo (Pescara) e Torino; lavora in tutta Italia, in sede e da remoto, in italiano e in inglese.
 
+- [Intelligenza artificiale](https://www.dmjlab.com/intelligenza-artificiale/): pagina principale sul tema. Come adottare l'AI in impresa, studio professionale, scuola e PA: da dove cominciare, metodo, regole (AI Act, legge 132/2025), errori frequenti, domande frequenti.
+- [AI per ristorazione, GDO e food retail](https://www.dmjlab.com/intelligenza-artificiale-food-retail/): previsione della domanda, listini, schede prodotto e allergeni (Reg. UE 1169/2011), recensioni, formazione del personale.
+- [AI per studi professionali](https://www.dmjlab.com/intelligenza-artificiale-studi-professionali/): articolo 13 della legge 132/2025, riservatezza, usi utili e formazione.
+- [AI per scuola e PA](https://www.dmjlab.com/intelligenza-artificiale-scuola-pa/): articolo 14 della legge 132/2025, DM 166/2025 sulle linee guida per le scuole, AgID, formazione del personale.
 - [Chi sono](https://www.dmjlab.com/chi-sono/): percorso, sintesi biografica e principi deontologici.
 - [Servizi](https://www.dmjlab.com/servizi/): consulenza, formazione, keynote, Food & Retail, metodo e domande frequenti.
 - [Articolo 4 dell'AI Act: la formazione sull'AI dopo l'Omnibus digitale](https://www.dmjlab.com/ai-act-articolo-4-formazione/): guida aggiornata al 2 novembre 2026 sull'obbligo di alfabetizzazione riscritto dal Regolamento (UE) 2026/1744, con il quadro italiano (legge 132/2025) e un metodo pratico.

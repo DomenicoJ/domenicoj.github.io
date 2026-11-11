@@ -224,9 +224,9 @@ function Nav({
     "aria-label": "Primary"
   }, items.map(it => /*#__PURE__*/React.createElement("a", {
     key: it.id,
-    href: sectionHref(it.id),
+    href: it.href || sectionHref(it.id),
     className: "nav-link" + (route === it.id ? " is-active" : ""),
-    onClick: e => {
+    onClick: it.href ? undefined : e => {
       e.preventDefault();
       nav(it.id);
     }
@@ -262,8 +262,8 @@ function Nav({
     className: "nav-mobile" + (open ? " is-open" : "")
   }, items.map(it => /*#__PURE__*/React.createElement("a", {
     key: it.id,
-    href: sectionHref(it.id),
-    onClick: e => {
+    href: it.href || sectionHref(it.id),
+    onClick: it.href ? undefined : e => {
       e.preventDefault();
       nav(it.id);
     }

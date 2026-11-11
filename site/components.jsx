@@ -148,9 +148,9 @@ function Nav({ lang, setLang, route, go }) {
           {items.map((it) => (
             <a
               key={it.id}
-              href={sectionHref(it.id)}
+              href={it.href || sectionHref(it.id)}
               className={"nav-link" + (route === it.id ? " is-active" : "")}
-              onClick={(e) => { e.preventDefault(); nav(it.id); }}
+              onClick={it.href ? undefined : (e) => { e.preventDefault(); nav(it.id); }}
             >
               {it.label}
             </a>
@@ -184,7 +184,7 @@ function Nav({ lang, setLang, route, go }) {
 
       <div className={"nav-mobile" + (open ? " is-open" : "")}>
         {items.map((it) => (
-          <a key={it.id} href={sectionHref(it.id)} onClick={(e) => { e.preventDefault(); nav(it.id); }}>
+          <a key={it.id} href={it.href || sectionHref(it.id)} onClick={it.href ? undefined : (e) => { e.preventDefault(); nav(it.id); }}>
             {it.label}
           </a>
         ))}

@@ -21,7 +21,7 @@ const read = (f) => fs.readFileSync(f, "utf8");
 const LD_RE = /<script type="application\/ld\+json">[\s\S]*?<\/script>/;
 const ld = (obj) => '<script type="application/ld+json">\n' + JSON.stringify(obj, null, 2) + "\n</script>";
 
-const NAV = '<nav><a href="/chi-sono/">Chi sono</a><a href="/servizi/">Servizi</a><a href="/insights/">Insights</a><a href="/#/contact">Contatti</a></nav>';
+const NAV = '<nav><a href="/intelligenza-artificiale/">AI</a><a href="/chi-sono/">Chi sono</a><a href="/servizi/">Servizi</a><a href="/insights/">Insights</a><a href="/#/contact">Contatti</a></nav>';
 const FOOTER = '<footer><div class="wrap foot"><p>© DMJ Lab, Driving Mindful Innovation · DMJ di Jacobone Domenico Maria · P. IVA 02453580686 · <a href="/">dmjlab.com</a> · <a href="/#/privacy">Privacy</a></p></div></footer>';
 const AUTHOR = { "@type": "Person", "@id": SITE + "/#person", "name": "Domenico Maria Jacobone", "url": SITE + "/chi-sono/",
   "sameAs": ["https://www.linkedin.com/in/domenicomjacobone", "https://x.com/domenicoj"] };
@@ -81,7 +81,8 @@ for (const p of posts) {
   fs.writeFileSync(f, common(h));
 }
 // Pagine statiche stabili (profilo, servizi, guide): stessi navigazione e piè di pagina, incluse in sitemap
-const STATIC_PAGES = ["chi-sono", "servizi", "ai-act-articolo-4-formazione"];
+const STATIC_PAGES = ["intelligenza-artificiale", "intelligenza-artificiale-food-retail", "intelligenza-artificiale-studi-professionali",
+  "intelligenza-artificiale-scuola-pa", "ai-act-articolo-4-formazione", "chi-sono", "servizi"];
 for (const d of STATIC_PAGES) fs.writeFileSync(`${d}/index.html`, common(read(`${d}/index.html`)));
 
 // Home: ultimi articoli nel contenuto statico
